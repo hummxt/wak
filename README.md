@@ -8,7 +8,7 @@ Quiet, fast, and meant to stay out of the way. Pick a look, tweak colors, apply 
 
 ## What it does
 
-- Animated mesh, fluid, aurora, wave, liquid, noise, and abstract backgrounds (i will add more and make the resolution better)
+- Animated mesh, fluid, aurora, wave, liquid, noise, and abstract backgrounds (i will add more animations and make the resolution better)
 - Live preview before you apply
 - Per-preset color controls (four palette colors, speed, intensity, brightness)
 - Runs behind desktop icons on Windows 10 / 11
