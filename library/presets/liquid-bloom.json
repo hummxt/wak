@@ -1,0 +1,12 @@
+{
+  "id": "liquid-bloom",
+  "name": "Liquid Bloom",
+  "category": "liquid",
+  "shader": "liquid/LiquidGradient",
+  "description": "Blurred liquid-like colour shapes that slowly morph.",
+  "thumbnail": "thumbnails/liquid-bloom.png",
+  "defaultSettings": {
+    "speed": 0.4,
+    "intensity": 0.85
+  }
+}

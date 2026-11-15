@@ -1,0 +1,12 @@
+{
+  "id": "soft-motion",
+  "name": "Soft Motion",
+  "category": "minimal",
+  "shader": "minimal/MinimalGradient",
+  "description": "Subtle two-tone gradient with gentle movement.",
+  "thumbnail": "thumbnails/soft-motion.png",
+  "defaultSettings": {
+    "speed": 0.25,
+    "intensity": 0.4
+  }
+}

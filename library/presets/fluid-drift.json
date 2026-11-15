@@ -1,0 +1,12 @@
+{
+  "id": "fluid-drift",
+  "name": "Fluid Drift",
+  "category": "fluid",
+  "shader": "fluid/FluidGradient",
+  "description": "Organic flowing colour movement with soft distortion.",
+  "thumbnail": "thumbnails/fluid-drift.png",
+  "defaultSettings": {
+    "speed": 0.45,
+    "intensity": 0.8
+  }
+}

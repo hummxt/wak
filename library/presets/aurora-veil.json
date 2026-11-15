@@ -1,0 +1,12 @@
+{
+  "id": "aurora-veil",
+  "name": "Aurora Veil",
+  "category": "aurora",
+  "shader": "aurora/Aurora",
+  "description": "Northern-lights inspired soft glowing colour waves.",
+  "thumbnail": "thumbnails/aurora-veil.png",
+  "defaultSettings": {
+    "speed": 0.35,
+    "intensity": 0.75
+  }
+}

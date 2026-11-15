@@ -1,0 +1,12 @@
+{
+  "id": "wave-pulse",
+  "name": "Wave Pulse",
+  "category": "waves",
+  "shader": "waves/WaveGradient",
+  "description": "Layered oscillating colour waves.",
+  "thumbnail": "thumbnails/wave-pulse.png",
+  "defaultSettings": {
+    "speed": 0.55,
+    "intensity": 0.65
+  }
+}

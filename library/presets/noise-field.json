@@ -1,0 +1,12 @@
+{
+  "id": "noise-field",
+  "name": "Noise Field",
+  "category": "noise",
+  "shader": "noise/NoiseField",
+  "description": "Procedural noise patterns with organic colour displacement.",
+  "thumbnail": "thumbnails/noise-field.png",
+  "defaultSettings": {
+    "speed": 0.4,
+    "intensity": 0.75
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mesh-flow",
+  "name": "Mesh Flow",
+  "category": "mesh",
+  "shader": "mesh/MeshGradient",
+  "description": "Smooth animated multi-colour mesh gradient.",
+  "thumbnail": "thumbnails/mesh-flow.png",
+  "defaultSettings": {
+    "speed": 0.5,
+    "intensity": 0.7
+  }
+}

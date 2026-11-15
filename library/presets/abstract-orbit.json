@@ -1,0 +1,12 @@
+{
+  "id": "abstract-orbit",
+  "name": "Abstract Orbit",
+  "category": "abstract",
+  "shader": "abstract/Abstract",
+  "description": "Geometric colour transitions with soft moving rings.",
+  "thumbnail": "thumbnails/abstract-orbit.png",
+  "defaultSettings": {
+    "speed": 0.5,
+    "intensity": 0.7
+  }
+}
