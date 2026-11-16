@@ -1,22 +1,26 @@
 # Wakbg
 
-**Wakbg** is a lightweight Windows app for live desktop backgrounds — procedural gradients that run on the GPU, not video files.
+Windows app for live desktop backgrounds. Procedural gradients and motion run on the GPU (DirectX 11 / HLSL) — not video files.
 
-Quiet, fast, and meant to stay out of the way. Pick a look, tweak colors, apply it behind your icons, close the window. The wallpaper keeps running from the tray until you stop it.
+Built by **Hummet Azim** (software engineer) for personal use.
+
+- Website: [hummet.dev](https://www.hummet.dev)
+- LinkedIn: [linkedin.com/in/hummet](https://www.linkedin.com/in/hummet/)
+- GitHub: [github.com/hummxt](https://github.com/hummxt)
 
 ---
 
-## What it does
+## Features
 
-- Animated mesh, fluid, aurora, wave, liquid, noise, and abstract backgrounds (i will add more animations and make the resolution better)
-- Live preview before you apply
-- Per-preset color controls (four palette colors, speed, intensity, brightness)
+- Animated mesh, fluid, aurora, wave, liquid, noise, abstract, and still gradient presets
+- Live preview before apply
+- Color / speed / intensity / brightness controls
 - Runs behind desktop icons on Windows 10 / 11
-- Low footprint: native C++, DirectX 11, no Electron / browser runtime
+- Native C++ — no Electron / browser runtime
+- Tray mode: close the UI and the wallpaper keeps running
+- Optional start-with-Windows restore after reboot (`--background`)
 
-Close the UI anytime — right-click the **Wakbg** tray icon to open it again or **Stop Wallpaper and Exit**.
-
-After you apply a wallpaper, Wakbg registers itself to start with Windows (`--background`) and restores the live background after reboot. Settings are stored in `%AppData%\Wakbg\config.json`.
+Settings live in `%AppData%\Wakbg\config.json`.
 
 ---
 
@@ -30,8 +34,6 @@ After you apply a wallpaper, Wakbg registers itself to start with Windows (`--ba
 | Desktop host | Win32 (WorkerW / Progman + DirectComposition on Win11) |
 | Build | CMake + MSVC |
 | Config / presets | JSON |
-
-Animations are shader-driven. Only the active preset is loaded.
 
 ---
 
@@ -60,30 +62,22 @@ Output: `build\Release\Wakbg.exe`
 .\build\Release\Wakbg.exe
 ```
 
-1. Browse the library and select a preset  
-2. Adjust motion and colors in the preview panel  
-3. Click **Apply to Desktop** (also enables start-with-Windows)  
-4. Close the window — wallpaper stays active via the tray and after reboot  
+1. Pick a preset in Library  
+2. Adjust motion and colors  
+3. Click **Apply to Desktop**  
+4. Close the window — wallpaper stays via the tray (and after reboot if start-with-Windows is on)
 
-Use tray **Stop Wallpaper and Exit** only when you want the default Windows background back.
+Tray → **Stop Wallpaper and Exit** restores the normal Windows background.
 
 ---
 
-## Project layout
+## Layout
 
 ```text
 src/           app, renderer, desktop host, UI
-shaders/       HLSL presets (mesh, fluid, aurora, …)
-library/       preset JSON metadata
-config/        default settings
-assets/        palettes / thumbnails
+shaders/       HLSL
+library/       preset JSON
+config/        defaults
+assets/        logo / palettes / thumbnails
 third_party/   Dear ImGui
 ```
-
----
-
-## Notes
-
-- Win11 “raised desktop” uses DirectComposition so the wallpaper composites correctly behind icons.
-- Prefer measuring RAM/CPU on your machine; targets are roughly tens of MB and capped FPS (default 30).
-- This is not a video wallpaper player — everything is generated in real time.
