@@ -22,6 +22,7 @@ public:
         Config& config,
         AnimationManager& animations,
         ID3D11ShaderResourceView* previewSrv,
+        const std::function<ID3D11ShaderResourceView*(const std::string&)>& getThumbnail,
         const std::string& desktopStatus,
         const std::function<void(const AnimationPreset&)>& onSelectPreset,
         const std::function<void(const AnimationPreset&)>& onApplyPreset,
@@ -35,10 +36,14 @@ public:
     LibraryViewState& GetLibraryState();
 
 private:
+    void DrawSidebar(float width);
+
     LibraryView m_libraryView;
     PreviewView m_previewView;
     SettingsView m_settingsView;
     LibraryViewState m_libraryState;
+    float m_sidebarHover[5]{};
+    float m_sidebarPress[5]{};
     bool m_initialized = false;
 };
 

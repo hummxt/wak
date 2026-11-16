@@ -37,10 +37,16 @@ void SettingsView::Draw(AppConfig& config, const std::function<void()>& onChange
         SetStartWithWindows(start);
         onChanged();
     }
+    ImGui::TextDisabled("Keeps your wallpaper after reboot.");
 
     if (ImGui::Checkbox("Wallpaper mode", &config.application.wallpaperMode)) {
+        if (config.application.wallpaperMode) {
+            config.application.startWithWindows = true;
+            SetStartWithWindows(true);
+        }
         onChanged();
     }
+    ImGui::TextDisabled("Turn off only if you want the default Windows wallpaper back.");
 
     ImGui::EndChild();
 }

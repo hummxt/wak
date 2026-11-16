@@ -48,15 +48,23 @@ void PreviewView::Draw(
     const std::function<void()>& onToggleFavorite,
     const std::function<void()>& onSettingsChanged
 ) {
-    ImGui::BeginChild("PreviewPanel", ImVec2(0, 0), true);
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(18.0f, 16.0f));
+    ImGui::BeginChild("PreviewPanel", ImVec2(0, 0), true, ImGuiWindowFlags_AlwaysUseWindowPadding);
 
     if (!preset) {
+        ImGui::Dummy(ImVec2(0.0f, 4.0f));
+        ImGui::Indent(4.0f);
         ImGui::TextDisabled("Select a wallpaper to preview");
+        ImGui::Unindent(4.0f);
         ImGui::EndChild();
+        ImGui::PopStyleVar();
         return;
     }
 
+    ImGui::Dummy(ImVec2(0.0f, 6.0f));
+    ImGui::Indent(4.0f);
     ImGui::TextUnformatted(preset->name.c_str());
+    ImGui::Unindent(4.0f);
     ImGui::TextDisabled("%s", preset->category.c_str());
     ImGui::Spacing();
     ImGui::TextWrapped("%s", preset->description.c_str());
@@ -177,6 +185,7 @@ void PreviewView::Draw(
     }
 
     ImGui::EndChild();
+    ImGui::PopStyleVar();
 }
 
 }
