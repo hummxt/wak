@@ -1,12 +1,6 @@
 # Wakbg
 
-Windows app for live desktop backgrounds. Procedural gradients and motion run on the GPU (DirectX 11 / HLSL) — not video files.
-
-Built by **Hummet Azim** (software engineer) for personal use.
-
-- Website: [hummet.dev](https://www.hummet.dev)
-- LinkedIn: [linkedin.com/in/hummet](https://www.linkedin.com/in/hummet/)
-- GitHub: [github.com/hummxt](https://github.com/hummxt)
+Windows app for live desktop backgrounds. Procedural gradients and motion run on the GPU (DirectX 11 / HLSL).
 
 ---
 
@@ -66,8 +60,6 @@ Output: `build\Release\Wakbg.exe`
 2. Adjust motion and colors  
 3. Click **Apply to Desktop**  
 4. Close the window — wallpaper stays via the tray (and after reboot if start-with-Windows is on)
-
-Tray → **Stop Wallpaper and Exit** restores the normal Windows background.
 
 ---
 
