@@ -3,11 +3,11 @@
   "name": "Night Party",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Night Party.",
+  "description": "CSS linear gradient background inspired by WebGradients: Night Party.",
   "thumbnail": "thumbnails/wg-night-party.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.2796,
-    0.2917,
-    0.7,
+    0.2961,
+    0.2904,
+    0.6956,
     1.0
   ],
   "colorC": [
-    0.5514,
-    0.2697,
-    0.6276,
+    0.5843,
+    0.2671,
+    0.6188,
     1.0
   ],
   "colorD": [

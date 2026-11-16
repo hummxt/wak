@@ -3,11 +3,11 @@
   "name": "Juicy Peach",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Juicy Peach.",
+  "description": "CSS linear gradient background inspired by WebGradients: Juicy Peach.",
   "thumbnail": "thumbnails/wg-juicy-peach.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.9961,
-    0.8556,
-    0.7575,
+    0.9959,
+    0.8514,
+    0.7535,
     1.0
   ],
   "colorC": [
-    0.9922,
-    0.7857,
-    0.6915,
+    0.9917,
+    0.7772,
+    0.6835,
     1.0
   ],
   "colorD": [

@@ -1,0 +1,37 @@
+{
+  "id": "wg-love-kiss",
+  "name": "Love Kiss",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient background inspired by WebGradients: Love Kiss.",
+  "thumbnail": "thumbnails/wg-love-kiss.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.0314,
+    0.2667,
+    1.0
+  ],
+  "colorB": [
+    1.0,
+    0.2633,
+    0.3834,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.4953,
+    0.5,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.6941,
+    0.6,
+    1.0
+  ]
+}

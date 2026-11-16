@@ -3,11 +3,11 @@
   "name": "New Life",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: New Life.",
+  "description": "CSS linear gradient background inspired by WebGradients: New Life.",
   "thumbnail": "thumbnails/wg-new-life.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.2485,
-    0.9344,
-    0.6014,
+    0.2476,
+    0.9357,
+    0.6086,
     1.0
   ],
   "colorC": [
-    0.2343,
-    0.9551,
-    0.7205,
+    0.2325,
+    0.9577,
+    0.7349,
     1.0
   ],
   "colorD": [

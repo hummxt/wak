@@ -1,0 +1,37 @@
+{
+  "id": "wg-space-shift",
+  "name": "Space Shift",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient background inspired by WebGradients: Space Shift.",
+  "thumbnail": "thumbnails/wg-space-shift.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 135.0
+  },
+  "colorA": [
+    0.2392,
+    0.2,
+    0.5765,
+    1.0
+  ],
+  "colorB": [
+    0.1569,
+    0.5176,
+    0.7804,
+    1.0
+  ],
+  "colorC": [
+    0.1824,
+    0.7196,
+    0.6784,
+    1.0
+  ],
+  "colorD": [
+    0.2078,
+    0.9216,
+    0.5765,
+    1.0
+  ]
+}

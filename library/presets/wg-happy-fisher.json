@@ -3,11 +3,11 @@
   "name": "Happy Fisher",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Happy Fisher.",
+  "description": "CSS linear gradient background inspired by WebGradients: Happy Fisher.",
   "thumbnail": "thumbnails/wg-happy-fisher.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.492,
-    0.8638,
-    0.9974,
+    0.4892,
+    0.8574,
+    0.9975,
     1.0
   ],
   "colorC": [
-    0.4467,
-    0.759,
-    0.9987,
+    0.4412,
+    0.7463,
+    0.9988,
     1.0
   ],
   "colorD": [

@@ -3,11 +3,11 @@
   "name": "Teen Party",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Teen Party.",
+  "description": "CSS linear gradient background inspired by WebGradients: Teen Party.",
   "thumbnail": "thumbnails/wg-teen-party.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [

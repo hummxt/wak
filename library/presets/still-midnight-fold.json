@@ -3,15 +3,35 @@
   "name": "Midnight Fold",
   "category": "still",
   "shader": "still/StillMesh",
-  "description": "Grainy navy with a soft magenta sweep.",
+  "description": "High quality still gradient background: Midnight Fold.",
   "thumbnail": "thumbnails/still-midnight-fold.png",
   "defaultSettings": {
-    "speed": 0.08,
-    "intensity": 0.7,
+    "speed": 0.0,
+    "intensity": 0.9,
     "angle": 320.0
   },
-  "colorA": [0.06, 0.08, 0.22, 1.0],
-  "colorB": [0.12, 0.14, 0.35, 1.0],
-  "colorC": [0.72, 0.28, 0.55, 1.0],
-  "colorD": [0.03, 0.04, 0.10, 1.0]
+  "colorA": [
+    0.0431,
+    0.0706,
+    0.2196,
+    1.0
+  ],
+  "colorB": [
+    0.102,
+    0.1333,
+    0.3451,
+    1.0
+  ],
+  "colorC": [
+    0.7608,
+    0.2902,
+    0.549,
+    1.0
+  ],
+  "colorD": [
+    0.0196,
+    0.0275,
+    0.0588,
+    1.0
+  ]
 }

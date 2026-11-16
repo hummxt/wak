@@ -3,11 +3,11 @@
   "name": "Dusty Grass",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Dusty Grass.",
+  "description": "CSS linear gradient background inspired by WebGradients: Dusty Grass.",
   "thumbnail": "thumbnails/wg-dusty-grass.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.7511,
-    0.9598,
-    0.5263,
+    0.7463,
+    0.958,
+    0.5294,
     1.0
   ],
   "colorC": [
-    0.6709,
-    0.9313,
-    0.5781,
+    0.6612,
+    0.9279,
+    0.5843,
     1.0
   ],
   "colorD": [

@@ -3,11 +3,11 @@
   "name": "North Miracle",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: North Miracle.",
+  "description": "CSS linear gradient background inspired by WebGradients: North Miracle.",
   "thumbnail": "thumbnails/wg-north-miracle.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.3261,
-    0.5754,
-    0.9133,
+    0.3459,
+    0.5582,
+    0.9159,
     1.0
   ],
   "colorC": [
-    0.6522,
-    0.292,
-    0.956,
+    0.6917,
+    0.2576,
+    0.9612,
     1.0
   ],
   "colorD": [

@@ -3,11 +3,11 @@
   "name": "Near Moon",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Near Moon.",
+  "description": "CSS linear gradient background inspired by WebGradients: Near Moon.",
   "thumbnail": "thumbnails/wg-near-moon.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.4799,
-    0.7933,
-    0.8473,
+    0.4867,
+    0.7865,
+    0.8457,
     1.0
   ],
   "colorC": [
-    0.5912,
-    0.6807,
-    0.8202,
+    0.6047,
+    0.6671,
+    0.8169,
     1.0
   ],
   "colorD": [

@@ -3,15 +3,35 @@
   "name": "Pastel Haze",
   "category": "still",
   "shader": "still/StillMesh",
-  "description": "Soft lavender-pink mesh with film grain. Freeze with Speed 0.",
+  "description": "High quality still gradient background: Pastel Haze.",
   "thumbnail": "thumbnails/still-pastel-haze.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.85,
+    "intensity": 0.9,
     "angle": 18.0
   },
-  "colorA": [0.78, 0.72, 0.92, 1.0],
-  "colorB": [0.95, 0.78, 0.86, 1.0],
-  "colorC": [0.98, 0.88, 0.78, 1.0],
-  "colorD": [0.92, 0.90, 0.96, 1.0]
+  "colorA": [
+    0.7804,
+    0.7216,
+    0.9608,
+    1.0
+  ],
+  "colorB": [
+    0.9608,
+    0.7765,
+    0.8392,
+    1.0
+  ],
+  "colorC": [
+    0.9804,
+    0.8431,
+    0.6902,
+    1.0
+  ],
+  "colorD": [
+    0.9294,
+    0.9059,
+    0.9647,
+    1.0
+  ]
 }

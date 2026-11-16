@@ -3,11 +3,11 @@
   "name": "Phoenix Start",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Phoenix Start.",
+  "description": "CSS linear gradient background inspired by WebGradients: Phoenix Start.",
   "thumbnail": "thumbnails/wg-phoenix-start.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.9738,
-    0.4163,
-    0.0453,
+    0.9739,
+    0.4287,
+    0.0481,
     1.0
   ],
   "colorC": [
-    0.9751,
-    0.6207,
-    0.0906,
+    0.9753,
+    0.6455,
+    0.0961,
     1.0
   ],
   "colorD": [

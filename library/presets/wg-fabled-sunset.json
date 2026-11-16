@@ -3,11 +3,11 @@
   "name": "Fabled Sunset",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Fabled Sunset.",
+  "description": "CSS linear gradient background inspired by WebGradients: Fabled Sunset.",
   "thumbnail": "thumbnails/wg-fabled-sunset.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [

@@ -3,11 +3,11 @@
   "name": "Amy Crisp",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Amy Crisp.",
+  "description": "CSS linear gradient background inspired by WebGradients: Amy Crisp.",
   "thumbnail": "thumbnails/wg-amy-crisp.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.7545,
-    0.6701,
-    0.8382,
+    0.7608,
+    0.6651,
+    0.8286,
     1.0
   ],
   "colorC": [
-    0.858,
-    0.5873,
-    0.6803,
+    0.8706,
+    0.5773,
+    0.6611,
     1.0
   ],
   "colorD": [

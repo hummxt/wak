@@ -3,11 +3,11 @@
   "name": "October Silence",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: October Silence.",
+  "description": "CSS linear gradient background inspired by WebGradients: October Silence.",
   "thumbnail": "thumbnails/wg-october-silence.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.5235,
-    0.3611,
-    0.9974,
+    0.5117,
+    0.3751,
+    0.9973,
     1.0
   ],
   "colorC": [
-    0.3294,
-    0.5927,
-    0.9949,
+    0.3059,
+    0.6208,
+    0.9945,
     1.0
   ],
   "colorD": [

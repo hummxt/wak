@@ -3,15 +3,35 @@
   "name": "Coastal Fade",
   "category": "still",
   "shader": "still/SoftLinear",
-  "description": "Clean multi-stop linear gradient, cssgradient style.",
+  "description": "High quality still gradient background: Coastal Fade.",
   "thumbnail": "thumbnails/still-coastal-fade.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.55,
+    "intensity": 0.9,
     "angle": 90.0
   },
-  "colorA": [0.16, 0.48, 0.61, 1.0],
-  "colorB": [0.34, 0.78, 0.52, 1.0],
-  "colorC": [0.93, 0.87, 0.33, 1.0],
-  "colorD": [0.98, 0.95, 0.78, 1.0]
+  "colorA": [
+    0.1647,
+    0.4824,
+    0.6078,
+    1.0
+  ],
+  "colorB": [
+    0.3412,
+    0.7804,
+    0.5216,
+    1.0
+  ],
+  "colorC": [
+    0.9294,
+    0.8667,
+    0.3255,
+    1.0
+  ],
+  "colorD": [
+    0.9804,
+    0.9529,
+    0.7529,
+    1.0
+  ]
 }

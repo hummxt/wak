@@ -3,11 +3,11 @@
   "name": "Night Fade",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Night Fade.",
+  "description": "CSS linear gradient background inspired by WebGradients: Night Fade.",
   "thumbnail": "thumbnails/wg-night-fade.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.7479,
-    0.6189,
-    0.8533,
+    0.7549,
+    0.6231,
+    0.8553,
     1.0
   ],
   "colorC": [
-    0.8643,
-    0.6888,
-    0.8869,
+    0.8784,
+    0.6973,
+    0.891,
     1.0
   ],
   "colorD": [

@@ -3,11 +3,11 @@
   "name": "Malibu Beach",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Malibu Beach.",
+  "description": "CSS linear gradient background inspired by WebGradients: Malibu Beach.",
   "thumbnail": "thumbnails/wg-malibu-beach.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,14 +17,14 @@
     1.0
   ],
   "colorB": [
-    0.2076,
-    0.7651,
+    0.2014,
+    0.7706,
     0.9961,
     1.0
   ],
   "colorC": [
-    0.1053,
-    0.8557,
+    0.0929,
+    0.8666,
     0.9961,
     1.0
   ],

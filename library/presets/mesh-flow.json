@@ -6,7 +6,32 @@
   "description": "Smooth animated multi-colour mesh gradient.",
   "thumbnail": "thumbnails/mesh-flow.png",
   "defaultSettings": {
-    "speed": 0.5,
-    "intensity": 0.7
-  }
+    "speed": 0.55,
+    "intensity": 0.75,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4824,
+    0.1843,
+    0.9686,
+    1.0
+  ],
+  "colorB": [
+    0.1647,
+    0.4196,
+    1.0,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.3608,
+    0.6588,
+    1.0
+  ],
+  "colorD": [
+    0.098,
+    0.8157,
+    0.902,
+    1.0
+  ]
 }

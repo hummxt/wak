@@ -3,15 +3,35 @@
   "name": "Flame Navy",
   "category": "still",
   "shader": "still/StillMesh",
-  "description": "Orange-magenta blaze fading into deep navy.",
+  "description": "High quality still gradient background: Flame Navy.",
   "thumbnail": "thumbnails/still-flame-navy.png",
   "defaultSettings": {
-    "speed": 0.12,
-    "intensity": 1.0,
+    "speed": 0.0,
+    "intensity": 0.9,
     "angle": 135.0
   },
-  "colorA": [0.98, 0.55, 0.18, 1.0],
-  "colorB": [0.92, 0.22, 0.28, 1.0],
-  "colorC": [0.72, 0.12, 0.48, 1.0],
-  "colorD": [0.08, 0.10, 0.28, 1.0]
+  "colorA": [
+    1.0,
+    0.5412,
+    0.1216,
+    1.0
+  ],
+  "colorB": [
+    0.949,
+    0.2275,
+    0.2275,
+    1.0
+  ],
+  "colorC": [
+    0.6902,
+    0.1216,
+    0.4706,
+    1.0
+  ],
+  "colorD": [
+    0.0627,
+    0.0941,
+    0.2706,
+    1.0
+  ]
 }

@@ -3,15 +3,35 @@
   "name": "Blush Cream",
   "category": "still",
   "shader": "still/SoftLinear",
-  "description": "Airy pastel pinks and cream fade.",
+  "description": "High quality still gradient background: Blush Cream.",
   "thumbnail": "thumbnails/still-blush-cream.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.6,
+    "intensity": 0.9,
     "angle": 120.0
   },
-  "colorA": [0.98, 0.90, 0.88, 1.0],
-  "colorB": [0.96, 0.78, 0.82, 1.0],
-  "colorC": [0.92, 0.72, 0.78, 1.0],
-  "colorD": [0.98, 0.94, 0.90, 1.0]
+  "colorA": [
+    0.9804,
+    0.902,
+    0.8863,
+    1.0
+  ],
+  "colorB": [
+    0.9608,
+    0.7804,
+    0.8157,
+    1.0
+  ],
+  "colorC": [
+    0.9216,
+    0.6902,
+    0.7412,
+    1.0
+  ],
+  "colorD": [
+    0.9804,
+    0.9412,
+    0.9098,
+    1.0
+  ]
 }

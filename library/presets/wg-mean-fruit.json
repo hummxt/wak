@@ -3,11 +3,11 @@
   "name": "Mean Fruit",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Mean Fruit.",
+  "description": "CSS linear gradient background inspired by WebGradients: Mean Fruit.",
   "thumbnail": "thumbnails/wg-mean-fruit.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.9377,
-    0.6964,
-    0.6825,
+    0.9347,
+    0.6904,
+    0.6896,
     1.0
   ],
   "colorC": [
-    0.8873,
-    0.5968,
-    0.8003,
+    0.8812,
+    0.5847,
+    0.8145,
     1.0
   ],
   "colorD": [

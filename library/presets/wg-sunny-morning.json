@@ -3,11 +3,11 @@
   "name": "Sunny Morning",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Sunny Morning.",
+  "description": "CSS linear gradient background inspired by WebGradients: Sunny Morning.",
   "thumbnail": "thumbnails/wg-sunny-morning.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.9738,
-    0.7615,
-    0.4375,
+    0.9743,
+    0.7575,
+    0.44,
     1.0
   ],
   "colorC": [
-    0.9829,
-    0.6955,
-    0.4789,
+    0.9839,
+    0.6875,
+    0.4839,
     1.0
   ],
   "colorD": [

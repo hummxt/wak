@@ -3,11 +3,11 @@
   "name": "Night Sky",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Night Sky.",
+  "description": "CSS linear gradient background inspired by WebGradients: Night Sky.",
   "thumbnail": "thumbnails/wg-night-sky.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 180.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.1331,
-    0.2638,
-    0.4963,
+    0.1341,
+    0.2655,
+    0.4992,
     1.0
   ],
   "colorC": [
-    0.1487,
-    0.2923,
-    0.5454,
+    0.1506,
+    0.2957,
+    0.5514,
     1.0
   ],
   "colorD": [

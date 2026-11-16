@@ -3,10 +3,35 @@
   "name": "Abstract Orbit",
   "category": "abstract",
   "shader": "abstract/Abstract",
-  "description": "Geometric colour transitions with soft moving rings.",
+  "description": "Abstract orbiting colour forms.",
   "thumbnail": "thumbnails/abstract-orbit.png",
   "defaultSettings": {
-    "speed": 0.5,
-    "intensity": 0.7
-  }
+    "speed": 0.45,
+    "intensity": 0.8,
+    "angle": 60.0
+  },
+  "colorA": [
+    1.0,
+    0.3686,
+    0.2275,
+    1.0
+  ],
+  "colorB": [
+    1.0,
+    0.1804,
+    0.3882,
+    1.0
+  ],
+  "colorC": [
+    0.2275,
+    0.1098,
+    0.4431,
+    1.0
+  ],
+  "colorD": [
+    0.8431,
+    0.4275,
+    0.4667,
+    1.0
+  ]
 }

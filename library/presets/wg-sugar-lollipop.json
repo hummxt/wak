@@ -1,0 +1,37 @@
+{
+  "id": "wg-sugar-lollipop",
+  "name": "Sugar Lollipop",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient background inspired by WebGradients: Sugar Lollipop.",
+  "thumbnail": "thumbnails/wg-sugar-lollipop.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6431,
+    0.2706,
+    0.698,
+    1.0
+  ],
+  "colorB": [
+    0.8314,
+    0.0941,
+    0.4471,
+    1.0
+  ],
+  "colorC": [
+    0.9157,
+    0.0471,
+    0.4235,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.0,
+    0.4,
+    1.0
+  ]
+}

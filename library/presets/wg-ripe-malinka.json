@@ -3,11 +3,11 @@
   "name": "Ripe Malinka",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Ripe Malinka.",
+  "description": "CSS linear gradient background inspired by WebGradients: Ripe Malinka.",
   "thumbnail": "thumbnails/wg-ripe-malinka.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.9477,
-    0.4989,
-    0.7992,
+    0.9481,
+    0.4941,
+    0.788,
     1.0
   ],
   "colorC": [
-    0.9541,
-    0.4212,
-    0.6142,
+    0.9549,
+    0.4118,
+    0.5917,
     1.0
   ],
   "colorD": [

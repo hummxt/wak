@@ -3,11 +3,11 @@
   "name": "Plum Plate",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Plum Plate.",
+  "description": "CSS linear gradient background inspired by WebGradients: Plum Plate.",
   "thumbnail": "thumbnails/wg-plum-plate.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 135.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.4207,
-    0.4281,
-    0.8244,
+    0.4219,
+    0.4241,
+    0.8188,
     1.0
   ],
   "colorC": [
-    0.4414,
-    0.3621,
-    0.7313,
+    0.4439,
+    0.3541,
+    0.72,
     1.0
   ],
   "colorD": [

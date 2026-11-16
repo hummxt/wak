@@ -3,11 +3,11 @@
   "name": "Midnight Cyan",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Midnight Cyan.",
+  "description": "CSS linear gradient background inspired by WebGradients: Midnight Cyan.",
   "thumbnail": "thumbnails/wg-midnight-cyan.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 90.0
   },
   "colorA": [

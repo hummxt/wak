@@ -3,11 +3,11 @@
   "name": "Tempting Azure",
   "category": "gradient",
   "shader": "still/SoftLinear",
-  "description": "WebGradients / cssgradient-style linear: Tempting Azure.",
+  "description": "CSS linear gradient background inspired by WebGradients: Tempting Azure.",
   "thumbnail": "thumbnails/wg-tempting-azure.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.45,
+    "intensity": 0.85,
     "angle": 120.0
   },
   "colorA": [
@@ -17,15 +17,15 @@
     1.0
   ],
   "colorB": [
-    0.5319,
-    0.9299,
-    0.7782,
+    0.5327,
+    0.9269,
+    0.7835,
     1.0
   ],
   "colorC": [
-    0.5461,
-    0.8795,
-    0.8662,
+    0.5478,
+    0.8734,
+    0.8769,
     1.0
   ],
   "colorD": [

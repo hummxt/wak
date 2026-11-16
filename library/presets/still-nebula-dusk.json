@@ -3,15 +3,35 @@
   "name": "Nebula Dusk",
   "category": "still",
   "shader": "still/GlowMesh",
-  "description": "Dark atmospheric glow with purple, teal, and peach.",
+  "description": "High quality still gradient background: Nebula Dusk.",
   "thumbnail": "thumbnails/still-nebula-dusk.png",
   "defaultSettings": {
     "speed": 0.0,
-    "intensity": 0.8,
+    "intensity": 0.9,
     "angle": 0.0
   },
-  "colorA": [0.72, 0.22, 0.78, 1.0],
-  "colorB": [0.10, 0.45, 0.55, 1.0],
-  "colorC": [0.95, 0.62, 0.42, 1.0],
-  "colorD": [0.04, 0.05, 0.10, 1.0]
+  "colorA": [
+    0.7686,
+    0.2471,
+    0.8157,
+    1.0
+  ],
+  "colorB": [
+    0.0784,
+    0.4784,
+    0.549,
+    1.0
+  ],
+  "colorC": [
+    0.9608,
+    0.6471,
+    0.4196,
+    1.0
+  ],
+  "colorD": [
+    0.0275,
+    0.0314,
+    0.0706,
+    1.0
+  ]
 }
