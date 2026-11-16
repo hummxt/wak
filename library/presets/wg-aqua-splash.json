@@ -1,0 +1,37 @@
+{
+  "id": "wg-aqua-splash",
+  "name": "Aqua Splash",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Aqua Splash.",
+  "thumbnail": "thumbnails/wg-aqua-splash.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 120.0
+  },
+  "colorA": [
+    0.0745,
+    0.3294,
+    0.4784,
+    1.0
+  ],
+  "colorB": [
+    0.2156,
+    0.4899,
+    0.5781,
+    1.0
+  ],
+  "colorC": [
+    0.3567,
+    0.6504,
+    0.6777,
+    1.0
+  ],
+  "colorD": [
+    0.502,
+    0.8157,
+    0.7804,
+    1.0
+  ]
+}

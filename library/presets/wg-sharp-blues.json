@@ -1,0 +1,37 @@
+{
+  "id": "wg-sharp-blues",
+  "name": "Sharp Blues",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Sharp Blues.",
+  "thumbnail": "thumbnails/wg-sharp-blues.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0,
+    0.7765,
+    0.9843,
+    1.0
+  ],
+  "colorB": [
+    0.0,
+    0.638,
+    0.9623,
+    1.0
+  ],
+  "colorC": [
+    0.0,
+    0.4996,
+    0.9403,
+    1.0
+  ],
+  "colorD": [
+    0.0,
+    0.3569,
+    0.9176,
+    1.0
+  ]
+}

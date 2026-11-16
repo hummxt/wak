@@ -1,0 +1,37 @@
+{
+  "id": "wg-night-party",
+  "name": "Night Party",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Night Party.",
+  "thumbnail": "thumbnails/wg-night-party.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0078,
+    0.3137,
+    0.7725,
+    1.0
+  ],
+  "colorB": [
+    0.2796,
+    0.2917,
+    0.7,
+    1.0
+  ],
+  "colorC": [
+    0.5514,
+    0.2697,
+    0.6276,
+    1.0
+  ],
+  "colorD": [
+    0.8314,
+    0.2471,
+    0.5529,
+    1.0
+  ]
+}

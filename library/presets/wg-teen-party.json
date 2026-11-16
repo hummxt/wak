@@ -1,0 +1,37 @@
+{
+  "id": "wg-teen-party",
+  "name": "Teen Party",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Teen Party.",
+  "thumbnail": "thumbnails/wg-teen-party.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.0196,
+    0.4863,
+    1.0
+  ],
+  "colorB": [
+    0.4863,
+    0.3922,
+    1.0,
+    1.0
+  ],
+  "colorC": [
+    0.3412,
+    0.2373,
+    0.7294,
+    1.0
+  ],
+  "colorD": [
+    0.1961,
+    0.0824,
+    0.4588,
+    1.0
+  ]
+}

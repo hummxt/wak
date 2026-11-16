@@ -1,0 +1,37 @@
+{
+  "id": "wg-midnight-cyan",
+  "name": "Midnight Cyan",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Midnight Cyan.",
+  "thumbnail": "thumbnails/wg-midnight-cyan.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0078,
+    0.0,
+    0.1412,
+    1.0
+  ],
+  "colorB": [
+    0.0353,
+    0.0353,
+    0.4745,
+    1.0
+  ],
+  "colorC": [
+    0.0176,
+    0.4334,
+    0.7372,
+    1.0
+  ],
+  "colorD": [
+    0.0,
+    0.8314,
+    1.0,
+    1.0
+  ]
+}

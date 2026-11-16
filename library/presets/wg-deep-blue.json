@@ -1,0 +1,37 @@
+{
+  "id": "wg-deep-blue",
+  "name": "Deep Blue",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Deep Blue.",
+  "thumbnail": "thumbnails/wg-deep-blue.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 120.0
+  },
+  "colorA": [
+    0.4157,
+    0.0667,
+    0.7961,
+    1.0
+  ],
+  "colorB": [
+    0.3264,
+    0.1961,
+    0.8595,
+    1.0
+  ],
+  "colorC": [
+    0.2371,
+    0.3255,
+    0.9229,
+    1.0
+  ],
+  "colorD": [
+    0.1451,
+    0.4588,
+    0.9882,
+    1.0
+  ]
+}

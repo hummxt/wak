@@ -1,0 +1,37 @@
+{
+  "id": "wg-true-sunset",
+  "name": "True Sunset",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: True Sunset.",
+  "thumbnail": "thumbnails/wg-true-sunset.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9804,
+    0.4392,
+    0.6039,
+    1.0
+  ],
+  "colorB": [
+    0.9856,
+    0.5855,
+    0.4874,
+    1.0
+  ],
+  "colorC": [
+    0.9908,
+    0.7317,
+    0.371,
+    1.0
+  ],
+  "colorD": [
+    0.9961,
+    0.8824,
+    0.251,
+    1.0
+  ]
+}

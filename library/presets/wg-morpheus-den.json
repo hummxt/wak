@@ -1,0 +1,37 @@
+{
+  "id": "wg-morpheus-den",
+  "name": "Morpheus Den",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Morpheus Den.",
+  "thumbnail": "thumbnails/wg-morpheus-den.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 135.0
+  },
+  "colorA": [
+    0.1882,
+    0.8118,
+    0.8157,
+    1.0
+  ],
+  "colorB": [
+    0.1921,
+    0.5543,
+    0.6798,
+    1.0
+  ],
+  "colorC": [
+    0.196,
+    0.2967,
+    0.5439,
+    1.0
+  ],
+  "colorD": [
+    0.2,
+    0.0314,
+    0.4039,
+    1.0
+  ]
+}

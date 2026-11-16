@@ -1,0 +1,17 @@
+{
+  "id": "wg-warm-flame",
+  "name": "Warm Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Warm Flame.",
+  "thumbnail": "thumbnails/wg-warm-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 45.0
+  },
+  "colorA": [1.0, 0.6039, 0.6196, 1.0],
+  "colorB": [0.9935, 0.7451, 0.7189, 1.0],
+  "colorC": [0.987, 0.7804, 0.7686, 1.0],
+  "colorD": [0.9804, 0.8157, 0.7686, 1.0]
+}

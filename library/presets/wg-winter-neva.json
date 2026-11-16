@@ -1,0 +1,37 @@
+{
+  "id": "wg-winter-neva",
+  "name": "Winter Neva",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "WebGradients / cssgradient-style linear: Winter Neva.",
+  "thumbnail": "thumbnails/wg-winter-neva.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.45,
+    "angle": 120.0
+  },
+  "colorA": [
+    0.6314,
+    0.7686,
+    0.9922,
+    1.0
+  ],
+  "colorB": [
+    0.6741,
+    0.8165,
+    0.9896,
+    1.0
+  ],
+  "colorC": [
+    0.7168,
+    0.8644,
+    0.987,
+    1.0
+  ],
+  "colorD": [
+    0.7608,
+    0.9137,
+    0.9843,
+    1.0
+  ]
+}
