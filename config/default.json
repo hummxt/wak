@@ -1,26 +1,27 @@
 {
   "application": {
-    "startWithWindows": false,
+    "startWithWindows": true,
     "theme": "dark",
     "wallpaperMode": false
   },
   "performance": {
-    "fpsLimit": 30,
+    "fpsLimit": 60,
     "renderScale": 1.0,
     "pauseWhenFullscreen": true,
     "powerSaving": false
   },
   "animation": {
-    "speed": 0.85,
-    "intensity": 0.9,
+    "speed": 0.0,
+    "intensity": 0.88,
     "brightness": 1.0,
-    "colorA": [0.45, 0.20, 0.85, 1.0],
-    "colorB": [0.15, 0.35, 0.95, 1.0],
-    "colorC": [0.90, 0.35, 0.55, 1.0],
-    "colorD": [0.10, 0.75, 0.80, 1.0]
+    "angle": 250.0,
+    "colorA": [0.35, 0.12, 0.62, 1.0],
+    "colorB": [0.12, 0.22, 0.72, 1.0],
+    "colorC": [0.55, 0.28, 0.78, 1.0],
+    "colorD": [0.85, 0.38, 0.28, 1.0]
   },
   "wallpaper": {
-    "selected": "mesh-flow",
+    "selected": "still-violet-horizon",
     "palette": "custom"
   }
 }
