@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <cstdio>
 #include <fstream>
+#include <string>
 
 namespace ge {
 namespace {
@@ -179,9 +180,17 @@ bool DesktopHost::EmbedWindow(HWND hwnd) {
     GetClientRect(parent, &parentRect);
     int width = parentRect.right - parentRect.left;
     int height = parentRect.bottom - parentRect.top;
+    const int virtualW = GetSystemMetrics(SM_CXVIRTUALSCREEN);
+    const int virtualH = GetSystemMetrics(SM_CYVIRTUALSCREEN);
+    if (width < virtualW) {
+        width = virtualW;
+    }
+    if (height < virtualH) {
+        height = virtualH;
+    }
     if (width <= 1 || height <= 1) {
-        width = GetSystemMetrics(SM_CXVIRTUALSCREEN);
-        height = GetSystemMetrics(SM_CYVIRTUALSCREEN);
+        width = GetSystemMetrics(SM_CXSCREEN);
+        height = GetSystemMetrics(SM_CYSCREEN);
     }
 
     UINT flags = SWP_SHOWWINDOW | SWP_FRAMECHANGED | SWP_NOACTIVATE;
@@ -320,7 +329,17 @@ bool SetStartWithWindows(bool enabled) {
     if (enabled) {
         wchar_t path[MAX_PATH]{};
         GetModuleFileNameW(nullptr, path, MAX_PATH);
-        ok = RegSetValueExW(key, valueName, 0, REG_SZ, reinterpret_cast<const BYTE*>(path), static_cast<DWORD>((wcslen(path) + 1) * sizeof(wchar_t))) == ERROR_SUCCESS;
+        std::wstring command = L"\"";
+        command += path;
+        command += L"\" --background";
+        ok = RegSetValueExW(
+            key,
+            valueName,
+            0,
+            REG_SZ,
+            reinterpret_cast<const BYTE*>(command.c_str()),
+            static_cast<DWORD>((command.size() + 1) * sizeof(wchar_t))
+        ) == ERROR_SUCCESS;
     } else {
         RegDeleteValueW(key, valueName);
     }

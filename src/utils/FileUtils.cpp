@@ -1,6 +1,7 @@
 #include "utils/FileUtils.h"
 
 #include <Windows.h>
+#include <ShlObj.h>
 #include <fstream>
 #include <sstream>
 #include <filesystem>
@@ -43,6 +44,22 @@ std::wstring GetExecutableDirectory() {
     }
     fs::path p(buffer);
     return p.parent_path().wstring();
+}
+
+std::wstring GetAppDataDirectory() {
+    wchar_t buffer[MAX_PATH]{};
+    if (FAILED(SHGetFolderPathW(nullptr, CSIDL_APPDATA, nullptr, SHGFP_TYPE_CURRENT, buffer))) {
+        return JoinPath(GetExecutableDirectory(), L"userdata");
+    }
+    return JoinPath(buffer, L"Wakbg");
+}
+
+bool EnsureDirectoryExists(const std::wstring& path) {
+    std::error_code ec;
+    if (DirectoryExists(path)) {
+        return true;
+    }
+    return fs::create_directories(path, ec) || DirectoryExists(path);
 }
 
 std::wstring JoinPath(const std::wstring& a, const std::wstring& b) {
