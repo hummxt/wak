@@ -30,7 +30,9 @@ float4 PSMain(PSInput input) : SV_TARGET
     float sum = w0 + w1 + w2 + w3;
 
     float3 color = (ColorA.rgb * w0 + ColorB.rgb * w1 + ColorC.rgb * w2 + ColorD.rgb * w3) / sum;
-    float pulse = 0.04 * sin(t * 1.8 + uv.x * 4.0);
+    float pulse = 0.03 * sin(t * 1.8 + uv.x * 4.0);
     color = saturate(color + pulse);
-    return float4(ApplyBrightness(color), 1.0);
+    color = ApplyBrightness(color);
+    color = Dither8Bit(input.UV, color);
+    return float4(color, 1.0);
 }

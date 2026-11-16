@@ -8,7 +8,6 @@ cbuffer Constants : register(b0)
     float ResolutionY;
     float Pad0;
     float Pad1;
-    // Pad0 = angle degrees for still/linear shaders
     float4 ColorA;
     float4 ColorB;
     float4 ColorC;
@@ -37,4 +36,23 @@ float2 AspectCorrect(float2 uv)
 float3 ApplyBrightness(float3 color)
 {
     return saturate(color * Brightness);
+}
+
+float Bayer4(float2 pixel)
+{
+    int2 p = int2(pixel) & 3;
+    const float bayer[16] = {
+        0.0 / 16.0,  8.0 / 16.0,  2.0 / 16.0, 10.0 / 16.0,
+        12.0 / 16.0, 4.0 / 16.0, 14.0 / 16.0,  6.0 / 16.0,
+        3.0 / 16.0, 11.0 / 16.0,  1.0 / 16.0,  9.0 / 16.0,
+        15.0 / 16.0, 7.0 / 16.0, 13.0 / 16.0,  5.0 / 16.0
+    };
+    return bayer[p.y * 4 + p.x];
+}
+
+float3 Dither8Bit(float2 uv, float3 color)
+{
+    float2 pixel = uv * float2(ResolutionX, ResolutionY);
+    float dither = (Bayer4(pixel) - 0.5) / 255.0;
+    return saturate(color + dither);
 }

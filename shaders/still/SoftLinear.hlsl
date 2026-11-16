@@ -1,5 +1,4 @@
 #include "../common/Common.hlsli"
-#include "../common/Noise.hlsli"
 
 PSInput VSMain(VSInput input)
 {
@@ -9,39 +8,30 @@ PSInput VSMain(VSInput input)
     return output;
 }
 
-float3 FilmGrain(float2 uv, float3 color)
-{
-    float grain = Hash21(uv * float2(ResolutionX, ResolutionY) * 0.55) - 0.5;
-    return saturate(color + grain * 0.018);
-}
-
 float4 PSMain(PSInput input) : SV_TARGET
 {
     float2 uv = input.UV;
     float t = Time * Speed * 0.08;
     float angle = radians(Pad0);
     float2 dir = float2(sin(angle), -cos(angle));
-    float drift = Speed > 0.001 ? 0.02 * sin(t + uv.y * 1.5) : 0.0;
+    float drift = Speed > 0.001 ? 0.01 * sin(t + uv.y * 2.0) : 0.0;
     float x = saturate(dot(uv - 0.5, dir) + 0.5 + drift);
 
-    float soft = lerp(0.01, 0.08, saturate(Intensity));
     float3 color;
-    if (x < 0.333)
+    if (x < 0.333333)
     {
-        float u = smoothstep(0.0, 0.333 + soft, x);
-        color = lerp(ColorA.rgb, ColorB.rgb, u);
+        color = lerp(ColorA.rgb, ColorB.rgb, saturate(x / 0.333333));
     }
-    else if (x < 0.666)
+    else if (x < 0.666667)
     {
-        float u = smoothstep(0.333 - soft, 0.666 + soft, x);
-        color = lerp(ColorB.rgb, ColorC.rgb, u);
+        color = lerp(ColorB.rgb, ColorC.rgb, saturate((x - 0.333333) / 0.333333));
     }
     else
     {
-        float u = smoothstep(0.666 - soft, 1.0, x);
-        color = lerp(ColorC.rgb, ColorD.rgb, u);
+        color = lerp(ColorC.rgb, ColorD.rgb, saturate((x - 0.666667) / 0.333333));
     }
 
-    color = FilmGrain(uv, color);
-    return float4(ApplyBrightness(color), 1.0);
+    color = ApplyBrightness(color);
+    color = Dither8Bit(uv, color);
+    return float4(color, 1.0);
 }

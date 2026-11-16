@@ -9,12 +9,6 @@ PSInput VSMain(VSInput input)
     return output;
 }
 
-float3 FilmGrain(float2 uv, float3 color)
-{
-    float grain = Hash21(uv * float2(ResolutionX, ResolutionY) * 0.65) - 0.5;
-    return saturate(color + grain * 0.035);
-}
-
 float4 PSMain(PSInput input) : SV_TARGET
 {
     float t = Time * Speed * 0.22;
@@ -24,7 +18,7 @@ float4 PSMain(PSInput input) : SV_TARGET
     float2 centered = uv - 0.5;
     float2 rotated = float2(dot(centered, dir), dot(centered, float2(-dir.y, dir.x))) + 0.5;
 
-    float soft = lerp(1.85, 1.15, saturate(Intensity));
+    float falloff = lerp(2.05, 1.45, saturate(Intensity));
     float drift = Speed > 0.001 ? 1.0 : 0.0;
 
     float2 p0 = float2(0.18 + 0.16 * sin(t * 0.70) * drift, 0.22 + 0.14 * cos(t * 0.55) * drift);
@@ -37,15 +31,14 @@ float4 PSMain(PSInput input) : SV_TARGET
     float d2 = distance(rotated, p2);
     float d3 = distance(rotated, p3);
 
-    float w0 = 1.0 / max(pow(d0, soft), 0.0008);
-    float w1 = 1.0 / max(pow(d1, soft), 0.0008);
-    float w2 = 1.0 / max(pow(d2, soft), 0.0008);
-    float w3 = 1.0 / max(pow(d3, soft), 0.0008);
+    float w0 = 1.0 / max(pow(d0, falloff), 0.0004);
+    float w1 = 1.0 / max(pow(d1, falloff), 0.0004);
+    float w2 = 1.0 / max(pow(d2, falloff), 0.0004);
+    float w3 = 1.0 / max(pow(d3, falloff), 0.0004);
     float sum = w0 + w1 + w2 + w3;
 
     float3 color = (ColorA.rgb * w0 + ColorB.rgb * w1 + ColorC.rgb * w2 + ColorD.rgb * w3) / sum;
-    float lift = 0.03 * Noise2D(uv * 3.0 + t * drift);
-    color = saturate(color + lift);
-    color = FilmGrain(input.UV, color);
-    return float4(ApplyBrightness(color), 1.0);
+    color = ApplyBrightness(color);
+    color = Dither8Bit(input.UV, color);
+    return float4(color, 1.0);
 }
