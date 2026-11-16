@@ -16,6 +16,8 @@ Quiet, fast, and meant to stay out of the way. Pick a look, tweak colors, apply 
 
 Close the UI anytime — right-click the **Wakbg** tray icon to open it again or **Stop Wallpaper and Exit**.
 
+After you apply a wallpaper, Wakbg registers itself to start with Windows (`--background`) and restores the live background after reboot. Settings are stored in `%AppData%\Wakbg\config.json`.
+
 ---
 
 ## Stack
@@ -60,8 +62,10 @@ Output: `build\Release\Wakbg.exe`
 
 1. Browse the library and select a preset  
 2. Adjust motion and colors in the preview panel  
-3. Click **Apply to Desktop**  
-4. Close the window — wallpaper stays active via the tray  
+3. Click **Apply to Desktop** (also enables start-with-Windows)  
+4. Close the window — wallpaper stays active via the tray and after reboot  
+
+Use tray **Stop Wallpaper and Exit** only when you want the default Windows background back.
 
 ---
 
