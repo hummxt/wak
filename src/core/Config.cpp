@@ -89,6 +89,7 @@ bool Config::Load(const std::wstring& path) {
     m_config.animation.speed = ExtractFloat(json, "speed", m_config.animation.speed);
     m_config.animation.intensity = ExtractFloat(json, "intensity", m_config.animation.intensity);
     m_config.animation.brightness = ExtractFloat(json, "brightness", m_config.animation.brightness);
+    m_config.animation.angle = ExtractFloat(json, "angle", m_config.animation.angle);
     ExtractColor(json, "colorA", m_config.animation.colorA);
     ExtractColor(json, "colorB", m_config.animation.colorB);
     ExtractColor(json, "colorC", m_config.animation.colorC);
@@ -117,6 +118,7 @@ bool Config::Save(const std::wstring& path) const {
     ss << "    \"speed\": " << m_config.animation.speed << ",\n";
     ss << "    \"intensity\": " << m_config.animation.intensity << ",\n";
     ss << "    \"brightness\": " << m_config.animation.brightness << ",\n";
+    ss << "    \"angle\": " << m_config.animation.angle << ",\n";
     ss << "    \"colorA\": " << ColorToJson(m_config.animation.colorA) << ",\n";
     ss << "    \"colorB\": " << ColorToJson(m_config.animation.colorB) << ",\n";
     ss << "    \"colorC\": " << ColorToJson(m_config.animation.colorC) << ",\n";

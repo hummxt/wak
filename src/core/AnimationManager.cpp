@@ -25,6 +25,21 @@ float ExtractFloat(const std::string& json, const std::string& key, float fallba
     return fallback;
 }
 
+bool ExtractColor(const std::string& json, const std::string& key, std::array<float, 4>& out) {
+    const std::regex pattern(
+        "\"" + key + "\"\\s*:\\s*\\[\\s*(-?[0-9]+(?:\\.[0-9]+)?)\\s*,\\s*(-?[0-9]+(?:\\.[0-9]+)?)\\s*,\\s*(-?[0-9]+(?:\\.[0-9]+)?)\\s*,\\s*(-?[0-9]+(?:\\.[0-9]+)?)\\s*\\]"
+    );
+    std::smatch match;
+    if (std::regex_search(json, match, pattern) && match.size() > 4) {
+        out[0] = std::stof(match[1].str());
+        out[1] = std::stof(match[2].str());
+        out[2] = std::stof(match[3].str());
+        out[3] = std::stof(match[4].str());
+        return true;
+    }
+    return false;
+}
+
 bool ContainsIgnoreCase(const std::string& haystack, const std::string& needle) {
     auto lower = [](std::string s) {
         std::transform(s.begin(), s.end(), s.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
@@ -62,6 +77,11 @@ bool AnimationManager::LoadPresetFile(const std::wstring& path) {
     preset.thumbnail = ExtractString(json, "thumbnail");
     preset.defaultSpeed = ExtractFloat(json, "speed", 0.5f);
     preset.defaultIntensity = ExtractFloat(json, "intensity", 0.7f);
+    preset.defaultAngle = ExtractFloat(json, "angle", 90.0f);
+    ExtractColor(json, "colorA", preset.colorA);
+    ExtractColor(json, "colorB", preset.colorB);
+    ExtractColor(json, "colorC", preset.colorC);
+    ExtractColor(json, "colorD", preset.colorD);
 
     if (preset.id.empty() || preset.shader.empty()) {
         return false;

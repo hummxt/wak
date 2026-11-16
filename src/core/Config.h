@@ -22,6 +22,7 @@ struct AnimationSettings {
     float speed = 0.75f;
     float intensity = 0.85f;
     float brightness = 1.0f;
+    float angle = 90.0f;
     std::array<float, 4> colorA{ 0.45f, 0.20f, 0.85f, 1.0f };
     std::array<float, 4> colorB{ 0.15f, 0.35f, 0.95f, 1.0f };
     std::array<float, 4> colorC{ 0.90f, 0.35f, 0.55f, 1.0f };
