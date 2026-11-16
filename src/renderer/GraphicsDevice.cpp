@@ -145,11 +145,16 @@ bool GraphicsDevice::CreateCompositionSwapChain(HWND hwnd, uint32_t width, uint3
     desc.BufferCount = 2;
     desc.SwapEffect = DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL;
     desc.AlphaMode = DXGI_ALPHA_MODE_IGNORE;
-    desc.Scaling = DXGI_SCALING_STRETCH;
+    desc.Scaling = DXGI_SCALING_NONE;
 
     hr = factory->CreateSwapChainForComposition(m_device.Get(), &desc, nullptr, &m_swapChain1);
     if (FAILED(hr)) {
+        desc.Scaling = DXGI_SCALING_STRETCH;
+        hr = factory->CreateSwapChainForComposition(m_device.Get(), &desc, nullptr, &m_swapChain1);
+    }
+    if (FAILED(hr)) {
         desc.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
+        desc.Scaling = DXGI_SCALING_STRETCH;
         hr = factory->CreateSwapChainForComposition(m_device.Get(), &desc, nullptr, &m_swapChain1);
         if (FAILED(hr)) {
             LogError("Failed to create composition swap chain");

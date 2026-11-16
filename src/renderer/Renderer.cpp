@@ -98,7 +98,7 @@ void Renderer::UpdateConstants(const FrameParams& params) {
     data->brightness = params.brightness;
     data->resolutionX = params.resolutionX;
     data->resolutionY = params.resolutionY;
-    data->pad0 = 0.0f;
+    data->pad0 = params.angle;
     data->pad1 = 0.0f;
     for (int i = 0; i < 4; ++i) {
         data->colorA[i] = params.colorA[i];
@@ -119,6 +119,7 @@ void Renderer::DrawFullscreen(const AnimationSettings& animation, float timeSeco
     m_params.speed = animation.speed;
     m_params.intensity = animation.intensity;
     m_params.brightness = animation.brightness;
+    m_params.angle = animation.angle;
     m_params.resolutionX = width;
     m_params.resolutionY = height;
 
