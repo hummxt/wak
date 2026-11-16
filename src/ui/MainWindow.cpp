@@ -70,11 +70,11 @@ void MainWindow::Draw(
 
     ImGui::TextUnformatted("Wakbg");
     ImGui::SameLine();
-    ImGui::TextDisabled("  Closing this window keeps the wallpaper running. Use tray Exit to stop.");
+    ImGui::TextDisabled("  Still or animated wallpapers. Close keeps wallpaper running — tray Exit to stop.");
     ImGui::Separator();
     ImGui::Spacing();
 
-    const float sidebarWidth = 180.0f;
+    const float sidebarWidth = 168.0f;
     ImGui::BeginChild("Sidebar", ImVec2(sidebarWidth, 0), true);
     const char* items[] = { "Library", "Favorites", "Recent", "Settings", "About" };
     for (int i = 0; i < 5; ++i) {

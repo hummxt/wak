@@ -15,9 +15,10 @@ void SettingsView::Draw(AppConfig& config, const std::function<void()>& onChange
         onChanged();
     }
 
-    if (ImGui::SliderFloat("Render Scale", &config.performance.renderScale, 0.5f, 1.0f, "%.2f")) {
+    if (ImGui::SliderFloat("Render Scale", &config.performance.renderScale, 0.75f, 1.0f, "%.2f")) {
         onChanged();
     }
+    ImGui::TextDisabled("Desktop wallpaper always uses native screen resolution.");
 
     if (ImGui::Checkbox("Pause when fullscreen", &config.performance.pauseWhenFullscreen)) {
         onChanged();

@@ -6,14 +6,17 @@ namespace ge {
 
 void ApplyDarkTheme() {
     ImGuiStyle& style = ImGui::GetStyle();
-    style.WindowRounding = 6.0f;
-    style.FrameRounding = 4.0f;
-    style.GrabRounding = 3.0f;
-    style.ScrollbarRounding = 4.0f;
+    style.WindowRounding = 8.0f;
+    style.ChildRounding = 8.0f;
+    style.FrameRounding = 6.0f;
+    style.GrabRounding = 4.0f;
+    style.ScrollbarRounding = 6.0f;
+    style.PopupRounding = 6.0f;
     style.WindowPadding = ImVec2(14.0f, 14.0f);
     style.FramePadding = ImVec2(10.0f, 6.0f);
     style.ItemSpacing = ImVec2(10.0f, 8.0f);
     style.WindowBorderSize = 0.0f;
+    style.ChildBorderSize = 1.0f;
 
     ImVec4* colors = style.Colors;
     colors[ImGuiCol_WindowBg] = ImVec4(0.07f, 0.08f, 0.10f, 1.00f);
