@@ -8,6 +8,7 @@ cbuffer Constants : register(b0)
     float ResolutionY;
     float Pad0;
     float Pad1;
+    // Pad0 = angle degrees for still/linear shaders
     float4 ColorA;
     float4 ColorB;
     float4 ColorC;

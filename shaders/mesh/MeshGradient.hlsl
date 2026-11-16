@@ -10,7 +10,7 @@ PSInput VSMain(VSInput input)
 
 float4 PSMain(PSInput input) : SV_TARGET
 {
-    float t = Time * max(Speed, 0.05) * 1.35;
+    float t = Time * Speed * 1.35;
     float2 uv = AspectCorrect(input.UV);
 
     float2 p0 = float2(0.22 + 0.28 * sin(t * 0.85), 0.28 + 0.24 * cos(t * 0.65));
