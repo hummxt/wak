@@ -1,0 +1,17 @@
+{
+  "id": "still-pastel-haze",
+  "name": "Pastel Haze",
+  "category": "still",
+  "shader": "still/StillMesh",
+  "description": "Soft lavender-pink mesh with film grain. Freeze with Speed 0.",
+  "thumbnail": "thumbnails/still-pastel-haze.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 18.0
+  },
+  "colorA": [0.78, 0.72, 0.92, 1.0],
+  "colorB": [0.95, 0.78, 0.86, 1.0],
+  "colorC": [0.98, 0.88, 0.78, 1.0],
+  "colorD": [0.92, 0.90, 0.96, 1.0]
+}

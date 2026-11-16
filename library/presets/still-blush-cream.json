@@ -1,0 +1,17 @@
+{
+  "id": "still-blush-cream",
+  "name": "Blush Cream",
+  "category": "still",
+  "shader": "still/SoftLinear",
+  "description": "Airy pastel pinks and cream fade.",
+  "thumbnail": "thumbnails/still-blush-cream.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.6,
+    "angle": 120.0
+  },
+  "colorA": [0.98, 0.90, 0.88, 1.0],
+  "colorB": [0.96, 0.78, 0.82, 1.0],
+  "colorC": [0.92, 0.72, 0.78, 1.0],
+  "colorD": [0.98, 0.94, 0.90, 1.0]
+}

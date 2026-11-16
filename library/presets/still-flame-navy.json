@@ -1,0 +1,17 @@
+{
+  "id": "still-flame-navy",
+  "name": "Flame Navy",
+  "category": "still",
+  "shader": "still/StillMesh",
+  "description": "Orange-magenta blaze fading into deep navy.",
+  "thumbnail": "thumbnails/still-flame-navy.png",
+  "defaultSettings": {
+    "speed": 0.12,
+    "intensity": 1.0,
+    "angle": 135.0
+  },
+  "colorA": [0.98, 0.55, 0.18, 1.0],
+  "colorB": [0.92, 0.22, 0.28, 1.0],
+  "colorC": [0.72, 0.12, 0.48, 1.0],
+  "colorD": [0.08, 0.10, 0.28, 1.0]
+}

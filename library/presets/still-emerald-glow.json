@@ -1,0 +1,17 @@
+{
+  "id": "still-emerald-glow",
+  "name": "Emerald Glow",
+  "category": "still",
+  "shader": "still/GlowMesh",
+  "description": "Soft dark-edge emerald mesh glow.",
+  "thumbnail": "thumbnails/still-emerald-glow.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.75,
+    "angle": 0.0
+  },
+  "colorA": [0.12, 0.85, 0.45, 1.0],
+  "colorB": [0.05, 0.45, 0.28, 1.0],
+  "colorC": [0.20, 0.70, 0.55, 1.0],
+  "colorD": [0.02, 0.05, 0.04, 1.0]
+}

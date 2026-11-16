@@ -1,0 +1,17 @@
+{
+  "id": "still-coastal-fade",
+  "name": "Coastal Fade",
+  "category": "still",
+  "shader": "still/SoftLinear",
+  "description": "Clean multi-stop linear gradient, cssgradient style.",
+  "thumbnail": "thumbnails/still-coastal-fade.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.55,
+    "angle": 90.0
+  },
+  "colorA": [0.16, 0.48, 0.61, 1.0],
+  "colorB": [0.34, 0.78, 0.52, 1.0],
+  "colorC": [0.93, 0.87, 0.33, 1.0],
+  "colorD": [0.98, 0.95, 0.78, 1.0]
+}
