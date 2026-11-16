@@ -16,7 +16,7 @@ namespace ge {
 
 class Application {
 public:
-    bool Initialize(HINSTANCE instance, int nCmdShow);
+    bool Initialize(HINSTANCE instance, int nCmdShow, bool backgroundMode = false);
     int Run();
     void Shutdown();
     void ApplyDesktopForTesting();
@@ -28,6 +28,7 @@ private:
     bool CreateAppWindow(HINSTANCE instance, int nCmdShow);
     bool CreateWallpaperWindow(HINSTANCE instance);
     bool InitializeSystems();
+    void ResolveConfigPath();
     void Update();
     void RenderFrame();
     void ApplyPreset(const AnimationPreset& preset);
@@ -35,7 +36,9 @@ private:
     void SyncPaletteToRenderers();
     void ApplyWallpaperMode(bool enabled);
     void PositionWallpaperWindow();
+    void QueryDesktopPixelSize(uint32_t& width, uint32_t& height, int& x, int& y);
     void SyncStartupSetting();
+    void EnablePersistentWallpaper();
     bool ShouldPauseWallpaper() const;
     int EffectiveFpsLimit() const;
     std::wstring ResolvePath(const std::wstring& relative) const;
@@ -45,7 +48,7 @@ private:
     void DestroyTrayIcon();
     void ShowUiWindow();
     void HideUiWindow();
-    void RequestExit();
+    void RequestExit(bool stopWallpaper);
 
     static constexpr UINT WM_TRAYICON = WM_APP + 1;
     static constexpr UINT ID_TRAY_SHOW = 1001;
@@ -58,6 +61,8 @@ private:
     bool m_trayAdded = false;
     bool m_running = false;
     bool m_exitRequested = false;
+    bool m_stopWallpaperOnExit = false;
+    bool m_backgroundMode = false;
     bool m_uiVisible = true;
     bool m_uiResized = false;
     bool m_wallpaperModeApplied = false;

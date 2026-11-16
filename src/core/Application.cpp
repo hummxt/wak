@@ -16,15 +16,18 @@ extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg
 
 namespace ge {
 
-bool Application::Initialize(HINSTANCE instance, int nCmdShow) {
+bool Application::Initialize(HINSTANCE instance, int nCmdShow, bool backgroundMode) {
     m_instance = instance;
+    m_backgroundMode = backgroundMode;
     m_baseDir = GetExecutableDirectory();
-    m_configPath = ResolvePath(L"config\\default.json");
+    ResolveConfigPath();
     m_config.ApplyDefaults();
     m_config.Load(m_configPath);
-    m_config.Get().application.startWithWindows = IsStartWithWindowsEnabled();
+    if (m_config.Get().application.wallpaperMode) {
+        m_config.Get().application.startWithWindows = true;
+    }
 
-    if (!CreateAppWindow(instance, nCmdShow)) {
+    if (!CreateAppWindow(instance, backgroundMode ? SW_HIDE : nCmdShow)) {
         return false;
     }
 
@@ -38,10 +41,30 @@ bool Application::Initialize(HINSTANCE instance, int nCmdShow) {
 
     CreateTrayIcon();
 
+    if (backgroundMode) {
+        HideUiWindow();
+    } else {
+        m_uiVisible = true;
+        ShowWindow(m_hwnd, SW_SHOW);
+        SetForegroundWindow(m_hwnd);
+    }
+
     m_startTime = std::chrono::steady_clock::now();
     m_lastFrame = m_startTime;
     m_running = true;
     return true;
+}
+
+void Application::ResolveConfigPath() {
+    const std::wstring appData = GetAppDataDirectory();
+    EnsureDirectoryExists(appData);
+    m_configPath = JoinPath(appData, L"config.json");
+    if (!FileExists(m_configPath)) {
+        const std::wstring bundled = ResolvePath(L"config\\default.json");
+        if (FileExists(bundled)) {
+            WriteTextFile(m_configPath, ReadTextFile(bundled));
+        }
+    }
 }
 
 std::wstring Application::ResolvePath(const std::wstring& relative) const {
@@ -99,12 +122,9 @@ bool Application::CreateWallpaperWindow(HINSTANCE instance) {
     wc.lpszClassName = className;
     RegisterClassExW(&wc);
 
-    m_monitors.Refresh();
-    const MonitorInfo* primary = m_monitors.GetPrimary();
-    const int x = primary ? primary->rect.left : 0;
-    const int y = primary ? primary->rect.top : 0;
-    m_wallpaperWidth = primary ? primary->width : 1920;
-    m_wallpaperHeight = primary ? primary->height : 1080;
+    int x = 0;
+    int y = 0;
+    QueryDesktopPixelSize(m_wallpaperWidth, m_wallpaperHeight, x, y);
 
     m_wallpaperHwnd = CreateWindowExW(
         WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW | WS_EX_LAYERED,
@@ -164,10 +184,44 @@ void Application::HideUiWindow() {
     m_desktopStatus = "UI hidden. Wallpaper keeps running. Tray icon: Open / Exit.";
 }
 
-void Application::RequestExit() {
+void Application::RequestExit(bool stopWallpaper) {
+    m_stopWallpaperOnExit = stopWallpaper;
     m_exitRequested = true;
     m_running = false;
     PostQuitMessage(0);
+}
+
+void Application::EnablePersistentWallpaper() {
+    m_config.Get().application.wallpaperMode = true;
+    m_config.Get().application.startWithWindows = true;
+    m_config.Get().performance.renderScale = 1.0f;
+    m_startWithWindowsApplied = true;
+    SetStartWithWindows(true);
+    m_config.Save(m_configPath);
+}
+
+void Application::QueryDesktopPixelSize(uint32_t& width, uint32_t& height, int& x, int& y) {
+    m_monitors.Refresh();
+    x = GetSystemMetrics(SM_XVIRTUALSCREEN);
+    y = GetSystemMetrics(SM_YVIRTUALSCREEN);
+    long w = GetSystemMetrics(SM_CXVIRTUALSCREEN);
+    long h = GetSystemMetrics(SM_CYVIRTUALSCREEN);
+
+    const MonitorInfo* primary = m_monitors.GetPrimary();
+    if (primary && primary->width > 0 && primary->height > 0) {
+        w = (std::max)(w, static_cast<long>(primary->width));
+        h = (std::max)(h, static_cast<long>(primary->height));
+    }
+
+    if (w <= 1 || h <= 1) {
+        w = GetSystemMetrics(SM_CXSCREEN);
+        h = GetSystemMetrics(SM_CYSCREEN);
+        x = 0;
+        y = 0;
+    }
+
+    width = static_cast<uint32_t>((std::max)(1L, w));
+    height = static_cast<uint32_t>((std::max)(1L, h));
 }
 
 bool Application::InitializeSystems() {
@@ -202,17 +256,15 @@ bool Application::InitializeSystems() {
         m_activePresetId = preset->id;
         m_ui.GetLibraryState().selectedPresetId = preset->id;
         m_config.Get().wallpaper.selected = preset->id;
-        if (m_config.Get().animation.speed <= 0.0f) {
-            m_config.Get().animation.speed = preset->defaultSpeed;
-        }
-        if (m_config.Get().animation.intensity <= 0.0f) {
-            m_config.Get().animation.intensity = preset->defaultIntensity;
-        }
         SyncPaletteToRenderers();
     }
 
     m_wallpaperModeApplied = false;
-    if (m_config.Get().application.wallpaperMode) {
+    if (m_config.Get().application.wallpaperMode || m_backgroundMode) {
+        if (m_backgroundMode) {
+            m_config.Get().application.wallpaperMode = true;
+        }
+        EnablePersistentWallpaper();
         ApplyWallpaperMode(true);
     }
 
@@ -317,6 +369,13 @@ void Application::ApplyPreset(const AnimationPreset& preset) {
 
     m_activePresetId = preset.id;
     m_config.Get().wallpaper.selected = preset.id;
+    m_config.Get().animation.speed = preset.defaultSpeed;
+    m_config.Get().animation.intensity = preset.defaultIntensity;
+    m_config.Get().animation.angle = preset.defaultAngle;
+    m_config.Get().animation.colorA = preset.colorA;
+    m_config.Get().animation.colorB = preset.colorB;
+    m_config.Get().animation.colorC = preset.colorC;
+    m_config.Get().animation.colorD = preset.colorD;
     m_animations.PushRecent(preset.id);
     SyncPaletteToRenderers();
     m_config.Save(m_configPath);
@@ -328,19 +387,29 @@ void Application::PositionWallpaperWindow() {
         return;
     }
 
+    int originX = 0;
+    int originY = 0;
+    QueryDesktopPixelSize(m_wallpaperWidth, m_wallpaperHeight, originX, originY);
+
+    HWND host = m_desktop.GetHostWindow();
     RECT hostRect{};
-    GetClientRect(m_desktop.GetHostWindow(), &hostRect);
-    long width = hostRect.right - hostRect.left;
-    long height = hostRect.bottom - hostRect.top;
-    if (width <= 1 || height <= 1) {
-        width = GetSystemMetrics(SM_CXVIRTUALSCREEN);
-        height = GetSystemMetrics(SM_CYVIRTUALSCREEN);
+    GetClientRect(host, &hostRect);
+    long hostW = hostRect.right - hostRect.left;
+    long hostH = hostRect.bottom - hostRect.top;
+
+    HMONITOR monitor = MonitorFromWindow(host, MONITOR_DEFAULTTOPRIMARY);
+    MONITORINFO monitorInfo{};
+    monitorInfo.cbSize = sizeof(monitorInfo);
+    if (GetMonitorInfoW(monitor, &monitorInfo)) {
+        hostW = (std::max)(hostW, monitorInfo.rcMonitor.right - monitorInfo.rcMonitor.left);
+        hostH = (std::max)(hostH, monitorInfo.rcMonitor.bottom - monitorInfo.rcMonitor.top);
     }
-    m_wallpaperWidth = static_cast<uint32_t>((std::max)(1L, width));
-    m_wallpaperHeight = static_cast<uint32_t>((std::max)(1L, height));
+
+    m_wallpaperWidth = static_cast<uint32_t>((std::max)(1L, (std::max)(hostW, static_cast<long>(m_wallpaperWidth))));
+    m_wallpaperHeight = static_cast<uint32_t>((std::max)(1L, (std::max)(hostH, static_cast<long>(m_wallpaperHeight))));
 
     UINT flags = SWP_NOACTIVATE | SWP_SHOWWINDOW | SWP_FRAMECHANGED;
-    if (m_desktop.GetHostWindow() == m_desktop.GetProgman() && m_desktop.GetDefView()) {
+    if (host == m_desktop.GetProgman() && m_desktop.GetDefView()) {
         SetWindowPos(
             m_wallpaperHwnd,
             m_desktop.GetDefView(),
@@ -366,9 +435,19 @@ void Application::PositionWallpaperWindow() {
         );
     }
 
+    RECT clientRect{};
+    GetClientRect(m_wallpaperHwnd, &clientRect);
+    const long clientW = clientRect.right - clientRect.left;
+    const long clientH = clientRect.bottom - clientRect.top;
+    if (clientW > 1 && clientH > 1) {
+        m_wallpaperWidth = static_cast<uint32_t>(clientW);
+        m_wallpaperHeight = static_cast<uint32_t>(clientH);
+    }
+
     m_wallpaperRenderer.Resize(m_wallpaperWidth, m_wallpaperHeight);
     m_wallpaperRenderer.RecreateDeviceSurface();
     SyncPaletteToRenderers();
+    LogInfo("Wallpaper surface " + std::to_string(m_wallpaperWidth) + "x" + std::to_string(m_wallpaperHeight));
 }
 
 void Application::ApplyWallpaperMode(bool enabled) {
@@ -376,6 +455,7 @@ void Application::ApplyWallpaperMode(bool enabled) {
     m_wallpaperModeApplied = enabled;
 
     if (enabled) {
+        EnablePersistentWallpaper();
         if (!m_desktop.EmbedWindow(m_wallpaperHwnd)) {
             const std::string err = m_desktop.GetLastErrorMessage().empty()
                 ? "Could not attach wallpaper to desktop"
@@ -384,18 +464,22 @@ void Application::ApplyWallpaperMode(bool enabled) {
             m_desktopStatus = "Desktop apply failed: " + err;
             m_config.Get().application.wallpaperMode = false;
             m_wallpaperModeApplied = false;
+            m_config.Save(m_configPath);
             return;
         }
 
         PositionWallpaperWindow();
         ShowWindow(m_wallpaperHwnd, SW_SHOWNOACTIVATE);
         UpdateWindow(m_wallpaperHwnd);
-        m_desktopStatus = "Desktop wallpaper running. Close UI anytime — use tray Exit to stop.";
+        m_desktopStatus = "Desktop wallpaper running and will restore after reboot.";
         LogInfo(m_desktopStatus);
     } else {
         m_desktop.ReleaseWindow(m_wallpaperHwnd);
         m_desktop.Detach();
         m_desktopStatus = "Desktop wallpaper disabled";
+        SetStartWithWindows(false);
+        m_config.Get().application.startWithWindows = false;
+        m_startWithWindowsApplied = false;
     }
 
     m_config.Save(m_configPath);
@@ -419,6 +503,9 @@ int Application::EffectiveFpsLimit() const {
     }
     if (m_config.Get().performance.powerSaving) {
         fps = (std::min)(fps, 20);
+    }
+    if (m_config.Get().animation.speed <= 0.0001f) {
+        fps = (std::min)(fps, 8);
     }
     return fps;
 }
@@ -495,7 +582,20 @@ void Application::RenderFrame() {
     const bool drawUi = m_uiVisible && m_hwnd && IsWindowVisible(m_hwnd);
     if (drawUi) {
         SyncPaletteToRenderers();
-        m_renderer.EnsurePreviewTarget(960, 540);
+        uint32_t previewW = 960;
+        uint32_t previewH = 540;
+        if (m_wallpaperWidth > 0 && m_wallpaperHeight > 0) {
+            previewH = 720;
+            previewW = static_cast<uint32_t>((720.0f * static_cast<float>(m_wallpaperWidth)) / static_cast<float>(m_wallpaperHeight));
+            if (previewW < 480) {
+                previewW = 480;
+            }
+            if (previewW > 1920) {
+                previewW = 1920;
+                previewH = static_cast<uint32_t>((1920.0f * static_cast<float>(m_wallpaperHeight)) / static_cast<float>(m_wallpaperWidth));
+            }
+        }
+        m_renderer.EnsurePreviewTarget(previewW, previewH);
         m_renderer.RenderPreview(m_config.Get().animation, elapsed);
 
         m_renderer.GetDevice().BeginFrame(0.06f, 0.07f, 0.09f, 1.0f);
@@ -509,11 +609,16 @@ void Application::RenderFrame() {
                 ApplyShaderToRenderer(m_renderer, preset);
                 ApplyShaderToRenderer(m_wallpaperRenderer, preset);
                 m_activePresetId = preset.id;
+                m_config.Get().wallpaper.selected = preset.id;
+                m_config.Get().animation.speed = preset.defaultSpeed;
+                m_config.Get().animation.intensity = preset.defaultIntensity;
+                m_config.Get().animation.angle = preset.defaultAngle;
                 m_config.Get().animation.colorA = preset.colorA;
                 m_config.Get().animation.colorB = preset.colorB;
                 m_config.Get().animation.colorC = preset.colorC;
                 m_config.Get().animation.colorD = preset.colorD;
                 SyncPaletteToRenderers();
+                m_config.Save(m_configPath);
             },
             [this](const AnimationPreset& preset) {
                 ApplyPreset(preset);
@@ -540,8 +645,14 @@ void Application::RenderFrame() {
 
 void Application::Shutdown() {
     DestroyTrayIcon();
-    m_config.Save(m_configPath);
-    ApplyWallpaperMode(false);
+    if (m_stopWallpaperOnExit) {
+        ApplyWallpaperMode(false);
+    } else {
+        if (m_config.Get().application.wallpaperMode) {
+            EnablePersistentWallpaper();
+        }
+        m_config.Save(m_configPath);
+    }
     m_ui.Shutdown();
     m_wallpaperRenderer.Shutdown();
     m_renderer.Shutdown();
@@ -607,7 +718,7 @@ LRESULT Application::HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
             return 0;
         }
         if (LOWORD(wParam) == ID_TRAY_EXIT) {
-            RequestExit();
+            RequestExit(true);
             return 0;
         }
         break;
@@ -620,9 +731,25 @@ LRESULT Application::HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
             return 0;
         }
         break;
+    case WM_QUERYENDSESSION:
+        if (m_config.Get().application.wallpaperMode) {
+            EnablePersistentWallpaper();
+        }
+        return TRUE;
+    case WM_ENDSESSION:
+        if (wParam) {
+            if (m_config.Get().application.wallpaperMode) {
+                EnablePersistentWallpaper();
+            }
+            m_stopWallpaperOnExit = false;
+        }
+        return 0;
     case WM_CLOSE:
         if (hwnd == m_hwnd) {
             HideUiWindow();
+            if (m_config.Get().application.wallpaperMode) {
+                EnablePersistentWallpaper();
+            }
             return 0;
         }
         break;
