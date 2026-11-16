@@ -211,6 +211,13 @@ bool GraphicsDevice::CreateRenderTarget() {
         return false;
     }
 
+    D3D11_TEXTURE2D_DESC bufferDesc{};
+    backBuffer->GetDesc(&bufferDesc);
+    if (bufferDesc.Width > 0 && bufferDesc.Height > 0) {
+        m_width = bufferDesc.Width;
+        m_height = bufferDesc.Height;
+    }
+
     hr = m_device->CreateRenderTargetView(backBuffer.Get(), nullptr, &m_renderTarget);
     return SUCCEEDED(hr);
 }

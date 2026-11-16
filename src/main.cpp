@@ -3,6 +3,7 @@
 
 #include <Windows.h>
 #include <shellapi.h>
+#include <objbase.h>
 
 #ifndef DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2
 #define DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 ((DPI_AWARENESS_CONTEXT)-4)
@@ -36,6 +37,7 @@ void EnableDpiAwareness() {
 
 int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int nCmdShow) {
     EnableDpiAwareness();
+    CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);
 
     int argc = 0;
     LPWSTR* argv = CommandLineToArgvW(GetCommandLineW(), &argc);
@@ -66,5 +68,6 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int nCmdShow) {
 
     const int code = app.Run();
     app.Shutdown();
+    CoUninitialize();
     return code;
 }

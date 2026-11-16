@@ -15,6 +15,7 @@ set(SOURCES
     src/renderer/GraphicsDevice.cpp
     src/renderer/Renderer.cpp
     src/renderer/ShaderManager.cpp
+    src/renderer/ThumbnailCache.cpp
     src/desktop/DesktopHost.cpp
     src/desktop/MonitorManager.cpp
     src/ui/MainWindow.cpp
@@ -24,6 +25,7 @@ set(SOURCES
     src/ui/Theme.cpp
     src/utils/Logger.cpp
     src/utils/FileUtils.cpp
+    src/utils/TextureLoader.cpp
     ${IMGUI_DIR}/imgui.cpp
     ${IMGUI_DIR}/imgui_draw.cpp
     ${IMGUI_DIR}/imgui_tables.cpp
@@ -58,6 +60,7 @@ target_link_libraries(Wakbg PRIVATE
     user32
     gdi32
     advapi32
+    windowscodecs
 )
 
 set(SHADER_SRC_DIR ${CMAKE_SOURCE_DIR}/shaders)

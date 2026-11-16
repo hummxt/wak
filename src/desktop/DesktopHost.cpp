@@ -163,10 +163,9 @@ bool DesktopHost::EmbedWindow(HWND hwnd) {
     SetWindowLongPtrW(hwnd, GWL_STYLE, style);
 
     LONG_PTR ex = GetWindowLongPtrW(hwnd, GWL_EXSTYLE);
-    ex |= WS_EX_LAYERED | WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW;
-    ex &= ~(WS_EX_APPWINDOW | WS_EX_TRANSPARENT);
+    ex |= WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW;
+    ex &= ~(WS_EX_APPWINDOW | WS_EX_TRANSPARENT | WS_EX_LAYERED);
     SetWindowLongPtrW(hwnd, GWL_EXSTYLE, ex);
-    SetLayeredWindowAttributes(hwnd, 0, 255, LWA_ALPHA);
 
     HWND parent = m_host;
     if (!parent) {
@@ -340,6 +339,9 @@ bool SetStartWithWindows(bool enabled) {
             reinterpret_cast<const BYTE*>(command.c_str()),
             static_cast<DWORD>((command.size() + 1) * sizeof(wchar_t))
         ) == ERROR_SUCCESS;
+        if (ok) {
+            LogInfo("Registered Wakbg to start with Windows");
+        }
     } else {
         RegDeleteValueW(key, valueName);
     }

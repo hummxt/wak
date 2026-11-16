@@ -30,12 +30,15 @@ public:
     void Shutdown();
 
     bool SetShader(const std::string& shaderId, const std::wstring& relativePath);
+    bool ActivateShader(const std::string& shaderId);
     void SetPalette(const std::array<float, 4>& a, const std::array<float, 4>& b, const std::array<float, 4>& c, const std::array<float, 4>& d);
     void Render(const AnimationSettings& animation, float timeSeconds, bool present, bool vsync);
     bool EnsurePreviewTarget(uint32_t width, uint32_t height);
     void RenderPreview(const AnimationSettings& animation, float timeSeconds);
+    bool RenderToTarget(ID3D11RenderTargetView* rtv, uint32_t width, uint32_t height, const AnimationSettings& animation, float timeSeconds);
     ID3D11ShaderResourceView* GetPreviewSRV() const;
     void RecreateDeviceSurface();
+    void SetHighQuality(bool enabled);
 
     GraphicsDevice& GetDevice();
     ShaderManager& GetShaders();
@@ -43,8 +46,12 @@ public:
 
 private:
     bool CreateConstantBuffer();
+    bool CreateSampler();
+    bool EnsureHqTarget(uint32_t width, uint32_t height);
+    bool EnsureBlitShader();
     void UpdateConstants(const FrameParams& params);
     void DrawFullscreen(const AnimationSettings& animation, float timeSeconds, float width, float height);
+    void BlitHqToBackbuffer(float width, float height);
 
     struct alignas(16) ConstantBufferData {
         float time;
@@ -64,14 +71,21 @@ private:
     GraphicsDevice m_device;
     ShaderManager* m_shaders = nullptr;
     ComPtr<ID3D11Buffer> m_constantBuffer;
+    ComPtr<ID3D11SamplerState> m_linearSampler;
     ComPtr<ID3D11Texture2D> m_previewTexture;
     ComPtr<ID3D11RenderTargetView> m_previewRtv;
     ComPtr<ID3D11ShaderResourceView> m_previewSrv;
+    ComPtr<ID3D11Texture2D> m_hqTexture;
+    ComPtr<ID3D11RenderTargetView> m_hqRtv;
+    ComPtr<ID3D11ShaderResourceView> m_hqSrv;
     uint32_t m_previewWidth = 0;
     uint32_t m_previewHeight = 0;
+    uint32_t m_hqWidth = 0;
+    uint32_t m_hqHeight = 0;
     std::wstring m_shaderRoot;
     std::string m_activeShader;
     FrameParams m_params;
+    bool m_highQuality = false;
 };
 
 }

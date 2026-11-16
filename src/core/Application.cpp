@@ -1,16 +1,31 @@
 #include "core/Application.h"
 #include "utils/FileUtils.h"
 #include "utils/Logger.h"
+#include "utils/TextureLoader.h"
 
 #include "imgui.h"
 #include "imgui_impl_win32.h"
 
+#include <dwmapi.h>
 #include <shellapi.h>
 
 #include <algorithm>
 #include <fstream>
 #include <thread>
 #include <vector>
+
+#ifndef DWMWA_USE_IMMERSIVE_DARK_MODE
+#define DWMWA_USE_IMMERSIVE_DARK_MODE 20
+#endif
+#ifndef DWMWA_BORDER_COLOR
+#define DWMWA_BORDER_COLOR 34
+#endif
+#ifndef DWMWA_CAPTION_COLOR
+#define DWMWA_CAPTION_COLOR 35
+#endif
+#ifndef DWMWA_TEXT_COLOR
+#define DWMWA_TEXT_COLOR 36
+#endif
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
@@ -80,7 +95,7 @@ bool Application::CreateAppWindow(HINSTANCE instance, int nCmdShow) {
     wc.lpfnWndProc = WndProc;
     wc.hInstance = instance;
     wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
-    wc.hbrBackground = reinterpret_cast<HBRUSH>(COLOR_WINDOW + 1);
+    wc.hbrBackground = CreateSolidBrush(RGB(0x0A, 0x0F, 0x1D));
     wc.lpszClassName = className;
     RegisterClassExW(&wc);
 
@@ -104,9 +119,46 @@ bool Application::CreateAppWindow(HINSTANCE instance, int nCmdShow) {
         return false;
     }
 
+    ApplyWindowChrome();
     ShowWindow(m_hwnd, nCmdShow);
     UpdateWindow(m_hwnd);
     return true;
+}
+
+void Application::ApplyWindowChrome() {
+    if (!m_hwnd) {
+        return;
+    }
+
+    const std::wstring logoPath = ResolvePath(L"assets\\logo\\logo.png");
+    if (m_appIconBig) {
+        DestroyIcon(m_appIconBig);
+        m_appIconBig = nullptr;
+    }
+    if (m_appIconSmall) {
+        DestroyIcon(m_appIconSmall);
+        m_appIconSmall = nullptr;
+    }
+
+    // Full-size logo with rounded corners only (no shrink/padding).
+    m_appIconBig = LoadIconFromFile(logoPath, 256, 256, 0.0f, 0.22f);
+    m_appIconSmall = LoadIconFromFile(logoPath, 32, 32, 0.0f, 0.22f);
+    if (m_appIconBig) {
+        SendMessageW(m_hwnd, WM_SETICON, ICON_BIG, reinterpret_cast<LPARAM>(m_appIconBig));
+    }
+    if (m_appIconSmall) {
+        SendMessageW(m_hwnd, WM_SETICON, ICON_SMALL, reinterpret_cast<LPARAM>(m_appIconSmall));
+    }
+
+    const BOOL dark = TRUE;
+    DwmSetWindowAttribute(m_hwnd, DWMWA_USE_IMMERSIVE_DARK_MODE, &dark, sizeof(dark));
+
+    const COLORREF caption = RGB(0x0A, 0x0F, 0x1D);
+    const COLORREF border = RGB(0x04, 0x07, 0x0E);
+    const COLORREF text = RGB(0xF2, 0xF4, 0xF8);
+    DwmSetWindowAttribute(m_hwnd, DWMWA_CAPTION_COLOR, &caption, sizeof(caption));
+    DwmSetWindowAttribute(m_hwnd, DWMWA_BORDER_COLOR, &border, sizeof(border));
+    DwmSetWindowAttribute(m_hwnd, DWMWA_TEXT_COLOR, &text, sizeof(text));
 }
 
 bool Application::CreateWallpaperWindow(HINSTANCE instance) {
@@ -127,7 +179,7 @@ bool Application::CreateWallpaperWindow(HINSTANCE instance) {
     QueryDesktopPixelSize(m_wallpaperWidth, m_wallpaperHeight, x, y);
 
     m_wallpaperHwnd = CreateWindowExW(
-        WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW | WS_EX_LAYERED,
+        WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW,
         className,
         L"Wakbg Wallpaper",
         WS_POPUP,
@@ -146,7 +198,6 @@ bool Application::CreateWallpaperWindow(HINSTANCE instance) {
         return false;
     }
 
-    SetLayeredWindowAttributes(m_wallpaperHwnd, 0, 255, LWA_ALPHA);
     ShowWindow(m_wallpaperHwnd, SW_HIDE);
     return true;
 }
@@ -158,7 +209,7 @@ bool Application::CreateTrayIcon() {
     m_tray.uID = 1;
     m_tray.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP;
     m_tray.uCallbackMessage = WM_TRAYICON;
-    m_tray.hIcon = LoadIcon(nullptr, IDI_APPLICATION);
+    m_tray.hIcon = m_appIconSmall ? m_appIconSmall : LoadIcon(nullptr, IDI_APPLICATION);
     wcsncpy_s(m_tray.szTip, L"Wakbg", _TRUNCATE);
     m_trayAdded = Shell_NotifyIconW(NIM_ADD, &m_tray) == TRUE;
     return m_trayAdded;
@@ -198,6 +249,120 @@ void Application::EnablePersistentWallpaper() {
     m_startWithWindowsApplied = true;
     SetStartWithWindows(true);
     m_config.Save(m_configPath);
+}
+
+std::wstring Application::GetPersistedWallpaperPath() const {
+    return JoinPath(GetAppDataDirectory(), L"current_wallpaper.bmp");
+}
+
+bool Application::CaptureWallpaperToFile(const std::wstring& path) {
+    if (!m_wallpaperHwnd) {
+        return false;
+    }
+
+    RECT rect{};
+    GetClientRect(m_wallpaperHwnd, &rect);
+    const int width = rect.right - rect.left;
+    const int height = rect.bottom - rect.top;
+    if (width <= 0 || height <= 0) {
+        return false;
+    }
+
+    HDC windowDc = GetDC(m_wallpaperHwnd);
+    if (!windowDc) {
+        return false;
+    }
+    HDC memDc = CreateCompatibleDC(windowDc);
+    HBITMAP bitmap = CreateCompatibleBitmap(windowDc, width, height);
+    HGDIOBJ old = SelectObject(memDc, bitmap);
+    BitBlt(memDc, 0, 0, width, height, windowDc, 0, 0, SRCCOPY);
+
+    BITMAPINFOHEADER info{};
+    info.biSize = sizeof(info);
+    info.biWidth = width;
+    info.biHeight = -height;
+    info.biPlanes = 1;
+    info.biBitCount = 24;
+    info.biCompression = BI_RGB;
+
+    const int stride = ((width * 3 + 3) / 4) * 4;
+    std::vector<unsigned char> pixels(static_cast<size_t>(stride * height));
+    GetDIBits(memDc, bitmap, 0, height, pixels.data(), reinterpret_cast<BITMAPINFO*>(&info), DIB_RGB_COLORS);
+
+    EnsureDirectoryExists(GetAppDataDirectory());
+    std::ofstream file(path, std::ios::binary);
+    bool ok = false;
+    if (file) {
+        BITMAPFILEHEADER header{};
+        header.bfType = 0x4D42;
+        header.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
+        header.bfSize = header.bfOffBits + static_cast<DWORD>(pixels.size());
+        file.write(reinterpret_cast<const char*>(&header), sizeof(header));
+        file.write(reinterpret_cast<const char*>(&info), sizeof(info));
+        file.write(reinterpret_cast<const char*>(pixels.data()), static_cast<std::streamsize>(pixels.size()));
+        ok = static_cast<bool>(file);
+    }
+
+    SelectObject(memDc, old);
+    DeleteObject(bitmap);
+    DeleteDC(memDc);
+    ReleaseDC(m_wallpaperHwnd, windowDc);
+    return ok;
+}
+
+bool Application::PersistStaticWallpaper() {
+    const std::wstring path = GetPersistedWallpaperPath();
+    SyncPaletteToRenderers();
+    for (int i = 0; i < 3; ++i) {
+        m_wallpaperRenderer.Render(m_config.Get().animation, 1.25f, true, false);
+    }
+
+    if (!CaptureWallpaperToFile(path)) {
+        LogWarning("Failed to save persistent wallpaper image");
+        return false;
+    }
+
+    wchar_t absolute[MAX_PATH]{};
+    if (GetFullPathNameW(path.c_str(), MAX_PATH, absolute, nullptr) == 0) {
+        wcsncpy_s(absolute, path.c_str(), _TRUNCATE);
+    }
+
+    const BOOL ok = SystemParametersInfoW(
+        SPI_SETDESKWALLPAPER,
+        0,
+        absolute,
+        SPIF_UPDATEINIFILE | SPIF_SENDCHANGE
+    );
+    if (!ok) {
+        LogWarning("Failed to set Windows desktop wallpaper fallback");
+        return false;
+    }
+
+    LogInfo("Saved persistent wallpaper fallback");
+    return true;
+}
+
+bool Application::TryAttachWallpaper() {
+    if (!m_config.Get().application.wallpaperMode || !m_wallpaperHwnd) {
+        return false;
+    }
+
+    if (!m_desktop.EmbedWindow(m_wallpaperHwnd)) {
+        m_wallpaperModeApplied = false;
+        m_desktopStatus = "Waiting for Windows desktop to become ready...";
+        return false;
+    }
+
+    PositionWallpaperWindow();
+    ShowWindow(m_wallpaperHwnd, SW_SHOWNOACTIVATE);
+    UpdateWindow(m_wallpaperHwnd);
+    m_wallpaperModeApplied = true;
+    m_wallpaperAttachAttempts = 0;
+    m_desktopStatus = "Desktop wallpaper running and will restore after reboot.";
+    LogInfo(m_desktopStatus);
+    m_persistWallpaperPending = true;
+    m_wallpaperFrames = 0;
+    return true;
 }
 
 void Application::QueryDesktopPixelSize(uint32_t& width, uint32_t& height, int& x, int& y) {
@@ -265,7 +430,10 @@ bool Application::InitializeSystems() {
             m_config.Get().application.wallpaperMode = true;
         }
         EnablePersistentWallpaper();
-        ApplyWallpaperMode(true);
+        if (!TryAttachWallpaper()) {
+            m_nextWallpaperAttachTry = std::chrono::steady_clock::now() + std::chrono::seconds(1);
+            LogWarning("Desktop not ready yet; will retry wallpaper attach");
+        }
     }
 
     m_startWithWindowsApplied = m_config.Get().application.startWithWindows;
@@ -311,52 +479,7 @@ void Application::ApplyDesktopForTesting() {
 }
 
 void Application::CaptureWallpaperDebugFrame() {
-    if (!m_wallpaperHwnd) {
-        return;
-    }
-
-    RECT rect{};
-    GetClientRect(m_wallpaperHwnd, &rect);
-    const int width = rect.right - rect.left;
-    const int height = rect.bottom - rect.top;
-    if (width <= 0 || height <= 0) {
-        return;
-    }
-
-    HDC windowDc = GetDC(m_wallpaperHwnd);
-    HDC memDc = CreateCompatibleDC(windowDc);
-    HBITMAP bitmap = CreateCompatibleBitmap(windowDc, width, height);
-    HGDIOBJ old = SelectObject(memDc, bitmap);
-    BitBlt(memDc, 0, 0, width, height, windowDc, 0, 0, SRCCOPY);
-
-    BITMAPINFOHEADER info{};
-    info.biSize = sizeof(info);
-    info.biWidth = width;
-    info.biHeight = -height;
-    info.biPlanes = 1;
-    info.biBitCount = 24;
-    info.biCompression = BI_RGB;
-
-    const int stride = ((width * 3 + 3) / 4) * 4;
-    std::vector<unsigned char> pixels(static_cast<size_t>(stride * height));
-    GetDIBits(memDc, bitmap, 0, height, pixels.data(), reinterpret_cast<BITMAPINFO*>(&info), DIB_RGB_COLORS);
-
-    const std::wstring path = ResolvePath(L"wallpaper_capture.bmp");
-    std::ofstream file(path, std::ios::binary);
-    if (file) {
-        BITMAPFILEHEADER header{};
-        header.bfType = 0x4D42;
-        header.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
-        header.bfSize = header.bfOffBits + static_cast<DWORD>(pixels.size());
-        file.write(reinterpret_cast<const char*>(&header), sizeof(header));
-        file.write(reinterpret_cast<const char*>(&info), sizeof(info));
-        file.write(reinterpret_cast<const char*>(pixels.data()), static_cast<std::streamsize>(pixels.size()));
-    }
-
-    SelectObject(memDc, old);
-    DeleteObject(bitmap);
-    DeleteDC(memDc);
-    ReleaseDC(m_wallpaperHwnd, windowDc);
+    CaptureWallpaperToFile(ResolvePath(L"wallpaper_capture.bmp"));
 }
 
 void Application::ApplyPreset(const AnimationPreset& preset) {
@@ -452,30 +575,20 @@ void Application::PositionWallpaperWindow() {
 
 void Application::ApplyWallpaperMode(bool enabled) {
     m_config.Get().application.wallpaperMode = enabled;
-    m_wallpaperModeApplied = enabled;
 
     if (enabled) {
         EnablePersistentWallpaper();
-        if (!m_desktop.EmbedWindow(m_wallpaperHwnd)) {
-            const std::string err = m_desktop.GetLastErrorMessage().empty()
-                ? "Could not attach wallpaper to desktop"
-                : m_desktop.GetLastErrorMessage();
-            LogError(err);
-            m_desktopStatus = "Desktop apply failed: " + err;
-            m_config.Get().application.wallpaperMode = false;
+        if (!TryAttachWallpaper()) {
             m_wallpaperModeApplied = false;
-            m_config.Save(m_configPath);
-            return;
+            m_nextWallpaperAttachTry = std::chrono::steady_clock::now() + std::chrono::seconds(2);
+            m_desktopStatus = "Wallpaper saved. Waiting for desktop attach...";
+            LogWarning(m_desktopStatus);
         }
-
-        PositionWallpaperWindow();
-        ShowWindow(m_wallpaperHwnd, SW_SHOWNOACTIVATE);
-        UpdateWindow(m_wallpaperHwnd);
-        m_desktopStatus = "Desktop wallpaper running and will restore after reboot.";
-        LogInfo(m_desktopStatus);
     } else {
         m_desktop.ReleaseWindow(m_wallpaperHwnd);
         m_desktop.Detach();
+        m_wallpaperModeApplied = false;
+        m_persistWallpaperPending = false;
         m_desktopStatus = "Desktop wallpaper disabled";
         SetStartWithWindows(false);
         m_config.Get().application.startWithWindows = false;
@@ -500,6 +613,9 @@ int Application::EffectiveFpsLimit() const {
     int fps = m_config.Get().performance.fpsLimit;
     if (fps < 15) {
         fps = 30;
+    }
+    if (m_uiVisible) {
+        return (std::max)(fps, 60);
     }
     if (m_config.Get().performance.powerSaving) {
         fps = (std::min)(fps, 20);
@@ -552,8 +668,17 @@ void Application::Update() {
     }
 
     const bool wantWallpaper = m_config.Get().application.wallpaperMode;
-    if (wantWallpaper != m_wallpaperModeApplied) {
-        ApplyWallpaperMode(wantWallpaper);
+    if (wantWallpaper && !m_wallpaperModeApplied) {
+        const auto now = std::chrono::steady_clock::now();
+        if (now >= m_nextWallpaperAttachTry) {
+            ++m_wallpaperAttachAttempts;
+            if (!TryAttachWallpaper()) {
+                const int delaySec = (std::min)(10, 1 + m_wallpaperAttachAttempts / 2);
+                m_nextWallpaperAttachTry = now + std::chrono::seconds(delaySec);
+            }
+        }
+    } else if (!wantWallpaper && m_wallpaperModeApplied) {
+        ApplyWallpaperMode(false);
     }
 
     const bool wantStartup = m_config.Get().application.startWithWindows;
@@ -568,42 +693,61 @@ void Application::RenderFrame() {
     const float elapsed = std::chrono::duration<float>(now - m_startTime).count();
 
     const bool pauseWallpaper = ShouldPauseWallpaper();
+    const bool drawUi = m_uiVisible && m_hwnd && IsWindowVisible(m_hwnd);
 
-    if (m_config.Get().application.wallpaperMode && m_wallpaperHwnd && !pauseWallpaper) {
-        SyncPaletteToRenderers();
-        m_wallpaperRenderer.Render(m_config.Get().animation, elapsed, true, false);
+    if (m_config.Get().application.wallpaperMode && m_wallpaperHwnd && m_wallpaperModeApplied && !pauseWallpaper) {
+        m_wallpaperRenderer.SetHighQuality(!drawUi);
+        const bool renderWallpaperThisFrame = !drawUi || (m_wallpaperFrames % 3 == 0) || m_persistWallpaperPending || m_capturePending;
+        if (renderWallpaperThisFrame) {
+            SyncPaletteToRenderers();
+            m_wallpaperRenderer.Render(m_config.Get().animation, elapsed, true, false);
+        }
         ++m_wallpaperFrames;
+        if (m_persistWallpaperPending && m_wallpaperFrames >= 12) {
+            PersistStaticWallpaper();
+            m_persistWallpaperPending = false;
+        }
         if (m_capturePending && m_wallpaperFrames >= 15) {
             CaptureWallpaperDebugFrame();
             m_capturePending = false;
         }
     }
 
-    const bool drawUi = m_uiVisible && m_hwnd && IsWindowVisible(m_hwnd);
     if (drawUi) {
+        const bool scrolling = ImGui::GetIO().MouseWheel != 0.0f || ImGui::GetIO().MouseWheelH != 0.0f;
+        if (!scrolling && m_thumbnails.HasMissing(m_animations.GetPresets())) {
+            m_thumbnails.BuildMissing(m_renderer, m_animations.GetPresets(), 1);
+        }
+
+        if (!m_activePresetId.empty()) {
+            m_renderer.ActivateShader(m_activePresetId);
+        }
         SyncPaletteToRenderers();
-        uint32_t previewW = 960;
-        uint32_t previewH = 540;
+        uint32_t previewW = 640;
+        uint32_t previewH = 360;
         if (m_wallpaperWidth > 0 && m_wallpaperHeight > 0) {
-            previewH = 720;
-            previewW = static_cast<uint32_t>((720.0f * static_cast<float>(m_wallpaperWidth)) / static_cast<float>(m_wallpaperHeight));
-            if (previewW < 480) {
-                previewW = 480;
+            previewH = 360;
+            previewW = static_cast<uint32_t>((360.0f * static_cast<float>(m_wallpaperWidth)) / static_cast<float>(m_wallpaperHeight));
+            if (previewW < 320) {
+                previewW = 320;
             }
-            if (previewW > 1920) {
-                previewW = 1920;
-                previewH = static_cast<uint32_t>((1920.0f * static_cast<float>(m_wallpaperHeight)) / static_cast<float>(m_wallpaperWidth));
+            if (previewW > 960) {
+                previewW = 960;
+                previewH = static_cast<uint32_t>((960.0f * static_cast<float>(m_wallpaperHeight)) / static_cast<float>(m_wallpaperWidth));
             }
         }
         m_renderer.EnsurePreviewTarget(previewW, previewH);
         m_renderer.RenderPreview(m_config.Get().animation, elapsed);
 
-        m_renderer.GetDevice().BeginFrame(0.06f, 0.07f, 0.09f, 1.0f);
+        m_renderer.GetDevice().BeginFrame(0.039f, 0.059f, 0.114f, 1.0f);
         m_ui.BeginFrame();
         m_ui.Draw(
             m_config,
             m_animations,
             m_renderer.GetPreviewSRV(),
+            [this](const std::string& id) -> ID3D11ShaderResourceView* {
+                return m_thumbnails.Get(id);
+            },
             m_desktopStatus,
             [this](const AnimationPreset& preset) {
                 ApplyShaderToRenderer(m_renderer, preset);
@@ -663,6 +807,14 @@ void Application::Shutdown() {
     if (m_hwnd) {
         DestroyWindow(m_hwnd);
         m_hwnd = nullptr;
+    }
+    if (m_appIconBig) {
+        DestroyIcon(m_appIconBig);
+        m_appIconBig = nullptr;
+    }
+    if (m_appIconSmall) {
+        DestroyIcon(m_appIconSmall);
+        m_appIconSmall = nullptr;
     }
 }
 

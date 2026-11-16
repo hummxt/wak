@@ -3,6 +3,7 @@
 #include "core/Config.h"
 #include "core/AnimationManager.h"
 #include "renderer/Renderer.h"
+#include "renderer/ThumbnailCache.h"
 #include "desktop/DesktopHost.h"
 #include "desktop/MonitorManager.h"
 #include "ui/MainWindow.h"
@@ -27,6 +28,7 @@ private:
 
     bool CreateAppWindow(HINSTANCE instance, int nCmdShow);
     bool CreateWallpaperWindow(HINSTANCE instance);
+    void ApplyWindowChrome();
     bool InitializeSystems();
     void ResolveConfigPath();
     void Update();
@@ -39,9 +41,13 @@ private:
     void QueryDesktopPixelSize(uint32_t& width, uint32_t& height, int& x, int& y);
     void SyncStartupSetting();
     void EnablePersistentWallpaper();
+    bool TryAttachWallpaper();
+    bool PersistStaticWallpaper();
     bool ShouldPauseWallpaper() const;
     int EffectiveFpsLimit() const;
     std::wstring ResolvePath(const std::wstring& relative) const;
+    std::wstring GetPersistedWallpaperPath() const;
+    bool CaptureWallpaperToFile(const std::wstring& path);
     void CaptureWallpaperDebugFrame();
 
     bool CreateTrayIcon();
@@ -57,6 +63,8 @@ private:
     HINSTANCE m_instance = nullptr;
     HWND m_hwnd = nullptr;
     HWND m_wallpaperHwnd = nullptr;
+    HICON m_appIconBig = nullptr;
+    HICON m_appIconSmall = nullptr;
     NOTIFYICONDATAW m_tray{};
     bool m_trayAdded = false;
     bool m_running = false;
@@ -67,6 +75,8 @@ private:
     bool m_uiResized = false;
     bool m_wallpaperModeApplied = false;
     bool m_startWithWindowsApplied = false;
+    bool m_persistWallpaperPending = false;
+    int m_wallpaperAttachAttempts = 0;
     uint32_t m_width = 1280;
     uint32_t m_height = 720;
     uint32_t m_wallpaperWidth = 0;
@@ -76,6 +86,7 @@ private:
     AnimationManager m_animations;
     Renderer m_renderer;
     Renderer m_wallpaperRenderer;
+    ThumbnailCache m_thumbnails;
     MainWindow m_ui;
     DesktopHost m_desktop;
     MonitorManager m_monitors;
@@ -88,6 +99,7 @@ private:
     int m_wallpaperFrames = 0;
     std::chrono::steady_clock::time_point m_startTime;
     std::chrono::steady_clock::time_point m_lastFrame;
+    std::chrono::steady_clock::time_point m_nextWallpaperAttachTry{};
 };
 
 }
