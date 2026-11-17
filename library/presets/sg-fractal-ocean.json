@@ -1,0 +1,54 @@
+{
+  "id": "sg-fractal-ocean",
+  "name": "Fractal Ocean",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Fractal Ocean.",
+  "thumbnail": "thumbnails/sg-fractal-ocean.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.4,
+    "brightness": 1.12,
+    "angle": 15.0,
+    "zoom": 1.0,
+    "freq": 4.0,
+    "sharpness": 2.0,
+    "amplitude": 1.4,
+    "waveWidthMod": 0.55,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 0.7,
+    "localWarpFreqY": 2.0,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.0,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.4,
+    "contrast": 1.13
+  },
+  "colorA": [
+    0.0039,
+    0.1647,
+    0.2902,
+    1.0
+  ],
+  "colorB": [
+    0.1725,
+    0.4902,
+    0.6275,
+    1.0
+  ],
+  "colorC": [
+    0.3804,
+    0.6471,
+    0.7608,
+    1.0
+  ],
+  "colorD": [
+    0.6627,
+    0.8392,
+    0.898,
+    1.0
+  ]
+}

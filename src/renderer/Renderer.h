@@ -17,6 +17,22 @@ struct FrameParams {
     float resolutionX = 1.0f;
     float resolutionY = 1.0f;
     float angle = 90.0f;
+    float zoom = 1.0f;
+    float freq = 4.0f;
+    float sharpness = 2.0f;
+    float amplitude = 1.0f;
+    float waveWidthMod = 0.5f;
+    float offsetX = 0.0f;
+    float offsetY = 0.0f;
+    float localWarpIntensity = 0.4f;
+    float localWarpFreqY = 1.9f;
+    float ditherLevels = 0.0f;
+    float ditherScale = 4.0f;
+    float grainIntensity = 0.0f;
+    float grainSpeed = 50.0f;
+    float contrast = 1.0f;
+    float vignetteIntensity = 0.0f;
+    float vignetteRadius = 0.4f;
     std::array<float, 4> colorA{ 0.45f, 0.20f, 0.85f, 1.0f };
     std::array<float, 4> colorB{ 0.15f, 0.35f, 0.95f, 1.0f };
     std::array<float, 4> colorC{ 0.90f, 0.35f, 0.55f, 1.0f };
@@ -36,6 +52,14 @@ public:
     bool EnsurePreviewTarget(uint32_t width, uint32_t height);
     void RenderPreview(const AnimationSettings& animation, float timeSeconds);
     bool RenderToTarget(ID3D11RenderTargetView* rtv, uint32_t width, uint32_t height, const AnimationSettings& animation, float timeSeconds);
+    // Offline GPU capture — works with DComp wallpaper surfaces (GDI BitBlt often returns black).
+    bool SaveFrameToBmp(
+        const AnimationSettings& animation,
+        float timeSeconds,
+        uint32_t width,
+        uint32_t height,
+        const std::wstring& path
+    );
     ID3D11ShaderResourceView* GetPreviewSRV() const;
     void RecreateDeviceSurface();
     void SetHighQuality(bool enabled);
@@ -61,11 +85,27 @@ private:
         float resolutionX;
         float resolutionY;
         float pad0;
-        float pad1;
+        float zoom;
         float colorA[4];
         float colorB[4];
         float colorC[4];
         float colorD[4];
+        float freq;
+        float sharpness;
+        float amplitude;
+        float waveWidthMod;
+        float offsetX;
+        float offsetY;
+        float localWarpIntensity;
+        float localWarpFreqY;
+        float ditherLevels;
+        float ditherScale;
+        float grainIntensity;
+        float grainSpeed;
+        float contrast;
+        float vignetteIntensity;
+        float vignetteRadius;
+        float padExtra;
     };
 
     GraphicsDevice m_device;

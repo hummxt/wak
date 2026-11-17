@@ -1,0 +1,54 @@
+{
+  "id": "sg-ultraviolet-dream",
+  "name": "Ultraviolet Dream",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Ultraviolet Dream.",
+  "thumbnail": "thumbnails/sg-ultraviolet-dream.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.0,
+    "brightness": 1.0,
+    "angle": 0.0,
+    "zoom": 1.0,
+    "freq": 4.0,
+    "sharpness": 2.0,
+    "amplitude": 1.0,
+    "waveWidthMod": 0.5,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 2.2,
+    "localWarpFreqY": 5.2,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.0,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.4,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.0353,
+    0.0078,
+    0.2196,
+    1.0
+  ],
+  "colorB": [
+    0.4118,
+    0.0118,
+    0.9765,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.0824,
+    0.898,
+    1.0
+  ],
+  "colorD": [
+    0.8627,
+    0.7725,
+    1.0,
+    1.0
+  ]
+}

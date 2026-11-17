@@ -6,12 +6,28 @@ cbuffer Constants : register(b0)
     float Brightness;
     float ResolutionX;
     float ResolutionY;
-    float Pad0;
-    float Pad1;
+    float Pad0; // rotation / angle (degrees)
+    float Zoom;
     float4 ColorA;
     float4 ColorB;
     float4 ColorC;
     float4 ColorD;
+    float Freq;
+    float Sharpness;
+    float Amplitude;
+    float WaveWidthMod;
+    float OffsetX;
+    float OffsetY;
+    float LocalWarpIntensity;
+    float LocalWarpFreqY;
+    float DitherLevels;      // <= 0 disables
+    float DitherScale;
+    float GrainIntensity;    // <= 0 disables
+    float GrainSpeed;
+    float Contrast;
+    float VignetteIntensity; // <= 0 disables
+    float VignetteRadius;
+    float PadExtra;
 };
 
 struct VSInput

@@ -1,0 +1,54 @@
+{
+  "id": "sg-midnight",
+  "name": "Midnight",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Midnight.",
+  "thumbnail": "thumbnails/sg-midnight.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 2.75,
+    "brightness": 1.0,
+    "angle": 120.0,
+    "zoom": 0.94,
+    "freq": 7.0,
+    "sharpness": 1.0,
+    "amplitude": 2.75,
+    "waveWidthMod": 0.44,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 1.4,
+    "localWarpFreqY": 1.9,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.071,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.54,
+    "vignetteRadius": 0.5,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.0196,
+    0.0039,
+    0.051,
+    1.0
+  ],
+  "colorB": [
+    0.0431,
+    0.1176,
+    0.2902,
+    1.0
+  ],
+  "colorC": [
+    0.2275,
+    0.1804,
+    0.6784,
+    1.0
+  ],
+  "colorD": [
+    0.4235,
+    0.3608,
+    0.9059,
+    1.0
+  ]
+}

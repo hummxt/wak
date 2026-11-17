@@ -1,0 +1,54 @@
+{
+  "id": "sg-ember",
+  "name": "Ember",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Ember.",
+  "thumbnail": "thumbnails/sg-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.0,
+    "brightness": 1.0,
+    "angle": 90.0,
+    "zoom": 1.0,
+    "freq": 8.0,
+    "sharpness": 5.0,
+    "amplitude": 1.0,
+    "waveWidthMod": 0.45,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 1.0,
+    "localWarpFreqY": 2.8,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.06,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.9,
+    "vignetteRadius": 0.45,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.0431,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "colorB": [
+    0.2392,
+    0.0471,
+    0.0078,
+    1.0
+  ],
+  "colorC": [
+    0.7569,
+    0.0706,
+    0.1216,
+    1.0
+  ],
+  "colorD": [
+    0.9843,
+    0.5451,
+    0.1412,
+    1.0
+  ]
+}
