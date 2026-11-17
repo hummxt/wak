@@ -56,6 +56,12 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int nCmdShow) {
         LocalFree(argv);
     }
 
+    // One process keeps the live wallpaper. A second launch just reopens the UI.
+    if (!background && ge::Application::ActivateExistingInstance()) {
+        CoUninitialize();
+        return 0;
+    }
+
     ge::Application app;
     if (!app.Initialize(instance, background ? SW_HIDE : nCmdShow, background)) {
         ge::LogError("Application failed to initialize");
