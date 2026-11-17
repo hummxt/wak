@@ -26,10 +26,24 @@
 #ifndef DWMWA_TEXT_COLOR
 #define DWMWA_TEXT_COLOR 36
 #endif
+#ifndef PW_RENDERFULLCONTENT
+#define PW_RENDERFULLCONTENT 0x00000002
+#endif
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 namespace ge {
+
+bool Application::ActivateExistingInstance() {
+    HWND existing = FindWindowW(L"WakbgWindow", nullptr);
+    if (!existing) {
+        return false;
+    }
+    AllowSetForegroundWindow(ASFW_ANY);
+    PostMessageW(existing, WM_SHOW_FROM_SECOND_INSTANCE, 0, 0);
+    SetForegroundWindow(existing);
+    return true;
+}
 
 bool Application::Initialize(HINSTANCE instance, int nCmdShow, bool backgroundMode) {
     m_instance = instance;
@@ -224,6 +238,10 @@ void Application::DestroyTrayIcon() {
 
 void Application::ShowUiWindow() {
     m_uiVisible = true;
+    m_backgroundMode = false;
+    if (!m_trayAdded) {
+        CreateTrayIcon();
+    }
     ShowWindow(m_hwnd, SW_RESTORE);
     ShowWindow(m_hwnd, SW_SHOW);
     SetForegroundWindow(m_hwnd);
@@ -232,7 +250,19 @@ void Application::ShowUiWindow() {
 void Application::HideUiWindow() {
     m_uiVisible = false;
     ShowWindow(m_hwnd, SW_HIDE);
-    m_desktopStatus = "UI hidden. Wallpaper keeps running. Tray icon: Open / Exit.";
+    m_desktopStatus = m_trayAdded
+        ? "UI hidden. Wallpaper keeps running. Tray: Open / Exit."
+        : "Running in background. Launch Wakbg again to open the UI.";
+}
+
+void Application::EnterSilentBackground() {
+    // Keep the live wallpaper process alive. Do not touch Explorer wallpaper APIs.
+    EnablePersistentWallpaper();
+    DestroyTrayIcon();
+    HideUiWindow();
+    m_backgroundMode = true;
+    m_desktopStatus = "Running in background. Launch Wakbg again to open the UI.";
+    LogInfo(m_desktopStatus);
 }
 
 void Application::RequestExit(bool stopWallpaper) {
@@ -275,7 +305,12 @@ bool Application::CaptureWallpaperToFile(const std::wstring& path) {
     HDC memDc = CreateCompatibleDC(windowDc);
     HBITMAP bitmap = CreateCompatibleBitmap(windowDc, width, height);
     HGDIOBJ old = SelectObject(memDc, bitmap);
-    BitBlt(memDc, 0, 0, width, height, windowDc, 0, 0, SRCCOPY);
+
+    // DComp / layered desktop children often won't BitBlt; PrintWindow is more reliable.
+    BOOL captured = PrintWindow(m_wallpaperHwnd, memDc, PW_RENDERFULLCONTENT);
+    if (!captured) {
+        captured = BitBlt(memDc, 0, 0, width, height, windowDc, 0, 0, SRCCOPY);
+    }
 
     BITMAPINFOHEADER info{};
     info.biSize = sizeof(info);
@@ -292,7 +327,7 @@ bool Application::CaptureWallpaperToFile(const std::wstring& path) {
     EnsureDirectoryExists(GetAppDataDirectory());
     std::ofstream file(path, std::ios::binary);
     bool ok = false;
-    if (file) {
+    if (file && captured) {
         BITMAPFILEHEADER header{};
         header.bfType = 0x4D42;
         header.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
@@ -310,15 +345,8 @@ bool Application::CaptureWallpaperToFile(const std::wstring& path) {
     return ok;
 }
 
-bool Application::PersistStaticWallpaper() {
-    const std::wstring path = GetPersistedWallpaperPath();
-    SyncPaletteToRenderers();
-    for (int i = 0; i < 3; ++i) {
-        m_wallpaperRenderer.Render(m_config.Get().animation, 1.25f, true, false);
-    }
-
-    if (!CaptureWallpaperToFile(path)) {
-        LogWarning("Failed to save persistent wallpaper image");
+bool Application::ApplyStaticWallpaperFile(const std::wstring& path) {
+    if (path.empty() || !FileExists(path)) {
         return false;
     }
 
@@ -337,9 +365,74 @@ bool Application::PersistStaticWallpaper() {
         LogWarning("Failed to set Windows desktop wallpaper fallback");
         return false;
     }
-
-    LogInfo("Saved persistent wallpaper fallback");
+    LogInfo("Applied static wallpaper fallback image");
     return true;
+}
+
+bool Application::PersistStaticWallpaper(bool setSystemWallpaper, float timeSeconds) {
+    const std::wstring path = GetPersistedWallpaperPath();
+    uint32_t w = m_wallpaperWidth > 0 ? m_wallpaperWidth : 1920;
+    uint32_t h = m_wallpaperHeight > 0 ? m_wallpaperHeight : 1080;
+    // Cap capture size for speed while keeping enough detail for reboot fallback.
+    if (w > 2560) {
+        h = static_cast<uint32_t>((h * 2560.0f) / static_cast<float>(w));
+        w = 2560;
+    }
+
+    SyncPaletteToRenderers();
+    const bool saved = m_wallpaperRenderer.SaveFrameToBmp(
+        m_config.Get().animation,
+        timeSeconds,
+        w,
+        h,
+        path
+    );
+    if (!saved) {
+        LogWarning("Failed to save persistent wallpaper image");
+        return false;
+    }
+    LogInfo("Saved wallpaper fallback image");
+
+    if (!setSystemWallpaper) {
+        return true;
+    }
+    return ApplyStaticWallpaperFile(path);
+}
+
+void Application::PersistForSessionEnd() {
+    if (!m_config.Get().application.wallpaperMode) {
+        return;
+    }
+
+    EnablePersistentWallpaper();
+
+    const float elapsed = std::chrono::duration<float>(
+        std::chrono::steady_clock::now() - m_startTime
+    ).count();
+
+    // Save a real GPU frame first, then detach live wallpaper, then set static BMP.
+    // That keeps a still of the look after reboot until --background reattaches live.
+    PersistStaticWallpaper(false, elapsed);
+
+    if (m_wallpaperModeApplied && m_wallpaperHwnd) {
+        m_desktop.ReleaseWindow(m_wallpaperHwnd);
+        ShowWindow(m_wallpaperHwnd, SW_HIDE);
+        m_wallpaperModeApplied = false;
+    }
+
+    ApplyStaticWallpaperFile(GetPersistedWallpaperPath());
+}
+
+bool Application::IsWallpaperEmbedHealthy() const {
+    if (!m_wallpaperModeApplied || !m_wallpaperHwnd || !IsWindow(m_wallpaperHwnd)) {
+        return false;
+    }
+    HWND parent = GetParent(m_wallpaperHwnd);
+    HWND host = m_desktop.GetHostWindow();
+    if (!host || parent != host) {
+        return false;
+    }
+    return IsWindowVisible(m_wallpaperHwnd) != FALSE;
 }
 
 bool Application::TryAttachWallpaper() {
@@ -430,9 +523,20 @@ bool Application::InitializeSystems() {
             m_config.Get().application.wallpaperMode = true;
         }
         EnablePersistentWallpaper();
-        if (!TryAttachWallpaper()) {
+
+        // After reboot Explorer/WorkerW can take a moment — retry a few times here.
+        bool attached = false;
+        for (int attempt = 0; attempt < 8 && !attached; ++attempt) {
+            if (attempt > 0) {
+                Sleep(400);
+            }
+            attached = TryAttachWallpaper();
+        }
+        if (!attached) {
             m_nextWallpaperAttachTry = std::chrono::steady_clock::now() + std::chrono::seconds(1);
             LogWarning("Desktop not ready yet; will retry wallpaper attach");
+            // Still show the last still until live embed succeeds.
+            ApplyStaticWallpaperFile(GetPersistedWallpaperPath());
         }
     }
 
@@ -482,6 +586,34 @@ void Application::CaptureWallpaperDebugFrame() {
     CaptureWallpaperToFile(ResolvePath(L"wallpaper_capture.bmp"));
 }
 
+void Application::LoadPresetIntoAnimation(const AnimationPreset& preset) {
+    auto& anim = m_config.Get().animation;
+    anim.speed = preset.defaultSpeed;
+    anim.intensity = preset.defaultIntensity;
+    anim.angle = preset.defaultAngle;
+    anim.brightness = preset.defaultBrightness;
+    anim.zoom = preset.defaultZoom;
+    anim.freq = preset.defaultFreq;
+    anim.sharpness = preset.defaultSharpness;
+    anim.amplitude = preset.defaultAmplitude;
+    anim.waveWidthMod = preset.defaultWaveWidthMod;
+    anim.offsetX = preset.defaultOffsetX;
+    anim.offsetY = preset.defaultOffsetY;
+    anim.localWarpIntensity = preset.defaultLocalWarpIntensity;
+    anim.localWarpFreqY = preset.defaultLocalWarpFreqY;
+    anim.ditherLevels = preset.defaultDitherLevels;
+    anim.ditherScale = preset.defaultDitherScale;
+    anim.grainIntensity = preset.defaultGrainIntensity;
+    anim.grainSpeed = preset.defaultGrainSpeed;
+    anim.contrast = preset.defaultContrast;
+    anim.vignetteIntensity = preset.defaultVignetteIntensity;
+    anim.vignetteRadius = preset.defaultVignetteRadius;
+    anim.colorA = preset.colorA;
+    anim.colorB = preset.colorB;
+    anim.colorC = preset.colorC;
+    anim.colorD = preset.colorD;
+}
+
 void Application::ApplyPreset(const AnimationPreset& preset) {
     if (!ApplyShaderToRenderer(m_renderer, preset)) {
         return;
@@ -492,13 +624,7 @@ void Application::ApplyPreset(const AnimationPreset& preset) {
 
     m_activePresetId = preset.id;
     m_config.Get().wallpaper.selected = preset.id;
-    m_config.Get().animation.speed = preset.defaultSpeed;
-    m_config.Get().animation.intensity = preset.defaultIntensity;
-    m_config.Get().animation.angle = preset.defaultAngle;
-    m_config.Get().animation.colorA = preset.colorA;
-    m_config.Get().animation.colorB = preset.colorB;
-    m_config.Get().animation.colorC = preset.colorC;
-    m_config.Get().animation.colorD = preset.colorD;
+    LoadPresetIntoAnimation(preset);
     m_animations.PushRecent(preset.id);
     SyncPaletteToRenderers();
     m_config.Save(m_configPath);
@@ -668,12 +794,26 @@ void Application::Update() {
     }
 
     const bool wantWallpaper = m_config.Get().application.wallpaperMode;
+    const bool fullscreenNow = ShouldPauseWallpaper();
+    if (m_wasFullscreenPaused && !fullscreenNow && wantWallpaper) {
+        // Exclusive fullscreen games often rebuild WorkerW — force a fresh embed.
+        LogInfo("Fullscreen ended; reattaching wallpaper");
+        m_wallpaperModeApplied = false;
+        m_nextWallpaperAttachTry = std::chrono::steady_clock::now();
+    }
+    m_wasFullscreenPaused = fullscreenNow;
+
+    if (wantWallpaper && m_wallpaperModeApplied && !IsWallpaperEmbedHealthy()) {
+        LogWarning("Wallpaper embed lost; will reattach");
+        m_wallpaperModeApplied = false;
+        m_nextWallpaperAttachTry = std::chrono::steady_clock::now();
+    }
     if (wantWallpaper && !m_wallpaperModeApplied) {
         const auto now = std::chrono::steady_clock::now();
         if (now >= m_nextWallpaperAttachTry) {
             ++m_wallpaperAttachAttempts;
             if (!TryAttachWallpaper()) {
-                const int delaySec = (std::min)(10, 1 + m_wallpaperAttachAttempts / 2);
+                const int delaySec = (std::min)(8, 1 + m_wallpaperAttachAttempts / 3);
                 m_nextWallpaperAttachTry = now + std::chrono::seconds(delaySec);
             }
         }
@@ -681,8 +821,12 @@ void Application::Update() {
         ApplyWallpaperMode(false);
     }
 
-    const bool wantStartup = m_config.Get().application.startWithWindows;
-    if (wantStartup != m_startWithWindowsApplied) {
+    const bool wantStartup = m_config.Get().application.startWithWindows || wantWallpaper;
+    if (wantStartup && !m_startWithWindowsApplied) {
+        m_config.Get().application.startWithWindows = true;
+        SyncStartupSetting();
+        m_startWithWindowsApplied = true;
+    } else if (wantStartup != m_startWithWindowsApplied) {
         SyncStartupSetting();
         m_startWithWindowsApplied = wantStartup;
     }
@@ -696,15 +840,17 @@ void Application::RenderFrame() {
     const bool drawUi = m_uiVisible && m_hwnd && IsWindowVisible(m_hwnd);
 
     if (m_config.Get().application.wallpaperMode && m_wallpaperHwnd && m_wallpaperModeApplied && !pauseWallpaper) {
-        m_wallpaperRenderer.SetHighQuality(!drawUi);
-        const bool renderWallpaperThisFrame = !drawUi || (m_wallpaperFrames % 3 == 0) || m_persistWallpaperPending || m_capturePending;
+        // Keep HQ on always — toggling with UI visibility reboots the look when closing.
+        m_wallpaperRenderer.SetHighQuality(true);
+        const bool renderWallpaperThisFrame = !drawUi || (m_wallpaperFrames % 3 == 0) || m_capturePending;
         if (renderWallpaperThisFrame) {
             SyncPaletteToRenderers();
             m_wallpaperRenderer.Render(m_config.Get().animation, elapsed, true, false);
         }
         ++m_wallpaperFrames;
-        if (m_persistWallpaperPending && m_wallpaperFrames >= 12) {
-            PersistStaticWallpaper();
+        if (m_persistWallpaperPending && m_wallpaperFrames >= 18) {
+            // Save GPU still for reboot fallback — never SPI while live embed is active.
+            PersistStaticWallpaper(false, elapsed);
             m_persistWallpaperPending = false;
         }
         if (m_capturePending && m_wallpaperFrames >= 15) {
@@ -754,13 +900,7 @@ void Application::RenderFrame() {
                 ApplyShaderToRenderer(m_wallpaperRenderer, preset);
                 m_activePresetId = preset.id;
                 m_config.Get().wallpaper.selected = preset.id;
-                m_config.Get().animation.speed = preset.defaultSpeed;
-                m_config.Get().animation.intensity = preset.defaultIntensity;
-                m_config.Get().animation.angle = preset.defaultAngle;
-                m_config.Get().animation.colorA = preset.colorA;
-                m_config.Get().animation.colorB = preset.colorB;
-                m_config.Get().animation.colorC = preset.colorC;
-                m_config.Get().animation.colorD = preset.colorD;
+                LoadPresetIntoAnimation(preset);
                 SyncPaletteToRenderers();
                 m_config.Save(m_configPath);
             },
@@ -791,16 +931,17 @@ void Application::Shutdown() {
     DestroyTrayIcon();
     if (m_stopWallpaperOnExit) {
         ApplyWallpaperMode(false);
-    } else {
-        if (m_config.Get().application.wallpaperMode) {
-            EnablePersistentWallpaper();
-        }
+    } else if (m_config.Get().application.wallpaperMode) {
+        // Never SPI here — destroying the live window already happens below;
+        // Explorer would go black if we force a bad static wallpaper.
+        EnablePersistentWallpaper();
         m_config.Save(m_configPath);
     }
     m_ui.Shutdown();
     m_wallpaperRenderer.Shutdown();
     m_renderer.Shutdown();
     if (m_wallpaperHwnd) {
+        m_desktop.ReleaseWindow(m_wallpaperHwnd);
         DestroyWindow(m_wallpaperHwnd);
         m_wallpaperHwnd = nullptr;
     }
@@ -857,7 +998,7 @@ LRESULT Application::HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
             GetCursorPos(&pt);
             HMENU menu = CreatePopupMenu();
             AppendMenuW(menu, MF_STRING, ID_TRAY_SHOW, L"Open Wakbg");
-            AppendMenuW(menu, MF_STRING, ID_TRAY_EXIT, L"Stop Wallpaper and Exit");
+            AppendMenuW(menu, MF_STRING, ID_TRAY_EXIT, L"Exit");
             SetForegroundWindow(m_hwnd);
             TrackPopupMenu(menu, TPM_RIGHTBUTTON, pt.x, pt.y, 0, m_hwnd, nullptr);
             DestroyMenu(menu);
@@ -870,10 +1011,14 @@ LRESULT Application::HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
             return 0;
         }
         if (LOWORD(wParam) == ID_TRAY_EXIT) {
-            RequestExit(true);
+            // Leave live wallpaper running without tray/UI flash or black desktop.
+            EnterSilentBackground();
             return 0;
         }
         break;
+    case WM_SHOW_FROM_SECOND_INSTANCE:
+        ShowUiWindow();
+        return 0;
     case WM_KEYDOWN:
         if (hwnd != m_hwnd) {
             break;
@@ -885,23 +1030,21 @@ LRESULT Application::HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
         break;
     case WM_QUERYENDSESSION:
         if (m_config.Get().application.wallpaperMode) {
-            EnablePersistentWallpaper();
+            PersistForSessionEnd();
         }
         return TRUE;
     case WM_ENDSESSION:
         if (wParam) {
             if (m_config.Get().application.wallpaperMode) {
-                EnablePersistentWallpaper();
+                PersistForSessionEnd();
             }
             m_stopWallpaperOnExit = false;
         }
         return 0;
     case WM_CLOSE:
         if (hwnd == m_hwnd) {
+            // Hide only — do not re-render or touch wallpaper (that was resetting it).
             HideUiWindow();
-            if (m_config.Get().application.wallpaperMode) {
-                EnablePersistentWallpaper();
-            }
             return 0;
         }
         break;

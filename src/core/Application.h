@@ -22,6 +22,9 @@ public:
     void Shutdown();
     void ApplyDesktopForTesting();
 
+    // If another Wakbg is already running, ask it to show UI and return true.
+    static bool ActivateExistingInstance();
+
 private:
     static LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
     LRESULT HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
@@ -34,6 +37,7 @@ private:
     void Update();
     void RenderFrame();
     void ApplyPreset(const AnimationPreset& preset);
+    void LoadPresetIntoAnimation(const AnimationPreset& preset);
     bool ApplyShaderToRenderer(Renderer& renderer, const AnimationPreset& preset);
     void SyncPaletteToRenderers();
     void ApplyWallpaperMode(bool enabled);
@@ -42,8 +46,13 @@ private:
     void SyncStartupSetting();
     void EnablePersistentWallpaper();
     bool TryAttachWallpaper();
-    bool PersistStaticWallpaper();
+    // Saves a BMP fallback. setSystemWallpaper=true also calls SPI_SETDESKWALLPAPER
+    // (only safe when live embed is not active — e.g. session end / shutdown).
+    bool PersistStaticWallpaper(bool setSystemWallpaper, float timeSeconds);
+    void PersistForSessionEnd();
+    bool ApplyStaticWallpaperFile(const std::wstring& path);
     bool ShouldPauseWallpaper() const;
+    bool IsWallpaperEmbedHealthy() const;
     int EffectiveFpsLimit() const;
     std::wstring ResolvePath(const std::wstring& relative) const;
     std::wstring GetPersistedWallpaperPath() const;
@@ -54,9 +63,11 @@ private:
     void DestroyTrayIcon();
     void ShowUiWindow();
     void HideUiWindow();
+    void EnterSilentBackground();
     void RequestExit(bool stopWallpaper);
 
     static constexpr UINT WM_TRAYICON = WM_APP + 1;
+    static constexpr UINT WM_SHOW_FROM_SECOND_INSTANCE = WM_APP + 2;
     static constexpr UINT ID_TRAY_SHOW = 1001;
     static constexpr UINT ID_TRAY_EXIT = 1002;
 
@@ -76,6 +87,7 @@ private:
     bool m_wallpaperModeApplied = false;
     bool m_startWithWindowsApplied = false;
     bool m_persistWallpaperPending = false;
+    bool m_wasFullscreenPaused = false;
     int m_wallpaperAttachAttempts = 0;
     uint32_t m_width = 1280;
     uint32_t m_height = 720;
