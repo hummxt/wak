@@ -1,0 +1,37 @@
+{
+  "id": "cl-sky-spark",
+  "name": "Sky Spark",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sky Spark.",
+  "thumbnail": "thumbnails/cl-sky-spark.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.7961,
+    0.4196,
+    1.0
+  ],
+  "colorB": [
+    0.7489,
+    0.7133,
+    0.6111,
+    1.0
+  ],
+  "colorC": [
+    0.4979,
+    0.6304,
+    0.8027,
+    1.0
+  ],
+  "colorD": [
+    0.2392,
+    0.5451,
+    1.0,
+    1.0
+  ]
+}

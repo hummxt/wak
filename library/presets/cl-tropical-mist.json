@@ -1,0 +1,37 @@
+{
+  "id": "cl-tropical-mist",
+  "name": "Tropical Mist",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Tropical Mist.",
+  "thumbnail": "thumbnails/cl-tropical-mist.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1373,
+    0.6196,
+    0.6706,
+    1.0
+  ],
+  "colorB": [
+    0.2421,
+    0.7024,
+    0.7573,
+    1.0
+  ],
+  "colorC": [
+    0.3469,
+    0.7853,
+    0.844,
+    1.0
+  ],
+  "colorD": [
+    0.4549,
+    0.8706,
+    0.9333,
+    1.0
+  ]
+}

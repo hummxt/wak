@@ -1,0 +1,37 @@
+{
+  "id": "cl-golden-flame",
+  "name": "Golden Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Golden Flame.",
+  "thumbnail": "thumbnails/cl-golden-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9569,
+    0.851,
+    0.2549,
+    1.0
+  ],
+  "colorB": [
+    0.9465,
+    0.7384,
+    0.2394,
+    1.0
+  ],
+  "colorC": [
+    0.9362,
+    0.6258,
+    0.2238,
+    1.0
+  ],
+  "colorD": [
+    0.9255,
+    0.5098,
+    0.2078,
+    1.0
+  ]
+}

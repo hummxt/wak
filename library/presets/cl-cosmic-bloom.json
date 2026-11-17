@@ -1,0 +1,37 @@
+{
+  "id": "cl-cosmic-bloom",
+  "name": "Cosmic Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cosmic Bloom.",
+  "thumbnail": "thumbnails/cl-cosmic-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8863,
+    0.8588,
+    0.1216,
+    1.0
+  ],
+  "colorB": [
+    0.819,
+    0.5961,
+    0.4037,
+    1.0
+  ],
+  "colorC": [
+    0.7517,
+    0.3334,
+    0.6858,
+    1.0
+  ],
+  "colorD": [
+    0.6824,
+    0.0627,
+    0.9765,
+    1.0
+  ]
+}

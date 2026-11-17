@@ -1,0 +1,37 @@
+{
+  "id": "cl-plum-surge",
+  "name": "Plum Surge",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Plum Surge.",
+  "thumbnail": "thumbnails/cl-plum-surge.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8314,
+    0.6745,
+    0.9843,
+    1.0
+  ],
+  "colorB": [
+    0.7952,
+    0.5541,
+    0.9261,
+    1.0
+  ],
+  "colorC": [
+    0.7589,
+    0.4338,
+    0.8678,
+    1.0
+  ],
+  "colorD": [
+    0.7216,
+    0.3098,
+    0.8078,
+    1.0
+  ]
+}

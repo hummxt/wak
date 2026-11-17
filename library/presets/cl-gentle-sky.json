@@ -1,0 +1,37 @@
+{
+  "id": "cl-gentle-sky",
+  "name": "Gentle Sky",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Gentle Sky.",
+  "thumbnail": "thumbnails/cl-gentle-sky.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.9137,
+    0.9098,
+    1.0
+  ],
+  "colorB": [
+    0.9411,
+    0.9274,
+    0.7883,
+    1.0
+  ],
+  "colorC": [
+    0.9137,
+    0.9412,
+    0.6667,
+    1.0
+  ],
+  "colorD": [
+    0.6,
+    0.6745,
+    0.9216,
+    1.0
+  ]
+}

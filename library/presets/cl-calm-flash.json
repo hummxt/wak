@@ -1,0 +1,37 @@
+{
+  "id": "cl-calm-flash",
+  "name": "Calm Flash",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Calm Flash.",
+  "thumbnail": "thumbnails/cl-calm-flash.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5804,
+    0.5686,
+    0.8863,
+    1.0
+  ],
+  "colorB": [
+    0.6153,
+    0.6941,
+    0.8734,
+    1.0
+  ],
+  "colorC": [
+    0.6503,
+    0.8197,
+    0.8604,
+    1.0
+  ],
+  "colorD": [
+    0.6863,
+    0.949,
+    0.8471,
+    1.0
+  ]
+}

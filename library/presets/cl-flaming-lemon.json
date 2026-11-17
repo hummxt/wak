@@ -1,0 +1,37 @@
+{
+  "id": "cl-flaming-lemon",
+  "name": "Flaming Lemon",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Flaming Lemon.",
+  "thumbnail": "thumbnails/cl-flaming-lemon.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.6353,
+    0.6314,
+    1.0
+  ],
+  "colorB": [
+    0.979,
+    0.7324,
+    0.423,
+    1.0
+  ],
+  "colorC": [
+    0.9893,
+    0.8294,
+    0.2147,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.9294,
+    0.0,
+    1.0
+  ]
+}

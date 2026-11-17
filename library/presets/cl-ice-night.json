@@ -1,0 +1,37 @@
+{
+  "id": "cl-ice-night",
+  "name": "Ice Night",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Ice Night.",
+  "thumbnail": "thumbnails/cl-ice-night.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8941,
+    0.9059,
+    0.8941,
+    1.0
+  ],
+  "colorB": [
+    0.612,
+    0.6354,
+    0.6909,
+    1.0
+  ],
+  "colorC": [
+    0.3299,
+    0.365,
+    0.4877,
+    1.0
+  ],
+  "colorD": [
+    0.0392,
+    0.0863,
+    0.2784,
+    1.0
+  ]
+}

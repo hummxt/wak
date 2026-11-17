@@ -1,0 +1,37 @@
+{
+  "id": "cl-purple-ember",
+  "name": "Purple Ember",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Purple Ember.",
+  "thumbnail": "thumbnails/cl-purple-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6941,
+    0.3569,
+    0.5255,
+    1.0
+  ],
+  "colorB": [
+    0.5531,
+    0.2585,
+    0.4556,
+    1.0
+  ],
+  "colorC": [
+    0.412,
+    0.1602,
+    0.3857,
+    1.0
+  ],
+  "colorD": [
+    0.2667,
+    0.0588,
+    0.3137,
+    1.0
+  ]
+}

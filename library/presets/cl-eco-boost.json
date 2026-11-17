@@ -1,0 +1,37 @@
+{
+  "id": "cl-eco-boost",
+  "name": "Eco Boost",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Eco Boost.",
+  "thumbnail": "thumbnails/cl-eco-boost.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0353,
+    0.5922,
+    0.451,
+    1.0
+  ],
+  "colorB": [
+    0.1103,
+    0.6323,
+    0.4911,
+    1.0
+  ],
+  "colorC": [
+    0.1854,
+    0.6724,
+    0.5312,
+    1.0
+  ],
+  "colorD": [
+    0.2627,
+    0.7137,
+    0.5725,
+    1.0
+  ]
+}

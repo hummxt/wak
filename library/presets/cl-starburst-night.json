@@ -1,0 +1,37 @@
+{
+  "id": "cl-starburst-night",
+  "name": "Starburst Night",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Starburst Night.",
+  "thumbnail": "thumbnails/cl-starburst-night.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.9451,
+    0.749,
+    1.0
+  ],
+  "colorB": [
+    0.9627,
+    0.6079,
+    0.6509,
+    1.0
+  ],
+  "colorC": [
+    0.9255,
+    0.2706,
+    0.5529,
+    1.0
+  ],
+  "colorD": [
+    0.2784,
+    0.3059,
+    0.8431,
+    1.0
+  ]
+}

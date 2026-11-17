@@ -1,0 +1,37 @@
+{
+  "id": "cl-electric-sky",
+  "name": "Electric Sky",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Electric Sky.",
+  "thumbnail": "thumbnails/cl-electric-sky.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2706,
+    0.4353,
+    0.9098,
+    1.0
+  ],
+  "colorB": [
+    0.2136,
+    0.5194,
+    0.915,
+    1.0
+  ],
+  "colorC": [
+    0.1567,
+    0.6035,
+    0.9202,
+    1.0
+  ],
+  "colorD": [
+    0.098,
+    0.6902,
+    0.9255,
+    1.0
+  ]
+}

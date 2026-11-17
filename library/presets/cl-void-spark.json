@@ -1,0 +1,37 @@
+{
+  "id": "cl-void-spark",
+  "name": "Void Spark",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Void Spark.",
+  "thumbnail": "thumbnails/cl-void-spark.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0,
+    0.0118,
+    0.1569,
+    1.0
+  ],
+  "colorB": [
+    0.0,
+    0.0972,
+    0.2889,
+    1.0
+  ],
+  "colorC": [
+    0.0,
+    0.1826,
+    0.4209,
+    1.0
+  ],
+  "colorD": [
+    0.0,
+    0.2706,
+    0.5569,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-twilight-ember",
+  "name": "Twilight Ember",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Twilight Ember.",
+  "thumbnail": "thumbnails/cl-twilight-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1686,
+    0.0353,
+    0.2824,
+    1.0
+  ],
+  "colorB": [
+    0.3795,
+    0.1544,
+    0.2656,
+    1.0
+  ],
+  "colorC": [
+    0.5905,
+    0.2734,
+    0.2487,
+    1.0
+  ],
+  "colorD": [
+    0.8078,
+    0.3961,
+    0.2314,
+    1.0
+  ]
+}

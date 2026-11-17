@@ -1,0 +1,37 @@
+{
+  "id": "cl-wood-wine",
+  "name": "Wood & Wine",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Wood & Wine.",
+  "thumbnail": "thumbnails/cl-wood-wine.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1804,
+    0.4392,
+    0.2157,
+    1.0
+  ],
+  "colorB": [
+    0.3357,
+    0.3758,
+    0.2455,
+    1.0
+  ],
+  "colorC": [
+    0.491,
+    0.3124,
+    0.2752,
+    1.0
+  ],
+  "colorD": [
+    0.651,
+    0.2471,
+    0.3059,
+    1.0
+  ]
+}

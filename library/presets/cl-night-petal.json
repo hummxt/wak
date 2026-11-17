@@ -1,0 +1,37 @@
+{
+  "id": "cl-night-petal",
+  "name": "Night Petal",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Night Petal.",
+  "thumbnail": "thumbnails/cl-night-petal.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2235,
+    0.1765,
+    0.4118,
+    1.0
+  ],
+  "colorB": [
+    0.384,
+    0.2774,
+    0.5839,
+    1.0
+  ],
+  "colorC": [
+    0.5445,
+    0.3784,
+    0.756,
+    1.0
+  ],
+  "colorD": [
+    0.7098,
+    0.4824,
+    0.9333,
+    1.0
+  ]
+}

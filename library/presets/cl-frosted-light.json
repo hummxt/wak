@@ -1,0 +1,37 @@
+{
+  "id": "cl-frosted-light",
+  "name": "Frosted Light",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Frosted Light.",
+  "thumbnail": "thumbnails/cl-frosted-light.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9216,
+    0.9569,
+    0.9608,
+    1.0
+  ],
+  "colorB": [
+    0.8517,
+    0.8974,
+    0.9336,
+    1.0
+  ],
+  "colorC": [
+    0.7818,
+    0.8378,
+    0.9064,
+    1.0
+  ],
+  "colorD": [
+    0.7098,
+    0.7765,
+    0.8784,
+    1.0
+  ]
+}

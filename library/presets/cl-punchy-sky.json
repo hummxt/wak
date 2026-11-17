@@ -1,0 +1,37 @@
+{
+  "id": "cl-punchy-sky",
+  "name": "Punchy Sky",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Punchy Sky.",
+  "thumbnail": "thumbnails/cl-punchy-sky.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9373,
+    0.3373,
+    0.4157,
+    1.0
+  ],
+  "colorB": [
+    0.7548,
+    0.3839,
+    0.5982,
+    1.0
+  ],
+  "colorC": [
+    0.5723,
+    0.4304,
+    0.7806,
+    1.0
+  ],
+  "colorD": [
+    0.3843,
+    0.4784,
+    0.9686,
+    1.0
+  ]
+}

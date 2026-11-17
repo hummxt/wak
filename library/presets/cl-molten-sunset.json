@@ -1,0 +1,37 @@
+{
+  "id": "cl-molten-sunset",
+  "name": "Molten Sunset",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Molten Sunset.",
+  "thumbnail": "thumbnails/cl-molten-sunset.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.902,
+    0.1373,
+    0.0784,
+    1.0
+  ],
+  "colorB": [
+    0.9162,
+    0.2965,
+    0.0836,
+    1.0
+  ],
+  "colorC": [
+    0.9304,
+    0.4556,
+    0.0888,
+    1.0
+  ],
+  "colorD": [
+    0.9451,
+    0.6196,
+    0.0941,
+    1.0
+  ]
+}

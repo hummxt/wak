@@ -1,0 +1,37 @@
+{
+  "id": "cl-arctic-shift",
+  "name": "Arctic Shift",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Arctic Shift.",
+  "thumbnail": "thumbnails/cl-arctic-shift.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.302,
+    0.7882,
+    0.902,
+    1.0
+  ],
+  "colorB": [
+    0.245,
+    0.5436,
+    0.8295,
+    1.0
+  ],
+  "colorC": [
+    0.1881,
+    0.2991,
+    0.7571,
+    1.0
+  ],
+  "colorD": [
+    0.1294,
+    0.0471,
+    0.6824,
+    1.0
+  ]
+}

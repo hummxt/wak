@@ -1,0 +1,37 @@
+{
+  "id": "cl-electric-sunset",
+  "name": "Electric Sunset",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Electric Sunset.",
+  "thumbnail": "thumbnails/cl-electric-sunset.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2314,
+    0.8118,
+    0.8314,
+    1.0
+  ],
+  "colorB": [
+    0.6098,
+    0.6942,
+    0.4255,
+    1.0
+  ],
+  "colorC": [
+    0.9882,
+    0.5765,
+    0.0196,
+    1.0
+  ],
+  "colorD": [
+    0.949,
+    0.0,
+    0.5804,
+    1.0
+  ]
+}

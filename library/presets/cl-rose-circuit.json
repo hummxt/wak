@@ -1,0 +1,37 @@
+{
+  "id": "cl-rose-circuit",
+  "name": "Rose Circuit",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Rose Circuit.",
+  "thumbnail": "thumbnails/cl-rose-circuit.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9569,
+    0.902,
+    0.9451,
+    1.0
+  ],
+  "colorB": [
+    0.9549,
+    0.7648,
+    0.8941,
+    1.0
+  ],
+  "colorC": [
+    0.9529,
+    0.6275,
+    0.8431,
+    1.0
+  ],
+  "colorD": [
+    0.702,
+    0.9098,
+    0.9686,
+    1.0
+  ]
+}

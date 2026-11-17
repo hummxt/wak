@@ -1,0 +1,37 @@
+{
+  "id": "cl-aqua-bolt",
+  "name": "Aqua Bolt",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Aqua Bolt.",
+  "thumbnail": "thumbnails/cl-aqua-bolt.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1333,
+    0.4706,
+    0.9843,
+    1.0
+  ],
+  "colorB": [
+    0.2278,
+    0.6039,
+    0.9429,
+    1.0
+  ],
+  "colorC": [
+    0.3223,
+    0.7372,
+    0.9015,
+    1.0
+  ],
+  "colorD": [
+    0.4196,
+    0.8745,
+    0.8588,
+    1.0
+  ]
+}

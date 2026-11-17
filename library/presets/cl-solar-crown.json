@@ -1,0 +1,37 @@
+{
+  "id": "cl-solar-crown",
+  "name": "Solar Crown",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Solar Crown.",
+  "thumbnail": "thumbnails/cl-solar-crown.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2549,
+    0.0745,
+    0.6824,
+    1.0
+  ],
+  "colorB": [
+    0.4477,
+    0.2906,
+    0.5672,
+    1.0
+  ],
+  "colorC": [
+    0.6405,
+    0.5067,
+    0.452,
+    1.0
+  ],
+  "colorD": [
+    0.8392,
+    0.7294,
+    0.3333,
+    1.0
+  ]
+}

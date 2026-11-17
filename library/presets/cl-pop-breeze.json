@@ -1,0 +1,37 @@
+{
+  "id": "cl-pop-breeze",
+  "name": "Pop Breeze",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Pop Breeze.",
+  "thumbnail": "thumbnails/cl-pop-breeze.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3451,
+    0.9373,
+    0.9255,
+    1.0
+  ],
+  "colorB": [
+    0.6275,
+    0.6491,
+    0.7451,
+    1.0
+  ],
+  "colorC": [
+    0.9098,
+    0.3608,
+    0.5647,
+    1.0
+  ],
+  "colorD": [
+    0.9882,
+    0.7882,
+    0.7294,
+    1.0
+  ]
+}

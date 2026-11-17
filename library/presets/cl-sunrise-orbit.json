@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunrise-orbit",
+  "name": "Sunrise Orbit",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunrise Orbit.",
+  "thumbnail": "thumbnails/cl-sunrise-orbit.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0275,
+    0.2549,
+    0.4392,
+    1.0
+  ],
+  "colorB": [
+    0.2608,
+    0.4098,
+    0.2549,
+    1.0
+  ],
+  "colorC": [
+    0.4941,
+    0.5647,
+    0.0706,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.9686,
+    0.0314,
+    1.0
+  ]
+}

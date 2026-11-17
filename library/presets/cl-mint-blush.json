@@ -1,0 +1,37 @@
+{
+  "id": "cl-mint-blush",
+  "name": "Mint Blush",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Mint Blush.",
+  "thumbnail": "thumbnails/cl-mint-blush.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6627,
+    1.0,
+    0.4078,
+    1.0
+  ],
+  "colorB": [
+    0.774,
+    0.8473,
+    0.4505,
+    1.0
+  ],
+  "colorC": [
+    0.8853,
+    0.6946,
+    0.4933,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.5373,
+    0.5373,
+    1.0
+  ]
+}

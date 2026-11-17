@@ -1,0 +1,37 @@
+{
+  "id": "cl-velvet-mirage",
+  "name": "Velvet Mirage",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Velvet Mirage.",
+  "thumbnail": "thumbnails/cl-velvet-mirage.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.7725,
+    0.5529,
+    1.0
+  ],
+  "colorB": [
+    0.97,
+    0.7065,
+    0.681,
+    1.0
+  ],
+  "colorC": [
+    0.9636,
+    0.6405,
+    0.8092,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.5725,
+    0.9412,
+    1.0
+  ]
+}

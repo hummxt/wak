@@ -1,0 +1,37 @@
+{
+  "id": "cl-rose-mist",
+  "name": "Rose Mist",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Rose Mist.",
+  "thumbnail": "thumbnails/cl-rose-mist.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.3451,
+    0.3451,
+    1.0
+  ],
+  "colorB": [
+    1.0,
+    0.49,
+    0.49,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.635,
+    0.635,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.7843,
+    0.7843,
+    1.0
+  ]
+}

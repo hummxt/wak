@@ -1,0 +1,37 @@
+{
+  "id": "cl-tropic-shock",
+  "name": "Tropic Shock",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Tropic Shock.",
+  "thumbnail": "thumbnails/cl-tropic-shock.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9294,
+    0.8902,
+    0.2588,
+    1.0
+  ],
+  "colorB": [
+    0.9527,
+    0.7012,
+    0.4775,
+    1.0
+  ],
+  "colorC": [
+    0.976,
+    0.5123,
+    0.6962,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.3176,
+    0.9216,
+    1.0
+  ]
+}

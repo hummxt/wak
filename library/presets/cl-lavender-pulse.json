@@ -1,0 +1,37 @@
+{
+  "id": "cl-lavender-pulse",
+  "name": "Lavender Pulse",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lavender Pulse.",
+  "thumbnail": "thumbnails/cl-lavender-pulse.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9882,
+    0.6902,
+    0.9529,
+    1.0
+  ],
+  "colorB": [
+    0.741,
+    0.4689,
+    0.9245,
+    1.0
+  ],
+  "colorC": [
+    0.4939,
+    0.2476,
+    0.896,
+    1.0
+  ],
+  "colorD": [
+    0.2392,
+    0.0196,
+    0.8667,
+    1.0
+  ]
+}

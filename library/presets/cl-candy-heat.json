@@ -1,0 +1,37 @@
+{
+  "id": "cl-candy-heat",
+  "name": "Candy Heat",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Candy Heat.",
+  "thumbnail": "thumbnails/cl-candy-heat.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9882,
+    0.9373,
+    0.3922,
+    1.0
+  ],
+  "colorB": [
+    0.9882,
+    0.8529,
+    0.3431,
+    1.0
+  ],
+  "colorC": [
+    0.9882,
+    0.7686,
+    0.2941,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.298,
+    0.4902,
+    1.0
+  ]
+}

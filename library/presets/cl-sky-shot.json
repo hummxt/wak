@@ -1,0 +1,37 @@
+{
+  "id": "cl-sky-shot",
+  "name": "Sky Shot",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sky Shot.",
+  "thumbnail": "thumbnails/cl-sky-shot.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0275,
+    0.7843,
+    0.9765,
+    1.0
+  ],
+  "colorB": [
+    0.0353,
+    0.6096,
+    0.9454,
+    1.0
+  ],
+  "colorC": [
+    0.043,
+    0.4349,
+    0.9144,
+    1.0
+  ],
+  "colorD": [
+    0.051,
+    0.2549,
+    0.8824,
+    1.0
+  ]
+}

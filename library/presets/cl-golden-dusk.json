@@ -1,0 +1,37 @@
+{
+  "id": "cl-golden-dusk",
+  "name": "Golden Dusk",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Golden Dusk.",
+  "thumbnail": "thumbnails/cl-golden-dusk.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7412,
+    0.6549,
+    0.2039,
+    1.0
+  ],
+  "colorB": [
+    0.8162,
+    0.752,
+    0.3579,
+    1.0
+  ],
+  "colorC": [
+    0.8913,
+    0.849,
+    0.5119,
+    1.0
+  ],
+  "colorD": [
+    0.9686,
+    0.949,
+    0.6706,
+    1.0
+  ]
+}

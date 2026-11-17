@@ -1,0 +1,37 @@
+{
+  "id": "cl-candy-bloom",
+  "name": "Candy Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Candy Bloom.",
+  "thumbnail": "thumbnails/cl-candy-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8706,
+    0.7216,
+    0.9608,
+    1.0
+  ],
+  "colorB": [
+    0.824,
+    0.5689,
+    0.8922,
+    1.0
+  ],
+  "colorC": [
+    0.7774,
+    0.4162,
+    0.8236,
+    1.0
+  ],
+  "colorD": [
+    0.7294,
+    0.2588,
+    0.7529,
+    1.0
+  ]
+}

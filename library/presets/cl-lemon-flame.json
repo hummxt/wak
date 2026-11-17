@@ -1,0 +1,37 @@
+{
+  "id": "cl-lemon-flame",
+  "name": "Lemon Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lemon Flame.",
+  "thumbnail": "thumbnails/cl-lemon-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9098,
+    0.6157,
+    0.1216,
+    1.0
+  ],
+  "colorB": [
+    0.9046,
+    0.714,
+    0.2018,
+    1.0
+  ],
+  "colorC": [
+    0.8994,
+    0.8124,
+    0.282,
+    1.0
+  ],
+  "colorD": [
+    0.8941,
+    0.9137,
+    0.3647,
+    1.0
+  ]
+}

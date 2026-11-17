@@ -1,0 +1,37 @@
+{
+  "id": "cl-hybrid-beam",
+  "name": "Hybrid Beam",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Hybrid Beam.",
+  "thumbnail": "thumbnails/cl-hybrid-beam.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9569,
+    0.9137,
+    0.0,
+    1.0
+  ],
+  "colorB": [
+    0.7654,
+    0.8477,
+    0.3119,
+    1.0
+  ],
+  "colorC": [
+    0.5738,
+    0.7817,
+    0.6238,
+    1.0
+  ],
+  "colorD": [
+    0.3765,
+    0.7137,
+    0.9451,
+    1.0
+  ]
+}

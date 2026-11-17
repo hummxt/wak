@@ -1,0 +1,37 @@
+{
+  "id": "cl-stone-moss",
+  "name": "Stone Moss",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Stone Moss.",
+  "thumbnail": "thumbnails/cl-stone-moss.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2471,
+    0.2471,
+    0.2588,
+    1.0
+  ],
+  "colorB": [
+    0.2859,
+    0.2859,
+    0.251,
+    1.0
+  ],
+  "colorC": [
+    0.3247,
+    0.3247,
+    0.2433,
+    1.0
+  ],
+  "colorD": [
+    0.3647,
+    0.3647,
+    0.2353,
+    1.0
+  ]
+}

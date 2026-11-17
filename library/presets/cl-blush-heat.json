@@ -1,0 +1,37 @@
+{
+  "id": "cl-blush-heat",
+  "name": "Blush Heat",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Blush Heat.",
+  "thumbnail": "thumbnails/cl-blush-heat.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9725,
+    0.6,
+    0.4902,
+    1.0
+  ],
+  "colorB": [
+    0.8754,
+    0.468,
+    0.4695,
+    1.0
+  ],
+  "colorC": [
+    0.7784,
+    0.336,
+    0.4488,
+    1.0
+  ],
+  "colorD": [
+    0.6784,
+    0.2,
+    0.4275,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-citrus-fire",
+  "name": "Citrus Fire",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Citrus Fire.",
+  "thumbnail": "thumbnails/cl-citrus-fire.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.7294,
+    0.1725,
+    1.0
+  ],
+  "colorB": [
+    0.9518,
+    0.5974,
+    0.2307,
+    1.0
+  ],
+  "colorC": [
+    0.9349,
+    0.4654,
+    0.289,
+    1.0
+  ],
+  "colorD": [
+    0.9176,
+    0.3294,
+    0.349,
+    1.0
+  ]
+}

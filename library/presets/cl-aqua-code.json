@@ -1,0 +1,37 @@
+{
+  "id": "cl-aqua-code",
+  "name": "Aqua Code",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Aqua Code.",
+  "thumbnail": "thumbnails/cl-aqua-code.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4941,
+    0.949,
+    0.6157,
+    1.0
+  ],
+  "colorB": [
+    0.3505,
+    0.7704,
+    0.6312,
+    1.0
+  ],
+  "colorC": [
+    0.2068,
+    0.5918,
+    0.6467,
+    1.0
+  ],
+  "colorD": [
+    0.0588,
+    0.4078,
+    0.6627,
+    1.0
+  ]
+}

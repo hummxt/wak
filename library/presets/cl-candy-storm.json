@@ -1,0 +1,37 @@
+{
+  "id": "cl-candy-storm",
+  "name": "Candy Storm",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Candy Storm.",
+  "thumbnail": "thumbnails/cl-candy-storm.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.6588,
+    0.7412,
+    1.0
+  ],
+  "colorB": [
+    0.7166,
+    0.4957,
+    0.7645,
+    1.0
+  ],
+  "colorC": [
+    0.4332,
+    0.3327,
+    0.7878,
+    1.0
+  ],
+  "colorD": [
+    0.1412,
+    0.1647,
+    0.8118,
+    1.0
+  ]
+}

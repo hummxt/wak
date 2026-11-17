@@ -1,0 +1,37 @@
+{
+  "id": "cl-bubble-veil",
+  "name": "Bubble Veil",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Bubble Veil.",
+  "thumbnail": "thumbnails/cl-bubble-veil.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.8039,
+    0.7647,
+    1.0
+  ],
+  "colorB": [
+    0.9778,
+    0.8052,
+    0.8372,
+    1.0
+  ],
+  "colorC": [
+    0.9791,
+    0.8065,
+    0.9096,
+    1.0
+  ],
+  "colorD": [
+    0.9804,
+    0.8078,
+    0.9843,
+    1.0
+  ]
+}

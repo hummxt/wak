@@ -1,0 +1,37 @@
+{
+  "id": "cl-royal-candy",
+  "name": "Royal Candy",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Royal Candy.",
+  "thumbnail": "thumbnails/cl-royal-candy.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4,
+    0.1922,
+    0.4667,
+    1.0
+  ],
+  "colorB": [
+    0.5242,
+    0.2103,
+    0.4719,
+    1.0
+  ],
+  "colorC": [
+    0.6485,
+    0.2284,
+    0.4771,
+    1.0
+  ],
+  "colorD": [
+    0.7765,
+    0.2471,
+    0.4824,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-shadow-gold",
+  "name": "Shadow Gold",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Shadow Gold.",
+  "thumbnail": "thumbnails/cl-shadow-gold.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7176,
+    0.6118,
+    0.0196,
+    1.0
+  ],
+  "colorB": [
+    0.5093,
+    0.4384,
+    0.0416,
+    1.0
+  ],
+  "colorC": [
+    0.3009,
+    0.265,
+    0.0636,
+    1.0
+  ],
+  "colorD": [
+    0.0863,
+    0.0863,
+    0.0863,
+    1.0
+  ]
+}

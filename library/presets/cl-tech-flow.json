@@ -1,0 +1,37 @@
+{
+  "id": "cl-tech-flow",
+  "name": "Tech Flow",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Tech Flow.",
+  "thumbnail": "thumbnails/cl-tech-flow.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0706,
+    0.702,
+    0.9216,
+    1.0
+  ],
+  "colorB": [
+    0.156,
+    0.5946,
+    0.9397,
+    1.0
+  ],
+  "colorC": [
+    0.2414,
+    0.4872,
+    0.9578,
+    1.0
+  ],
+  "colorD": [
+    0.3294,
+    0.3765,
+    0.9765,
+    1.0
+  ]
+}

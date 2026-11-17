@@ -1,0 +1,37 @@
+{
+  "id": "cl-orchid-fog",
+  "name": "Orchid Fog",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Orchid Fog.",
+  "thumbnail": "thumbnails/cl-orchid-fog.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9098,
+    0.7412,
+    0.9765,
+    1.0
+  ],
+  "colorB": [
+    0.8891,
+    0.7839,
+    0.9312,
+    1.0
+  ],
+  "colorC": [
+    0.8684,
+    0.8266,
+    0.8859,
+    1.0
+  ],
+  "colorD": [
+    0.8471,
+    0.8706,
+    0.8392,
+    1.0
+  ]
+}

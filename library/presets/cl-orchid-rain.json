@@ -1,0 +1,37 @@
+{
+  "id": "cl-orchid-rain",
+  "name": "Orchid Rain",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Orchid Rain.",
+  "thumbnail": "thumbnails/cl-orchid-rain.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8431,
+    0.9216,
+    0.9216,
+    1.0
+  ],
+  "colorB": [
+    0.9,
+    0.8039,
+    0.9176,
+    1.0
+  ],
+  "colorC": [
+    0.9569,
+    0.6863,
+    0.9137,
+    1.0
+  ],
+  "colorD": [
+    0.6157,
+    0.4941,
+    0.9529,
+    1.0
+  ]
+}

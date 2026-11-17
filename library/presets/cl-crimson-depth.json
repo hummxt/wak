@@ -1,0 +1,37 @@
+{
+  "id": "cl-crimson-depth",
+  "name": "Crimson Depth",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Crimson Depth.",
+  "thumbnail": "thumbnails/cl-crimson-depth.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8784,
+    0.1216,
+    0.1765,
+    1.0
+  ],
+  "colorB": [
+    0.7801,
+    0.1591,
+    0.1622,
+    1.0
+  ],
+  "colorC": [
+    0.6817,
+    0.1966,
+    0.148,
+    1.0
+  ],
+  "colorD": [
+    0.5804,
+    0.2353,
+    0.1333,
+    1.0
+  ]
+}

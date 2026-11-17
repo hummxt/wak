@@ -1,0 +1,37 @@
+{
+  "id": "cl-petal-air",
+  "name": "Petal Air",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Petal Air.",
+  "thumbnail": "thumbnails/cl-petal-air.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9137,
+    0.7176,
+    0.8078,
+    1.0
+  ],
+  "colorB": [
+    0.8853,
+    0.7952,
+    0.8531,
+    1.0
+  ],
+  "colorC": [
+    0.8568,
+    0.8729,
+    0.8984,
+    1.0
+  ],
+  "colorD": [
+    0.8275,
+    0.9529,
+    0.9451,
+    1.0
+  ]
+}

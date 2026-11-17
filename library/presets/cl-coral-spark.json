@@ -1,0 +1,37 @@
+{
+  "id": "cl-coral-spark",
+  "name": "Coral Spark",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Coral Spark.",
+  "thumbnail": "thumbnails/cl-coral-spark.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.7843,
+    0.1373,
+    1.0
+  ],
+  "colorB": [
+    0.9804,
+    0.629,
+    0.2344,
+    1.0
+  ],
+  "colorC": [
+    0.9842,
+    0.4737,
+    0.3314,
+    1.0
+  ],
+  "colorD": [
+    0.9882,
+    0.3137,
+    0.4314,
+    1.0
+  ]
+}

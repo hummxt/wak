@@ -1,0 +1,37 @@
+{
+  "id": "cl-emerald-pulse",
+  "name": "Emerald Pulse",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Emerald Pulse.",
+  "thumbnail": "thumbnails/cl-emerald-pulse.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5098,
+    0.9569,
+    0.6941,
+    1.0
+  ],
+  "colorB": [
+    0.4037,
+    0.8974,
+    0.6255,
+    1.0
+  ],
+  "colorC": [
+    0.2975,
+    0.8378,
+    0.557,
+    1.0
+  ],
+  "colorD": [
+    0.1882,
+    0.7765,
+    0.4863,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-marine-mint",
+  "name": "Marine Mint",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Marine Mint.",
+  "thumbnail": "thumbnails/cl-marine-mint.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1843,
+    0.9176,
+    0.6588,
+    1.0
+  ],
+  "colorB": [
+    0.1261,
+    0.796,
+    0.7559,
+    1.0
+  ],
+  "colorC": [
+    0.0678,
+    0.6743,
+    0.8529,
+    1.0
+  ],
+  "colorD": [
+    0.0078,
+    0.549,
+    0.9529,
+    1.0
+  ]
+}

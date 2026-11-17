@@ -1,0 +1,37 @@
+{
+  "id": "cl-cactus-bloom",
+  "name": "Cactus Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cactus Bloom.",
+  "thumbnail": "thumbnails/cl-cactus-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8549,
+    0.2314,
+    0.2275,
+    1.0
+  ],
+  "colorB": [
+    0.7035,
+    0.441,
+    0.3401,
+    1.0
+  ],
+  "colorC": [
+    0.5521,
+    0.6507,
+    0.4526,
+    1.0
+  ],
+  "colorD": [
+    0.3961,
+    0.8667,
+    0.5686,
+    1.0
+  ]
+}

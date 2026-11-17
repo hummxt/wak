@@ -1,0 +1,37 @@
+{
+  "id": "cl-midnight-flame",
+  "name": "Midnight Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Midnight Flame.",
+  "thumbnail": "thumbnails/cl-midnight-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.902,
+    0.3412,
+    0.3882,
+    1.0
+  ],
+  "colorB": [
+    0.6147,
+    0.239,
+    0.2705,
+    1.0
+  ],
+  "colorC": [
+    0.3274,
+    0.1367,
+    0.1527,
+    1.0
+  ],
+  "colorD": [
+    0.0314,
+    0.0314,
+    0.0314,
+    1.0
+  ]
+}

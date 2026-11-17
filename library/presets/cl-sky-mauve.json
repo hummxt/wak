@@ -1,0 +1,37 @@
+{
+  "id": "cl-sky-mauve",
+  "name": "Sky Mauve",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sky Mauve.",
+  "thumbnail": "thumbnails/cl-sky-mauve.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7804,
+    0.702,
+    0.8,
+    1.0
+  ],
+  "colorB": [
+    0.572,
+    0.6489,
+    0.7663,
+    1.0
+  ],
+  "colorC": [
+    0.3637,
+    0.5959,
+    0.7327,
+    1.0
+  ],
+  "colorD": [
+    0.149,
+    0.5412,
+    0.698,
+    1.0
+  ]
+}

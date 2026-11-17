@@ -1,0 +1,37 @@
+{
+  "id": "cl-blush-sky",
+  "name": "Blush Sky",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Blush Sky.",
+  "thumbnail": "thumbnails/cl-blush-sky.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8667,
+    0.5137,
+    0.6784,
+    1.0
+  ],
+  "colorB": [
+    0.833,
+    0.6354,
+    0.7806,
+    1.0
+  ],
+  "colorC": [
+    0.7994,
+    0.757,
+    0.8829,
+    1.0
+  ],
+  "colorD": [
+    0.7647,
+    0.8824,
+    0.9882,
+    1.0
+  ]
+}

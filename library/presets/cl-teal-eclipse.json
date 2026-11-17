@@ -1,0 +1,37 @@
+{
+  "id": "cl-teal-eclipse",
+  "name": "Teal Eclipse",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Teal Eclipse.",
+  "thumbnail": "thumbnails/cl-teal-eclipse.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2627,
+    0.7569,
+    0.5922,
+    1.0
+  ],
+  "colorB": [
+    0.2122,
+    0.5343,
+    0.5055,
+    1.0
+  ],
+  "colorC": [
+    0.1618,
+    0.3117,
+    0.4188,
+    1.0
+  ],
+  "colorD": [
+    0.1098,
+    0.0824,
+    0.3294,
+    1.0
+  ]
+}

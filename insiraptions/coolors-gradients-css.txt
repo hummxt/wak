@@ -1,0 +1,3854 @@
+Coolors gradient CSS codes
+Source: https://coolors.co/gradients
+These are the codes from each gradient's three-dot menu → Copy CSS code.
+Includes the main list and every color filter (Red, Orange, Brown, Yellow, Green, Turquoise, Blue, Violet, Pink, White, Gray, Black).
+Unique gradients: 275
+
+1. Aged Bronze
+#6B6424 → #D3CEBA
+
+background: hsla(54, 50%, 28%, 1);
+
+background: linear-gradient(90deg, hsla(54, 50%, 28%, 1) 0%, hsla(48, 22%, 78%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(54, 50%, 28%, 1) 0%, hsla(48, 22%, 78%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(54, 50%, 28%, 1) 0%, hsla(48, 22%, 78%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6B6424", endColorstr="#D3CEBA", GradientType=1 );
+
+
+2. Almond Silk
+#F1E1C2 → #FCBC98
+
+background: hsla(40, 63%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F1E1C2", endColorstr="#FCBC98", GradientType=1 );
+
+
+3. Amber Burn
+#FFD78A → #F4762D
+
+background: hsla(39, 100%, 77%, 1);
+
+background: linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFD78A", endColorstr="#F4762D", GradientType=1 );
+
+
+4. Amber Coast
+#1C90BF → #EB8A3D
+
+background: hsla(197, 74%, 43%, 1);
+
+background: linear-gradient(90deg, hsla(197, 74%, 43%, 1) 0%, hsla(27, 81%, 58%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(197, 74%, 43%, 1) 0%, hsla(27, 81%, 58%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(197, 74%, 43%, 1) 0%, hsla(27, 81%, 58%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C90BF", endColorstr="#EB8A3D", GradientType=1 );
+
+
+5. Amber Heat
+#FFB88E → #EA5753
+
+background: hsla(22, 100%, 78%, 1);
+
+background: linear-gradient(90deg, hsla(22, 100%, 78%, 1) 0%, hsla(2, 78%, 62%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(22, 100%, 78%, 1) 0%, hsla(2, 78%, 62%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(22, 100%, 78%, 1) 0%, hsla(2, 78%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFB88E", endColorstr="#EA5753", GradientType=1 );
+
+
+6. Apricot Noise
+#F8F9C7 → #F2C1EA → #F67B6B
+
+background: hsla(61, 81%, 88%, 1);
+
+background: linear-gradient(90deg, hsla(61, 81%, 88%, 1) 0%, hsla(310, 65%, 85%, 1) 50%, hsla(7, 89%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(61, 81%, 88%, 1) 0%, hsla(310, 65%, 85%, 1) 50%, hsla(7, 89%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(61, 81%, 88%, 1) 0%, hsla(310, 65%, 85%, 1) 50%, hsla(7, 89%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F8F9C7", endColorstr="#F2C1EA", GradientType=1 );
+
+
+7. Aqua Bolt
+#2278FB → #6BDFDB
+
+background: hsla(216, 96%, 56%, 1);
+
+background: linear-gradient(90deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2278FB", endColorstr="#6BDFDB", GradientType=1 );
+
+
+8. Aqua Code
+#7EF29D → #0F68A9
+
+background: hsla(136, 82%, 72%, 1);
+
+background: linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7EF29D", endColorstr="#0F68A9", GradientType=1 );
+
+
+9. Aqua Honey
+#2CB2BA → #FBB92D
+
+background: hsla(183, 62%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(183, 62%, 45%, 1) 0%, hsla(41, 96%, 58%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(183, 62%, 45%, 1) 0%, hsla(41, 96%, 58%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(183, 62%, 45%, 1) 0%, hsla(41, 96%, 58%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2CB2BA", endColorstr="#FBB92D", GradientType=1 );
+
+
+10. Aqua Leaf
+#6EF195 → #00E3FD
+
+background: hsla(138, 82%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6EF195", endColorstr="#00E3FD", GradientType=1 );
+
+
+11. Arctic Shift
+#4DC9E6 → #210CAE
+
+background: hsla(191, 75%, 60%, 1);
+
+background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+
+
+12. Arctic Sprint
+#5AB2F7 → #12CFF3
+
+background: hsla(206, 91%, 66%, 1);
+
+background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5AB2F7", endColorstr="#12CFF3", GradientType=1 );
+
+
+13. Atomic Fizz
+#E20B8C → #F84B00
+
+background: hsla(324, 91%, 46%, 1);
+
+background: linear-gradient(90deg, hsla(324, 91%, 46%, 1) 0%, hsla(18, 100%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(324, 91%, 46%, 1) 0%, hsla(18, 100%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(324, 91%, 46%, 1) 0%, hsla(18, 100%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E20B8C", endColorstr="#F84B00", GradientType=1 );
+
+
+14. Battle Glory
+#1A2766 → #AE1B1E → #FC9F32
+
+background: hsla(230, 59%, 25%, 1);
+
+background: linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A2766", endColorstr="#AE1B1E", GradientType=1 );
+
+
+15. Berry Night
+#F44369 → #3E3B92
+
+background: hsla(347, 89%, 61%, 1);
+
+background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F44369", endColorstr="#3E3B92", GradientType=1 );
+
+
+16. Bliss Fade
+#F7C0EC → #A7BDEA
+
+background: hsla(312, 77%, 86%, 1);
+
+background: linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7C0EC", endColorstr="#A7BDEA", GradientType=1 );
+
+
+17. Blood Moon
+#76030F → #121B67
+
+background: hsla(354, 95%, 24%, 1);
+
+background: linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#76030F", endColorstr="#121B67", GradientType=1 );
+
+
+18. Bloom Rush
+#EF709B → #FA9372
+
+background: hsla(340, 80%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF709B", endColorstr="#FA9372", GradientType=1 );
+
+
+19. Blossom Air
+#CAEFD7 → #F5BFD7 → #ABC9E9
+
+background: hsla(141, 54%, 86%, 1);
+
+background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAEFD7", endColorstr="#F5BFD7", GradientType=1 );
+
+
+20. Blue Abyss
+#0968E5 → #091970
+
+background: hsla(214, 92%, 47%, 1);
+
+background: linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
+
+
+21. Blue Magenta
+#5C73B9 → #B330E1
+
+background: hsla(225, 40%, 54%, 1);
+
+background: linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C73B9", endColorstr="#B330E1", GradientType=1 );
+
+
+22. Blush Aurora
+#FCDBCA → #E6A5CC → #D5B3E8
+
+background: hsla(20, 89%, 89%, 1);
+
+background: linear-gradient(90deg, hsla(20, 89%, 89%, 1) 0%, hsla(324, 57%, 77%, 1) 50%, hsla(278, 54%, 81%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(20, 89%, 89%, 1) 0%, hsla(324, 57%, 77%, 1) 50%, hsla(278, 54%, 81%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(20, 89%, 89%, 1) 0%, hsla(324, 57%, 77%, 1) 50%, hsla(278, 54%, 81%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCDBCA", endColorstr="#E6A5CC", GradientType=1 );
+
+
+23. Blush Coral
+#FCD4CA → #F48EC3 → #FC94B3
+
+background: hsla(12, 89%, 89%, 1);
+
+background: linear-gradient(90deg, hsla(12, 89%, 89%, 1) 0%, hsla(329, 82%, 76%, 1) 50%, hsla(342, 95%, 78%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(12, 89%, 89%, 1) 0%, hsla(329, 82%, 76%, 1) 50%, hsla(342, 95%, 78%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(12, 89%, 89%, 1) 0%, hsla(329, 82%, 76%, 1) 50%, hsla(342, 95%, 78%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCD4CA", endColorstr="#F48EC3", GradientType=1 );
+
+
+24. Blush Heat
+#F8997D → #AD336D
+
+background: hsla(14, 90%, 73%, 1);
+
+background: linear-gradient(90deg, hsla(14, 90%, 73%, 1) 0%, hsla(331, 54%, 44%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(14, 90%, 73%, 1) 0%, hsla(331, 54%, 44%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(14, 90%, 73%, 1) 0%, hsla(331, 54%, 44%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F8997D", endColorstr="#AD336D", GradientType=1 );
+
+
+25. Blush Sky
+#DD83AD → #C3E1FC
+
+background: hsla(332, 57%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(332, 57%, 69%, 1) 0%, hsla(208, 90%, 88%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(332, 57%, 69%, 1) 0%, hsla(208, 90%, 88%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(332, 57%, 69%, 1) 0%, hsla(208, 90%, 88%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DD83AD", endColorstr="#C3E1FC", GradientType=1 );
+
+
+26. Blush Sunrise
+#FDF1CB → #B01041
+
+background: hsla(46, 93%, 89%, 1);
+
+background: linear-gradient(90deg, hsla(46, 93%, 89%, 1) 0%, hsla(342, 83%, 38%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(46, 93%, 89%, 1) 0%, hsla(342, 83%, 38%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(46, 93%, 89%, 1) 0%, hsla(342, 83%, 38%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDF1CB", endColorstr="#B01041", GradientType=1 );
+
+
+27. Bubble Flash
+#FAFF89 → #EA72AD
+
+background: hsla(63, 100%, 77%, 1);
+
+background: linear-gradient(90deg, hsla(63, 100%, 77%, 1) 0%, hsla(331, 74%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(63, 100%, 77%, 1) 0%, hsla(331, 74%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(63, 100%, 77%, 1) 0%, hsla(331, 74%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FAFF89", endColorstr="#EA72AD", GradientType=1 );
+
+
+28. Bubble Flow
+#E91FA8 → #B9DFEE
+
+background: hsla(319, 82%, 52%, 1);
+
+background: linear-gradient(90deg, hsla(319, 82%, 52%, 1) 0%, hsla(197, 61%, 83%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(319, 82%, 52%, 1) 0%, hsla(197, 61%, 83%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(319, 82%, 52%, 1) 0%, hsla(197, 61%, 83%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E91FA8", endColorstr="#B9DFEE", GradientType=1 );
+
+
+29. Bubble Veil
+#F9CDC3 → #FACEFB
+
+background: hsla(11, 82%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9CDC3", endColorstr="#FACEFB", GradientType=1 );
+
+
+30. Bubble Voltage
+#68E3F9 → #F55A9B → #4F4ED7
+
+background: hsla(189, 92%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#68E3F9", endColorstr="#F55A9B", GradientType=1 );
+
+
+31. Burnt Horizon
+#BD4733 → #195DBA
+
+background: hsla(9, 58%, 47%, 1);
+
+background: linear-gradient(90deg, hsla(9, 58%, 47%, 1) 0%, hsla(215, 76%, 41%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(9, 58%, 47%, 1) 0%, hsla(215, 76%, 41%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(9, 58%, 47%, 1) 0%, hsla(215, 76%, 41%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BD4733", endColorstr="#195DBA", GradientType=1 );
+
+
+32. Cactus Bloom
+#DA3B3A → #65DD91
+
+background: hsla(0, 68%, 54%, 1);
+
+background: linear-gradient(90deg, hsla(0, 68%, 54%, 1) 0%, hsla(142, 64%, 63%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 68%, 54%, 1) 0%, hsla(142, 64%, 63%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 68%, 54%, 1) 0%, hsla(142, 64%, 63%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DA3B3A", endColorstr="#65DD91", GradientType=1 );
+
+
+33. Calm Flash
+#9491E2 → #AFF2D8
+
+background: hsla(242, 58%, 73%, 1);
+
+background: linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9491E2", endColorstr="#AFF2D8", GradientType=1 );
+
+
+34. Candy Bloom
+#DEB8F5 → #BA42C0
+
+background: hsla(277, 75%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DEB8F5", endColorstr="#BA42C0", GradientType=1 );
+
+
+35. Candy Circuit
+#5EDEEF → #DCE956 → #E98FC0
+
+background: hsla(187, 82%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(187, 82%, 65%, 1) 0%, hsla(65, 77%, 63%, 1) 50%, hsla(327, 67%, 74%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(187, 82%, 65%, 1) 0%, hsla(65, 77%, 63%, 1) 50%, hsla(327, 67%, 74%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(187, 82%, 65%, 1) 0%, hsla(65, 77%, 63%, 1) 50%, hsla(327, 67%, 74%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5EDEEF", endColorstr="#DCE956", GradientType=1 );
+
+
+36. Candy Heat
+#FCEF64 → #FCC44B → #F44C7D
+
+background: hsla(55, 96%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(55, 96%, 69%, 1) 0%, hsla(41, 97%, 64%, 1) 50%, hsla(343, 88%, 63%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(55, 96%, 69%, 1) 0%, hsla(41, 97%, 64%, 1) 50%, hsla(343, 88%, 63%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(55, 96%, 69%, 1) 0%, hsla(41, 97%, 64%, 1) 50%, hsla(343, 88%, 63%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCEF64", endColorstr="#FCC44B", GradientType=1 );
+
+
+37. Candy Prism
+#F4E784 → #F24389 → #A478F1
+
+background: hsla(53, 84%, 74%, 1);
+
+background: linear-gradient(90deg, hsla(53, 84%, 74%, 1) 0%, hsla(336, 87%, 61%, 1) 50%, hsla(262, 81%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(53, 84%, 74%, 1) 0%, hsla(336, 87%, 61%, 1) 50%, hsla(262, 81%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(53, 84%, 74%, 1) 0%, hsla(336, 87%, 61%, 1) 50%, hsla(262, 81%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4E784", endColorstr="#F24389", GradientType=1 );
+
+
+38. Candy Storm
+#FFA8BD → #242ACF
+
+background: hsla(346, 100%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(346, 100%, 83%, 1) 0%, hsla(238, 70%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(346, 100%, 83%, 1) 0%, hsla(238, 70%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(346, 100%, 83%, 1) 0%, hsla(238, 70%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA8BD", endColorstr="#242ACF", GradientType=1 );
+
+
+39. Cherry Punch
+#F83D5C → #FD4B2F
+
+background: hsla(350, 93%, 61%, 1);
+
+background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+
+
+40. Cherry Smoke
+#AD4689 → #ED5C86
+
+background: hsla(321, 42%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(321, 42%, 48%, 1) 0%, hsla(343, 80%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(321, 42%, 48%, 1) 0%, hsla(343, 80%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(321, 42%, 48%, 1) 0%, hsla(343, 80%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#AD4689", endColorstr="#ED5C86", GradientType=1 );
+
+
+41. Chrome Orchid
+#0965C0 → #C53A94
+
+background: hsla(210, 91%, 39%, 1);
+
+background: linear-gradient(90deg, hsla(210, 91%, 39%, 1) 0%, hsla(321, 55%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(210, 91%, 39%, 1) 0%, hsla(321, 55%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(210, 91%, 39%, 1) 0%, hsla(321, 55%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0965C0", endColorstr="#C53A94", GradientType=1 );
+
+
+42. Citrus Ember
+#D4EA62 → #ED711E → #E9295C
+
+background: hsla(70, 76%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(70, 76%, 65%, 1) 0%, hsla(24, 85%, 52%, 1) 50%, hsla(344, 81%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(70, 76%, 65%, 1) 0%, hsla(24, 85%, 52%, 1) 50%, hsla(344, 81%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(70, 76%, 65%, 1) 0%, hsla(24, 85%, 52%, 1) 50%, hsla(344, 81%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4EA62", endColorstr="#ED711E", GradientType=1 );
+
+
+43. Citrus Fire
+#F7BA2C → #EA5459
+
+background: hsla(42, 93%, 57%, 1);
+
+background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7BA2C", endColorstr="#EA5459", GradientType=1 );
+
+
+44. Citrus Shine
+#FF930F → #FFF95B
+
+background: hsla(33, 100%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 );
+
+
+45. Cloud Alloy
+#8399A2 → #EEF2F3
+
+background: hsla(197, 14%, 57%, 1);
+
+background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8399A2", endColorstr="#EEF2F3", GradientType=1 );
+
+
+46. Cloud Circuit
+#ADFDA2 → #11D3F3
+
+background: hsla(113, 96%, 81%, 1);
+
+background: linear-gradient(90deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ADFDA2", endColorstr="#11D3F3", GradientType=1 );
+
+
+47. Cloud Drift
+#2C6CBC → #71C3F7 → #F6F6F6
+
+background: hsla(213, 62%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(213, 62%, 45%, 1) 0%, hsla(203, 89%, 71%, 1) 50%, hsla(0, 0%, 96%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(213, 62%, 45%, 1) 0%, hsla(203, 89%, 71%, 1) 50%, hsla(0, 0%, 96%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(213, 62%, 45%, 1) 0%, hsla(203, 89%, 71%, 1) 50%, hsla(0, 0%, 96%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2C6CBC", endColorstr="#71C3F7", GradientType=1 );
+
+
+48. Cool Haze
+#45CDE9 → #7A8FD3
+
+background: hsla(190, 79%, 59%, 1);
+
+background: linear-gradient(90deg, hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#45CDE9", endColorstr="#7A8FD3", GradientType=1 );
+
+
+49. Coral Ember
+#F9B16E → #F68080
+
+background: hsla(29, 92%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9B16E", endColorstr="#F68080", GradientType=1 );
+
+
+50. Coral Spark
+#F9C823 → #FC506E
+
+background: hsla(46, 95%, 56%, 1);
+
+background: linear-gradient(90deg, hsla(46, 95%, 56%, 1) 0%, hsla(350, 97%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(46, 95%, 56%, 1) 0%, hsla(350, 97%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(46, 95%, 56%, 1) 0%, hsla(350, 97%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C823", endColorstr="#FC506E", GradientType=1 );
+
+
+51. Cosmic Bloom
+#E2DB1F → #AE10F9
+
+background: hsla(58, 77%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(58, 77%, 50%, 1) 0%, hsla(281, 95%, 52%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(58, 77%, 50%, 1) 0%, hsla(281, 95%, 52%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(58, 77%, 50%, 1) 0%, hsla(281, 95%, 52%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E2DB1F", endColorstr="#AE10F9", GradientType=1 );
+
+
+52. Cosmic Pop
+#40C9FF → #E81CFF
+
+background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+
+
+53. Cotton Candy Blast
+#1CDCE8 → #BB77ED → #F34A62
+
+background: hsla(184, 82%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(184, 82%, 51%, 1) 0%, hsla(275, 77%, 70%, 1) 50%, hsla(351, 88%, 62%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(184, 82%, 51%, 1) 0%, hsla(275, 77%, 70%, 1) 50%, hsla(351, 88%, 62%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(184, 82%, 51%, 1) 0%, hsla(275, 77%, 70%, 1) 50%, hsla(351, 88%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1CDCE8", endColorstr="#BB77ED", GradientType=1 );
+
+
+54. Cotton Fade
+#F6D5F7 → #FBE9D7
+
+background: hsla(298, 68%, 90%, 1);
+
+background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6D5F7", endColorstr="#FBE9D7", GradientType=1 );
+
+
+55. Cotton Radar
+#4FE6F1 → #A6A6DE → #ED90CF
+
+background: hsla(184, 85%, 63%, 1);
+
+background: linear-gradient(90deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4FE6F1", endColorstr="#A6A6DE", GradientType=1 );
+
+
+56. Cotton Voltage
+#F9E7BB → #E97CBB → #3D47D9
+
+background: hsla(43, 84%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(43, 84%, 85%, 1) 0%, hsla(325, 71%, 70%, 1) 50%, hsla(236, 67%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(43, 84%, 85%, 1) 0%, hsla(325, 71%, 70%, 1) 50%, hsla(236, 67%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(43, 84%, 85%, 1) 0%, hsla(325, 71%, 70%, 1) 50%, hsla(236, 67%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9E7BB", endColorstr="#E97CBB", GradientType=1 );
+
+
+57. Crimson Depth
+#E01F2D → #943C22
+
+background: hsla(356, 76%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E01F2D", endColorstr="#943C22", GradientType=1 );
+
+
+58. Crimson Honey
+#FFCF67 → #D3321D
+
+background: hsla(41, 100%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCF67", endColorstr="#D3321D", GradientType=1 );
+
+
+59. Crimson Orchid
+#BA3429 → #9243A9
+
+background: hsla(5, 64%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(5, 64%, 45%, 1) 0%, hsla(286, 43%, 46%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(5, 64%, 45%, 1) 0%, hsla(286, 43%, 46%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(5, 64%, 45%, 1) 0%, hsla(286, 43%, 46%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BA3429", endColorstr="#9243A9", GradientType=1 );
+
+
+60. Crimson Silence
+#C11E38 → #220B34
+
+background: hsla(350, 73%, 44%, 1);
+
+background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", endColorstr="#220B34", GradientType=1 );
+
+
+61. Crimson Void
+#7F0012 → #1B0A07
+
+background: hsla(351, 100%, 25%, 1);
+
+background: linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7F0012", endColorstr="#1B0A07", GradientType=1 );
+
+
+62. Crystal Pulse
+#9BF8F4 → #6F7BF7
+
+background: hsla(177, 87%, 79%, 1);
+
+background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BF8F4", endColorstr="#6F7BF7", GradientType=1 );
+
+
+63. Crystal Punch
+#45A0EA → #ECA9BB → #F9658E
+
+background: hsla(207, 80%, 59%, 1);
+
+background: linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, hsla(343, 93%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, hsla(343, 93%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, hsla(343, 93%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#45A0EA", endColorstr="#ECA9BB", GradientType=1 );
+
+
+64. Cyber Bloom
+#FCEF04 → #DC419B
+
+background: hsla(57, 98%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(57, 98%, 50%, 1) 0%, hsla(325, 69%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(57, 98%, 50%, 1) 0%, hsla(325, 69%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(57, 98%, 50%, 1) 0%, hsla(325, 69%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCEF04", endColorstr="#DC419B", GradientType=1 );
+
+
+65. Cyber Nature
+#00EE6E → #0C75E6
+
+background: hsla(148, 100%, 47%, 1);
+
+background: linear-gradient(90deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00EE6E", endColorstr="#0C75E6", GradientType=1 );
+
+
+66. Cyber Rose
+#C81D77 → #6710C2
+
+background: hsla(328, 75%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(269, 85%, 41%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(269, 85%, 41%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(269, 85%, 41%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C81D77", endColorstr="#6710C2", GradientType=1 );
+
+
+67. Deep Abyss
+#0E1C26 → #2A454B → #294861
+
+background: hsla(205, 46%, 10%, 1);
+
+background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1 );
+
+
+68. Deep Current
+#30C5D2 → #471069
+
+background: hsla(185, 64%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#30C5D2", endColorstr="#471069", GradientType=1 );
+
+
+69. Deep Mint
+#95F9C3 → #0B3866
+
+background: hsla(148, 89%, 78%, 1);
+
+background: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95F9C3", endColorstr="#0B3866", GradientType=1 );
+
+
+70. Desert Bloom
+#F9A470 → #BC556F
+
+background: hsla(23, 92%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(23, 92%, 71%, 1) 0%, hsla(345, 43%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(23, 92%, 71%, 1) 0%, hsla(345, 43%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(23, 92%, 71%, 1) 0%, hsla(345, 43%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9A470", endColorstr="#BC556F", GradientType=1 );
+
+
+71. Digital Berry
+#B429F9 → #26C5F3
+
+background: hsla(280, 95%, 57%, 1);
+
+background: linear-gradient(90deg, hsla(280, 95%, 57%, 1) 0%, hsla(193, 90%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(280, 95%, 57%, 1) 0%, hsla(193, 90%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(280, 95%, 57%, 1) 0%, hsla(193, 90%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B429F9", endColorstr="#26C5F3", GradientType=1 );
+
+
+72. Digital Petal
+#A4E9F9 → #C5AEF2 → #8578EA
+
+background: hsla(191, 88%, 81%, 1);
+
+background: linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 50%, hsla(247, 73%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 50%, hsla(247, 73%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 50%, hsla(247, 73%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A4E9F9", endColorstr="#C5AEF2", GradientType=1 );
+
+
+73. Digital Rose
+#5DE0F0 → #F7A6F5 → #E64F6F
+
+background: hsla(187, 83%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(187, 83%, 65%, 1) 0%, hsla(301, 84%, 81%, 1) 50%, hsla(347, 75%, 61%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(187, 83%, 65%, 1) 0%, hsla(301, 84%, 81%, 1) 50%, hsla(347, 75%, 61%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(187, 83%, 65%, 1) 0%, hsla(301, 84%, 81%, 1) 50%, hsla(347, 75%, 61%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5DE0F0", endColorstr="#F7A6F5", GradientType=1 );
+
+
+74. Digital Sky
+#0061FF → #60EFFF
+
+background: hsla(217, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+
+
+75. Dream Circuit
+#84FFC9 → #AAB2FF → #ECA0FF
+
+background: hsla(154, 100%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#84FFC9", endColorstr="#AAB2FF", GradientType=1 );
+
+
+76. Dust & Ember
+#1F140D → #9B8074
+
+background: hsla(23, 41%, 9%, 1);
+
+background: linear-gradient(90deg, hsla(23, 41%, 9%, 1) 0%, hsla(18, 16%, 53%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(23, 41%, 9%, 1) 0%, hsla(18, 16%, 53%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(23, 41%, 9%, 1) 0%, hsla(18, 16%, 53%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F140D", endColorstr="#9B8074", GradientType=1 );
+
+
+77. Dusty Lilac
+#B190BA → #E8B595
+
+background: hsla(287, 23%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(287, 23%, 65%, 1) 0%, hsla(23, 64%, 75%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(287, 23%, 65%, 1) 0%, hsla(23, 64%, 75%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(287, 23%, 65%, 1) 0%, hsla(23, 64%, 75%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B190BA", endColorstr="#E8B595", GradientType=1 );
+
+
+78. Dusty Olive
+#BEB15B → #D5CFAC
+
+background: hsla(52, 43%, 55%, 1);
+
+background: linear-gradient(90deg, hsla(52, 43%, 55%, 1) 0%, hsla(51, 33%, 75%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(52, 43%, 55%, 1) 0%, hsla(51, 33%, 75%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(52, 43%, 55%, 1) 0%, hsla(51, 33%, 75%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BEB15B", endColorstr="#D5CFAC", GradientType=1 );
+
+
+79. Dusty Rose
+#B89C93 → #8E6865
+
+background: hsla(15, 21%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(15, 21%, 65%, 1) 0%, hsla(4, 17%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(15, 21%, 65%, 1) 0%, hsla(4, 17%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(15, 21%, 65%, 1) 0%, hsla(4, 17%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B89C93", endColorstr="#8E6865", GradientType=1 );
+
+
+80. Earth Matter
+#5A443A → #2E703B
+
+background: hsla(19, 22%, 29%, 1);
+
+background: linear-gradient(90deg, hsla(19, 22%, 29%, 1) 0%, hsla(132, 42%, 31%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(19, 22%, 29%, 1) 0%, hsla(132, 42%, 31%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(19, 22%, 29%, 1) 0%, hsla(132, 42%, 31%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5A443A", endColorstr="#2E703B", GradientType=1 );
+
+
+81. Eco Boost
+#099773 → #43B692
+
+background: hsla(165, 89%, 31%, 1);
+
+background: linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#099773", endColorstr="#43B692", GradientType=1 );
+
+
+82. Electric Petal
+#ED71AD → #7277F1
+
+background: hsla(331, 78%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(331, 78%, 69%, 1) 0%, hsla(238, 82%, 70%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(331, 78%, 69%, 1) 0%, hsla(238, 82%, 70%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(331, 78%, 69%, 1) 0%, hsla(238, 82%, 70%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ED71AD", endColorstr="#7277F1", GradientType=1 );
+
+
+83. Electric Shore
+#595CFF → #C6F8FF
+
+background: hsla(239, 100%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+
+
+84. Electric Sky
+#456FE8 → #19B0EC
+
+background: hsla(225, 78%, 59%, 1);
+
+background: linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#456FE8", endColorstr="#19B0EC", GradientType=1 );
+
+
+85. Electric Sunset
+#3BCFD4 → #FC9305 → #F20094
+
+background: hsla(182, 64%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(182, 64%, 53%, 1) 0%, hsla(34, 98%, 50%, 1) 50%, hsla(323, 100%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(182, 64%, 53%, 1) 0%, hsla(34, 98%, 50%, 1) 50%, hsla(323, 100%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(182, 64%, 53%, 1) 0%, hsla(34, 98%, 50%, 1) 50%, hsla(323, 100%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3BCFD4", endColorstr="#FC9305", GradientType=1 );
+
+
+86. Electric Violet
+#8711C1 → #2472FC
+
+background: hsla(280, 84%, 41%, 1);
+
+background: linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8711C1", endColorstr="#2472FC", GradientType=1 );
+
+
+87. Emerald Depth
+#4A9B7F → #0A3431
+
+background: hsla(159, 35%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A9B7F", endColorstr="#0A3431", GradientType=1 );
+
+
+88. Emerald Pulse
+#82F4B1 → #30C67C
+
+background: hsla(145, 84%, 73%, 1);
+
+background: linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#82F4B1", endColorstr="#30C67C", GradientType=1 );
+
+
+89. Fairy Dust
+#FCF4DF → #EFB7EA → #D66FEE
+
+background: hsla(43, 83%, 93%, 1);
+
+background: linear-gradient(90deg, hsla(43, 83%, 93%, 1) 0%, hsla(305, 64%, 83%, 1) 50%, hsla(289, 79%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(43, 83%, 93%, 1) 0%, hsla(305, 64%, 83%, 1) 50%, hsla(289, 79%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(43, 83%, 93%, 1) 0%, hsla(305, 64%, 83%, 1) 50%, hsla(289, 79%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCF4DF", endColorstr="#EFB7EA", GradientType=1 );
+
+
+90. Fire in the Dark
+#010101 → #E95D3C
+
+background: hsla(0, 0%, 0%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(11, 80%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(11, 80%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(11, 80%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#010101", endColorstr="#E95D3C", GradientType=1 );
+
+
+91. Flame Petal
+#F28367 → #FF5282
+
+background: hsla(12, 84%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(12, 84%, 68%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(12, 84%, 68%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(12, 84%, 68%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F28367", endColorstr="#FF5282", GradientType=1 );
+
+
+92. Flaming Lemon
+#F7A2A1 → #FFED00
+
+background: hsla(1, 84%, 80%, 1);
+
+background: linear-gradient(90deg, hsla(1, 84%, 80%, 1) 0%, hsla(56, 100%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(1, 84%, 80%, 1) 0%, hsla(56, 100%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(1, 84%, 80%, 1) 0%, hsla(56, 100%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7A2A1", endColorstr="#FFED00", GradientType=1 );
+
+
+93. Floral Cloud
+#CAF2EF → #C9EFDC → #F2BBF1
+
+background: hsla(176, 61%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAF2EF", endColorstr="#C9EFDC", GradientType=1 );
+
+
+94. Forest Fog
+#215600 → #D9DACE
+
+background: hsla(97, 100%, 17%, 1);
+
+background: linear-gradient(90deg, hsla(97, 100%, 17%, 1) 0%, hsla(65, 14%, 83%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(97, 100%, 17%, 1) 0%, hsla(65, 14%, 83%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(97, 100%, 17%, 1) 0%, hsla(65, 14%, 83%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#D9DACE", GradientType=1 );
+
+
+95. Forest Machine
+#0B2C24 → #247A4D
+
+background: hsla(165, 60%, 11%, 1);
+
+background: linear-gradient(90deg, hsla(165, 60%, 11%, 1) 0%, hsla(149, 54%, 31%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(165, 60%, 11%, 1) 0%, hsla(149, 54%, 31%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(165, 60%, 11%, 1) 0%, hsla(149, 54%, 31%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0B2C24", endColorstr="#247A4D", GradientType=1 );
+
+
+96. Fresh Core
+#B6F3C9 → #4766F4
+
+background: hsla(139, 72%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(139, 72%, 83%, 1) 0%, hsla(229, 89%, 62%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(139, 72%, 83%, 1) 0%, hsla(229, 89%, 62%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(139, 72%, 83%, 1) 0%, hsla(229, 89%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B6F3C9", endColorstr="#4766F4", GradientType=1 );
+
+
+97. Fresh Nectar
+#95ECB0 → #F3F98A
+
+background: hsla(139, 70%, 75%, 1);
+
+background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95ECB0", endColorstr="#F3F98A", GradientType=1 );
+
+
+98. Frosted Light
+#EBF4F5 → #B5C6E0
+
+background: hsla(186, 33%, 94%, 1);
+
+background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
+
+
+99. Frozen Light
+#CAD0FF → #E3E3E3
+
+background: hsla(233, 100%, 90%, 1);
+
+background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAD0FF", endColorstr="#E3E3E3", GradientType=1 );
+
+
+100. Fruit Sorbet
+#F292ED → #F36364
+
+background: hsla(303, 79%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(303, 79%, 76%, 1) 0%, hsla(0, 86%, 67%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(303, 79%, 76%, 1) 0%, hsla(0, 86%, 67%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(303, 79%, 76%, 1) 0%, hsla(0, 86%, 67%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F292ED", endColorstr="#F36364", GradientType=1 );
+
+
+101. Gentle Sky
+#F7E9E8 → #E9F0AA → #99ACEB
+
+background: hsla(4, 48%, 94%, 1);
+
+background: linear-gradient(90deg, hsla(4, 48%, 94%, 1) 0%, hsla(66, 70%, 80%, 1) 50%, hsla(226, 67%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(4, 48%, 94%, 1) 0%, hsla(66, 70%, 80%, 1) 50%, hsla(226, 67%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(4, 48%, 94%, 1) 0%, hsla(66, 70%, 80%, 1) 50%, hsla(226, 67%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7E9E8", endColorstr="#E9F0AA", GradientType=1 );
+
+
+102. Glacier Jet
+#6FF7E8 → #1F7EA1
+
+background: hsla(173, 89%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6FF7E8", endColorstr="#1F7EA1", GradientType=1 );
+
+
+103. Glow Silk
+#F2F3E2 → #B2E5F8 → #F4B3EF
+
+background: hsla(64, 41%, 92%, 1);
+
+background: linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2F3E2", endColorstr="#B2E5F8", GradientType=1 );
+
+
+104. Golden Dusk
+#BDA734 → #F7F2AB
+
+background: hsla(50, 57%, 47%, 1);
+
+background: linear-gradient(90deg, hsla(50, 57%, 47%, 1) 0%, hsla(56, 83%, 82%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(50, 57%, 47%, 1) 0%, hsla(56, 83%, 82%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(50, 57%, 47%, 1) 0%, hsla(56, 83%, 82%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BDA734", endColorstr="#F7F2AB", GradientType=1 );
+
+
+105. Golden Flame
+#F4D941 → #EC8235
+
+background: hsla(51, 89%, 61%, 1);
+
+background: linear-gradient(90deg, hsla(51, 89%, 61%, 1) 0%, hsla(25, 83%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(51, 89%, 61%, 1) 0%, hsla(25, 83%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(51, 89%, 61%, 1) 0%, hsla(25, 83%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4D941", endColorstr="#EC8235", GradientType=1 );
+
+
+106. Golden Haze
+#FBD07C → #F7F779
+
+background: hsla(40, 94%, 74%, 1);
+
+background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", endColorstr="#F7F779", GradientType=1 );
+
+
+107. Golden Meadow
+#FFCE06 → #6C960D
+
+background: hsla(48, 100%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(48, 100%, 51%, 1) 0%, hsla(78, 84%, 32%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(48, 100%, 51%, 1) 0%, hsla(78, 84%, 32%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(48, 100%, 51%, 1) 0%, hsla(78, 84%, 32%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCE06", endColorstr="#6C960D", GradientType=1 );
+
+
+108. Golden Twilight (#544F7D → #FFCB50)
+#544F7D → #FFCB50
+
+background: hsla(247, 23%, 40%, 1);
+
+background: linear-gradient(90deg, hsla(247, 23%, 40%, 1) 0%, hsla(42, 100%, 66%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(247, 23%, 40%, 1) 0%, hsla(42, 100%, 66%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(247, 23%, 40%, 1) 0%, hsla(42, 100%, 66%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#544F7D", endColorstr="#FFCB50", GradientType=1 );
+
+
+109. Golden Twilight (#DCF180 → #F0CD97 → #35518A)
+#DCF180 → #F0CD97 → #35518A
+
+background: hsla(71, 80%, 72%, 1);
+
+background: linear-gradient(90deg, hsla(71, 80%, 72%, 1) 0%, hsla(36, 75%, 77%, 1) 50%, hsla(220, 45%, 37%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(71, 80%, 72%, 1) 0%, hsla(36, 75%, 77%, 1) 50%, hsla(220, 45%, 37%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(71, 80%, 72%, 1) 0%, hsla(36, 75%, 77%, 1) 50%, hsla(220, 45%, 37%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DCF180", endColorstr="#F0CD97", GradientType=1 );
+
+
+110. Herb Garden
+#809B0E → #AEB778
+
+background: hsla(71, 83%, 33%, 1);
+
+background: linear-gradient(90deg, hsla(71, 83%, 33%, 1) 0%, hsla(69, 30%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(71, 83%, 33%, 1) 0%, hsla(69, 30%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(71, 83%, 33%, 1) 0%, hsla(69, 30%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#809B0E", endColorstr="#AEB778", GradientType=1 );
+
+
+111. Hybrid Beam
+#F4E900 → #60B6F1
+
+background: hsla(57, 100%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(57, 100%, 48%, 1) 0%, hsla(204, 84%, 66%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(57, 100%, 48%, 1) 0%, hsla(204, 84%, 66%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(57, 100%, 48%, 1) 0%, hsla(204, 84%, 66%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4E900", endColorstr="#60B6F1", GradientType=1 );
+
+
+112. Ice Beam
+#53DBF2 → #CE9EEC → #3A7FF2
+
+background: hsla(189, 86%, 64%, 1);
+
+background: linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#53DBF2", endColorstr="#CE9EEC", GradientType=1 );
+
+
+113. Ice Night
+#E4E7E4 → #0A1647
+
+background: hsla(120, 6%, 90%, 1);
+
+background: linear-gradient(90deg, hsla(120, 6%, 90%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(120, 6%, 90%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(120, 6%, 90%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E4E7E4", endColorstr="#0A1647", GradientType=1 );
+
+
+114. Indigo Drive
+#919BFF → #133A94
+
+background: hsla(235, 100%, 78%, 1);
+
+background: linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 77%, 33%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 77%, 33%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 77%, 33%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#919BFF", endColorstr="#133A94", GradientType=1 );
+
+
+115. Indigo Smoke
+#6274E7 → #8752A3
+
+background: hsla(232, 73%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6274E7", endColorstr="#8752A3", GradientType=1 );
+
+
+116. Ionic Blue
+#61F4DE → #6E78FF
+
+background: hsla(171, 87%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#61F4DE", endColorstr="#6E78FF", GradientType=1 );
+
+
+117. Jungle Code
+#46B83D → #111E0B
+
+background: hsla(116, 50%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#46B83D", endColorstr="#111E0B", GradientType=1 );
+
+
+118. Lavender Candy
+#810576 → #FCC1CF
+
+background: hsla(305, 93%, 26%, 1);
+
+background: linear-gradient(90deg, hsla(305, 93%, 26%, 1) 0%, hsla(346, 91%, 87%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(305, 93%, 26%, 1) 0%, hsla(346, 91%, 87%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(305, 93%, 26%, 1) 0%, hsla(346, 91%, 87%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#810576", endColorstr="#FCC1CF", GradientType=1 );
+
+
+119. Lavender Dream
+#696EFF → #F8ACFF
+
+background: hsla(238, 100%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
+
+
+120. Lavender Pulse
+#FCB0F3 → #3D05DD
+
+background: hsla(307, 93%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCB0F3", endColorstr="#3D05DD", GradientType=1 );
+
+
+121. Lavender Sand
+#FFEFC1 → #874F9E
+
+background: hsla(45, 100%, 88%, 1);
+
+background: linear-gradient(90deg, hsla(45, 100%, 88%, 1) 0%, hsla(283, 33%, 46%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(45, 100%, 88%, 1) 0%, hsla(283, 33%, 46%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(45, 100%, 88%, 1) 0%, hsla(283, 33%, 46%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFEFC1", endColorstr="#874F9E", GradientType=1 );
+
+
+122. Lavender Smoke
+#6D51A5 → #E4A7C5
+
+background: hsla(260, 34%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(260, 34%, 48%, 1) 0%, hsla(330, 53%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(260, 34%, 48%, 1) 0%, hsla(330, 53%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(260, 34%, 48%, 1) 0%, hsla(330, 53%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6D51A5", endColorstr="#E4A7C5", GradientType=1 );
+
+
+123. Lemon Breeze
+#EED991 → #CCF7F4
+
+background: hsla(46, 73%, 75%, 1);
+
+background: linear-gradient(90deg, hsla(46, 73%, 75%, 1) 0%, hsla(176, 73%, 88%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(46, 73%, 75%, 1) 0%, hsla(176, 73%, 88%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(46, 73%, 75%, 1) 0%, hsla(176, 73%, 88%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EED991", endColorstr="#CCF7F4", GradientType=1 );
+
+
+124. Lemon Dust
+#FFFBAF → #AB2AED
+
+background: hsla(57, 100%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(57, 100%, 84%, 1) 0%, hsla(280, 84%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(57, 100%, 84%, 1) 0%, hsla(280, 84%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(57, 100%, 84%, 1) 0%, hsla(280, 84%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFBAF", endColorstr="#AB2AED", GradientType=1 );
+
+
+125. Lemon Flame
+#E89D1F → #E4E95D
+
+background: hsla(38, 81%, 52%, 1);
+
+background: linear-gradient(90deg, hsla(38, 81%, 52%, 1) 0%, hsla(62, 76%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(38, 81%, 52%, 1) 0%, hsla(62, 76%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(38, 81%, 52%, 1) 0%, hsla(62, 76%, 64%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E89D1F", endColorstr="#E4E95D", GradientType=1 );
+
+
+126. Lemon Grove
+#F4F269 → #5CB270
+
+background: hsla(59, 86%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4F269", endColorstr="#5CB270", GradientType=1 );
+
+
+127. Lilac Frost
+#B597F6 → #96C6EA
+
+background: hsla(259, 84%, 78%, 1);
+
+background: linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B597F6", endColorstr="#96C6EA", GradientType=1 );
+
+
+128. Lilac Whisper
+#9D80CB → #F7C2E6
+
+background: hsla(263, 42%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9D80CB", endColorstr="#F7C2E6", GradientType=1 );
+
+
+129. Lime Inferno
+#2A8D08 → #F2E713 → #F71E06
+
+background: hsla(105, 89%, 29%, 1);
+
+background: linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A8D08", endColorstr="#F2E713", GradientType=1 );
+
+
+130. Lime Rush
+#51C26F → #F2E901
+
+background: hsla(136, 48%, 54%, 1);
+
+background: linear-gradient(90deg, hsla(136, 48%, 54%, 1) 0%, hsla(58, 99%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(136, 48%, 54%, 1) 0%, hsla(58, 99%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(136, 48%, 54%, 1) 0%, hsla(58, 99%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#51C26F", endColorstr="#F2E901", GradientType=1 );
+
+
+131. Lime Spark
+#FAFA00 → #70960C
+
+background: hsla(60, 100%, 49%, 1);
+
+background: linear-gradient(90deg, hsla(60, 100%, 49%, 1) 0%, hsla(77, 85%, 32%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(60, 100%, 49%, 1) 0%, hsla(77, 85%, 32%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(60, 100%, 49%, 1) 0%, hsla(77, 85%, 32%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FAFA00", endColorstr="#70960C", GradientType=1 );
+
+
+132. Lollipop Crush
+#FCF3C4 → #F962A0 → #AA96F9
+
+background: hsla(50, 90%, 88%, 1);
+
+background: linear-gradient(90deg, hsla(50, 90%, 88%, 1) 0%, hsla(335, 93%, 68%, 1) 50%, hsla(252, 89%, 78%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(50, 90%, 88%, 1) 0%, hsla(335, 93%, 68%, 1) 50%, hsla(252, 89%, 78%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(50, 90%, 88%, 1) 0%, hsla(335, 93%, 68%, 1) 50%, hsla(252, 89%, 78%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCF3C4", endColorstr="#F962A0", GradientType=1 );
+
+
+133. Luna Fade
+#F492F0 → #A18DCE
+
+background: hsla(302, 82%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F492F0", endColorstr="#A18DCE", GradientType=1 );
+
+
+134. Lush Fields
+#5DA92F → #9BD46A
+
+background: hsla(97, 56%, 42%, 1);
+
+background: linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5DA92F", endColorstr="#9BD46A", GradientType=1 );
+
+
+135. Magenta Shock
+#A106F4 → #E707FA
+
+background: hsla(279, 95%, 49%, 1);
+
+background: linear-gradient(90deg, hsla(279, 95%, 49%, 1) 0%, hsla(295, 96%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(279, 95%, 49%, 1) 0%, hsla(295, 96%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(279, 95%, 49%, 1) 0%, hsla(295, 96%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A106F4", endColorstr="#E707FA", GradientType=1 );
+
+
+136. Magic Garden
+#BF0FFF → #CBFF49
+
+background: hsla(284, 100%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(284, 100%, 53%, 1) 0%, hsla(77, 100%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(284, 100%, 53%, 1) 0%, hsla(77, 100%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(284, 100%, 53%, 1) 0%, hsla(77, 100%, 64%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BF0FFF", endColorstr="#CBFF49", GradientType=1 );
+
+
+137. Mango Flame
+#F74C06 → #F9BC2C
+
+background: hsla(17, 95%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F74C06", endColorstr="#F9BC2C", GradientType=1 );
+
+
+138. Marine Mint
+#2FEAA8 → #028CF3
+
+background: hsla(159, 82%, 55%, 1);
+
+background: linear-gradient(90deg, hsla(159, 82%, 55%, 1) 0%, hsla(206, 98%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(159, 82%, 55%, 1) 0%, hsla(206, 98%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(159, 82%, 55%, 1) 0%, hsla(206, 98%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2FEAA8", endColorstr="#028CF3", GradientType=1 );
+
+
+139. Mars Echo
+#EF745C → #34073D
+
+background: hsla(10, 82%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF745C", endColorstr="#34073D", GradientType=1 );
+
+
+140. Mellow Ice
+#D3EEF4 → #F1EEC8 → #F3A46C
+
+background: hsla(191, 60%, 89%, 1);
+
+background: linear-gradient(90deg, hsla(191, 60%, 89%, 1) 0%, hsla(56, 59%, 86%, 1) 50%, hsla(25, 85%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(191, 60%, 89%, 1) 0%, hsla(56, 59%, 86%, 1) 50%, hsla(25, 85%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(191, 60%, 89%, 1) 0%, hsla(56, 59%, 86%, 1) 50%, hsla(25, 85%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D3EEF4", endColorstr="#F1EEC8", GradientType=1 );
+
+
+141. Melon Vibe
+#FFCAA6 → #F86594
+
+background: hsla(24, 100%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCAA6", endColorstr="#F86594", GradientType=1 );
+
+
+142. Miami Pop
+#83F5E5 → #E761BD
+
+background: hsla(172, 85%, 74%, 1);
+
+background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#83F5E5", endColorstr="#E761BD", GradientType=1 );
+
+
+143. Midnight Calm
+#9BAFD9 → #103783
+
+background: hsla(221, 45%, 73%, 1);
+
+background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+
+
+144. Midnight Flame
+#E65763 → #080808
+
+background: hsla(355, 74%, 62%, 1);
+
+background: linear-gradient(90deg, hsla(355, 74%, 62%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(355, 74%, 62%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(355, 74%, 62%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E65763", endColorstr="#080808", GradientType=1 );
+
+
+145. Mint Blush
+#A9FF68 → #FF8989
+
+background: hsla(94, 100%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(94, 100%, 70%, 1) 0%, hsla(0, 100%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(94, 100%, 70%, 1) 0%, hsla(0, 100%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(94, 100%, 70%, 1) 0%, hsla(0, 100%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A9FF68", endColorstr="#FF8989", GradientType=1 );
+
+
+146. Mint Cloud
+#87F4B5 → #93CBF1
+
+background: hsla(145, 83%, 74%, 1);
+
+background: linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87F4B5", endColorstr="#93CBF1", GradientType=1 );
+
+
+147. Mint Flow
+#8DE9D5 → #32C4C0
+
+background: hsla(167, 68%, 73%, 1);
+
+background: linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8DE9D5", endColorstr="#32C4C0", GradientType=1 );
+
+
+148. Mint Nectar
+#1ED7B5 → #F0F9A7
+
+background: hsla(169, 76%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(169, 76%, 48%, 1) 0%, hsla(67, 87%, 82%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(169, 76%, 48%, 1) 0%, hsla(67, 87%, 82%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(169, 76%, 48%, 1) 0%, hsla(67, 87%, 82%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ED7B5", endColorstr="#F0F9A7", GradientType=1 );
+
+
+149. Mint Petal
+#F8DADC → #B6EDC8 → #EEACDC
+
+background: hsla(356, 68%, 91%, 1);
+
+background: linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F8DADC", endColorstr="#B6EDC8", GradientType=1 );
+
+
+150. Molten Sunset
+#E62314 → #F19E18
+
+background: hsla(4, 84%, 49%, 1);
+
+background: linear-gradient(90deg, hsla(4, 84%, 49%, 1) 0%, hsla(37, 89%, 52%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(4, 84%, 49%, 1) 0%, hsla(37, 89%, 52%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(4, 84%, 49%, 1) 0%, hsla(37, 89%, 52%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E62314", endColorstr="#F19E18", GradientType=1 );
+
+
+151. Moon Dust
+#22052D → #CCB3D1
+
+background: hsla(284, 80%, 10%, 1);
+
+background: linear-gradient(90deg, hsla(284, 80%, 10%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(284, 80%, 10%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(284, 80%, 10%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#22052D", endColorstr="#CCB3D1", GradientType=1 );
+
+
+152. Muted Charm
+#A04970 → #6D6C83 → #3B7F99
+
+background: hsla(333, 37%, 46%, 1);
+
+background: linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A04970", endColorstr="#6D6C83", GradientType=1 );
+
+
+153. Mystic Forest
+#58B580 → #A67BE0 → #6624C0
+
+background: hsla(146, 39%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(146, 39%, 53%, 1) 0%, hsla(266, 62%, 68%, 1) 50%, hsla(265, 68%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(146, 39%, 53%, 1) 0%, hsla(266, 62%, 68%, 1) 50%, hsla(265, 68%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(146, 39%, 53%, 1) 0%, hsla(266, 62%, 68%, 1) 50%, hsla(265, 68%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#58B580", endColorstr="#A67BE0", GradientType=1 );
+
+
+154. Neon Bloom
+#C621E5 → #7D7CF9
+
+background: hsla(291, 79%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(291, 79%, 51%, 1) 0%, hsla(240, 91%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(291, 79%, 51%, 1) 0%, hsla(240, 91%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(291, 79%, 51%, 1) 0%, hsla(240, 91%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C621E5", endColorstr="#7D7CF9", GradientType=1 );
+
+
+155. Neon Breeze
+#05C9F9 → #E5F61B
+
+background: hsla(192, 96%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(192, 96%, 50%, 1) 0%, hsla(65, 92%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(192, 96%, 50%, 1) 0%, hsla(65, 92%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(192, 96%, 50%, 1) 0%, hsla(65, 92%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#05C9F9", endColorstr="#E5F61B", GradientType=1 );
+
+
+156. Neon Clash
+#0AB6F8 → #ED2D53
+
+background: hsla(197, 94%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(197, 94%, 51%, 1) 0%, hsla(348, 84%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(197, 94%, 51%, 1) 0%, hsla(348, 84%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(197, 94%, 51%, 1) 0%, hsla(348, 84%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0AB6F8", endColorstr="#ED2D53", GradientType=1 );
+
+
+157. Neon Grain
+#C3C600 → #858C0B
+
+background: hsla(61, 100%, 39%, 1);
+
+background: linear-gradient(90deg, hsla(61, 100%, 39%, 1) 0%, hsla(63, 85%, 30%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(61, 100%, 39%, 1) 0%, hsla(63, 85%, 30%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(61, 100%, 39%, 1) 0%, hsla(63, 85%, 30%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C3C600", endColorstr="#858C0B", GradientType=1 );
+
+
+158. Neon Lagoon (#00FF87 → #60EFFF)
+#00FF87 → #60EFFF
+
+background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+
+
+159. Neon Lagoon (#6FE3E1 → #5257E5)
+#6FE3E1 → #5257E5
+
+background: hsla(179, 67%, 66%, 1);
+
+background: linear-gradient(90deg, hsla(179, 67%, 66%, 1) 0%, hsla(238, 74%, 61%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(179, 67%, 66%, 1) 0%, hsla(238, 74%, 61%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(179, 67%, 66%, 1) 0%, hsla(238, 74%, 61%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6FE3E1", endColorstr="#5257E5", GradientType=1 );
+
+
+160. Neon Mirage
+#439CFB → #F187FB
+
+background: hsla(211, 96%, 62%, 1);
+
+background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#439CFB", endColorstr="#F187FB", GradientType=1 );
+
+
+161. Neon Rose
+#C471F2 → #F76CC6
+
+background: hsla(279, 83%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(279, 83%, 70%, 1) 0%, hsla(321, 90%, 70%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(279, 83%, 70%, 1) 0%, hsla(321, 90%, 70%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(279, 83%, 70%, 1) 0%, hsla(321, 90%, 70%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C471F2", endColorstr="#F76CC6", GradientType=1 );
+
+
+162. Neon Royal
+#FC4778 → #3952F5
+
+background: hsla(344, 97%, 63%, 1);
+
+background: linear-gradient(90deg, hsla(344, 97%, 63%, 1) 0%, hsla(232, 90%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(344, 97%, 63%, 1) 0%, hsla(232, 90%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(344, 97%, 63%, 1) 0%, hsla(232, 90%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FC4778", endColorstr="#3952F5", GradientType=1 );
+
+
+163. Night Dive
+#020344 → #28B8D5
+
+background: hsla(239, 94%, 14%, 1);
+
+background: linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#020344", endColorstr="#28B8D5", GradientType=1 );
+
+
+164. Night Petal
+#392D69 → #B57BEE
+
+background: hsla(252, 40%, 29%, 1);
+
+background: linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#392D69", endColorstr="#B57BEE", GradientType=1 );
+
+
+165. Ocean Dust
+#9BB2E5 → #698CBF
+
+background: hsla(221, 59%, 75%, 1);
+
+background: linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BB2E5", endColorstr="#698CBF", GradientType=1 );
+
+
+166. Ocean Mint
+#145277 → #83D0CB
+
+background: hsla(202, 71%, 27%, 1);
+
+background: linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#145277", endColorstr="#83D0CB", GradientType=1 );
+
+
+167. Ocean Vine
+#2B4584 → #4A9E48
+
+background: hsla(222, 51%, 34%, 1);
+
+background: linear-gradient(90deg, hsla(222, 51%, 34%, 1) 0%, hsla(119, 37%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(222, 51%, 34%, 1) 0%, hsla(119, 37%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(222, 51%, 34%, 1) 0%, hsla(119, 37%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2B4584", endColorstr="#4A9E48", GradientType=1 );
+
+
+168. Oceanic Flow
+#9FCCFA → #0974F1
+
+background: hsla(210, 90%, 80%, 1);
+
+background: linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1 );
+
+
+169. Old Gold
+#665803 → #9E9B6B
+
+background: hsla(52, 94%, 21%, 1);
+
+background: linear-gradient(90deg, hsla(52, 94%, 21%, 1) 0%, hsla(56, 21%, 52%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(52, 94%, 21%, 1) 0%, hsla(56, 21%, 52%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(52, 94%, 21%, 1) 0%, hsla(56, 21%, 52%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#665803", endColorstr="#9E9B6B", GradientType=1 );
+
+
+170. Olive Core
+#43470B → #767E20
+
+background: hsla(64, 73%, 16%, 1);
+
+background: linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#43470B", endColorstr="#767E20", GradientType=1 );
+
+
+171. Orange Heat
+#F64C18 → #EE9539
+
+background: hsla(14, 93%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(14, 93%, 53%, 1) 0%, hsla(30, 84%, 58%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(14, 93%, 53%, 1) 0%, hsla(30, 84%, 58%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(14, 93%, 53%, 1) 0%, hsla(30, 84%, 58%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F64C18", endColorstr="#EE9539", GradientType=1 );
+
+
+172. Orchid Fog
+#E8BDF9 → #D8DED6
+
+background: hsla(283, 83%, 86%, 1);
+
+background: linear-gradient(90deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E8BDF9", endColorstr="#D8DED6", GradientType=1 );
+
+
+173. Orchid Rain
+#D7EBEB → #F4AFE9 → #9D7EF3
+
+background: hsla(180, 33%, 88%, 1);
+
+background: linear-gradient(90deg, hsla(180, 33%, 88%, 1) 0%, hsla(310, 76%, 82%, 1) 50%, hsla(256, 83%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(180, 33%, 88%, 1) 0%, hsla(310, 76%, 82%, 1) 50%, hsla(256, 83%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(180, 33%, 88%, 1) 0%, hsla(310, 76%, 82%, 1) 50%, hsla(256, 83%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D7EBEB", endColorstr="#F4AFE9", GradientType=1 );
+
+
+174. Pale Frost
+#F6C4ED → #E1DAE6
+
+background: hsla(311, 74%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(311, 74%, 87%, 1) 0%, hsla(275, 19%, 88%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(311, 74%, 87%, 1) 0%, hsla(275, 19%, 88%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(311, 74%, 87%, 1) 0%, hsla(275, 19%, 88%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6C4ED", endColorstr="#E1DAE6", GradientType=1 );
+
+
+175. Pastel Cloud
+#F6CFBE → #B9DCF2
+
+background: hsla(18, 76%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
+
+
+176. Pastel Pop
+#ECDEC4 → #62F4F9 → #F49FDA
+
+background: hsla(39, 51%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ECDEC4", endColorstr="#62F4F9", GradientType=1 );
+
+
+177. Peach Cloud (#F97D5B → #F9A87B)
+#F97D5B → #F9A87B
+
+background: hsla(13, 93%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F97D5B", endColorstr="#F9A87B", GradientType=1 );
+
+
+178. Peach Cloud (#FFA585 → #FFEDA0)
+#FFA585 → #FFEDA0
+
+background: hsla(16, 100%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA585", endColorstr="#FFEDA0", GradientType=1 );
+
+
+179. Peach Foam
+#F89999 → #F6C0BA
+
+background: hsla(0, 87%, 79%, 1);
+
+background: linear-gradient(90deg, hsla(0, 87%, 79%, 1) 0%, hsla(6, 77%, 85%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 87%, 79%, 1) 0%, hsla(6, 77%, 85%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 87%, 79%, 1) 0%, hsla(6, 77%, 85%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F89999", endColorstr="#F6C0BA", GradientType=1 );
+
+
+180. Peach Forest
+#E5F392 → #E49E71 → #D45F97
+
+background: hsla(69, 80%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(69, 80%, 76%, 1) 0%, hsla(23, 68%, 67%, 1) 50%, hsla(331, 58%, 60%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(69, 80%, 76%, 1) 0%, hsla(23, 68%, 67%, 1) 50%, hsla(331, 58%, 60%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(69, 80%, 76%, 1) 0%, hsla(23, 68%, 67%, 1) 50%, hsla(331, 58%, 60%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E5F392", endColorstr="#E49E71", GradientType=1 );
+
+
+181. Peach Garden
+#DFF2CB → #F0A13A → #EE609A
+
+background: hsla(89, 60%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(89, 60%, 87%, 1) 0%, hsla(34, 86%, 58%, 1) 50%, hsla(335, 81%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(89, 60%, 87%, 1) 0%, hsla(34, 86%, 58%, 1) 50%, hsla(335, 81%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(89, 60%, 87%, 1) 0%, hsla(34, 86%, 58%, 1) 50%, hsla(335, 81%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DFF2CB", endColorstr="#F0A13A", GradientType=1 );
+
+
+182. Peach Rush
+#F78770 → #FF607B
+
+background: hsla(10, 89%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(10, 89%, 70%, 1) 0%, hsla(350, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(10, 89%, 70%, 1) 0%, hsla(350, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(10, 89%, 70%, 1) 0%, hsla(350, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F78770", endColorstr="#FF607B", GradientType=1 );
+
+
+183. Peach Snow
+#AED1EF → #F2DFC1 → #F0B9EF
+
+background: hsla(208, 67%, 81%, 1);
+
+background: linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#AED1EF", endColorstr="#F2DFC1", GradientType=1 );
+
+
+184. Petal Air
+#E9B7CE → #D3F3F1
+
+background: hsla(332, 53%, 82%, 1);
+
+background: linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#D3F3F1", GradientType=1 );
+
+
+185. Petal Circuit
+#EA98DA → #5B6CF9
+
+background: hsla(312, 66%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EA98DA", endColorstr="#5B6CF9", GradientType=1 );
+
+
+186. Pixel Meadow
+#57EBDE → #AEFB2A
+
+background: hsla(175, 79%, 63%, 1);
+
+background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#57EBDE", endColorstr="#AEFB2A", GradientType=1 );
+
+
+187. Pixel Punch
+#A8F368 → #F9035E
+
+background: hsla(92, 85%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(92, 85%, 68%, 1) 0%, hsla(338, 98%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(92, 85%, 68%, 1) 0%, hsla(338, 98%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(92, 85%, 68%, 1) 0%, hsla(338, 98%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A8F368", endColorstr="#F9035E", GradientType=1 );
+
+
+188. Pixel Spark
+#0A33F9 → #F6F151
+
+background: hsla(230, 95%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(230, 95%, 51%, 1) 0%, hsla(58, 90%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(230, 95%, 51%, 1) 0%, hsla(58, 90%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(230, 95%, 51%, 1) 0%, hsla(58, 90%, 64%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0A33F9", endColorstr="#F6F151", GradientType=1 );
+
+
+189. Plum Glow
+#3E196E → #D46C76 → #FFC07C
+
+background: hsla(266, 63%, 26%, 1);
+
+background: linear-gradient(90deg, hsla(266, 63%, 26%, 1) 0%, hsla(354, 55%, 63%, 1) 50%, hsla(31, 100%, 74%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(266, 63%, 26%, 1) 0%, hsla(354, 55%, 63%, 1) 50%, hsla(31, 100%, 74%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(266, 63%, 26%, 1) 0%, hsla(354, 55%, 63%, 1) 50%, hsla(31, 100%, 74%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3E196E", endColorstr="#D46C76", GradientType=1 );
+
+
+190. Plum Surge
+#D4ACFB → #B84FCE
+
+background: hsla(270, 91%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(270, 91%, 83%, 1) 0%, hsla(290, 56%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(270, 91%, 83%, 1) 0%, hsla(290, 56%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(270, 91%, 83%, 1) 0%, hsla(290, 56%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4ACFB", endColorstr="#B84FCE", GradientType=1 );
+
+
+191. Pop Breeze
+#58EFEC → #E85C90 → #FCC9BA
+
+background: hsla(179, 83%, 64%, 1);
+
+background: linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#58EFEC", endColorstr="#E85C90", GradientType=1 );
+
+
+192. Powder Bloom
+#C9DEF4 → #F5CCD4 → #B8A4C9
+
+background: hsla(211, 66%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+
+
+193. Punchy Sky
+#EF566A → #627AF7
+
+background: hsla(352, 83%, 64%, 1);
+
+background: linear-gradient(90deg, hsla(352, 83%, 64%, 1) 0%, hsla(230, 90%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(352, 83%, 64%, 1) 0%, hsla(230, 90%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(352, 83%, 64%, 1) 0%, hsla(230, 90%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF566A", endColorstr="#627AF7", GradientType=1 );
+
+
+194. Purple Ember
+#B15B86 → #440F50
+
+background: hsla(330, 36%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B15B86", endColorstr="#440F50", GradientType=1 );
+
+
+195. Purple Shift
+#D397FA → #8364E8
+
+background: hsla(276, 91%, 79%, 1);
+
+background: linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+
+
+196. Raspberry Blaze
+#B94C98 → #F0073B
+
+background: hsla(318, 44%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(318, 44%, 51%, 1) 0%, hsla(347, 94%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(318, 44%, 51%, 1) 0%, hsla(347, 94%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(318, 44%, 51%, 1) 0%, hsla(347, 94%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B94C98", endColorstr="#F0073B", GradientType=1 );
+
+
+197. Retro Bloom
+#D8BDBE → #BD90E3 → #CC575F
+
+background: hsla(358, 26%, 79%, 1);
+
+background: linear-gradient(90deg, hsla(358, 26%, 79%, 1) 0%, hsla(273, 60%, 73%, 1) 50%, hsla(356, 53%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(358, 26%, 79%, 1) 0%, hsla(273, 60%, 73%, 1) 50%, hsla(356, 53%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(358, 26%, 79%, 1) 0%, hsla(273, 60%, 73%, 1) 50%, hsla(356, 53%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D8BDBE", endColorstr="#BD90E3", GradientType=1 );
+
+
+198. Retro Night
+#295270 → #524175
+
+background: hsla(205, 46%, 30%, 1);
+
+background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#295270", endColorstr="#524175", GradientType=1 );
+
+
+199. Retro Pulse
+#D9CF79 → #5612D6
+
+background: hsla(54, 56%, 66%, 1);
+
+background: linear-gradient(90deg, hsla(54, 56%, 66%, 1) 0%, hsla(261, 84%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(54, 56%, 66%, 1) 0%, hsla(261, 84%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(54, 56%, 66%, 1) 0%, hsla(261, 84%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D9CF79", endColorstr="#5612D6", GradientType=1 );
+
+
+200. Rose Circuit
+#F4E6F1 → #F3A0D7 → #B3E8F7
+
+background: hsla(313, 39%, 93%, 1);
+
+background: linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(320, 78%, 79%, 1) 50%, hsla(193, 81%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(320, 78%, 79%, 1) 50%, hsla(193, 81%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(320, 78%, 79%, 1) 50%, hsla(193, 81%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4E6F1", endColorstr="#F3A0D7", GradientType=1 );
+
+
+201. Rose Ember
+#BC1B68 → #D3989B
+
+background: hsla(331, 75%, 42%, 1);
+
+background: linear-gradient(90deg, hsla(331, 75%, 42%, 1) 0%, hsla(357, 40%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(331, 75%, 42%, 1) 0%, hsla(357, 40%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(331, 75%, 42%, 1) 0%, hsla(357, 40%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BC1B68", endColorstr="#D3989B", GradientType=1 );
+
+
+202. Rose Mist
+#FF5858 → #FFC8C8
+
+background: hsla(0, 100%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF5858", endColorstr="#FFC8C8", GradientType=1 );
+
+
+203. Royal Beam
+#F5C900 → #183182
+
+background: hsla(49, 100%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(49, 100%, 48%, 1) 0%, hsla(226, 69%, 30%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(49, 100%, 48%, 1) 0%, hsla(226, 69%, 30%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(49, 100%, 48%, 1) 0%, hsla(226, 69%, 30%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5C900", endColorstr="#183182", GradientType=1 );
+
+
+204. Royal Candy
+#663177 → #C63F7B
+
+background: hsla(285, 42%, 33%, 1);
+
+background: linear-gradient(90deg, hsla(285, 42%, 33%, 1) 0%, hsla(333, 54%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(285, 42%, 33%, 1) 0%, hsla(333, 54%, 51%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(285, 42%, 33%, 1) 0%, hsla(333, 54%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#663177", endColorstr="#C63F7B", GradientType=1 );
+
+
+205. Royal Clash
+#CF203E → #505DA0
+
+background: hsla(350, 73%, 47%, 1);
+
+background: linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CF203E", endColorstr="#505DA0", GradientType=1 );
+
+
+206. Royal Grape
+#492957 → #744A6D
+
+background: hsla(282, 36%, 25%, 1);
+
+background: linear-gradient(90deg, hsla(282, 36%, 25%, 1) 0%, hsla(310, 22%, 37%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(282, 36%, 25%, 1) 0%, hsla(310, 22%, 37%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(282, 36%, 25%, 1) 0%, hsla(310, 22%, 37%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#492957", endColorstr="#744A6D", GradientType=1 );
+
+
+207. Royal Mirage
+#832388 → #E3436B → #F0772F
+
+background: hsla(297, 59%, 34%, 1);
+
+background: linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#832388", endColorstr="#E3436B", GradientType=1 );
+
+
+208. Ruby Clash
+#CB4288 → #B6353B
+
+background: hsla(329, 57%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(329, 57%, 53%, 1) 0%, hsla(357, 55%, 46%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(329, 57%, 53%, 1) 0%, hsla(357, 55%, 46%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(329, 57%, 53%, 1) 0%, hsla(357, 55%, 46%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CB4288", endColorstr="#B6353B", GradientType=1 );
+
+
+209. Rust Furnace
+#8C1105 → #25221E
+
+background: hsla(5, 93%, 28%, 1);
+
+background: linear-gradient(90deg, hsla(5, 93%, 28%, 1) 0%, hsla(34, 10%, 13%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(5, 93%, 28%, 1) 0%, hsla(34, 10%, 13%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(5, 93%, 28%, 1) 0%, hsla(34, 10%, 13%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8C1105", endColorstr="#25221E", GradientType=1 );
+
+
+210. Shadow Gold
+#B79C05 → #161616
+
+background: hsla(51, 95%, 37%, 1);
+
+background: linear-gradient(90deg, hsla(51, 95%, 37%, 1) 0%, hsla(0, 0%, 9%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(51, 95%, 37%, 1) 0%, hsla(0, 0%, 9%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(51, 95%, 37%, 1) 0%, hsla(0, 0%, 9%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B79C05", endColorstr="#161616", GradientType=1 );
+
+
+211. Sky Bloom
+#DDB4F6 → #8DD0FC
+
+background: hsla(277, 79%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DDB4F6", endColorstr="#8DD0FC", GradientType=1 );
+
+
+212. Sky Mauve
+#C7B3CC → #268AB2
+
+background: hsla(288, 20%, 75%, 1);
+
+background: linear-gradient(90deg, hsla(288, 20%, 75%, 1) 0%, hsla(197, 65%, 42%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(288, 20%, 75%, 1) 0%, hsla(197, 65%, 42%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(288, 20%, 75%, 1) 0%, hsla(197, 65%, 42%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C7B3CC", endColorstr="#268AB2", GradientType=1 );
+
+
+213. Sky Shot
+#07C8F9 → #0D41E1
+
+background: hsla(192, 95%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#07C8F9", endColorstr="#0D41E1", GradientType=1 );
+
+
+214. Sky Spark
+#FFCB6B → #3D8BFF
+
+background: hsla(39, 100%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCB6B", endColorstr="#3D8BFF", GradientType=1 );
+
+
+215. Slate Gray
+#858E96 → #60696B
+
+background: hsla(208, 7%, 55%, 1);
+
+background: linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, hsla(191, 5%, 40%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, hsla(191, 5%, 40%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, hsla(191, 5%, 40%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#858E96", endColorstr="#60696B", GradientType=1 );
+
+
+216. Soda Light
+#F7EA60 → #3CF2DE → #F774BB
+
+background: hsla(55, 90%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(55, 90%, 67%, 1) 0%, hsla(173, 87%, 59%, 1) 50%, hsla(327, 89%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(55, 90%, 67%, 1) 0%, hsla(173, 87%, 59%, 1) 50%, hsla(327, 89%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(55, 90%, 67%, 1) 0%, hsla(173, 87%, 59%, 1) 50%, hsla(327, 89%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7EA60", endColorstr="#3CF2DE", GradientType=1 );
+
+
+217. Solar Crown
+#4113AE → #D6BA55
+
+background: hsla(258, 80%, 38%, 1);
+
+background: linear-gradient(90deg, hsla(258, 80%, 38%, 1) 0%, hsla(47, 61%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(258, 80%, 38%, 1) 0%, hsla(47, 61%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(258, 80%, 38%, 1) 0%, hsla(47, 61%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4113AE", endColorstr="#D6BA55", GradientType=1 );
+
+
+218. Solar Ice
+#F0EBC0 → #9DDDF4 → #E93A28
+
+background: hsla(54, 62%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(54, 62%, 85%, 1) 0%, hsla(196, 80%, 79%, 1) 50%, hsla(6, 81%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(54, 62%, 85%, 1) 0%, hsla(196, 80%, 79%, 1) 50%, hsla(6, 81%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(54, 62%, 85%, 1) 0%, hsla(196, 80%, 79%, 1) 50%, hsla(6, 81%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F0EBC0", endColorstr="#9DDDF4", GradientType=1 );
+
+
+219. Solar Orchid
+#EEB86D → #9946B2
+
+background: hsla(35, 79%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(35, 79%, 68%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(35, 79%, 68%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(35, 79%, 68%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EEB86D", endColorstr="#9946B2", GradientType=1 );
+
+
+220. Spark Drift
+#F0EAFC → #61CEF2 → #F538B9
+
+background: hsla(260, 75%, 95%, 1);
+
+background: linear-gradient(90deg, hsla(260, 75%, 95%, 1) 0%, hsla(195, 85%, 66%, 1) 50%, hsla(319, 90%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(260, 75%, 95%, 1) 0%, hsla(195, 85%, 66%, 1) 50%, hsla(319, 90%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(260, 75%, 95%, 1) 0%, hsla(195, 85%, 66%, 1) 50%, hsla(319, 90%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F0EAFC", endColorstr="#61CEF2", GradientType=1 );
+
+
+221. Spiced Bloom
+#D4781A → #AA3678
+
+background: hsla(30, 78%, 47%, 1);
+
+background: linear-gradient(90deg, hsla(30, 78%, 47%, 1) 0%, hsla(326, 52%, 44%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(30, 78%, 47%, 1) 0%, hsla(326, 52%, 44%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(30, 78%, 47%, 1) 0%, hsla(326, 52%, 44%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4781A", endColorstr="#AA3678", GradientType=1 );
+
+
+222. Spicy Sunrise
+#F3696E → #F8A902
+
+background: hsla(358, 85%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(358, 85%, 68%, 1) 0%, hsla(41, 98%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(358, 85%, 68%, 1) 0%, hsla(41, 98%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(358, 85%, 68%, 1) 0%, hsla(41, 98%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F3696E", endColorstr="#F8A902", GradientType=1 );
+
+
+223. Spring Heat
+#B2EF91 → #FA9372
+
+background: hsla(99, 75%, 75%, 1);
+
+background: linear-gradient(90deg, hsla(99, 75%, 75%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(99, 75%, 75%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(99, 75%, 75%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B2EF91", endColorstr="#FA9372", GradientType=1 );
+
+
+224. Spring Punch
+#6EEE87 → #5FC52E
+
+background: hsla(132, 79%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6EEE87", endColorstr="#5FC52E", GradientType=1 );
+
+
+225. Starburst Night
+#FFF1BF → #EC458D → #474ED7
+
+background: hsla(47, 100%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(47, 100%, 87%, 1) 0%, hsla(334, 81%, 60%, 1) 50%, hsla(237, 64%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(47, 100%, 87%, 1) 0%, hsla(334, 81%, 60%, 1) 50%, hsla(237, 64%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(47, 100%, 87%, 1) 0%, hsla(334, 81%, 60%, 1) 50%, hsla(237, 64%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFF1BF", endColorstr="#EC458D", GradientType=1 );
+
+
+226. Steel & Flame
+#5A6776 → #FF7B74
+
+background: hsla(212, 13%, 41%, 1);
+
+background: linear-gradient(90deg, hsla(212, 13%, 41%, 1) 0%, hsla(3, 100%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(212, 13%, 41%, 1) 0%, hsla(3, 100%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(212, 13%, 41%, 1) 0%, hsla(3, 100%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5A6776", endColorstr="#FF7B74", GradientType=1 );
+
+
+227. Steel Ember
+#638B95 → #F4711F
+
+background: hsla(192, 20%, 49%, 1);
+
+background: linear-gradient(90deg, hsla(192, 20%, 49%, 1) 0%, hsla(23, 91%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(192, 20%, 49%, 1) 0%, hsla(23, 91%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(192, 20%, 49%, 1) 0%, hsla(23, 91%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#638B95", endColorstr="#F4711F", GradientType=1 );
+
+
+228. Steel Mist
+#6D90B9 → #BBC7DC
+
+background: hsla(212, 35%, 58%, 1);
+
+background: linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6D90B9", endColorstr="#BBC7DC", GradientType=1 );
+
+
+229. Steel Wave
+#243748 → #4B749F
+
+background: hsla(208, 33%, 21%, 1);
+
+background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#243748", endColorstr="#4B749F", GradientType=1 );
+
+
+230. Stone Mint
+#A4C6B8 → #5E435D
+
+background: hsla(155, 23%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(155, 23%, 71%, 1) 0%, hsla(302, 17%, 32%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(155, 23%, 71%, 1) 0%, hsla(302, 17%, 32%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(155, 23%, 71%, 1) 0%, hsla(302, 17%, 32%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A4C6B8", endColorstr="#5E435D", GradientType=1 );
+
+
+231. Stone Moss
+#3F3F42 → #5D5D3C
+
+background: hsla(240, 2%, 25%, 1);
+
+background: linear-gradient(90deg, hsla(240, 2%, 25%, 1) 0%, hsla(60, 22%, 30%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(240, 2%, 25%, 1) 0%, hsla(60, 22%, 30%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(240, 2%, 25%, 1) 0%, hsla(60, 22%, 30%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3F3F42", endColorstr="#5D5D3C", GradientType=1 );
+
+
+232. Sugar Pop
+#F756AA → #F75672
+
+background: hsla(329, 91%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(329, 91%, 65%, 1) 0%, hsla(350, 91%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(329, 91%, 65%, 1) 0%, hsla(350, 91%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(329, 91%, 65%, 1) 0%, hsla(350, 91%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F756AA", endColorstr="#F75672", GradientType=1 );
+
+
+233. Sun Pop
+#F9655B → #EE821A
+
+background: hsla(4, 93%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(4, 93%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(4, 93%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(4, 93%, 67%, 1) 0%, hsla(29, 86%, 52%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9655B", endColorstr="#EE821A", GradientType=1 );
+
+
+234. Sunberry Twist
+#F86CA7 → #F4D444
+
+background: hsla(335, 91%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F86CA7", endColorstr="#F4D444", GradientType=1 );
+
+
+235. Sunburn Edge
+#E9D022 → #E60B09
+
+background: hsla(52, 82%, 52%, 1);
+
+background: linear-gradient(90deg, hsla(52, 82%, 52%, 1) 0%, hsla(1, 92%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(52, 82%, 52%, 1) 0%, hsla(1, 92%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(52, 82%, 52%, 1) 0%, hsla(1, 92%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9D022", endColorstr="#E60B09", GradientType=1 );
+
+
+236. Sunlit Depth
+#F8CF6A → #2178DD
+
+background: hsla(43, 91%, 69%, 1);
+
+background: linear-gradient(90deg, hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F8CF6A", endColorstr="#2178DD", GradientType=1 );
+
+
+237. Sunrise Orbit
+#074170 → #7E9012 → #FFF708
+
+background: hsla(207, 88%, 23%, 1);
+
+background: linear-gradient(90deg, hsla(207, 88%, 23%, 1) 0%, hsla(69, 78%, 32%, 1) 50%, hsla(58, 100%, 52%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(207, 88%, 23%, 1) 0%, hsla(69, 78%, 32%, 1) 50%, hsla(58, 100%, 52%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(207, 88%, 23%, 1) 0%, hsla(69, 78%, 32%, 1) 50%, hsla(58, 100%, 52%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#074170", endColorstr="#7E9012", GradientType=1 );
+
+
+238. Sunset Bloom
+#F40752 → #F9AB8F
+
+background: hsla(341, 94%, 49%, 1);
+
+background: linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F40752", endColorstr="#F9AB8F", GradientType=1 );
+
+
+239. Sunset Candy
+#FF0F7B → #F89B29
+
+background: hsla(333, 100%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0F7B", endColorstr="#F89B29", GradientType=1 );
+
+
+240. Sunset Cream
+#F9F5E0 → #F5895C → #B34ECC
+
+background: hsla(50, 68%, 93%, 1);
+
+background: linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9F5E0", endColorstr="#F5895C", GradientType=1 );
+
+
+241. Sunset Flame
+#F5E6AD → #F13C77
+
+background: hsla(48, 78%, 82%, 1);
+
+background: linear-gradient(90deg, hsla(48, 78%, 82%, 1) 0%, hsla(340, 87%, 59%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(48, 78%, 82%, 1) 0%, hsla(340, 87%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(48, 78%, 82%, 1) 0%, hsla(340, 87%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5E6AD", endColorstr="#F13C77", GradientType=1 );
+
+
+242. Sunset Mint
+#B8E9D4 → #F4985A → #12243F
+
+background: hsla(154, 53%, 82%, 1);
+
+background: linear-gradient(90deg, hsla(154, 53%, 82%, 1) 0%, hsla(24, 88%, 65%, 1) 50%, hsla(216, 56%, 16%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(154, 53%, 82%, 1) 0%, hsla(24, 88%, 65%, 1) 50%, hsla(216, 56%, 16%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(154, 53%, 82%, 1) 0%, hsla(24, 88%, 65%, 1) 50%, hsla(216, 56%, 16%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B8E9D4", endColorstr="#F4985A", GradientType=1 );
+
+
+243. Sweet Amethyst
+#EEDDF3 → #EE92B1 → #6330B4
+
+background: hsla(286, 48%, 91%, 1);
+
+background: linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EEDDF3", endColorstr="#EE92B1", GradientType=1 );
+
+
+244. Synth Dusk
+#FF1B6B → #45CAFF
+
+background: hsla(339, 100%, 55%, 1);
+
+background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
+
+
+245. Synth Stream
+#42047E → #07F49E
+
+background: hsla(270, 94%, 25%, 1);
+
+background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42047E", endColorstr="#07F49E", GradientType=1 );
+
+
+246. Tangerine Mist
+#F55C7A → #F6BC66
+
+background: hsla(348, 88%, 66%, 1);
+
+background: linear-gradient(90deg, hsla(348, 88%, 66%, 1) 0%, hsla(36, 89%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(348, 88%, 66%, 1) 0%, hsla(36, 89%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(348, 88%, 66%, 1) 0%, hsla(36, 89%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F55C7A", endColorstr="#F6BC66", GradientType=1 );
+
+
+247. Teal Eclipse
+#43C197 → #1C1554
+
+background: hsla(160, 50%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#43C197", endColorstr="#1C1554", GradientType=1 );
+
+
+248. Tech Flow
+#12B3EB → #5460F9
+
+background: hsla(195, 86%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+
+
+249. Tech Jungle
+#0C0C0C → #0F971C
+
+background: hsla(0, 0%, 5%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 5%, 1) 0%, hsla(126, 82%, 33%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 5%, 1) 0%, hsla(126, 82%, 33%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 5%, 1) 0%, hsla(126, 82%, 33%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0C0C", endColorstr="#0F971C", GradientType=1 );
+
+
+250. Toxic Night
+#688D15 → #141516
+
+background: hsla(79, 74%, 32%, 1);
+
+background: linear-gradient(90deg, hsla(79, 74%, 32%, 1) 0%, hsla(210, 5%, 8%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(79, 74%, 32%, 1) 0%, hsla(210, 5%, 8%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(79, 74%, 32%, 1) 0%, hsla(210, 5%, 8%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#688D15", endColorstr="#141516", GradientType=1 );
+
+
+251. Tropic Shock
+#EDE342 → #FF51EB
+
+background: hsla(56, 83%, 59%, 1);
+
+background: linear-gradient(90deg, hsla(56, 83%, 59%, 1) 0%, hsla(307, 100%, 66%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(56, 83%, 59%, 1) 0%, hsla(307, 100%, 66%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(56, 83%, 59%, 1) 0%, hsla(307, 100%, 66%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EDE342", endColorstr="#FF51EB", GradientType=1 );
+
+
+252. Tropical Bay
+#1C3E35 → #99F2D1
+
+background: hsla(164, 38%, 18%, 1);
+
+background: linear-gradient(90deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C3E35", endColorstr="#99F2D1", GradientType=1 );
+
+
+253. Tropical Bloom
+#C5F9D7 → #F7D486 → #F27A7D
+
+background: hsla(141, 81%, 87%, 1);
+
+background: linear-gradient(90deg, hsla(141, 81%, 87%, 1) 0%, hsla(41, 88%, 75%, 1) 50%, hsla(358, 82%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(141, 81%, 87%, 1) 0%, hsla(41, 88%, 75%, 1) 50%, hsla(358, 82%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(141, 81%, 87%, 1) 0%, hsla(41, 88%, 75%, 1) 50%, hsla(358, 82%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C5F9D7", endColorstr="#F7D486", GradientType=1 );
+
+
+254. Tropical Byte
+#F3F520 → #59D102
+
+background: hsla(61, 91%, 54%, 1);
+
+background: linear-gradient(90deg, hsla(61, 91%, 54%, 1) 0%, hsla(95, 98%, 41%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(61, 91%, 54%, 1) 0%, hsla(95, 98%, 41%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(61, 91%, 54%, 1) 0%, hsla(95, 98%, 41%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F3F520", endColorstr="#59D102", GradientType=1 );
+
+
+255. Tropical Mist
+#239EAB → #74DEEE
+
+background: hsla(186, 66%, 40%, 1);
+
+background: linear-gradient(90deg, hsla(186, 66%, 40%, 1) 0%, hsla(188, 78%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(186, 66%, 40%, 1) 0%, hsla(188, 78%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(186, 66%, 40%, 1) 0%, hsla(188, 78%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#239EAB", endColorstr="#74DEEE", GradientType=1 );
+
+
+256. Turbo Pulse
+#1DBDE6 → #F1515E
+
+background: hsla(192, 80%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1DBDE6", endColorstr="#F1515E", GradientType=1 );
+
+
+257. Twilight Cream
+#CACFF9 → #F5CBD9 → #F4BCCD
+
+background: hsla(234, 80%, 88%, 1);
+
+background: linear-gradient(90deg, hsla(234, 80%, 88%, 1) 0%, hsla(340, 68%, 88%, 1) 50%, hsla(342, 72%, 85%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(234, 80%, 88%, 1) 0%, hsla(340, 68%, 88%, 1) 50%, hsla(342, 72%, 85%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(234, 80%, 88%, 1) 0%, hsla(340, 68%, 88%, 1) 50%, hsla(342, 72%, 85%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CACFF9", endColorstr="#F5CBD9", GradientType=1 );
+
+
+258. Twilight Ember
+#2B0948 → #CE653B
+
+background: hsla(272, 78%, 16%, 1);
+
+background: linear-gradient(90deg, hsla(272, 78%, 16%, 1) 0%, hsla(17, 60%, 52%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(272, 78%, 16%, 1) 0%, hsla(17, 60%, 52%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(272, 78%, 16%, 1) 0%, hsla(17, 60%, 52%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2B0948", endColorstr="#CE653B", GradientType=1 );
+
+
+259. Twilight Fade
+#ABBDFF → #894B77
+
+background: hsla(227, 100%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(227, 100%, 84%, 1) 0%, hsla(317, 29%, 42%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(227, 100%, 84%, 1) 0%, hsla(317, 29%, 42%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(227, 100%, 84%, 1) 0%, hsla(317, 29%, 42%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ABBDFF", endColorstr="#894B77", GradientType=1 );
+
+
+260. Twilight Gold
+#432371 → #FAAE7B
+
+background: hsla(265, 53%, 29%, 1);
+
+background: linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
+
+
+261. Twilight Steel (#08203E → #557C93)
+#08203E → #557C93
+
+background: hsla(213, 77%, 14%, 1);
+
+background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#08203E", endColorstr="#557C93", GradientType=1 );
+
+
+262. Twilight Steel (#436C89 → #8B2C40)
+#436C89 → #8B2C40
+
+background: hsla(205, 34%, 40%, 1);
+
+background: linear-gradient(90deg, hsla(205, 34%, 40%, 1) 0%, hsla(347, 52%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(205, 34%, 40%, 1) 0%, hsla(347, 52%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(205, 34%, 40%, 1) 0%, hsla(347, 52%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#436C89", endColorstr="#8B2C40", GradientType=1 );
+
+
+263. Urban Moss
+#5E5E5E → #A4A358
+
+background: hsla(0, 0%, 37%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 37%, 1) 0%, hsla(59, 30%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 37%, 1) 0%, hsla(59, 30%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 37%, 1) 0%, hsla(59, 30%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5E5E5E", endColorstr="#A4A358", GradientType=1 );
+
+
+264. Velvet Flame
+#83489E → #C5302E
+
+background: hsla(281, 37%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(281, 37%, 45%, 1) 0%, hsla(1, 62%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(281, 37%, 45%, 1) 0%, hsla(1, 62%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(281, 37%, 45%, 1) 0%, hsla(1, 62%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#83489E", endColorstr="#C5302E", GradientType=1 );
+
+
+265. Velvet Mirage
+#F9C58D → #F492F0
+
+background: hsla(31, 90%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 );
+
+
+266. Velvet Plum
+#F4119E → #4A313E
+
+background: hsla(323, 91%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(323, 91%, 51%, 1) 0%, hsla(329, 20%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(323, 91%, 51%, 1) 0%, hsla(329, 20%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(323, 91%, 51%, 1) 0%, hsla(329, 20%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4119E", endColorstr="#4A313E", GradientType=1 );
+
+
+267. Velvet Pulse
+#F90C71 → #30001A
+
+background: hsla(334, 95%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F90C71", endColorstr="#30001A", GradientType=1 );
+
+
+268. Velvet Rush
+#CF414B → #852170
+
+background: hsla(356, 60%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(356, 60%, 53%, 1) 0%, hsla(313, 60%, 33%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(356, 60%, 53%, 1) 0%, hsla(313, 60%, 33%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(356, 60%, 53%, 1) 0%, hsla(313, 60%, 33%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CF414B", endColorstr="#852170", GradientType=1 );
+
+
+269. Violet Breeze
+#7C65A9 → #96D4CA
+
+background: hsla(260, 28%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(260, 28%, 53%, 1) 0%, hsla(170, 42%, 71%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(260, 28%, 53%, 1) 0%, hsla(170, 42%, 71%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(260, 28%, 53%, 1) 0%, hsla(170, 42%, 71%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7C65A9", endColorstr="#96D4CA", GradientType=1 );
+
+
+270. Violet Dreamscape
+#0E0725 → #5C03BC → #E536AB → #F4E5F0
+
+background: hsla(254, 68%, 9%, 1);
+
+background: linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E0725", endColorstr="#5C03BC", GradientType=1 );
+
+
+271. Violet Dust
+#F2C2EE → #E763F9
+
+background: hsla(305, 65%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(305, 65%, 85%, 1) 0%, hsla(293, 93%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(305, 65%, 85%, 1) 0%, hsla(293, 93%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(305, 65%, 85%, 1) 0%, hsla(293, 93%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2C2EE", endColorstr="#E763F9", GradientType=1 );
+
+
+272. Violet Smoke
+#8338E3 → #E0A9BB
+
+background: hsla(266, 75%, 55%, 1);
+
+background: linear-gradient(90deg, hsla(266, 75%, 55%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(266, 75%, 55%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(266, 75%, 55%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8338E3", endColorstr="#E0A9BB", GradientType=1 );
+
+
+273. Void Spark
+#000328 → #00458E
+
+background: hsla(236, 100%, 8%, 1);
+
+background: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 );
+
+
+274. Wine Shadow
+#1F0021 → #751006
+
+background: hsla(296, 100%, 6%, 1);
+
+background: linear-gradient(90deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1F0021", endColorstr="#751006", GradientType=1 );
+
+
+275. Wood & Wine
+#2E7037 → #A63F4E
+
+background: hsla(128, 42%, 31%, 1);
+
+background: linear-gradient(90deg, hsla(128, 42%, 31%, 1) 0%, hsla(351, 45%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(128, 42%, 31%, 1) 0%, hsla(351, 45%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(128, 42%, 31%, 1) 0%, hsla(351, 45%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2E7037", endColorstr="#A63F4E", GradientType=1 );

@@ -1,0 +1,37 @@
+{
+  "id": "cl-spiced-bloom",
+  "name": "Spiced Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Spiced Bloom.",
+  "thumbnail": "thumbnails/cl-spiced-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8314,
+    0.4706,
+    0.102,
+    1.0
+  ],
+  "colorB": [
+    0.777,
+    0.3852,
+    0.2236,
+    1.0
+  ],
+  "colorC": [
+    0.7227,
+    0.2998,
+    0.3453,
+    1.0
+  ],
+  "colorD": [
+    0.6667,
+    0.2118,
+    0.4706,
+    1.0
+  ]
+}

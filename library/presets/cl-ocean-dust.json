@@ -1,0 +1,37 @@
+{
+  "id": "cl-ocean-dust",
+  "name": "Ocean Dust",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Ocean Dust.",
+  "thumbnail": "thumbnails/cl-ocean-dust.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6078,
+    0.698,
+    0.898,
+    1.0
+  ],
+  "colorB": [
+    0.5431,
+    0.6488,
+    0.8488,
+    1.0
+  ],
+  "colorC": [
+    0.4784,
+    0.5997,
+    0.7997,
+    1.0
+  ],
+  "colorD": [
+    0.4118,
+    0.549,
+    0.749,
+    1.0
+  ]
+}

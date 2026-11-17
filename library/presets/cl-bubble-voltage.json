@@ -1,0 +1,37 @@
+{
+  "id": "cl-bubble-voltage",
+  "name": "Bubble Voltage",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Bubble Voltage.",
+  "thumbnail": "thumbnails/cl-bubble-voltage.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4078,
+    0.8902,
+    0.9765,
+    1.0
+  ],
+  "colorB": [
+    0.6843,
+    0.6216,
+    0.7922,
+    1.0
+  ],
+  "colorC": [
+    0.9608,
+    0.3529,
+    0.6078,
+    1.0
+  ],
+  "colorD": [
+    0.3098,
+    0.3059,
+    0.8431,
+    1.0
+  ]
+}

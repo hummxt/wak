@@ -1,0 +1,37 @@
+{
+  "id": "cl-neon-bloom",
+  "name": "Neon Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Neon Bloom.",
+  "thumbnail": "thumbnails/cl-neon-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7765,
+    0.1294,
+    0.898,
+    1.0
+  ],
+  "colorB": [
+    0.682,
+    0.2472,
+    0.9239,
+    1.0
+  ],
+  "colorC": [
+    0.5875,
+    0.365,
+    0.9498,
+    1.0
+  ],
+  "colorD": [
+    0.4902,
+    0.4863,
+    0.9765,
+    1.0
+  ]
+}

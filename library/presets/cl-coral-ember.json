@@ -1,0 +1,37 @@
+{
+  "id": "cl-coral-ember",
+  "name": "Coral Ember",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Coral Ember.",
+  "thumbnail": "thumbnails/cl-coral-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.6941,
+    0.4314,
+    1.0
+  ],
+  "colorB": [
+    0.9726,
+    0.6307,
+    0.4547,
+    1.0
+  ],
+  "colorC": [
+    0.9687,
+    0.5673,
+    0.478,
+    1.0
+  ],
+  "colorD": [
+    0.9647,
+    0.502,
+    0.502,
+    1.0
+  ]
+}

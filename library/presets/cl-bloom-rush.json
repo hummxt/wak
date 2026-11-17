@@ -1,0 +1,37 @@
+{
+  "id": "cl-bloom-rush",
+  "name": "Bloom Rush",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Bloom Rush.",
+  "thumbnail": "thumbnails/cl-bloom-rush.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9373,
+    0.4392,
+    0.6078,
+    1.0
+  ],
+  "colorB": [
+    0.9515,
+    0.4845,
+    0.5548,
+    1.0
+  ],
+  "colorC": [
+    0.9657,
+    0.5298,
+    0.5017,
+    1.0
+  ],
+  "colorD": [
+    0.9804,
+    0.5765,
+    0.4471,
+    1.0
+  ]
+}

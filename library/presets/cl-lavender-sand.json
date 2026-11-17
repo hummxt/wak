@@ -1,0 +1,37 @@
+{
+  "id": "cl-lavender-sand",
+  "name": "Lavender Sand",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lavender Sand.",
+  "thumbnail": "thumbnails/cl-lavender-sand.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.9373,
+    0.7569,
+    1.0
+  ],
+  "colorB": [
+    0.8447,
+    0.7302,
+    0.7116,
+    1.0
+  ],
+  "colorC": [
+    0.6894,
+    0.5232,
+    0.6663,
+    1.0
+  ],
+  "colorD": [
+    0.5294,
+    0.3098,
+    0.6196,
+    1.0
+  ]
+}

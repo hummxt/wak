@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunset-mint",
+  "name": "Sunset Mint",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunset Mint.",
+  "thumbnail": "thumbnails/cl-sunset-mint.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7216,
+    0.9137,
+    0.8314,
+    1.0
+  ],
+  "colorB": [
+    0.8393,
+    0.7549,
+    0.5921,
+    1.0
+  ],
+  "colorC": [
+    0.9569,
+    0.5961,
+    0.3529,
+    1.0
+  ],
+  "colorD": [
+    0.0706,
+    0.1412,
+    0.2471,
+    1.0
+  ]
+}

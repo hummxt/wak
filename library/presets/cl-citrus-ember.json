@@ -1,0 +1,37 @@
+{
+  "id": "cl-citrus-ember",
+  "name": "Citrus Ember",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Citrus Ember.",
+  "thumbnail": "thumbnails/cl-citrus-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8314,
+    0.9176,
+    0.3843,
+    1.0
+  ],
+  "colorB": [
+    0.8804,
+    0.6804,
+    0.251,
+    1.0
+  ],
+  "colorC": [
+    0.9294,
+    0.4431,
+    0.1176,
+    1.0
+  ],
+  "colorD": [
+    0.9137,
+    0.1608,
+    0.3608,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-twilight-cream",
+  "name": "Twilight Cream",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Twilight Cream.",
+  "thumbnail": "thumbnails/cl-twilight-cream.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7922,
+    0.8118,
+    0.9765,
+    1.0
+  ],
+  "colorB": [
+    0.8765,
+    0.8039,
+    0.9138,
+    1.0
+  ],
+  "colorC": [
+    0.9608,
+    0.7961,
+    0.851,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.7373,
+    0.8039,
+    1.0
+  ]
+}

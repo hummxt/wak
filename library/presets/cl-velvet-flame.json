@@ -1,0 +1,37 @@
+{
+  "id": "cl-velvet-flame",
+  "name": "Velvet Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Velvet Flame.",
+  "thumbnail": "thumbnails/cl-velvet-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5137,
+    0.2824,
+    0.6196,
+    1.0
+  ],
+  "colorB": [
+    0.5991,
+    0.2513,
+    0.4747,
+    1.0
+  ],
+  "colorC": [
+    0.6845,
+    0.2202,
+    0.3297,
+    1.0
+  ],
+  "colorD": [
+    0.7725,
+    0.1882,
+    0.1804,
+    1.0
+  ]
+}

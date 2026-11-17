@@ -1,0 +1,37 @@
+{
+  "id": "cl-neon-lagoon-6fe3e1-5257e5",
+  "name": "Neon Lagoon (#6FE3E1 \u2192 #5257E5)",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Neon Lagoon (#6FE3E1 \u2192 #5257E5).",
+  "thumbnail": "thumbnails/cl-neon-lagoon-6fe3e1-5257e5.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4353,
+    0.8902,
+    0.8824,
+    1.0
+  ],
+  "colorB": [
+    0.3978,
+    0.709,
+    0.8875,
+    1.0
+  ],
+  "colorC": [
+    0.3603,
+    0.5279,
+    0.8927,
+    1.0
+  ],
+  "colorD": [
+    0.3216,
+    0.3412,
+    0.898,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-sun-pop",
+  "name": "Sun Pop",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sun Pop.",
+  "thumbnail": "thumbnails/cl-sun-pop.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.3961,
+    0.3569,
+    1.0
+  ],
+  "colorB": [
+    0.9622,
+    0.4336,
+    0.2728,
+    1.0
+  ],
+  "colorC": [
+    0.948,
+    0.4711,
+    0.1887,
+    1.0
+  ],
+  "colorD": [
+    0.9333,
+    0.5098,
+    0.102,
+    1.0
+  ]
+}

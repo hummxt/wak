@@ -1,0 +1,37 @@
+{
+  "id": "cl-miami-pop",
+  "name": "Miami Pop",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Miami Pop.",
+  "thumbnail": "thumbnails/cl-miami-pop.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5137,
+    0.9608,
+    0.898,
+    1.0
+  ],
+  "colorB": [
+    0.6431,
+    0.7693,
+    0.8463,
+    1.0
+  ],
+  "colorC": [
+    0.7726,
+    0.5777,
+    0.7945,
+    1.0
+  ],
+  "colorD": [
+    0.9059,
+    0.3804,
+    0.7412,
+    1.0
+  ]
+}

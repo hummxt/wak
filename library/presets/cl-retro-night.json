@@ -1,0 +1,37 @@
+{
+  "id": "cl-retro-night",
+  "name": "Retro Night",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Retro Night.",
+  "thumbnail": "thumbnails/cl-retro-night.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1608,
+    0.3216,
+    0.4392,
+    1.0
+  ],
+  "colorB": [
+    0.2139,
+    0.2996,
+    0.4457,
+    1.0
+  ],
+  "colorC": [
+    0.2669,
+    0.2776,
+    0.4521,
+    1.0
+  ],
+  "colorD": [
+    0.3216,
+    0.2549,
+    0.4588,
+    1.0
+  ]
+}

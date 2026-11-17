@@ -1,0 +1,37 @@
+{
+  "id": "cl-chrome-orchid",
+  "name": "Chrome Orchid",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Chrome Orchid.",
+  "thumbnail": "thumbnails/cl-chrome-orchid.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0353,
+    0.3961,
+    0.7529,
+    1.0
+  ],
+  "colorB": [
+    0.2786,
+    0.3405,
+    0.696,
+    1.0
+  ],
+  "colorC": [
+    0.5219,
+    0.2848,
+    0.6391,
+    1.0
+  ],
+  "colorD": [
+    0.7725,
+    0.2275,
+    0.5804,
+    1.0
+  ]
+}

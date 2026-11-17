@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunlit-depth",
+  "name": "Sunlit Depth",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunlit Depth.",
+  "thumbnail": "thumbnails/cl-sunlit-depth.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9725,
+    0.8118,
+    0.4157,
+    1.0
+  ],
+  "colorB": [
+    0.6943,
+    0.6992,
+    0.5645,
+    1.0
+  ],
+  "colorC": [
+    0.4161,
+    0.5866,
+    0.7134,
+    1.0
+  ],
+  "colorD": [
+    0.1294,
+    0.4706,
+    0.8667,
+    1.0
+  ]
+}

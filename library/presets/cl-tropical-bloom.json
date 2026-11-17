@@ -1,0 +1,37 @@
+{
+  "id": "cl-tropical-bloom",
+  "name": "Tropical Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Tropical Bloom.",
+  "thumbnail": "thumbnails/cl-tropical-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7725,
+    0.9765,
+    0.8431,
+    1.0
+  ],
+  "colorB": [
+    0.8705,
+    0.904,
+    0.6843,
+    1.0
+  ],
+  "colorC": [
+    0.9686,
+    0.8314,
+    0.5255,
+    1.0
+  ],
+  "colorD": [
+    0.949,
+    0.4784,
+    0.4902,
+    1.0
+  ]
+}

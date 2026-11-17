@@ -1,0 +1,37 @@
+{
+  "id": "cl-aqua-leaf",
+  "name": "Aqua Leaf",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Aqua Leaf.",
+  "thumbnail": "thumbnails/cl-aqua-leaf.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4314,
+    0.9451,
+    0.5843,
+    1.0
+  ],
+  "colorB": [
+    0.289,
+    0.927,
+    0.7189,
+    1.0
+  ],
+  "colorC": [
+    0.1467,
+    0.9089,
+    0.8535,
+    1.0
+  ],
+  "colorD": [
+    0.0,
+    0.8902,
+    0.9922,
+    1.0
+  ]
+}

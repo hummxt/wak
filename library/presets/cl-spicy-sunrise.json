@@ -1,0 +1,37 @@
+{
+  "id": "cl-spicy-sunrise",
+  "name": "Spicy Sunrise",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Spicy Sunrise.",
+  "thumbnail": "thumbnails/cl-spicy-sunrise.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9529,
+    0.4118,
+    0.4314,
+    1.0
+  ],
+  "colorB": [
+    0.9594,
+    0.4946,
+    0.2916,
+    1.0
+  ],
+  "colorC": [
+    0.9658,
+    0.5774,
+    0.1518,
+    1.0
+  ],
+  "colorD": [
+    0.9725,
+    0.6627,
+    0.0078,
+    1.0
+  ]
+}

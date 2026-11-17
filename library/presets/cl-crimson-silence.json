@@ -1,0 +1,37 @@
+{
+  "id": "cl-crimson-silence",
+  "name": "Crimson Silence",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Crimson Silence.",
+  "thumbnail": "thumbnails/cl-crimson-silence.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7569,
+    0.1176,
+    0.2196,
+    1.0
+  ],
+  "colorB": [
+    0.5511,
+    0.093,
+    0.2144,
+    1.0
+  ],
+  "colorC": [
+    0.3453,
+    0.0684,
+    0.2092,
+    1.0
+  ],
+  "colorD": [
+    0.1333,
+    0.0431,
+    0.2039,
+    1.0
+  ]
+}

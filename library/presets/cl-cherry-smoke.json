@@ -1,0 +1,37 @@
+{
+  "id": "cl-cherry-smoke",
+  "name": "Cherry Smoke",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cherry Smoke.",
+  "thumbnail": "thumbnails/cl-cherry-smoke.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6784,
+    0.2745,
+    0.5373,
+    1.0
+  ],
+  "colorB": [
+    0.7612,
+    0.303,
+    0.5334,
+    1.0
+  ],
+  "colorC": [
+    0.8441,
+    0.3315,
+    0.5295,
+    1.0
+  ],
+  "colorD": [
+    0.9294,
+    0.3608,
+    0.5255,
+    1.0
+  ]
+}

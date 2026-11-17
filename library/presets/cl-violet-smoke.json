@@ -1,0 +1,37 @@
+{
+  "id": "cl-violet-smoke",
+  "name": "Violet Smoke",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Violet Smoke.",
+  "thumbnail": "thumbnails/cl-violet-smoke.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5137,
+    0.2196,
+    0.8902,
+    1.0
+  ],
+  "colorB": [
+    0.6341,
+    0.3658,
+    0.8384,
+    1.0
+  ],
+  "colorC": [
+    0.7544,
+    0.512,
+    0.7866,
+    1.0
+  ],
+  "colorD": [
+    0.8784,
+    0.6627,
+    0.7333,
+    1.0
+  ]
+}

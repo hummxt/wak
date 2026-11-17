@@ -1,0 +1,37 @@
+{
+  "id": "cl-ice-beam",
+  "name": "Ice Beam",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Ice Beam.",
+  "thumbnail": "thumbnails/cl-ice-beam.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3255,
+    0.8588,
+    0.949,
+    1.0
+  ],
+  "colorB": [
+    0.5666,
+    0.7392,
+    0.9372,
+    1.0
+  ],
+  "colorC": [
+    0.8078,
+    0.6196,
+    0.9255,
+    1.0
+  ],
+  "colorD": [
+    0.2275,
+    0.498,
+    0.949,
+    1.0
+  ]
+}

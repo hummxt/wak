@@ -1,0 +1,37 @@
+{
+  "id": "cl-mint-nectar",
+  "name": "Mint Nectar",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Mint Nectar.",
+  "thumbnail": "thumbnails/cl-mint-nectar.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1176,
+    0.8431,
+    0.7098,
+    1.0
+  ],
+  "colorB": [
+    0.3894,
+    0.8871,
+    0.6917,
+    1.0
+  ],
+  "colorC": [
+    0.6612,
+    0.9311,
+    0.6736,
+    1.0
+  ],
+  "colorD": [
+    0.9412,
+    0.9765,
+    0.6549,
+    1.0
+  ]
+}

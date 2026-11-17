@@ -1,0 +1,37 @@
+{
+  "id": "cl-violet-dreamscape",
+  "name": "Violet Dreamscape",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Violet Dreamscape.",
+  "thumbnail": "thumbnails/cl-violet-dreamscape.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0549,
+    0.0275,
+    0.1451,
+    1.0
+  ],
+  "colorB": [
+    0.3608,
+    0.0118,
+    0.7373,
+    1.0
+  ],
+  "colorC": [
+    0.898,
+    0.2118,
+    0.6706,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.898,
+    0.9412,
+    1.0
+  ]
+}

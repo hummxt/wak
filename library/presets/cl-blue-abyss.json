@@ -1,0 +1,37 @@
+{
+  "id": "cl-blue-abyss",
+  "name": "Blue Abyss",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Blue Abyss.",
+  "thumbnail": "thumbnails/cl-blue-abyss.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0353,
+    0.4078,
+    0.898,
+    1.0
+  ],
+  "colorB": [
+    0.0353,
+    0.3056,
+    0.7466,
+    1.0
+  ],
+  "colorC": [
+    0.0353,
+    0.2033,
+    0.5952,
+    1.0
+  ],
+  "colorD": [
+    0.0353,
+    0.098,
+    0.4392,
+    1.0
+  ]
+}

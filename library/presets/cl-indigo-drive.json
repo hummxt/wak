@@ -1,0 +1,37 @@
+{
+  "id": "cl-indigo-drive",
+  "name": "Indigo Drive",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Indigo Drive.",
+  "thumbnail": "thumbnails/cl-indigo-drive.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5686,
+    0.6078,
+    1.0,
+    1.0
+  ],
+  "colorB": [
+    0.4055,
+    0.4823,
+    0.8615,
+    1.0
+  ],
+  "colorC": [
+    0.2425,
+    0.3568,
+    0.7231,
+    1.0
+  ],
+  "colorD": [
+    0.0745,
+    0.2275,
+    0.5804,
+    1.0
+  ]
+}

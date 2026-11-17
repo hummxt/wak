@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunset-cream",
+  "name": "Sunset Cream",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunset Cream.",
+  "thumbnail": "thumbnails/cl-sunset-cream.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.9608,
+    0.8784,
+    1.0
+  ],
+  "colorB": [
+    0.9687,
+    0.749,
+    0.6196,
+    1.0
+  ],
+  "colorC": [
+    0.9608,
+    0.5373,
+    0.3608,
+    1.0
+  ],
+  "colorD": [
+    0.702,
+    0.3059,
+    0.8,
+    1.0
+  ]
+}

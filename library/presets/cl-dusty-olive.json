@@ -1,0 +1,37 @@
+{
+  "id": "cl-dusty-olive",
+  "name": "Dusty Olive",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Dusty Olive.",
+  "thumbnail": "thumbnails/cl-dusty-olive.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7451,
+    0.6941,
+    0.3569,
+    1.0
+  ],
+  "colorB": [
+    0.7749,
+    0.7329,
+    0.4617,
+    1.0
+  ],
+  "colorC": [
+    0.8046,
+    0.7718,
+    0.5665,
+    1.0
+  ],
+  "colorD": [
+    0.8353,
+    0.8118,
+    0.6745,
+    1.0
+  ]
+}

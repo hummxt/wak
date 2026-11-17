@@ -1,0 +1,37 @@
+{
+  "id": "cl-wine-shadow",
+  "name": "Wine Shadow",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Wine Shadow.",
+  "thumbnail": "thumbnails/cl-wine-shadow.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1216,
+    0.0,
+    0.1294,
+    1.0
+  ],
+  "colorB": [
+    0.2329,
+    0.0207,
+    0.0945,
+    1.0
+  ],
+  "colorC": [
+    0.3442,
+    0.0414,
+    0.0595,
+    1.0
+  ],
+  "colorD": [
+    0.4588,
+    0.0627,
+    0.0235,
+    1.0
+  ]
+}

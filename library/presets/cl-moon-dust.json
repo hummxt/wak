@@ -1,0 +1,37 @@
+{
+  "id": "cl-moon-dust",
+  "name": "Moon Dust",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Moon Dust.",
+  "thumbnail": "thumbnails/cl-moon-dust.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1333,
+    0.0196,
+    0.1765,
+    1.0
+  ],
+  "colorB": [
+    0.3533,
+    0.2448,
+    0.3887,
+    1.0
+  ],
+  "colorC": [
+    0.5733,
+    0.47,
+    0.6009,
+    1.0
+  ],
+  "colorD": [
+    0.8,
+    0.702,
+    0.8196,
+    1.0
+  ]
+}
