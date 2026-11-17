@@ -1,0 +1,54 @@
+{
+  "id": "sg-candy",
+  "name": "Candy",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Candy.",
+  "thumbnail": "thumbnails/sg-candy.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.2,
+    "brightness": 1.0,
+    "angle": 45.0,
+    "zoom": 1.0,
+    "freq": 6.0,
+    "sharpness": 2.5,
+    "amplitude": 1.2,
+    "waveWidthMod": 0.7,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 1.2,
+    "localWarpFreqY": 3.2,
+    "ditherLevels": 12.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.0,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.4,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.9725,
+    0.4588,
+    0.6667,
+    1.0
+  ],
+  "colorB": [
+    0.9843,
+    0.6745,
+    0.8,
+    1.0
+  ],
+  "colorC": [
+    0.9451,
+    0.8196,
+    0.8157,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.9765,
+    0.9765,
+    1.0
+  ]
+}

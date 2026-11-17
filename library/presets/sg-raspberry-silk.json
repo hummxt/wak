@@ -1,0 +1,54 @@
+{
+  "id": "sg-raspberry-silk",
+  "name": "Raspberry Silk",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Raspberry Silk.",
+  "thumbnail": "thumbnails/sg-raspberry-silk.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.45,
+    "brightness": 1.0,
+    "angle": 41.0,
+    "zoom": 0.85,
+    "freq": 5.2,
+    "sharpness": 1.1,
+    "amplitude": 1.45,
+    "waveWidthMod": 0.9500000000000001,
+    "offsetX": 0.01,
+    "offsetY": 0.68,
+    "localWarpIntensity": 5.0,
+    "localWarpFreqY": 1.8,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.096,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.37,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.4745,
+    0.0471,
+    0.3529,
+    1.0
+  ],
+  "colorB": [
+    0.8,
+    0.0549,
+    0.4549,
+    1.0
+  ],
+  "colorC": [
+    0.902,
+    0.451,
+    0.6235,
+    1.0
+  ],
+  "colorD": [
+    0.9451,
+    0.8314,
+    0.8314,
+    1.0
+  ]
+}

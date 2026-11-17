@@ -1,0 +1,54 @@
+{
+  "id": "sg-solar-tide",
+  "name": "Solar Tide",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Solar Tide.",
+  "thumbnail": "thumbnails/sg-solar-tide.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.21,
+    "brightness": 1.0,
+    "angle": 147.0,
+    "zoom": 1.15,
+    "freq": 4.0,
+    "sharpness": 2.2,
+    "amplitude": 1.21,
+    "waveWidthMod": 0.5,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 2.0,
+    "localWarpFreqY": 5.3,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.04,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.4,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.2784,
+    0.2784,
+    0.2667,
+    1.0
+  ],
+  "colorB": [
+    0.1608,
+    0.5804,
+    0.698,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.9843,
+    0.8784,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.7059,
+    0.0,
+    1.0
+  ]
+}

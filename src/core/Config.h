@@ -23,6 +23,23 @@ struct AnimationSettings {
     float intensity = 0.85f;
     float brightness = 1.0f;
     float angle = 90.0f;
+    // Shader-gradient extras (ignored by classic presets)
+    float zoom = 1.0f;
+    float freq = 4.0f;
+    float sharpness = 2.0f;
+    float amplitude = 1.0f;
+    float waveWidthMod = 0.5f;
+    float offsetX = 0.0f;
+    float offsetY = 0.0f;
+    float localWarpIntensity = 0.4f;
+    float localWarpFreqY = 1.9f;
+    float ditherLevels = 0.0f;
+    float ditherScale = 4.0f;
+    float grainIntensity = 0.0f;
+    float grainSpeed = 50.0f;
+    float contrast = 1.0f;
+    float vignetteIntensity = 0.0f;
+    float vignetteRadius = 0.4f;
     std::array<float, 4> colorA{ 0.45f, 0.20f, 0.85f, 1.0f };
     std::array<float, 4> colorB{ 0.15f, 0.35f, 0.95f, 1.0f };
     std::array<float, 4> colorC{ 0.90f, 0.35f, 0.55f, 1.0f };

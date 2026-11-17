@@ -1,0 +1,54 @@
+{
+  "id": "sg-liquid-silver",
+  "name": "Liquid Silver",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Liquid Silver.",
+  "thumbnail": "thumbnails/sg-liquid-silver.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.98,
+    "brightness": 1.0,
+    "angle": 91.0,
+    "zoom": 0.8,
+    "freq": 3.4000000000000004,
+    "sharpness": 5.0,
+    "amplitude": 0.98,
+    "waveWidthMod": 0.51,
+    "offsetX": -0.73,
+    "offsetY": 0.18,
+    "localWarpIntensity": 0.6000000000000001,
+    "localWarpFreqY": 3.4000000000000004,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.095,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.32,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.2863,
+    0.2863,
+    0.2863,
+    1.0
+  ],
+  "colorB": [
+    1.0,
+    0.9922,
+    0.9647,
+    1.0
+  ],
+  "colorC": [
+    0.9255,
+    0.9098,
+    0.851,
+    1.0
+  ],
+  "colorD": [
+    0.9804,
+    0.9647,
+    0.9137,
+    1.0
+  ]
+}

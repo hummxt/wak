@@ -1,0 +1,54 @@
+{
+  "id": "sg-aurora",
+  "name": "Aurora",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Aurora.",
+  "thumbnail": "thumbnails/sg-aurora.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.69,
+    "brightness": 1.0,
+    "angle": 69.0,
+    "zoom": 0.75,
+    "freq": 4.3,
+    "sharpness": 1.0,
+    "amplitude": 0.69,
+    "waveWidthMod": 0.34,
+    "offsetX": 0.0,
+    "offsetY": 0.0,
+    "localWarpIntensity": 0.6,
+    "localWarpFreqY": 1.6,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.047,
+    "grainSpeed": 0.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.4,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.0078,
+    0.1059,
+    0.102,
+    1.0
+  ],
+  "colorB": [
+    0.0471,
+    0.4118,
+    0.4471,
+    1.0
+  ],
+  "colorC": [
+    0.1137,
+    0.8275,
+    0.6902,
+    1.0
+  ],
+  "colorD": [
+    0.6863,
+    0.9882,
+    0.2549,
+    1.0
+  ]
+}

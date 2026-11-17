@@ -1,0 +1,54 @@
+{
+  "id": "sg-northern-depths",
+  "name": "Northern Depths",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Northern Depths.",
+  "thumbnail": "thumbnails/sg-northern-depths.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.78,
+    "brightness": 1.0,
+    "angle": 193.0,
+    "zoom": 0.7000000000000001,
+    "freq": 2.0,
+    "sharpness": 2.3000000000000003,
+    "amplitude": 0.78,
+    "waveWidthMod": 0.76,
+    "offsetX": 0.12,
+    "offsetY": -0.1,
+    "localWarpIntensity": 0.30000000000000004,
+    "localWarpFreqY": 2.4000000000000004,
+    "ditherLevels": 0.0,
+    "ditherScale": 5.0,
+    "grainIntensity": 0.058,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.39,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.9333,
+    0.9333,
+    0.9333,
+    1.0
+  ],
+  "colorB": [
+    0.0,
+    0.6784,
+    0.7098,
+    1.0
+  ],
+  "colorC": [
+    0.2235,
+    0.2431,
+    0.2745,
+    1.0
+  ],
+  "colorD": [
+    0.1333,
+    0.1569,
+    0.1922,
+    1.0
+  ]
+}

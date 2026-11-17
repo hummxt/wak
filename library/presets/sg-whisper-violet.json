@@ -1,0 +1,54 @@
+{
+  "id": "sg-whisper-violet",
+  "name": "Whisper Violet",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Whisper Violet.",
+  "thumbnail": "thumbnails/sg-whisper-violet.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 1.79,
+    "brightness": 1.0,
+    "angle": 349.0,
+    "zoom": 1.2,
+    "freq": 3.5,
+    "sharpness": 5.5,
+    "amplitude": 1.79,
+    "waveWidthMod": 0.26,
+    "offsetX": 0.68,
+    "offsetY": -0.44,
+    "localWarpIntensity": 0.6000000000000001,
+    "localWarpFreqY": 2.8000000000000003,
+    "ditherLevels": 0.0,
+    "ditherScale": 4.0,
+    "grainIntensity": 0.051000000000000004,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.32,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.9294,
+    0.9333,
+    0.9686,
+    1.0
+  ],
+  "colorB": [
+    0.4706,
+    0.4078,
+    0.902,
+    1.0
+  ],
+  "colorC": [
+    0.7216,
+    0.7098,
+    1.0,
+    1.0
+  ],
+  "colorD": [
+    0.8941,
+    0.9843,
+    1.0,
+    1.0
+  ]
+}

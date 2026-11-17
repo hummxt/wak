@@ -1,0 +1,54 @@
+{
+  "id": "sg-metallic-ember",
+  "name": "Metallic Ember",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Shader gradient port of MagicPattern preset: Metallic Ember.",
+  "thumbnail": "thumbnails/sg-metallic-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 2.24,
+    "brightness": 1.0,
+    "angle": 308.0,
+    "zoom": 0.52,
+    "freq": 4.5,
+    "sharpness": 4.2,
+    "amplitude": 2.24,
+    "waveWidthMod": 0.44,
+    "offsetX": -0.03,
+    "offsetY": -0.46,
+    "localWarpIntensity": 1.1,
+    "localWarpFreqY": 3.9000000000000004,
+    "ditherLevels": 0.0,
+    "ditherScale": 7.5,
+    "grainIntensity": 0.0,
+    "grainSpeed": 50.0,
+    "vignetteIntensity": 0.0,
+    "vignetteRadius": 0.41000000000000003,
+    "contrast": 1.0
+  },
+  "colorA": [
+    0.3255,
+    0.2078,
+    0.2902,
+    1.0
+  ],
+  "colorB": [
+    0.5647,
+    0.2157,
+    0.2863,
+    1.0
+  ],
+  "colorC": [
+    0.9098,
+    0.2706,
+    0.2706,
+    1.0
+  ],
+  "colorD": [
+    0.1686,
+    0.1804,
+    0.2902,
+    1.0
+  ]
+}
