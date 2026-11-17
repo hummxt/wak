@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunset-flame",
+  "name": "Sunset Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunset Flame.",
+  "thumbnail": "thumbnails/cl-sunset-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9608,
+    0.902,
+    0.6784,
+    1.0
+  ],
+  "colorB": [
+    0.9556,
+    0.682,
+    0.6085,
+    1.0
+  ],
+  "colorC": [
+    0.9504,
+    0.462,
+    0.5387,
+    1.0
+  ],
+  "colorD": [
+    0.9451,
+    0.2353,
+    0.4667,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-flame-petal",
+  "name": "Flame Petal",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Flame Petal.",
+  "thumbnail": "thumbnails/cl-flame-petal.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.949,
+    0.5137,
+    0.4039,
+    1.0
+  ],
+  "colorB": [
+    0.9658,
+    0.4503,
+    0.4388,
+    1.0
+  ],
+  "colorC": [
+    0.9827,
+    0.3869,
+    0.4738,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.3216,
+    0.5098,
+    1.0
+  ]
+}

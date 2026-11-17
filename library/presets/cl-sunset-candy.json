@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunset-candy",
+  "name": "Sunset Candy",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunset Candy.",
+  "thumbnail": "thumbnails/cl-sunset-candy.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.0588,
+    0.4824,
+    1.0
+  ],
+  "colorB": [
+    0.9909,
+    0.24,
+    0.3763,
+    1.0
+  ],
+  "colorC": [
+    0.9819,
+    0.4211,
+    0.2701,
+    1.0
+  ],
+  "colorD": [
+    0.9725,
+    0.6078,
+    0.1608,
+    1.0
+  ]
+}

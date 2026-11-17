@@ -1,0 +1,37 @@
+{
+  "id": "cl-fresh-nectar",
+  "name": "Fresh Nectar",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Fresh Nectar.",
+  "thumbnail": "thumbnails/cl-fresh-nectar.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5843,
+    0.9255,
+    0.6902,
+    1.0
+  ],
+  "colorB": [
+    0.7059,
+    0.9423,
+    0.641,
+    1.0
+  ],
+  "colorC": [
+    0.8276,
+    0.9592,
+    0.5919,
+    1.0
+  ],
+  "colorD": [
+    0.9529,
+    0.9765,
+    0.5412,
+    1.0
+  ]
+}

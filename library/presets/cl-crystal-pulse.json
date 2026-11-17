@@ -1,0 +1,37 @@
+{
+  "id": "cl-crystal-pulse",
+  "name": "Crystal Pulse",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Crystal Pulse.",
+  "thumbnail": "thumbnails/cl-crystal-pulse.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6078,
+    0.9725,
+    0.9569,
+    1.0
+  ],
+  "colorB": [
+    0.5509,
+    0.8108,
+    0.9608,
+    1.0
+  ],
+  "colorC": [
+    0.494,
+    0.649,
+    0.9646,
+    1.0
+  ],
+  "colorD": [
+    0.4353,
+    0.4824,
+    0.9686,
+    1.0
+  ]
+}

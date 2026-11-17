@@ -1,0 +1,37 @@
+{
+  "id": "cl-tropical-bay",
+  "name": "Tropical Bay",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Tropical Bay.",
+  "thumbnail": "thumbnails/cl-tropical-bay.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1098,
+    0.2431,
+    0.2078,
+    1.0
+  ],
+  "colorB": [
+    0.2716,
+    0.476,
+    0.4097,
+    1.0
+  ],
+  "colorC": [
+    0.4333,
+    0.709,
+    0.6116,
+    1.0
+  ],
+  "colorD": [
+    0.6,
+    0.949,
+    0.8196,
+    1.0
+  ]
+}

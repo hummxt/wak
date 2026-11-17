@@ -1,0 +1,37 @@
+{
+  "id": "cl-twilight-fade",
+  "name": "Twilight Fade",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Twilight Fade.",
+  "thumbnail": "thumbnails/cl-twilight-fade.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6706,
+    0.7412,
+    1.0,
+    1.0
+  ],
+  "colorB": [
+    0.6266,
+    0.5937,
+    0.824,
+    1.0
+  ],
+  "colorC": [
+    0.5826,
+    0.4461,
+    0.648,
+    1.0
+  ],
+  "colorD": [
+    0.5373,
+    0.2941,
+    0.4667,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-crystal-punch",
+  "name": "Crystal Punch",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Crystal Punch.",
+  "thumbnail": "thumbnails/cl-crystal-punch.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2706,
+    0.6275,
+    0.9176,
+    1.0
+  ],
+  "colorB": [
+    0.598,
+    0.6451,
+    0.8255,
+    1.0
+  ],
+  "colorC": [
+    0.9255,
+    0.6627,
+    0.7333,
+    1.0
+  ],
+  "colorD": [
+    0.9765,
+    0.3961,
+    0.5569,
+    1.0
+  ]
+}

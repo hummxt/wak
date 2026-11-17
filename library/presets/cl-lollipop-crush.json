@@ -1,0 +1,37 @@
+{
+  "id": "cl-lollipop-crush",
+  "name": "Lollipop Crush",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lollipop Crush.",
+  "thumbnail": "thumbnails/cl-lollipop-crush.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9882,
+    0.9529,
+    0.7686,
+    1.0
+  ],
+  "colorB": [
+    0.9824,
+    0.6686,
+    0.698,
+    1.0
+  ],
+  "colorC": [
+    0.9765,
+    0.3843,
+    0.6275,
+    1.0
+  ],
+  "colorD": [
+    0.6667,
+    0.5882,
+    0.9765,
+    1.0
+  ]
+}

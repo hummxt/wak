@@ -1,0 +1,37 @@
+{
+  "id": "cl-ionic-blue",
+  "name": "Ionic Blue",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Ionic Blue.",
+  "thumbnail": "thumbnails/cl-ionic-blue.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3804,
+    0.9569,
+    0.8706,
+    1.0
+  ],
+  "colorB": [
+    0.3972,
+    0.7964,
+    0.9133,
+    1.0
+  ],
+  "colorC": [
+    0.4141,
+    0.6359,
+    0.956,
+    1.0
+  ],
+  "colorD": [
+    0.4314,
+    0.4706,
+    1.0,
+    1.0
+  ]
+}

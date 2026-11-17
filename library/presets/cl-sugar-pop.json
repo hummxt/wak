@@ -1,0 +1,37 @@
+{
+  "id": "cl-sugar-pop",
+  "name": "Sugar Pop",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sugar Pop.",
+  "thumbnail": "thumbnails/cl-sugar-pop.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.3373,
+    0.6667,
+    1.0
+  ],
+  "colorB": [
+    0.9686,
+    0.3373,
+    0.5942,
+    1.0
+  ],
+  "colorC": [
+    0.9686,
+    0.3373,
+    0.5218,
+    1.0
+  ],
+  "colorD": [
+    0.9686,
+    0.3373,
+    0.4471,
+    1.0
+  ]
+}

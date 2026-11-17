@@ -1,0 +1,37 @@
+{
+  "id": "cl-glacier-jet",
+  "name": "Glacier Jet",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Glacier Jet.",
+  "thumbnail": "thumbnails/cl-glacier-jet.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4353,
+    0.9686,
+    0.9098,
+    1.0
+  ],
+  "colorB": [
+    0.3318,
+    0.812,
+    0.8179,
+    1.0
+  ],
+  "colorC": [
+    0.2283,
+    0.6554,
+    0.7261,
+    1.0
+  ],
+  "colorD": [
+    0.1216,
+    0.4941,
+    0.6314,
+    1.0
+  ]
+}

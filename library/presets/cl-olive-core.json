@@ -1,0 +1,37 @@
+{
+  "id": "cl-olive-core",
+  "name": "Olive Core",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Olive Core.",
+  "thumbnail": "thumbnails/cl-olive-core.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2627,
+    0.2784,
+    0.0431,
+    1.0
+  ],
+  "colorB": [
+    0.3287,
+    0.3496,
+    0.0703,
+    1.0
+  ],
+  "colorC": [
+    0.3947,
+    0.4208,
+    0.0975,
+    1.0
+  ],
+  "colorD": [
+    0.4627,
+    0.4941,
+    0.1255,
+    1.0
+  ]
+}

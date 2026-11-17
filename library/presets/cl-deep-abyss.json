@@ -1,0 +1,37 @@
+{
+  "id": "cl-deep-abyss",
+  "name": "Deep Abyss",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Deep Abyss.",
+  "thumbnail": "thumbnails/cl-deep-abyss.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0549,
+    0.1098,
+    0.149,
+    1.0
+  ],
+  "colorB": [
+    0.1098,
+    0.1902,
+    0.2215,
+    1.0
+  ],
+  "colorC": [
+    0.1647,
+    0.2706,
+    0.2941,
+    1.0
+  ],
+  "colorD": [
+    0.1608,
+    0.2824,
+    0.3804,
+    1.0
+  ]
+}

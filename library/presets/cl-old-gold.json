@@ -1,0 +1,37 @@
+{
+  "id": "cl-old-gold",
+  "name": "Old Gold",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Old Gold.",
+  "thumbnail": "thumbnails/cl-old-gold.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4,
+    0.3451,
+    0.0118,
+    1.0
+  ],
+  "colorB": [
+    0.4725,
+    0.4318,
+    0.1464,
+    1.0
+  ],
+  "colorC": [
+    0.5449,
+    0.5185,
+    0.2809,
+    1.0
+  ],
+  "colorD": [
+    0.6196,
+    0.6078,
+    0.4196,
+    1.0
+  ]
+}

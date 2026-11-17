@@ -1,0 +1,37 @@
+{
+  "id": "cl-amber-coast",
+  "name": "Amber Coast",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Amber Coast.",
+  "thumbnail": "thumbnails/cl-amber-coast.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1098,
+    0.5647,
+    0.749,
+    1.0
+  ],
+  "colorB": [
+    0.3777,
+    0.5569,
+    0.5808,
+    1.0
+  ],
+  "colorC": [
+    0.6456,
+    0.5492,
+    0.4125,
+    1.0
+  ],
+  "colorD": [
+    0.9216,
+    0.5412,
+    0.2392,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-cyber-nature",
+  "name": "Cyber Nature",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cyber Nature.",
+  "thumbnail": "thumbnails/cl-cyber-nature.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0,
+    0.9333,
+    0.4314,
+    1.0
+  ],
+  "colorB": [
+    0.0155,
+    0.7767,
+    0.5867,
+    1.0
+  ],
+  "colorC": [
+    0.0311,
+    0.6201,
+    0.742,
+    1.0
+  ],
+  "colorD": [
+    0.0471,
+    0.4588,
+    0.902,
+    1.0
+  ]
+}

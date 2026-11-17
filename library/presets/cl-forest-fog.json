@@ -1,0 +1,37 @@
+{
+  "id": "cl-forest-fog",
+  "name": "Forest Fog",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Forest Fog.",
+  "thumbnail": "thumbnails/cl-forest-fog.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1294,
+    0.3373,
+    0.0,
+    1.0
+  ],
+  "colorB": [
+    0.3675,
+    0.5081,
+    0.2666,
+    1.0
+  ],
+  "colorC": [
+    0.6057,
+    0.6789,
+    0.5331,
+    1.0
+  ],
+  "colorD": [
+    0.851,
+    0.8549,
+    0.8078,
+    1.0
+  ]
+}

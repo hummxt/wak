@@ -1,0 +1,37 @@
+{
+  "id": "cl-digital-rose",
+  "name": "Digital Rose",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Digital Rose.",
+  "thumbnail": "thumbnails/cl-digital-rose.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3647,
+    0.8784,
+    0.9412,
+    1.0
+  ],
+  "colorB": [
+    0.6666,
+    0.7647,
+    0.951,
+    1.0
+  ],
+  "colorC": [
+    0.9686,
+    0.651,
+    0.9608,
+    1.0
+  ],
+  "colorD": [
+    0.902,
+    0.3098,
+    0.4353,
+    1.0
+  ]
+}

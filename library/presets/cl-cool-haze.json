@@ -1,0 +1,37 @@
+{
+  "id": "cl-cool-haze",
+  "name": "Cool Haze",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cool Haze.",
+  "thumbnail": "thumbnails/cl-cool-haze.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2706,
+    0.8039,
+    0.9137,
+    1.0
+  ],
+  "colorB": [
+    0.3392,
+    0.7237,
+    0.8853,
+    1.0
+  ],
+  "colorC": [
+    0.4077,
+    0.6435,
+    0.8568,
+    1.0
+  ],
+  "colorD": [
+    0.4784,
+    0.5608,
+    0.8275,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-peach-forest",
+  "name": "Peach Forest",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Peach Forest.",
+  "thumbnail": "thumbnails/cl-peach-forest.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.898,
+    0.9529,
+    0.5725,
+    1.0
+  ],
+  "colorB": [
+    0.8961,
+    0.7863,
+    0.5078,
+    1.0
+  ],
+  "colorC": [
+    0.8941,
+    0.6196,
+    0.4431,
+    1.0
+  ],
+  "colorD": [
+    0.8314,
+    0.3725,
+    0.5922,
+    1.0
+  ]
+}

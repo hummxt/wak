@@ -1,0 +1,37 @@
+{
+  "id": "cl-peach-cloud-ffa585-ffeda0",
+  "name": "Peach Cloud (#FFA585 \u2192 #FFEDA0)",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Peach Cloud (#FFA585 \u2192 #FFEDA0).",
+  "thumbnail": "thumbnails/cl-peach-cloud-ffa585-ffeda0.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.6471,
+    0.5216,
+    1.0
+  ],
+  "colorB": [
+    1.0,
+    0.7403,
+    0.5565,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.8334,
+    0.5915,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.9294,
+    0.6275,
+    1.0
+  ]
+}

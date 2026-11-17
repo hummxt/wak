@@ -1,0 +1,37 @@
+{
+  "id": "cl-jungle-code",
+  "name": "Jungle Code",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Jungle Code.",
+  "thumbnail": "thumbnails/cl-jungle-code.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2745,
+    0.7216,
+    0.2392,
+    1.0
+  ],
+  "colorB": [
+    0.2059,
+    0.5223,
+    0.1745,
+    1.0
+  ],
+  "colorC": [
+    0.1374,
+    0.323,
+    0.1098,
+    1.0
+  ],
+  "colorD": [
+    0.0667,
+    0.1176,
+    0.0431,
+    1.0
+  ]
+}

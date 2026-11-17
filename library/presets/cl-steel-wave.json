@@ -1,0 +1,37 @@
+{
+  "id": "cl-steel-wave",
+  "name": "Steel Wave",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Steel Wave.",
+  "thumbnail": "thumbnails/cl-steel-wave.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1412,
+    0.2157,
+    0.2824,
+    1.0
+  ],
+  "colorB": [
+    0.1917,
+    0.2946,
+    0.395,
+    1.0
+  ],
+  "colorC": [
+    0.2421,
+    0.3736,
+    0.5075,
+    1.0
+  ],
+  "colorD": [
+    0.2941,
+    0.4549,
+    0.6235,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-golden-twilight-544f7d-ffcb50",
+  "name": "Golden Twilight (#544F7D \u2192 #FFCB50)",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Golden Twilight (#544F7D \u2192 #FFCB50).",
+  "thumbnail": "thumbnails/cl-golden-twilight-544f7d-ffcb50.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3294,
+    0.3098,
+    0.4902,
+    1.0
+  ],
+  "colorB": [
+    0.5507,
+    0.4703,
+    0.432,
+    1.0
+  ],
+  "colorC": [
+    0.772,
+    0.6308,
+    0.3737,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.7961,
+    0.3137,
+    1.0
+  ]
+}

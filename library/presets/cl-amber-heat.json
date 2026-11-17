@@ -1,0 +1,37 @@
+{
+  "id": "cl-amber-heat",
+  "name": "Amber Heat",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Amber Heat.",
+  "thumbnail": "thumbnails/cl-amber-heat.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.7216,
+    0.5569,
+    1.0
+  ],
+  "colorB": [
+    0.9728,
+    0.5961,
+    0.4805,
+    1.0
+  ],
+  "colorC": [
+    0.9456,
+    0.4705,
+    0.4042,
+    1.0
+  ],
+  "colorD": [
+    0.9176,
+    0.3412,
+    0.3255,
+    1.0
+  ]
+}

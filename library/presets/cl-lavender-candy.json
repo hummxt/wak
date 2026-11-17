@@ -1,0 +1,37 @@
+{
+  "id": "cl-lavender-candy",
+  "name": "Lavender Candy",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lavender Candy.",
+  "thumbnail": "thumbnails/cl-lavender-candy.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5059,
+    0.0196,
+    0.4627,
+    1.0
+  ],
+  "colorB": [
+    0.6651,
+    0.2629,
+    0.5779,
+    1.0
+  ],
+  "colorC": [
+    0.8242,
+    0.5062,
+    0.6931,
+    1.0
+  ],
+  "colorD": [
+    0.9882,
+    0.7569,
+    0.8118,
+    1.0
+  ]
+}

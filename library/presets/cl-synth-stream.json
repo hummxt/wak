@@ -1,0 +1,37 @@
+{
+  "id": "cl-synth-stream",
+  "name": "Synth Stream",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Synth Stream.",
+  "thumbnail": "thumbnails/cl-synth-stream.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2588,
+    0.0157,
+    0.4941,
+    1.0
+  ],
+  "colorB": [
+    0.1825,
+    0.3263,
+    0.5355,
+    1.0
+  ],
+  "colorC": [
+    0.1061,
+    0.6369,
+    0.5769,
+    1.0
+  ],
+  "colorD": [
+    0.0275,
+    0.9569,
+    0.6196,
+    1.0
+  ]
+}

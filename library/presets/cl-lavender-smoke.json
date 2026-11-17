@@ -1,0 +1,37 @@
+{
+  "id": "cl-lavender-smoke",
+  "name": "Lavender Smoke",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lavender Smoke.",
+  "thumbnail": "thumbnails/cl-lavender-smoke.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4275,
+    0.3176,
+    0.6471,
+    1.0
+  ],
+  "colorB": [
+    0.5815,
+    0.4289,
+    0.6885,
+    1.0
+  ],
+  "colorC": [
+    0.7355,
+    0.5402,
+    0.7299,
+    1.0
+  ],
+  "colorD": [
+    0.8941,
+    0.6549,
+    0.7725,
+    1.0
+  ]
+}

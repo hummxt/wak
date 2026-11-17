@@ -1,0 +1,37 @@
+{
+  "id": "cl-violet-dust",
+  "name": "Violet Dust",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Violet Dust.",
+  "thumbnail": "thumbnails/cl-violet-dust.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.949,
+    0.7608,
+    0.9333,
+    1.0
+  ],
+  "colorB": [
+    0.9348,
+    0.6378,
+    0.9476,
+    1.0
+  ],
+  "colorC": [
+    0.9206,
+    0.5149,
+    0.9618,
+    1.0
+  ],
+  "colorD": [
+    0.9059,
+    0.3882,
+    0.9765,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-neon-rose",
+  "name": "Neon Rose",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Neon Rose.",
+  "thumbnail": "thumbnails/cl-neon-rose.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7686,
+    0.4431,
+    0.949,
+    1.0
+  ],
+  "colorB": [
+    0.8346,
+    0.4366,
+    0.8921,
+    1.0
+  ],
+  "colorC": [
+    0.9006,
+    0.4302,
+    0.8351,
+    1.0
+  ],
+  "colorD": [
+    0.9686,
+    0.4235,
+    0.7765,
+    1.0
+  ]
+}

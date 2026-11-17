@@ -1,0 +1,37 @@
+{
+  "id": "cl-cotton-voltage",
+  "name": "Cotton Voltage",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cotton Voltage.",
+  "thumbnail": "thumbnails/cl-cotton-voltage.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9765,
+    0.9059,
+    0.7333,
+    1.0
+  ],
+  "colorB": [
+    0.9451,
+    0.6961,
+    0.7333,
+    1.0
+  ],
+  "colorC": [
+    0.9137,
+    0.4863,
+    0.7333,
+    1.0
+  ],
+  "colorD": [
+    0.2392,
+    0.2784,
+    0.851,
+    1.0
+  ]
+}

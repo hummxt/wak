@@ -1,0 +1,37 @@
+{
+  "id": "cl-sunburn-edge",
+  "name": "Sunburn Edge",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Sunburn Edge.",
+  "thumbnail": "thumbnails/cl-sunburn-edge.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9137,
+    0.8157,
+    0.1333,
+    1.0
+  ],
+  "colorB": [
+    0.9098,
+    0.5607,
+    0.101,
+    1.0
+  ],
+  "colorC": [
+    0.906,
+    0.3058,
+    0.0686,
+    1.0
+  ],
+  "colorD": [
+    0.902,
+    0.0431,
+    0.0353,
+    1.0
+  ]
+}

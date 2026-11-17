@@ -1,0 +1,37 @@
+{
+  "id": "cl-crimson-void",
+  "name": "Crimson Void",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Crimson Void.",
+  "thumbnail": "thumbnails/cl-crimson-void.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.498,
+    0.0,
+    0.0706,
+    1.0
+  ],
+  "colorB": [
+    0.3686,
+    0.0129,
+    0.0564,
+    1.0
+  ],
+  "colorC": [
+    0.2392,
+    0.0259,
+    0.0422,
+    1.0
+  ],
+  "colorD": [
+    0.1059,
+    0.0392,
+    0.0275,
+    1.0
+  ]
+}

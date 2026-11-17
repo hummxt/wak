@@ -1,0 +1,37 @@
+{
+  "id": "cl-amber-burn",
+  "name": "Amber Burn",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Amber Burn.",
+  "thumbnail": "thumbnails/cl-amber-burn.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.8431,
+    0.5412,
+    1.0
+  ],
+  "colorB": [
+    0.9858,
+    0.7176,
+    0.4208,
+    1.0
+  ],
+  "colorC": [
+    0.9716,
+    0.592,
+    0.3005,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.4627,
+    0.1765,
+    1.0
+  ]
+}

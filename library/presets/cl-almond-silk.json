@@ -1,0 +1,37 @@
+{
+  "id": "cl-almond-silk",
+  "name": "Almond Silk",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Almond Silk.",
+  "thumbnail": "thumbnails/cl-almond-silk.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9451,
+    0.8824,
+    0.7608,
+    1.0
+  ],
+  "colorB": [
+    0.9593,
+    0.8345,
+    0.7064,
+    1.0
+  ],
+  "colorC": [
+    0.9735,
+    0.7866,
+    0.6521,
+    1.0
+  ],
+  "colorD": [
+    0.9882,
+    0.7373,
+    0.5961,
+    1.0
+  ]
+}

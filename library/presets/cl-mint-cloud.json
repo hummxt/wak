@@ -1,0 +1,37 @@
+{
+  "id": "cl-mint-cloud",
+  "name": "Mint Cloud",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Mint Cloud.",
+  "thumbnail": "thumbnails/cl-mint-cloud.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5294,
+    0.9569,
+    0.7098,
+    1.0
+  ],
+  "colorB": [
+    0.5449,
+    0.9038,
+    0.7874,
+    1.0
+  ],
+  "colorC": [
+    0.5605,
+    0.8508,
+    0.8651,
+    1.0
+  ],
+  "colorD": [
+    0.5765,
+    0.7961,
+    0.9451,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-peach-garden",
+  "name": "Peach Garden",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Peach Garden.",
+  "thumbnail": "thumbnails/cl-peach-garden.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8745,
+    0.949,
+    0.7961,
+    1.0
+  ],
+  "colorB": [
+    0.9079,
+    0.7902,
+    0.5118,
+    1.0
+  ],
+  "colorC": [
+    0.9412,
+    0.6314,
+    0.2275,
+    1.0
+  ],
+  "colorD": [
+    0.9333,
+    0.3765,
+    0.6039,
+    1.0
+  ]
+}

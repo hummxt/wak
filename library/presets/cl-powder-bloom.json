@@ -1,0 +1,37 @@
+{
+  "id": "cl-powder-bloom",
+  "name": "Powder Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Powder Bloom.",
+  "thumbnail": "thumbnails/cl-powder-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7882,
+    0.8706,
+    0.9569,
+    1.0
+  ],
+  "colorB": [
+    0.8745,
+    0.8353,
+    0.8942,
+    1.0
+  ],
+  "colorC": [
+    0.9608,
+    0.8,
+    0.8314,
+    1.0
+  ],
+  "colorD": [
+    0.7216,
+    0.6431,
+    0.7882,
+    1.0
+  ]
+}

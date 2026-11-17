@@ -1,0 +1,37 @@
+{
+  "id": "cl-citrus-shine",
+  "name": "Citrus Shine",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Citrus Shine.",
+  "thumbnail": "thumbnails/cl-citrus-shine.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.5765,
+    0.0588,
+    1.0
+  ],
+  "colorB": [
+    1.0,
+    0.7085,
+    0.1572,
+    1.0
+  ],
+  "colorC": [
+    1.0,
+    0.8405,
+    0.2555,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.9765,
+    0.3569,
+    1.0
+  ]
+}

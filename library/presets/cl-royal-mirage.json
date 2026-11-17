@@ -1,0 +1,37 @@
+{
+  "id": "cl-royal-mirage",
+  "name": "Royal Mirage",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Royal Mirage.",
+  "thumbnail": "thumbnails/cl-royal-mirage.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.5137,
+    0.1373,
+    0.5333,
+    1.0
+  ],
+  "colorB": [
+    0.702,
+    0.2,
+    0.4764,
+    1.0
+  ],
+  "colorC": [
+    0.8902,
+    0.2627,
+    0.4196,
+    1.0
+  ],
+  "colorD": [
+    0.9412,
+    0.4667,
+    0.1843,
+    1.0
+  ]
+}

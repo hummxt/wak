@@ -1,0 +1,37 @@
+{
+  "id": "cl-lime-rush",
+  "name": "Lime Rush",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lime Rush.",
+  "thumbnail": "thumbnails/cl-lime-rush.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3176,
+    0.7608,
+    0.4353,
+    1.0
+  ],
+  "colorB": [
+    0.526,
+    0.8113,
+    0.2929,
+    1.0
+  ],
+  "colorC": [
+    0.7343,
+    0.8617,
+    0.1506,
+    1.0
+  ],
+  "colorD": [
+    0.949,
+    0.9137,
+    0.0039,
+    1.0
+  ]
+}

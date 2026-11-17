@@ -1,0 +1,37 @@
+{
+  "id": "cl-soda-light",
+  "name": "Soda Light",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Soda Light.",
+  "thumbnail": "thumbnails/cl-soda-light.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.9176,
+    0.3765,
+    1.0
+  ],
+  "colorB": [
+    0.6019,
+    0.9333,
+    0.6236,
+    1.0
+  ],
+  "colorC": [
+    0.2353,
+    0.949,
+    0.8706,
+    1.0
+  ],
+  "colorD": [
+    0.9686,
+    0.4549,
+    0.7333,
+    1.0
+  ]
+}

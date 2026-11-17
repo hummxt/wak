@@ -1,0 +1,37 @@
+{
+  "id": "cl-royal-clash",
+  "name": "Royal Clash",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Royal Clash.",
+  "thumbnail": "thumbnails/cl-royal-clash.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8118,
+    0.1255,
+    0.2431,
+    1.0
+  ],
+  "colorB": [
+    0.6474,
+    0.2044,
+    0.37,
+    1.0
+  ],
+  "colorC": [
+    0.4831,
+    0.2834,
+    0.4968,
+    1.0
+  ],
+  "colorD": [
+    0.3137,
+    0.3647,
+    0.6275,
+    1.0
+  ]
+}

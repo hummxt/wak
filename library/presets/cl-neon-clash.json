@@ -1,0 +1,37 @@
+{
+  "id": "cl-neon-clash",
+  "name": "Neon Clash",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Neon Clash.",
+  "thumbnail": "thumbnails/cl-neon-clash.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0392,
+    0.7137,
+    0.9725,
+    1.0
+  ],
+  "colorB": [
+    0.333,
+    0.5364,
+    0.759,
+    1.0
+  ],
+  "colorC": [
+    0.6267,
+    0.3591,
+    0.5455,
+    1.0
+  ],
+  "colorD": [
+    0.9294,
+    0.1765,
+    0.3255,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-deep-current",
+  "name": "Deep Current",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Deep Current.",
+  "thumbnail": "thumbnails/cl-deep-current.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1882,
+    0.7725,
+    0.8235,
+    1.0
+  ],
+  "colorB": [
+    0.218,
+    0.5383,
+    0.6876,
+    1.0
+  ],
+  "colorC": [
+    0.2477,
+    0.304,
+    0.5518,
+    1.0
+  ],
+  "colorD": [
+    0.2784,
+    0.0627,
+    0.4118,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-cloud-circuit",
+  "name": "Cloud Circuit",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cloud Circuit.",
+  "thumbnail": "thumbnails/cl-cloud-circuit.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6784,
+    0.9922,
+    0.6353,
+    1.0
+  ],
+  "colorB": [
+    0.4765,
+    0.9378,
+    0.7401,
+    1.0
+  ],
+  "colorC": [
+    0.2747,
+    0.8835,
+    0.8449,
+    1.0
+  ],
+  "colorD": [
+    0.0667,
+    0.8275,
+    0.9529,
+    1.0
+  ]
+}

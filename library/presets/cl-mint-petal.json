@@ -1,0 +1,37 @@
+{
+  "id": "cl-mint-petal",
+  "name": "Mint Petal",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Mint Petal.",
+  "thumbnail": "thumbnails/cl-mint-petal.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9725,
+    0.8549,
+    0.8627,
+    1.0
+  ],
+  "colorB": [
+    0.8431,
+    0.8921,
+    0.8235,
+    1.0
+  ],
+  "colorC": [
+    0.7137,
+    0.9294,
+    0.7843,
+    1.0
+  ],
+  "colorD": [
+    0.9333,
+    0.6745,
+    0.8627,
+    1.0
+  ]
+}

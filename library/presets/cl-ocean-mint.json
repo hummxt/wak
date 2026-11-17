@@ -1,0 +1,37 @@
+{
+  "id": "cl-ocean-mint",
+  "name": "Ocean Mint",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Ocean Mint.",
+  "thumbnail": "thumbnails/cl-ocean-mint.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0784,
+    0.3216,
+    0.4667,
+    1.0
+  ],
+  "colorB": [
+    0.222,
+    0.4847,
+    0.5754,
+    1.0
+  ],
+  "colorC": [
+    0.3657,
+    0.6477,
+    0.6841,
+    1.0
+  ],
+  "colorD": [
+    0.5137,
+    0.8157,
+    0.7961,
+    1.0
+  ]
+}

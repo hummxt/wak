@@ -1,0 +1,37 @@
+{
+  "id": "cl-lavender-dream",
+  "name": "Lavender Dream",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lavender Dream.",
+  "thumbnail": "thumbnails/cl-lavender-dream.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.4118,
+    0.4314,
+    1.0,
+    1.0
+  ],
+  "colorB": [
+    0.5968,
+    0.5116,
+    1.0,
+    1.0
+  ],
+  "colorC": [
+    0.7819,
+    0.5918,
+    1.0,
+    1.0
+  ],
+  "colorD": [
+    0.9725,
+    0.6745,
+    1.0,
+    1.0
+  ]
+}

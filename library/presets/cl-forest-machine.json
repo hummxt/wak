@@ -1,0 +1,37 @@
+{
+  "id": "cl-forest-machine",
+  "name": "Forest Machine",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Forest Machine.",
+  "thumbnail": "thumbnails/cl-forest-machine.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0431,
+    0.1725,
+    0.1412,
+    1.0
+  ],
+  "colorB": [
+    0.0755,
+    0.2734,
+    0.1943,
+    1.0
+  ],
+  "colorC": [
+    0.1078,
+    0.3744,
+    0.2473,
+    1.0
+  ],
+  "colorD": [
+    0.1412,
+    0.4784,
+    0.302,
+    1.0
+  ]
+}

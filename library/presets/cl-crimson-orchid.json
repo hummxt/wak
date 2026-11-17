@@ -1,0 +1,37 @@
+{
+  "id": "cl-crimson-orchid",
+  "name": "Crimson Orchid",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Crimson Orchid.",
+  "thumbnail": "thumbnails/cl-crimson-orchid.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7294,
+    0.2039,
+    0.1608,
+    1.0
+  ],
+  "colorB": [
+    0.6776,
+    0.2233,
+    0.3264,
+    1.0
+  ],
+  "colorC": [
+    0.6258,
+    0.2427,
+    0.4921,
+    1.0
+  ],
+  "colorD": [
+    0.5725,
+    0.2627,
+    0.6627,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-velvet-rush",
+  "name": "Velvet Rush",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Velvet Rush.",
+  "thumbnail": "thumbnails/cl-velvet-rush.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8118,
+    0.2549,
+    0.2941,
+    1.0
+  ],
+  "colorB": [
+    0.716,
+    0.2135,
+    0.342,
+    1.0
+  ],
+  "colorC": [
+    0.6203,
+    0.1721,
+    0.3899,
+    1.0
+  ],
+  "colorD": [
+    0.5216,
+    0.1294,
+    0.4392,
+    1.0
+  ]
+}

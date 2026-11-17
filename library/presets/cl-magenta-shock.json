@@ -1,0 +1,37 @@
+{
+  "id": "cl-magenta-shock",
+  "name": "Magenta Shock",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Magenta Shock.",
+  "thumbnail": "thumbnails/cl-magenta-shock.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.6314,
+    0.0235,
+    0.9569,
+    1.0
+  ],
+  "colorB": [
+    0.722,
+    0.0248,
+    0.9647,
+    1.0
+  ],
+  "colorC": [
+    0.8126,
+    0.0261,
+    0.9724,
+    1.0
+  ],
+  "colorD": [
+    0.9059,
+    0.0275,
+    0.9804,
+    1.0
+  ]
+}

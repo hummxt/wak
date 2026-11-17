@@ -1,0 +1,37 @@
+{
+  "id": "cl-solar-ice",
+  "name": "Solar Ice",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Solar Ice.",
+  "thumbnail": "thumbnails/cl-solar-ice.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9412,
+    0.9216,
+    0.7529,
+    1.0
+  ],
+  "colorB": [
+    0.7785,
+    0.8942,
+    0.8549,
+    1.0
+  ],
+  "colorC": [
+    0.6157,
+    0.8667,
+    0.9569,
+    1.0
+  ],
+  "colorD": [
+    0.9137,
+    0.2275,
+    0.1569,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-floral-cloud",
+  "name": "Floral Cloud",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Floral Cloud.",
+  "thumbnail": "thumbnails/cl-floral-cloud.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7922,
+    0.949,
+    0.9373,
+    1.0
+  ],
+  "colorB": [
+    0.7902,
+    0.9431,
+    0.9,
+    1.0
+  ],
+  "colorC": [
+    0.7882,
+    0.9373,
+    0.8627,
+    1.0
+  ],
+  "colorD": [
+    0.949,
+    0.7333,
+    0.9451,
+    1.0
+  ]
+}

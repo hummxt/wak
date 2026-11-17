@@ -1,0 +1,37 @@
+{
+  "id": "cl-bliss-fade",
+  "name": "Bliss Fade",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Bliss Fade.",
+  "thumbnail": "thumbnails/cl-bliss-fade.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.7529,
+    0.9255,
+    1.0
+  ],
+  "colorB": [
+    0.8651,
+    0.749,
+    0.9229,
+    1.0
+  ],
+  "colorC": [
+    0.7616,
+    0.7452,
+    0.9203,
+    1.0
+  ],
+  "colorD": [
+    0.6549,
+    0.7412,
+    0.9176,
+    1.0
+  ]
+}

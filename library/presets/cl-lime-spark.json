@@ -1,0 +1,37 @@
+{
+  "id": "cl-lime-spark",
+  "name": "Lime Spark",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lime Spark.",
+  "thumbnail": "thumbnails/cl-lime-spark.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9804,
+    0.9804,
+    0.0,
+    1.0
+  ],
+  "colorB": [
+    0.8018,
+    0.851,
+    0.0155,
+    1.0
+  ],
+  "colorC": [
+    0.6232,
+    0.7215,
+    0.0311,
+    1.0
+  ],
+  "colorD": [
+    0.4392,
+    0.5882,
+    0.0471,
+    1.0
+  ]
+}

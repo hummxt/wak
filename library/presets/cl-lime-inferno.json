@@ -1,0 +1,37 @@
+{
+  "id": "cl-lime-inferno",
+  "name": "Lime Inferno",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lime Inferno.",
+  "thumbnail": "thumbnails/cl-lime-inferno.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1647,
+    0.5529,
+    0.0314,
+    1.0
+  ],
+  "colorB": [
+    0.5569,
+    0.7294,
+    0.0529,
+    1.0
+  ],
+  "colorC": [
+    0.949,
+    0.9059,
+    0.0745,
+    1.0
+  ],
+  "colorD": [
+    0.9686,
+    0.1176,
+    0.0235,
+    1.0
+  ]
+}

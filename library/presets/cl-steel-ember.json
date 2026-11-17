@@ -1,0 +1,37 @@
+{
+  "id": "cl-steel-ember",
+  "name": "Steel Ember",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Steel Ember.",
+  "thumbnail": "thumbnails/cl-steel-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3882,
+    0.5451,
+    0.5843,
+    1.0
+  ],
+  "colorB": [
+    0.5759,
+    0.5114,
+    0.4316,
+    1.0
+  ],
+  "colorC": [
+    0.7635,
+    0.4778,
+    0.2789,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.4431,
+    0.1216,
+    1.0
+  ]
+}

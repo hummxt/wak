@@ -1,0 +1,37 @@
+{
+  "id": "cl-lemon-breeze",
+  "name": "Lemon Breeze",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lemon Breeze.",
+  "thumbnail": "thumbnails/cl-lemon-breeze.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9333,
+    0.851,
+    0.5686,
+    1.0
+  ],
+  "colorB": [
+    0.8893,
+    0.8898,
+    0.6967,
+    1.0
+  ],
+  "colorC": [
+    0.8453,
+    0.9286,
+    0.8249,
+    1.0
+  ],
+  "colorD": [
+    0.8,
+    0.9686,
+    0.9569,
+    1.0
+  ]
+}

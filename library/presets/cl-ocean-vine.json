@@ -1,0 +1,37 @@
+{
+  "id": "cl-ocean-vine",
+  "name": "Ocean Vine",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Ocean Vine.",
+  "thumbnail": "thumbnails/cl-ocean-vine.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1686,
+    0.2706,
+    0.5176,
+    1.0
+  ],
+  "colorB": [
+    0.2087,
+    0.3858,
+    0.44,
+    1.0
+  ],
+  "colorC": [
+    0.2489,
+    0.5009,
+    0.3624,
+    1.0
+  ],
+  "colorD": [
+    0.2902,
+    0.6196,
+    0.2824,
+    1.0
+  ]
+}

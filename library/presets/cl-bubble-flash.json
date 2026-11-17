@@ -1,0 +1,37 @@
+{
+  "id": "cl-bubble-flash",
+  "name": "Bubble Flash",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Bubble Flash.",
+  "thumbnail": "thumbnails/cl-bubble-flash.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9804,
+    1.0,
+    0.5373,
+    1.0
+  ],
+  "colorB": [
+    0.9597,
+    0.8175,
+    0.5839,
+    1.0
+  ],
+  "colorC": [
+    0.939,
+    0.6351,
+    0.6304,
+    1.0
+  ],
+  "colorD": [
+    0.9176,
+    0.4471,
+    0.6784,
+    1.0
+  ]
+}

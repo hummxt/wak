@@ -1,0 +1,37 @@
+{
+  "id": "cl-fruit-sorbet",
+  "name": "Fruit Sorbet",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Fruit Sorbet.",
+  "thumbnail": "thumbnails/cl-fruit-sorbet.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.949,
+    0.5725,
+    0.9294,
+    1.0
+  ],
+  "colorB": [
+    0.9503,
+    0.5117,
+    0.7521,
+    1.0
+  ],
+  "colorC": [
+    0.9516,
+    0.4509,
+    0.5748,
+    1.0
+  ],
+  "colorD": [
+    0.9529,
+    0.3882,
+    0.3922,
+    1.0
+  ]
+}

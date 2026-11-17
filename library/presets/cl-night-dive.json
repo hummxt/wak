@@ -1,0 +1,37 @@
+{
+  "id": "cl-night-dive",
+  "name": "Night Dive",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Night Dive.",
+  "thumbnail": "thumbnails/cl-night-dive.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.0078,
+    0.0118,
+    0.2667,
+    1.0
+  ],
+  "colorB": [
+    0.057,
+    0.246,
+    0.4543,
+    1.0
+  ],
+  "colorC": [
+    0.1062,
+    0.4803,
+    0.642,
+    1.0
+  ],
+  "colorD": [
+    0.1569,
+    0.7216,
+    0.8353,
+    1.0
+  ]
+}

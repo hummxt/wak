@@ -1,0 +1,37 @@
+{
+  "id": "cl-dust-ember",
+  "name": "Dust & Ember",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Dust & Ember.",
+  "thumbnail": "thumbnails/cl-dust-ember.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.1216,
+    0.0784,
+    0.051,
+    1.0
+  ],
+  "colorB": [
+    0.282,
+    0.2182,
+    0.1843,
+    1.0
+  ],
+  "colorC": [
+    0.4425,
+    0.358,
+    0.3176,
+    1.0
+  ],
+  "colorD": [
+    0.6078,
+    0.502,
+    0.4549,
+    1.0
+  ]
+}

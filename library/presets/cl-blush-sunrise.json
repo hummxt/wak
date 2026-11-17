@@ -1,0 +1,37 @@
+{
+  "id": "cl-blush-sunrise",
+  "name": "Blush Sunrise",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Blush Sunrise.",
+  "thumbnail": "thumbnails/cl-blush-sunrise.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9922,
+    0.9451,
+    0.7961,
+    1.0
+  ],
+  "colorB": [
+    0.8925,
+    0.6539,
+    0.6175,
+    1.0
+  ],
+  "colorC": [
+    0.7929,
+    0.3627,
+    0.4389,
+    1.0
+  ],
+  "colorD": [
+    0.6902,
+    0.0627,
+    0.2549,
+    1.0
+  ]
+}

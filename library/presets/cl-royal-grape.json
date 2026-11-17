@@ -1,0 +1,37 @@
+{
+  "id": "cl-royal-grape",
+  "name": "Royal Grape",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Royal Grape.",
+  "thumbnail": "thumbnails/cl-royal-grape.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.2863,
+    0.1608,
+    0.3412,
+    1.0
+  ],
+  "colorB": [
+    0.3419,
+    0.2035,
+    0.3697,
+    1.0
+  ],
+  "colorC": [
+    0.3976,
+    0.2462,
+    0.3982,
+    1.0
+  ],
+  "colorD": [
+    0.4549,
+    0.2902,
+    0.4275,
+    1.0
+  ]
+}

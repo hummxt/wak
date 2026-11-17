@@ -1,0 +1,37 @@
+{
+  "id": "cl-burnt-horizon",
+  "name": "Burnt Horizon",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Burnt Horizon.",
+  "thumbnail": "thumbnails/cl-burnt-horizon.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7412,
+    0.2784,
+    0.2,
+    1.0
+  ],
+  "colorB": [
+    0.5289,
+    0.3069,
+    0.3747,
+    1.0
+  ],
+  "colorC": [
+    0.3167,
+    0.3354,
+    0.5494,
+    1.0
+  ],
+  "colorD": [
+    0.098,
+    0.3647,
+    0.7294,
+    1.0
+  ]
+}

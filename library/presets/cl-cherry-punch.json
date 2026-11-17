@@ -1,0 +1,37 @@
+{
+  "id": "cl-cherry-punch",
+  "name": "Cherry Punch",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cherry Punch.",
+  "thumbnail": "thumbnails/cl-cherry-punch.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9725,
+    0.2392,
+    0.3608,
+    1.0
+  ],
+  "colorB": [
+    0.979,
+    0.2573,
+    0.3026,
+    1.0
+  ],
+  "colorC": [
+    0.9855,
+    0.2754,
+    0.2443,
+    1.0
+  ],
+  "colorD": [
+    0.9922,
+    0.2941,
+    0.1843,
+    1.0
+  ]
+}

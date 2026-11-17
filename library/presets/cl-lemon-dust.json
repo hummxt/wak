@@ -1,0 +1,37 @@
+{
+  "id": "cl-lemon-dust",
+  "name": "Lemon Dust",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Lemon Dust.",
+  "thumbnail": "thumbnails/cl-lemon-dust.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.9843,
+    0.6863,
+    1.0
+  ],
+  "colorB": [
+    0.8913,
+    0.7138,
+    0.7665,
+    1.0
+  ],
+  "colorC": [
+    0.7826,
+    0.4434,
+    0.8467,
+    1.0
+  ],
+  "colorD": [
+    0.6706,
+    0.1647,
+    0.9294,
+    1.0
+  ]
+}

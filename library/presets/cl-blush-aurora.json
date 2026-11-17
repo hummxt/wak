@@ -1,0 +1,37 @@
+{
+  "id": "cl-blush-aurora",
+  "name": "Blush Aurora",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Blush Aurora.",
+  "thumbnail": "thumbnails/cl-blush-aurora.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9882,
+    0.8588,
+    0.7922,
+    1.0
+  ],
+  "colorB": [
+    0.9451,
+    0.753,
+    0.7961,
+    1.0
+  ],
+  "colorC": [
+    0.902,
+    0.6471,
+    0.8,
+    1.0
+  ],
+  "colorD": [
+    0.8353,
+    0.702,
+    0.9098,
+    1.0
+  ]
+}

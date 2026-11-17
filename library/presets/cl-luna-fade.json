@@ -1,0 +1,37 @@
+{
+  "id": "cl-luna-fade",
+  "name": "Luna Fade",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Luna Fade.",
+  "thumbnail": "thumbnails/cl-luna-fade.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9569,
+    0.5725,
+    0.9412,
+    1.0
+  ],
+  "colorB": [
+    0.8495,
+    0.566,
+    0.8972,
+    1.0
+  ],
+  "colorC": [
+    0.7421,
+    0.5596,
+    0.8532,
+    1.0
+  ],
+  "colorD": [
+    0.6314,
+    0.5529,
+    0.8078,
+    1.0
+  ]
+}

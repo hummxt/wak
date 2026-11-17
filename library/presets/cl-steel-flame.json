@@ -1,0 +1,37 @@
+{
+  "id": "cl-steel-flame",
+  "name": "Steel & Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Steel & Flame.",
+  "thumbnail": "thumbnails/cl-steel-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.3529,
+    0.4039,
+    0.4627,
+    1.0
+  ],
+  "colorB": [
+    0.5664,
+    0.4298,
+    0.4601,
+    1.0
+  ],
+  "colorC": [
+    0.78,
+    0.4557,
+    0.4576,
+    1.0
+  ],
+  "colorD": [
+    1.0,
+    0.4824,
+    0.4549,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-glow-silk",
+  "name": "Glow Silk",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Glow Silk.",
+  "thumbnail": "thumbnails/cl-glow-silk.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.949,
+    0.9529,
+    0.8863,
+    1.0
+  ],
+  "colorB": [
+    0.8235,
+    0.9254,
+    0.9294,
+    1.0
+  ],
+  "colorC": [
+    0.698,
+    0.898,
+    0.9725,
+    1.0
+  ],
+  "colorD": [
+    0.9569,
+    0.702,
+    0.9373,
+    1.0
+  ]
+}

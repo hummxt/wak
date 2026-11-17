@@ -1,0 +1,37 @@
+{
+  "id": "cl-cyber-rose",
+  "name": "Cyber Rose",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cyber Rose.",
+  "thumbnail": "thumbnails/cl-cyber-rose.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7843,
+    0.1137,
+    0.4667,
+    1.0
+  ],
+  "colorB": [
+    0.6588,
+    0.0969,
+    0.5638,
+    1.0
+  ],
+  "colorC": [
+    0.5332,
+    0.08,
+    0.6608,
+    1.0
+  ],
+  "colorD": [
+    0.4039,
+    0.0627,
+    0.7608,
+    1.0
+  ]
+}

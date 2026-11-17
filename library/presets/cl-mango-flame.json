@@ -1,0 +1,37 @@
+{
+  "id": "cl-mango-flame",
+  "name": "Mango Flame",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Mango Flame.",
+  "thumbnail": "thumbnails/cl-mango-flame.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9686,
+    0.298,
+    0.0235,
+    1.0
+  ],
+  "colorB": [
+    0.9712,
+    0.443,
+    0.0727,
+    1.0
+  ],
+  "colorC": [
+    0.9738,
+    0.5879,
+    0.1218,
+    1.0
+  ],
+  "colorD": [
+    0.9765,
+    0.7373,
+    0.1725,
+    1.0
+  ]
+}

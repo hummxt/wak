@@ -1,0 +1,37 @@
+{
+  "id": "cl-melon-vibe",
+  "name": "Melon Vibe",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Melon Vibe.",
+  "thumbnail": "thumbnails/cl-melon-vibe.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    1.0,
+    0.7922,
+    0.651,
+    1.0
+  ],
+  "colorB": [
+    0.9909,
+    0.6615,
+    0.6277,
+    1.0
+  ],
+  "colorC": [
+    0.9819,
+    0.5308,
+    0.6044,
+    1.0
+  ],
+  "colorD": [
+    0.9725,
+    0.3961,
+    0.5804,
+    1.0
+  ]
+}

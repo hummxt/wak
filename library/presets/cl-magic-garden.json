@@ -1,0 +1,37 @@
+{
+  "id": "cl-magic-garden",
+  "name": "Magic Garden",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Magic Garden.",
+  "thumbnail": "thumbnails/cl-magic-garden.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.749,
+    0.0588,
+    1.0,
+    1.0
+  ],
+  "colorB": [
+    0.7645,
+    0.3694,
+    0.7645,
+    1.0
+  ],
+  "colorC": [
+    0.7801,
+    0.68,
+    0.529,
+    1.0
+  ],
+  "colorD": [
+    0.7961,
+    1.0,
+    0.2863,
+    1.0
+  ]
+}

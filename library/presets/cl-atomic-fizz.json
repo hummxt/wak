@@ -1,0 +1,37 @@
+{
+  "id": "cl-atomic-fizz",
+  "name": "Atomic Fizz",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Atomic Fizz.",
+  "thumbnail": "thumbnails/cl-atomic-fizz.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8863,
+    0.0431,
+    0.549,
+    1.0
+  ],
+  "colorB": [
+    0.9147,
+    0.1259,
+    0.3678,
+    1.0
+  ],
+  "colorC": [
+    0.9432,
+    0.2088,
+    0.1867,
+    1.0
+  ],
+  "colorD": [
+    0.9725,
+    0.2941,
+    0.0,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-cyber-bloom",
+  "name": "Cyber Bloom",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Cyber Bloom.",
+  "thumbnail": "thumbnails/cl-cyber-bloom.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9882,
+    0.9373,
+    0.0157,
+    1.0
+  ],
+  "colorB": [
+    0.9468,
+    0.7121,
+    0.2111,
+    1.0
+  ],
+  "colorC": [
+    0.9054,
+    0.4869,
+    0.4065,
+    1.0
+  ],
+  "colorD": [
+    0.8627,
+    0.2549,
+    0.6078,
+    1.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cl-spark-drift",
+  "name": "Spark Drift",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Spark Drift.",
+  "thumbnail": "thumbnails/cl-spark-drift.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9412,
+    0.9176,
+    0.9882,
+    1.0
+  ],
+  "colorB": [
+    0.6608,
+    0.8627,
+    0.9686,
+    1.0
+  ],
+  "colorC": [
+    0.3804,
+    0.8078,
+    0.949,
+    1.0
+  ],
+  "colorD": [
+    0.9608,
+    0.2196,
+    0.7255,
+    1.0
+  ]
+}

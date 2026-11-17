@@ -1,0 +1,37 @@
+{
+  "id": "cl-pale-frost",
+  "name": "Pale Frost",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Pale Frost.",
+  "thumbnail": "thumbnails/cl-pale-frost.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9647,
+    0.7686,
+    0.9294,
+    1.0
+  ],
+  "colorB": [
+    0.9375,
+    0.7971,
+    0.9204,
+    1.0
+  ],
+  "colorC": [
+    0.9104,
+    0.8256,
+    0.9113,
+    1.0
+  ],
+  "colorD": [
+    0.8824,
+    0.8549,
+    0.902,
+    1.0
+  ]
+}

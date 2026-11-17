@@ -1,0 +1,37 @@
+{
+  "id": "cl-golden-twilight-dcf180-f0cd97-35518a",
+  "name": "Golden Twilight (#DCF180 \u2192 #F0CD97 \u2192 #35518A)",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Golden Twilight (#DCF180 \u2192 #F0CD97 \u2192 #35518A).",
+  "thumbnail": "thumbnails/cl-golden-twilight-dcf180-f0cd97-35518a.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.8627,
+    0.9451,
+    0.502,
+    1.0
+  ],
+  "colorB": [
+    0.902,
+    0.8745,
+    0.5471,
+    1.0
+  ],
+  "colorC": [
+    0.9412,
+    0.8039,
+    0.5922,
+    1.0
+  ],
+  "colorD": [
+    0.2078,
+    0.3176,
+    0.5412,
+    1.0
+  ]
+}

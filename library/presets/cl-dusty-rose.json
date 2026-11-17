@@ -1,0 +1,37 @@
+{
+  "id": "cl-dusty-rose",
+  "name": "Dusty Rose",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Dusty Rose.",
+  "thumbnail": "thumbnails/cl-dusty-rose.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.7216,
+    0.6118,
+    0.5765,
+    1.0
+  ],
+  "colorB": [
+    0.6672,
+    0.5445,
+    0.517,
+    1.0
+  ],
+  "colorC": [
+    0.6129,
+    0.4772,
+    0.4574,
+    1.0
+  ],
+  "colorD": [
+    0.5569,
+    0.4078,
+    0.3961,
+    1.0
+  ]
+}

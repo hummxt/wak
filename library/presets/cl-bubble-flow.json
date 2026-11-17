@@ -1,0 +1,37 @@
+{
+  "id": "cl-bubble-flow",
+  "name": "Bubble Flow",
+  "category": "gradient",
+  "shader": "still/SoftLinear",
+  "description": "CSS linear gradient from Coolors: Bubble Flow.",
+  "thumbnail": "thumbnails/cl-bubble-flow.png",
+  "defaultSettings": {
+    "speed": 0.0,
+    "intensity": 0.85,
+    "angle": 90.0
+  },
+  "colorA": [
+    0.9137,
+    0.1216,
+    0.6588,
+    1.0
+  ],
+  "colorB": [
+    0.8516,
+    0.3701,
+    0.7494,
+    1.0
+  ],
+  "colorC": [
+    0.7895,
+    0.6185,
+    0.84,
+    1.0
+  ],
+  "colorD": [
+    0.7255,
+    0.8745,
+    0.9333,
+    1.0
+  ]
+}
