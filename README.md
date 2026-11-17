@@ -67,7 +67,7 @@ Output: `build\Release\Wakbg.exe`
 3. Click **Apply to Desktop**  
 4. Close the window — wallpaper stays via the tray (and after reboot if start-with-Windows is on)
 
-Tray → **Stop Wallpaper and Exit** restores the normal Windows background.
+Tray → **Exit** removes the tray icon and keeps the wallpaper running in the background. Launch Wakbg again to reopen the UI. Turn off **Wallpaper mode** in Settings only if you want the default Windows background back.
 
 ---
 

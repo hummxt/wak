@@ -45,8 +45,10 @@ void DrawAboutPage() {
     ImGui::BulletText("Tweak colors, speed, and intensity on the right panel.");
     ImGui::BulletText("Press Apply to Desktop to put it behind your icons.");
     ImGui::BulletText("Close the window anytime — the wallpaper keeps running.");
-    ImGui::BulletText("Right-click the tray icon to open the UI again or exit.");
-    ImGui::BulletText("After apply, Wakbg can restore your wallpaper after reboot.");
+    ImGui::BulletText("Close the window to hide the UI — wallpaper keeps running from the tray.");
+    ImGui::BulletText("Tray Exit hides the tray and keeps the wallpaper running in the background.");
+    ImGui::BulletText("Launch Wakbg again anytime to reopen the UI.");
+    ImGui::BulletText("Turn off Wallpaper mode in Settings only if you want the default Windows background.");
 
     ImGui::Spacing();
     ImGui::Separator();
