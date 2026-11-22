@@ -1,0 +1,38 @@
+{
+  "id": "wave-silk",
+  "name": "Silk Waves",
+  "category": "waves",
+  "shader": "waves/WaveGradient",
+  "description": "Layered silk waves for long sessions.",
+  "thumbnail": "thumbnails/wave-silk.png",
+  "colorA": [
+    0.1,
+    0.08,
+    0.18,
+    1
+  ],
+  "colorB": [
+    0.35,
+    0.25,
+    0.55,
+    1
+  ],
+  "colorC": [
+    0.85,
+    0.45,
+    0.65,
+    1
+  ],
+  "colorD": [
+    0.45,
+    0.75,
+    0.9,
+    1
+  ],
+  "speed": 0.35,
+  "intensity": 0.6,
+  "freq": 4.0,
+  "sharpness": 2.0,
+  "amplitude": 0.9,
+  "waveWidthMod": 0.4
+}
