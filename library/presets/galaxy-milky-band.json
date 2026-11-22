@@ -1,0 +1,43 @@
+{
+  "id": "galaxy-milky-band",
+  "name": "Milky Band",
+  "category": "galaxy",
+  "shader": "galaxy/Galaxy",
+  "description": "Diagonal milky-way style star river with warm dust.",
+  "thumbnail": "thumbnails/galaxy-milky-band.png",
+  "colorA": [
+    0.01,
+    0.02,
+    0.05,
+    1
+  ],
+  "colorB": [
+    0.15,
+    0.18,
+    0.35,
+    1
+  ],
+  "colorC": [
+    0.75,
+    0.45,
+    0.35,
+    1
+  ],
+  "colorD": [
+    1.0,
+    0.85,
+    0.7,
+    1
+  ],
+  "speed": 0.16,
+  "intensity": 0.85,
+  "zoom": 0.95,
+  "freq": 6.0,
+  "sharpness": 2.0,
+  "amplitude": 1.05,
+  "waveWidthMod": 0.25,
+  "offsetX": -0.05,
+  "offsetY": 0.1,
+  "localWarpIntensity": 0.7,
+  "localWarpFreqY": 1.8
+}
