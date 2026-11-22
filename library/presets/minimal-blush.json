@@ -1,0 +1,35 @@
+{
+  "id": "minimal-blush",
+  "name": "Minimal Blush",
+  "category": "minimal",
+  "shader": "minimal/MinimalGradient",
+  "description": "Soft blush gradient, almost still.",
+  "thumbnail": "thumbnails/minimal-blush.png",
+  "colorA": [
+    0.95,
+    0.88,
+    0.9,
+    1
+  ],
+  "colorB": [
+    0.9,
+    0.75,
+    0.8,
+    1
+  ],
+  "colorC": [
+    0.85,
+    0.85,
+    0.92,
+    1
+  ],
+  "colorD": [
+    0.98,
+    0.95,
+    0.95,
+    1
+  ],
+  "speed": 0.1,
+  "intensity": 0.22,
+  "angle": 160.0
+}
