@@ -1,0 +1,39 @@
+{
+  "id": "noise-beam",
+  "name": "Grain Beam",
+  "category": "noise",
+  "shader": "noise/NoiseField",
+  "description": "Soft diagonal light beam with fine film grain.",
+  "thumbnail": "thumbnails/noise-beam.png",
+  "colorA": [
+    0.05,
+    0.05,
+    0.06,
+    1
+  ],
+  "colorB": [
+    0.22,
+    0.22,
+    0.24,
+    1
+  ],
+  "colorC": [
+    0.72,
+    0.72,
+    0.74,
+    1
+  ],
+  "colorD": [
+    0.95,
+    0.95,
+    0.96,
+    1
+  ],
+  "speed": 0.12,
+  "intensity": 0.7,
+  "angle": 135,
+  "zoom": 1.1,
+  "freq": 5,
+  "amplitude": 0.9,
+  "grainIntensity": 0.1
+}
