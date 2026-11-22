@@ -1,0 +1,35 @@
+{
+  "id": "minimal-sage",
+  "name": "Minimal Sage",
+  "category": "minimal",
+  "shader": "minimal/MinimalGradient",
+  "description": "Calm sage-to-cream field.",
+  "thumbnail": "thumbnails/minimal-sage.png",
+  "colorA": [
+    0.75,
+    0.82,
+    0.75,
+    1
+  ],
+  "colorB": [
+    0.55,
+    0.65,
+    0.58,
+    1
+  ],
+  "colorC": [
+    0.9,
+    0.9,
+    0.85,
+    1
+  ],
+  "colorD": [
+    0.95,
+    0.95,
+    0.92,
+    1
+  ],
+  "speed": 0.12,
+  "intensity": 0.3,
+  "angle": 25.0
+}
