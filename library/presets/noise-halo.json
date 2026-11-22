@@ -1,0 +1,38 @@
+{
+  "id": "noise-halo",
+  "name": "Soft Halo Grain",
+  "category": "noise",
+  "shader": "noise/NoiseField",
+  "description": "Central glow through dense monochrome grain.",
+  "thumbnail": "thumbnails/noise-halo.png",
+  "colorA": [
+    0.04,
+    0.04,
+    0.05,
+    1
+  ],
+  "colorB": [
+    0.18,
+    0.18,
+    0.2,
+    1
+  ],
+  "colorC": [
+    0.6,
+    0.6,
+    0.62,
+    1
+  ],
+  "colorD": [
+    0.92,
+    0.92,
+    0.93,
+    1
+  ],
+  "speed": 0.1,
+  "intensity": 0.8,
+  "angle": 45,
+  "zoom": 1.3,
+  "amplitude": 1.1,
+  "grainIntensity": 0.09
+}
