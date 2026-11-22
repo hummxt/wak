@@ -3,35 +3,35 @@
   "name": "Wave Pulse",
   "category": "waves",
   "shader": "waves/WaveGradient",
-  "description": "Rhythmic wave bands across the desktop.",
+  "description": "Classic crossing wave pulse.",
   "thumbnail": "thumbnails/wave-pulse.png",
-  "defaultSettings": {
-    "speed": 0.5,
-    "intensity": 0.65,
-    "angle": 0.0
-  },
   "colorA": [
-    0.0118,
-    0.102,
-    0.2392,
-    1.0
+    0.05,
+    0.15,
+    0.35,
+    1
   ],
   "colorB": [
-    0.1059,
-    0.4196,
-    1.0,
-    1.0
+    0.15,
+    0.45,
+    0.85,
+    1
   ],
   "colorC": [
-    0.349,
-    0.8235,
-    0.9961,
-    1.0
+    0.55,
+    0.85,
+    0.95,
+    1
   ],
   "colorD": [
-    0.0392,
-    0.1529,
-    0.3098,
-    1.0
-  ]
+    0.95,
+    0.55,
+    0.75,
+    1
+  ],
+  "speed": 0.55,
+  "intensity": 0.85,
+  "freq": 5.5,
+  "sharpness": 2.4,
+  "amplitude": 1.1
 }
