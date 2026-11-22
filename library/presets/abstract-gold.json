@@ -1,0 +1,35 @@
+{
+  "id": "abstract-gold",
+  "name": "Abstract Gold",
+  "category": "abstract",
+  "shader": "abstract/Abstract",
+  "description": "Warm gold abstract field.",
+  "thumbnail": "thumbnails/abstract-gold.png",
+  "colorA": [
+    0.12,
+    0.06,
+    0.02,
+    1
+  ],
+  "colorB": [
+    0.75,
+    0.45,
+    0.1,
+    1
+  ],
+  "colorC": [
+    0.95,
+    0.8,
+    0.35,
+    1
+  ],
+  "colorD": [
+    0.45,
+    0.2,
+    0.35,
+    1
+  ],
+  "speed": 0.35,
+  "intensity": 0.7,
+  "angle": 45
+}
