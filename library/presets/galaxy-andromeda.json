@@ -1,0 +1,43 @@
+{
+  "id": "galaxy-andromeda",
+  "name": "Andromeda Drift",
+  "category": "galaxy",
+  "shader": "galaxy/Galaxy",
+  "description": "Tilted spiral disk with warm core and blue arms.",
+  "thumbnail": "thumbnails/galaxy-andromeda.png",
+  "colorA": [
+    0.01,
+    0.02,
+    0.06,
+    1
+  ],
+  "colorB": [
+    0.12,
+    0.2,
+    0.45,
+    1
+  ],
+  "colorC": [
+    0.45,
+    0.65,
+    0.95,
+    1
+  ],
+  "colorD": [
+    1.0,
+    0.9,
+    0.7,
+    1
+  ],
+  "speed": 0.18,
+  "intensity": 0.9,
+  "zoom": 1.2,
+  "freq": 4.5,
+  "sharpness": 2.6,
+  "amplitude": 1.25,
+  "waveWidthMod": 0.85,
+  "offsetX": 0.08,
+  "offsetY": -0.05,
+  "localWarpIntensity": 0.55,
+  "localWarpFreqY": 1.4
+}
