@@ -1,0 +1,42 @@
+{
+  "id": "sg-skyline",
+  "name": "Skyline",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Bright skyline cyan-blue shader.",
+  "thumbnail": "thumbnails/sg-skyline.png",
+  "colorA": [
+    0.05,
+    0.15,
+    0.35,
+    1
+  ],
+  "colorB": [
+    0.15,
+    0.45,
+    0.85,
+    1
+  ],
+  "colorC": [
+    0.45,
+    0.8,
+    0.95,
+    1
+  ],
+  "colorD": [
+    0.95,
+    0.95,
+    0.85,
+    1
+  ],
+  "speed": 0.3,
+  "intensity": 1.5,
+  "angle": 70,
+  "zoom": 0.9,
+  "freq": 6.0,
+  "sharpness": 1.0,
+  "amplitude": 1.5,
+  "waveWidthMod": 0.42,
+  "localWarpIntensity": 1.0,
+  "grainIntensity": 0.05
+}
