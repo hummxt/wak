@@ -5,33 +5,31 @@
   "shader": "abstract/Abstract",
   "description": "Abstract orbiting colour forms.",
   "thumbnail": "thumbnails/abstract-orbit.png",
-  "defaultSettings": {
-    "speed": 0.45,
-    "intensity": 0.8,
-    "angle": 60.0
-  },
   "colorA": [
     1.0,
-    0.3686,
-    0.2275,
-    1.0
+    0.37,
+    0.23,
+    1
   ],
   "colorB": [
     1.0,
-    0.1804,
-    0.3882,
-    1.0
+    0.18,
+    0.39,
+    1
   ],
   "colorC": [
-    0.2275,
-    0.1098,
-    0.4431,
-    1.0
+    0.23,
+    0.11,
+    0.44,
+    1
   ],
   "colorD": [
-    0.8431,
-    0.4275,
-    0.4667,
-    1.0
-  ]
+    0.84,
+    0.43,
+    0.47,
+    1
+  ],
+  "speed": 0.45,
+  "intensity": 0.8,
+  "angle": 60
 }
