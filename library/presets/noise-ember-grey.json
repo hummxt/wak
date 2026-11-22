@@ -1,0 +1,39 @@
+{
+  "id": "noise-ember-grey",
+  "name": "Ash Gradient",
+  "category": "noise",
+  "shader": "noise/NoiseField",
+  "description": "Matte charcoal-to-silver grain field.",
+  "thumbnail": "thumbnails/noise-ember-grey.png",
+  "colorA": [
+    0.02,
+    0.02,
+    0.025,
+    1
+  ],
+  "colorB": [
+    0.14,
+    0.14,
+    0.15,
+    1
+  ],
+  "colorC": [
+    0.45,
+    0.45,
+    0.47,
+    1
+  ],
+  "colorD": [
+    0.82,
+    0.82,
+    0.84,
+    1
+  ],
+  "speed": 0.08,
+  "intensity": 0.55,
+  "angle": 90,
+  "zoom": 0.9,
+  "freq": 4,
+  "amplitude": 0.7,
+  "grainIntensity": 0.12
+}
