@@ -5,6 +5,12 @@ namespace ge {
 
 void ThumbnailCache::Clear() {
     m_entries.clear();
+    ClearHover();
+}
+
+void ThumbnailCache::ClearHover() {
+    m_hover = {};
+    m_hoverPresetId.clear();
 }
 
 ID3D11ShaderResourceView* ThumbnailCache::Get(const std::string& presetId) const {
@@ -43,20 +49,11 @@ bool ThumbnailCache::CreateEntry(Renderer& renderer, Entry& entry) {
     return SUCCEEDED(hr);
 }
 
-bool ThumbnailCache::RenderPreset(Renderer& renderer, const AnimationPreset& preset, Entry& entry) {
-    std::wstring shaderPath = Widen(preset.shader);
-    for (auto& ch : shaderPath) {
-        if (ch == L'/') {
-            ch = L'\\';
-        }
-    }
-
-    if (!renderer.SetShader(preset.id, shaderPath)) {
-        return false;
-    }
-
+AnimationSettings ThumbnailCache::SettingsFromPreset(const AnimationPreset& preset, bool animate) {
     AnimationSettings settings{};
-    settings.speed = 0.0f;
+    settings.speed = animate
+        ? (preset.defaultSpeed > 0.05f ? preset.defaultSpeed : 0.45f)
+        : 0.0f;
     settings.intensity = preset.defaultIntensity > 0.0f ? preset.defaultIntensity : 0.85f;
     settings.brightness = preset.defaultBrightness;
     settings.angle = preset.defaultAngle;
@@ -80,9 +77,55 @@ bool ThumbnailCache::RenderPreset(Renderer& renderer, const AnimationPreset& pre
     settings.colorB = preset.colorB;
     settings.colorC = preset.colorC;
     settings.colorD = preset.colorD;
+    return settings;
+}
 
+bool ThumbnailCache::RenderPreset(
+    Renderer& renderer,
+    const AnimationPreset& preset,
+    Entry& entry,
+    float timeSeconds,
+    bool animate
+) {
+    std::wstring shaderPath = Widen(preset.shader);
+    for (auto& ch : shaderPath) {
+        if (ch == L'/') {
+            ch = L'\\';
+        }
+    }
+
+    if (!renderer.SetShader(preset.id, shaderPath)) {
+        return false;
+    }
+
+    AnimationSettings settings = SettingsFromPreset(preset, animate);
     renderer.SetPalette(settings.colorA, settings.colorB, settings.colorC, settings.colorD);
-    return renderer.RenderToTarget(entry.rtv.Get(), kWidth, kHeight, settings, 0.0f);
+    return renderer.RenderToTarget(entry.rtv.Get(), kWidth, kHeight, settings, timeSeconds);
+}
+
+ID3D11ShaderResourceView* ThumbnailCache::RenderHover(
+    Renderer& renderer,
+    const AnimationPreset& preset,
+    float timeSeconds
+) {
+    if (!m_hover.rtv) {
+        if (!CreateEntry(renderer, m_hover)) {
+            return nullptr;
+        }
+    }
+
+    const std::string previousShader = renderer.GetActiveShader();
+    if (!RenderPreset(renderer, preset, m_hover, timeSeconds, true)) {
+        if (!previousShader.empty()) {
+            renderer.ActivateShader(previousShader);
+        }
+        return nullptr;
+    }
+    m_hoverPresetId = preset.id;
+    if (!previousShader.empty()) {
+        renderer.ActivateShader(previousShader);
+    }
+    return m_hover.srv.Get();
 }
 
 bool ThumbnailCache::HasMissing(const std::vector<AnimationPreset>& presets) const {
@@ -110,7 +153,7 @@ int ThumbnailCache::BuildMissing(Renderer& renderer, const std::vector<Animation
         if (!CreateEntry(renderer, entry)) {
             continue;
         }
-        if (!RenderPreset(renderer, preset, entry)) {
+        if (!RenderPreset(renderer, preset, entry, 0.0f, false)) {
             continue;
         }
 

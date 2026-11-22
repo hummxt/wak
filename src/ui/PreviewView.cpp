@@ -22,7 +22,12 @@ bool DrawColorSwatch(const char* id, float color[4], float size = 28.0f) {
         ImGui::EndTooltip();
     }
     if (ImGui::BeginPopup("picker")) {
-        changed |= ImGui::ColorPicker4("##picker", color, ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoSidePreview | ImGuiColorEditFlags_NoSmallPreview);
+        changed |= ImGui::ColorPicker4(
+            "##picker",
+            color,
+            ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_AlphaBar |
+                ImGuiColorEditFlags_NoSidePreview | ImGuiColorEditFlags_NoSmallPreview
+        );
         ImGui::EndPopup();
     }
     ImGui::PopID();
@@ -34,6 +39,33 @@ void RandomizeColor(std::array<float, 4>& c) {
     c[1] = static_cast<float>(std::rand() % 1000) / 1000.0f;
     c[2] = static_cast<float>(std::rand() % 1000) / 1000.0f;
     c[3] = 1.0f;
+}
+
+void ApplyPresetDefaults(const AnimationPreset& preset, AnimationSettings& animation) {
+    animation.speed = preset.defaultSpeed;
+    animation.intensity = preset.defaultIntensity;
+    animation.brightness = preset.defaultBrightness;
+    animation.angle = preset.defaultAngle;
+    animation.zoom = preset.defaultZoom;
+    animation.freq = preset.defaultFreq;
+    animation.sharpness = preset.defaultSharpness;
+    animation.amplitude = preset.defaultAmplitude;
+    animation.waveWidthMod = preset.defaultWaveWidthMod;
+    animation.offsetX = preset.defaultOffsetX;
+    animation.offsetY = preset.defaultOffsetY;
+    animation.localWarpIntensity = preset.defaultLocalWarpIntensity;
+    animation.localWarpFreqY = preset.defaultLocalWarpFreqY;
+    animation.ditherLevels = preset.defaultDitherLevels;
+    animation.ditherScale = preset.defaultDitherScale;
+    animation.grainIntensity = preset.defaultGrainIntensity;
+    animation.grainSpeed = preset.defaultGrainSpeed;
+    animation.contrast = preset.defaultContrast;
+    animation.vignetteIntensity = preset.defaultVignetteIntensity;
+    animation.vignetteRadius = preset.defaultVignetteRadius;
+    animation.colorA = preset.colorA;
+    animation.colorB = preset.colorB;
+    animation.colorC = preset.colorC;
+    animation.colorD = preset.colorD;
 }
 
 }
@@ -70,86 +102,103 @@ void PreviewView::Draw(
     ImGui::TextWrapped("%s", preset->description.c_str());
     ImGui::Separator();
 
-    ImGui::TextUnformatted("Motion");
-    bool frozen = animation.speed <= 0.0001f;
-    if (ImGui::Checkbox("Freeze as still image", &frozen)) {
-        animation.speed = frozen ? 0.0f : (std::max)(preset->defaultSpeed, 0.25f);
-        onSettingsChanged();
-    }
-    if (ImGui::SliderFloat("Speed", &animation.speed, 0.0f, 3.0f, "%.2f")) {
-        onSettingsChanged();
-    }
-    ImGui::TextDisabled(animation.speed <= 0.0001f ? "Frozen still — no animation." : "Animated — set Speed to 0 to freeze.");
-    if (ImGui::SliderFloat("Intensity", &animation.intensity, 0.05f, 2.0f, "%.2f")) {
-        onSettingsChanged();
-    }
-    if (ImGui::SliderFloat("Brightness", &animation.brightness, 0.2f, 2.0f, "%.2f")) {
-        onSettingsChanged();
-    }
-    if (ImGui::SliderFloat("Angle", &animation.angle, 0.0f, 360.0f, "%.0f deg")) {
-        onSettingsChanged();
-    }
+    bool changed = false;
 
-    ImGui::Separator();
-    ImGui::TextUnformatted("Colors");
-    ImGui::TextDisabled("Hover a swatch, click to edit. Swap or randomize freely.");
-
-    bool colorChanged = false;
-    colorChanged |= DrawColorSwatch("A", animation.colorA.data());
-    ImGui::SameLine();
-    colorChanged |= DrawColorSwatch("B", animation.colorB.data());
-    ImGui::SameLine();
-    colorChanged |= DrawColorSwatch("C", animation.colorC.data());
-    ImGui::SameLine();
-    colorChanged |= DrawColorSwatch("D", animation.colorD.data());
-
-    colorChanged |= ImGui::ColorEdit4("Color A##ca", animation.colorA.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
-    colorChanged |= ImGui::ColorEdit4("Color B##cb", animation.colorB.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
-    colorChanged |= ImGui::ColorEdit4("Color C##cc", animation.colorC.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
-    colorChanged |= ImGui::ColorEdit4("Color D##cd", animation.colorD.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
-
-    if (ImGui::Button("Swap A/B", ImVec2(88, 0))) {
-        std::swap(animation.colorA, animation.colorB);
-        colorChanged = true;
-    }
-    ImGui::SameLine();
-    if (ImGui::Button("Swap C/D", ImVec2(88, 0))) {
-        std::swap(animation.colorC, animation.colorD);
-        colorChanged = true;
-    }
-    ImGui::SameLine();
-    if (ImGui::Button("Rotate", ImVec2(72, 0))) {
-        auto tmp = animation.colorA;
-        animation.colorA = animation.colorB;
-        animation.colorB = animation.colorC;
-        animation.colorC = animation.colorD;
-        animation.colorD = tmp;
-        colorChanged = true;
-    }
-
-    if (ImGui::Button("Randomize", ImVec2(100, 0))) {
-        static bool seeded = false;
-        if (!seeded) {
-            std::srand(static_cast<unsigned>(std::time(nullptr)));
-            seeded = true;
+    if (ImGui::CollapsingHeader("Customizer", ImGuiTreeNodeFlags_DefaultOpen)) {
+        ImGui::Spacing();
+        ImGui::TextUnformatted("Motion");
+        bool frozen = animation.speed <= 0.0001f;
+        if (ImGui::Checkbox("Freeze as still image", &frozen)) {
+            animation.speed = frozen ? 0.0f : (std::max)(preset->defaultSpeed, 0.25f);
+            changed = true;
         }
-        RandomizeColor(animation.colorA);
-        RandomizeColor(animation.colorB);
-        RandomizeColor(animation.colorC);
-        RandomizeColor(animation.colorD);
-        colorChanged = true;
-    }
-    ImGui::SameLine();
-    if (ImGui::Button("Reset Colors", ImVec2(110, 0))) {
-        animation.colorA = preset->colorA;
-        animation.colorB = preset->colorB;
-        animation.colorC = preset->colorC;
-        animation.colorD = preset->colorD;
-        animation.angle = preset->defaultAngle;
-        colorChanged = true;
+        changed |= ImGui::SliderFloat("Speed", &animation.speed, 0.0f, 3.0f, "%.2f");
+        ImGui::TextDisabled(animation.speed <= 0.0001f ? "Frozen still — no animation." : "Animated — set Speed to 0 to freeze.");
+        changed |= ImGui::SliderFloat("Intensity", &animation.intensity, 0.05f, 2.0f, "%.2f");
+        changed |= ImGui::SliderFloat("Brightness", &animation.brightness, 0.2f, 2.0f, "%.2f");
+        changed |= ImGui::SliderFloat("Angle", &animation.angle, 0.0f, 360.0f, "%.0f deg");
+
+        ImGui::Spacing();
+        if (ImGui::TreeNode("Shape & warp")) {
+            changed |= ImGui::SliderFloat("Zoom", &animation.zoom, 0.25f, 3.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Frequency", &animation.freq, 0.5f, 12.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Sharpness", &animation.sharpness, 0.2f, 6.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Amplitude", &animation.amplitude, 0.0f, 2.5f, "%.2f");
+            changed |= ImGui::SliderFloat("Wave width", &animation.waveWidthMod, 0.0f, 1.5f, "%.2f");
+            changed |= ImGui::SliderFloat("Offset X / time-of-day", &animation.offsetX, -1.0f, 1.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Offset Y", &animation.offsetY, -1.0f, 1.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Local warp", &animation.localWarpIntensity, 0.0f, 2.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Warp frequency Y", &animation.localWarpFreqY, 0.2f, 6.0f, "%.2f");
+            ImGui::TreePop();
+        }
+
+        if (ImGui::TreeNode("Atmosphere")) {
+            changed |= ImGui::SliderFloat("Contrast", &animation.contrast, 0.4f, 2.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Grain", &animation.grainIntensity, 0.0f, 0.25f, "%.3f");
+            changed |= ImGui::SliderFloat("Grain speed", &animation.grainSpeed, 0.0f, 120.0f, "%.1f");
+            changed |= ImGui::SliderFloat("Vignette", &animation.vignetteIntensity, 0.0f, 1.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Vignette radius", &animation.vignetteRadius, 0.1f, 1.0f, "%.2f");
+            changed |= ImGui::SliderFloat("Dither levels", &animation.ditherLevels, 0.0f, 32.0f, "%.0f");
+            changed |= ImGui::SliderFloat("Dither scale", &animation.ditherScale, 1.0f, 12.0f, "%.1f");
+            ImGui::TreePop();
+        }
+
+        ImGui::Spacing();
+        ImGui::TextUnformatted("Colors");
+        ImGui::TextDisabled("Hover a swatch, click to edit. Swap or randomize freely.");
+
+        changed |= DrawColorSwatch("A", animation.colorA.data());
+        ImGui::SameLine();
+        changed |= DrawColorSwatch("B", animation.colorB.data());
+        ImGui::SameLine();
+        changed |= DrawColorSwatch("C", animation.colorC.data());
+        ImGui::SameLine();
+        changed |= DrawColorSwatch("D", animation.colorD.data());
+
+        changed |= ImGui::ColorEdit4("Color A##ca", animation.colorA.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+        changed |= ImGui::ColorEdit4("Color B##cb", animation.colorB.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+        changed |= ImGui::ColorEdit4("Color C##cc", animation.colorC.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+        changed |= ImGui::ColorEdit4("Color D##cd", animation.colorD.data(), ImGuiColorEditFlags_Float | ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+
+        if (ImGui::Button("Swap A/B", ImVec2(88, 0))) {
+            std::swap(animation.colorA, animation.colorB);
+            changed = true;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Swap C/D", ImVec2(88, 0))) {
+            std::swap(animation.colorC, animation.colorD);
+            changed = true;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Rotate", ImVec2(72, 0))) {
+            auto tmp = animation.colorA;
+            animation.colorA = animation.colorB;
+            animation.colorB = animation.colorC;
+            animation.colorC = animation.colorD;
+            animation.colorD = tmp;
+            changed = true;
+        }
+
+        if (ImGui::Button("Randomize", ImVec2(100, 0))) {
+            static bool seeded = false;
+            if (!seeded) {
+                std::srand(static_cast<unsigned>(std::time(nullptr)));
+                seeded = true;
+            }
+            RandomizeColor(animation.colorA);
+            RandomizeColor(animation.colorB);
+            RandomizeColor(animation.colorC);
+            RandomizeColor(animation.colorD);
+            changed = true;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Reset all", ImVec2(100, 0))) {
+            ApplyPresetDefaults(*preset, animation);
+            changed = true;
+        }
     }
 
-    if (colorChanged) {
+    if (changed) {
         onSettingsChanged();
     }
 

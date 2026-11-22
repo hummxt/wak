@@ -20,6 +20,10 @@ public:
     bool HasMissing(const std::vector<AnimationPreset>& presets) const;
     int BuildMissing(Renderer& renderer, const std::vector<AnimationPreset>& presets, int maxPerFrame);
 
+    // Renders one animated thumbnail for library hover preview.
+    ID3D11ShaderResourceView* RenderHover(Renderer& renderer, const AnimationPreset& preset, float timeSeconds);
+    void ClearHover();
+
 private:
     struct Entry {
         ComPtr<ID3D11Texture2D> texture;
@@ -28,9 +32,12 @@ private:
     };
 
     bool CreateEntry(Renderer& renderer, Entry& entry);
-    bool RenderPreset(Renderer& renderer, const AnimationPreset& preset, Entry& entry);
+    bool RenderPreset(Renderer& renderer, const AnimationPreset& preset, Entry& entry, float timeSeconds, bool animate);
+    static AnimationSettings SettingsFromPreset(const AnimationPreset& preset, bool animate);
 
     std::unordered_map<std::string, Entry> m_entries;
+    Entry m_hover;
+    std::string m_hoverPresetId;
     static constexpr uint32_t kWidth = 320;
     static constexpr uint32_t kHeight = 200;
 };

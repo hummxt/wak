@@ -12,6 +12,7 @@ struct LibraryViewState {
     std::string selectedCategory = "All";
     std::string searchQuery;
     std::string selectedPresetId;
+    std::string hoveredPresetId;
     int sidebarIndex = 0;
 };
 

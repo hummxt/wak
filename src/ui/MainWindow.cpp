@@ -41,8 +41,8 @@ void DrawAboutPage() {
     ImGui::Spacing();
     ImGui::TextUnformatted("How to use");
     ImGui::Spacing();
-    ImGui::BulletText("Browse Library and click a wallpaper to preview it.");
-    ImGui::BulletText("Tweak colors, speed, and intensity on the right panel.");
+    ImGui::BulletText("Browse Library — hover a card to see it animate.");
+    ImGui::BulletText("Click a wallpaper, then use Customizer on the right to tune it.");
     ImGui::BulletText("Press Apply to Desktop to put it behind your icons.");
     ImGui::BulletText("Close the window anytime — the wallpaper keeps running.");
     ImGui::BulletText("Close the window to hide the UI — wallpaper keeps running from the tray.");
@@ -219,7 +219,15 @@ void MainWindow::Draw(
     ImGui::BeginChild("Content", ImVec2(0, 0), false);
 
     if (m_libraryState.sidebarIndex == 0) {
-        const float libraryWidth = ImGui::GetContentRegionAvail().x * 0.54f;
+        const float contentAvail = ImGui::GetContentRegionAvail().x;
+        const float splitterW = 8.0f;
+        const float minLibrary = 280.0f;
+        const float minPreview = 260.0f;
+        const float maxLibrary = (std::max)(minLibrary, contentAvail - splitterW - minPreview);
+        float libraryWidth = contentAvail * m_librarySplit;
+        libraryWidth = (std::max)(minLibrary, (std::min)(libraryWidth, maxLibrary));
+        m_librarySplit = libraryWidth / (std::max)(contentAvail, 1.0f);
+
         ImGui::BeginChild("LibraryArea", ImVec2(libraryWidth, 0), false);
         m_libraryView.Draw(animations, m_libraryState, getThumbnail, [&](const AnimationPreset& preset) {
             m_libraryState.selectedPresetId = preset.id;
@@ -227,7 +235,32 @@ void MainWindow::Draw(
         });
         ImGui::EndChild();
 
-        ImGui::SameLine();
+        ImGui::SameLine(0.0f, 0.0f);
+        ImGui::InvisibleButton("##library_split", ImVec2(splitterW, ImGui::GetContentRegionAvail().y));
+        const bool splitHovered = ImGui::IsItemHovered();
+        const bool splitActive = ImGui::IsItemActive();
+        if (splitHovered || splitActive) {
+            ImGui::SetMouseCursor(ImGuiMouseCursor_ResizeEW);
+        }
+        if (splitActive) {
+            libraryWidth += ImGui::GetIO().MouseDelta.x;
+            libraryWidth = (std::max)(minLibrary, (std::min)(libraryWidth, maxLibrary));
+            m_librarySplit = libraryWidth / (std::max)(contentAvail, 1.0f);
+        }
+        {
+            const ImVec2 sp0 = ImGui::GetItemRectMin();
+            const ImVec2 sp1 = ImGui::GetItemRectMax();
+            ImDrawList* splitDraw = ImGui::GetWindowDrawList();
+            const int alpha = splitActive ? 160 : (splitHovered ? 110 : 55);
+            splitDraw->AddRectFilled(
+                ImVec2(sp0.x + splitterW * 0.35f, sp0.y + 18.0f),
+                ImVec2(sp1.x - splitterW * 0.35f, sp1.y - 18.0f),
+                IM_COL32(120, 150, 200, alpha),
+                2.0f
+            );
+        }
+
+        ImGui::SameLine(0.0f, 0.0f);
         const AnimationPreset* selected = animations.FindById(m_libraryState.selectedPresetId);
         m_previewView.Draw(
             selected,

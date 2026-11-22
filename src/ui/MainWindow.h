@@ -44,6 +44,7 @@ private:
     LibraryViewState m_libraryState;
     float m_sidebarHover[5]{};
     float m_sidebarPress[5]{};
+    float m_librarySplit = 0.54f;
     bool m_initialized = false;
 };
 

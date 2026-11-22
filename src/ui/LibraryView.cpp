@@ -27,6 +27,24 @@ std::string TitleCase(std::string value) {
     return value;
 }
 
+std::string Ellipsize(const std::string& text, float maxWidth) {
+    if (maxWidth <= 8.0f) {
+        return {};
+    }
+    if (ImGui::CalcTextSize(text.c_str()).x <= maxWidth) {
+        return text;
+    }
+    std::string out = text;
+    while (!out.empty()) {
+        const std::string candidate = out + "...";
+        if (ImGui::CalcTextSize(candidate.c_str()).x <= maxWidth) {
+            return candidate;
+        }
+        out.pop_back();
+    }
+    return "...";
+}
+
 std::unordered_map<std::string, float> g_cardHover;
 std::unordered_map<std::string, float> g_cardPress;
 
@@ -48,14 +66,20 @@ void LibraryView::Draw(
     ImGui::Unindent(4.0f);
     ImGui::Spacing();
 
+    ImGuiIO& io = ImGui::GetIO();
+    const float dt = io.DeltaTime;
+    const ImGuiStyle& style = ImGui::GetStyle();
+
+    // Wrapping category chips — reflow into rows as the library panel resizes.
+    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(8.0f, 8.0f));
+    const float categoryWrapX = ImGui::GetCursorScreenPos().x + ImGui::GetContentRegionAvail().x;
     const auto categories = animations.GetCategories();
     for (size_t i = 0; i < categories.size(); ++i) {
-        if (i > 0) {
-            ImGui::SameLine();
-        }
         const auto& category = categories[i];
         const bool selected = state.selectedCategory == category;
         const std::string label = category == "All" ? category : TitleCase(category);
+
+        ImGui::PushID(static_cast<int>(i));
         if (selected) {
             ImGui::PushStyleColor(ImGuiCol_Button, ImGui::GetStyleColorVec4(ImGuiCol_ButtonActive));
         }
@@ -65,8 +89,21 @@ void LibraryView::Draw(
         if (selected) {
             ImGui::PopStyleColor();
         }
-    }
 
+        const float lastButtonX2 = ImGui::GetItemRectMax().x;
+        if (i + 1 < categories.size()) {
+            const std::string nextLabel = categories[i + 1] == "All" ? categories[i + 1] : TitleCase(categories[i + 1]);
+            const float nextButtonW = ImGui::CalcTextSize(nextLabel.c_str()).x + style.FramePadding.x * 2.0f;
+            const float nextButtonX2 = lastButtonX2 + style.ItemSpacing.x + nextButtonW;
+            if (nextButtonX2 < categoryWrapX) {
+                ImGui::SameLine();
+            }
+        }
+        ImGui::PopID();
+    }
+    ImGui::PopStyleVar();
+
+    ImGui::Spacing();
     char buffer[128]{};
     std::snprintf(buffer, sizeof(buffer), "%s", state.searchQuery.c_str());
     ImGui::SetNextItemWidth(-1.0f);
@@ -87,13 +124,13 @@ void LibraryView::Draw(
         columns = 3;
     }
     const float cardWidth = (avail - gap * static_cast<float>(columns - 1)) / static_cast<float>(columns);
-    const float cardHeight = cardWidth * 0.62f;
+    const float imageHeight = cardWidth * 0.56f;
+    const float nameBand = 30.0f;
+    const float cardHeight = imageHeight + nameBand;
     const float rowStep = cardHeight + gap;
     const int total = static_cast<int>(filtered.size());
     const int rowCount = (total + columns - 1) / columns;
 
-    ImGuiIO& io = ImGui::GetIO();
-    const float dt = io.DeltaTime;
     if (ImGui::IsWindowHovered() && std::fabs(io.MouseWheel) > 0.0f) {
         m_scrollTarget -= io.MouseWheel * 96.0f;
     }
@@ -110,6 +147,7 @@ void LibraryView::Draw(
 
     ImDrawList* draw = ImGui::GetWindowDrawList();
     const ImVec2 gridOrigin = ImGui::GetCursorScreenPos();
+    std::string hoveredThisFrame;
 
     ImGuiListClipper clipper;
     clipper.Begin(rowCount, rowStep);
@@ -141,6 +179,9 @@ void LibraryView::Draw(
                 }
 
                 const bool hovered = ImGui::IsItemHovered();
+                if (hovered) {
+                    hoveredThisFrame = preset.id;
+                }
                 const bool held = ImGui::IsItemActive();
                 hover = SmoothApproach(hover, hovered ? 1.0f : 0.0f, 14.0f, dt);
                 press = SmoothApproach(press, held ? 1.0f : 0.0f, 18.0f, dt);
@@ -148,6 +189,7 @@ void LibraryView::Draw(
                 const float lift = hover * 2.0f - press * 1.0f;
                 const ImVec2 p0(cell.x, cell.y - lift);
                 const ImVec2 p1(cellEnd.x, cellEnd.y - lift);
+                const ImVec2 imageEnd(p1.x, p0.y + imageHeight);
 
                 if (hover > 0.01f) {
                     draw->AddRectFilled(
@@ -158,16 +200,25 @@ void LibraryView::Draw(
                     );
                 }
 
+                draw->PushClipRect(p0, p1, true);
                 if (thumb) {
-                    draw->AddImage(reinterpret_cast<ImTextureID>(thumb), p0, p1);
+                    draw->AddImage(reinterpret_cast<ImTextureID>(thumb), p0, imageEnd);
                 } else {
                     const ImU32 c0 = ImGui::ColorConvertFloat4ToU32(ImVec4(preset.colorA[0], preset.colorA[1], preset.colorA[2], 1.0f));
                     const ImU32 c1 = ImGui::ColorConvertFloat4ToU32(ImVec4(preset.colorD[0], preset.colorD[1], preset.colorD[2], 1.0f));
-                    draw->AddRectFilledMultiColor(p0, p1, c0, c1, c1, c0);
+                    draw->AddRectFilledMultiColor(p0, imageEnd, c0, c1, c1, c0);
                 }
 
-                draw->AddRectFilled(ImVec2(p0.x, p1.y - 38.0f), p1, IM_COL32(0, 0, 0, 150));
-                draw->AddText(ImVec2(p0.x + 10.0f, p1.y - 20.0f), IM_COL32(255, 255, 255, 245), preset.name.c_str());
+                // Name band under the image so labels stay readable on any wallpaper.
+                draw->AddRectFilled(ImVec2(p0.x, imageEnd.y), p1, IM_COL32(12, 16, 28, 245), 0.0f);
+                const std::string label = Ellipsize(preset.name, cardWidth - 16.0f);
+                const ImVec2 textSize = ImGui::CalcTextSize(label.c_str());
+                draw->AddText(
+                    ImVec2(p0.x + 8.0f, imageEnd.y + (nameBand - textSize.y) * 0.5f),
+                    IM_COL32(245, 248, 255, 255),
+                    label.c_str()
+                );
+                draw->PopClipRect();
 
                 if (state.selectedPresetId == preset.id) {
                     draw->AddRect(p0, p1, IM_COL32(120, 180, 255, 255), 8.0f, 0, 2.0f);
@@ -180,7 +231,8 @@ void LibraryView::Draw(
         }
     }
 
-    // Reserve full gallery height so scrolling/clipping stay correct.
+    state.hoveredPresetId = hoveredThisFrame;
+
     ImGui::SetCursorScreenPos(gridOrigin);
     ImGui::Dummy(ImVec2(avail, static_cast<float>(rowCount) * rowStep));
 
