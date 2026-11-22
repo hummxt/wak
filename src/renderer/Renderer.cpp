@@ -289,11 +289,10 @@ void Renderer::Render(const AnimationSettings& animation, float timeSeconds, boo
     const uint32_t outW = m_device.GetWidth();
     const uint32_t outH = m_device.GetHeight();
 
+    // Optional HQ path stays at native resolution (never 2x) — supersample was killing FPS.
     if (m_highQuality && outW > 0 && outH > 0) {
-        const uint32_t hqW = outW * 2;
-        const uint32_t hqH = outH * 2;
-        if (EnsureHqTarget(hqW, hqH) && m_hqRtv) {
-            RenderToTarget(m_hqRtv.Get(), hqW, hqH, animation, timeSeconds);
+        if (EnsureHqTarget(outW, outH) && m_hqRtv) {
+            RenderToTarget(m_hqRtv.Get(), outW, outH, animation, timeSeconds);
             m_device.BeginFrame(0.0f, 0.0f, 0.0f, 1.0f);
             BlitHqToBackbuffer(static_cast<float>(outW), static_cast<float>(outH));
             if (present) {

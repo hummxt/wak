@@ -36,6 +36,7 @@ private:
     void ResolveConfigPath();
     void Update();
     void RenderFrame();
+    void RenderWallpaperOnly();
     void ApplyPreset(const AnimationPreset& preset);
     void LoadPresetIntoAnimation(const AnimationPreset& preset);
     bool ApplyShaderToRenderer(Renderer& renderer, const AnimationPreset& preset);
@@ -70,6 +71,7 @@ private:
     static constexpr UINT WM_SHOW_FROM_SECOND_INSTANCE = WM_APP + 2;
     static constexpr UINT ID_TRAY_SHOW = 1001;
     static constexpr UINT ID_TRAY_EXIT = 1002;
+    static constexpr UINT_PTR kSizeMoveTimerId = 42;
 
     HINSTANCE m_instance = nullptr;
     HWND m_hwnd = nullptr;
@@ -84,6 +86,7 @@ private:
     bool m_backgroundMode = false;
     bool m_uiVisible = true;
     bool m_uiResized = false;
+    bool m_inSizeMove = false;
     bool m_wallpaperModeApplied = false;
     bool m_startWithWindowsApplied = false;
     bool m_persistWallpaperPending = false;

@@ -738,13 +738,17 @@ bool Application::ShouldPauseWallpaper() const {
 int Application::EffectiveFpsLimit() const {
     int fps = m_config.Get().performance.fpsLimit;
     if (fps < 15) {
-        fps = 30;
+        fps = 60;
+    }
+    if (fps > 240) {
+        fps = 240;
     }
     if (m_uiVisible) {
+        // Keep the editor responsive while respecting a high user cap.
         return (std::max)(fps, 60);
     }
     if (m_config.Get().performance.powerSaving) {
-        fps = (std::min)(fps, 20);
+        fps = (std::min)(fps, 30);
     }
     if (m_config.Get().animation.speed <= 0.0001f) {
         fps = (std::min)(fps, 8);
@@ -832,21 +836,33 @@ void Application::Update() {
     }
 }
 
+void Application::RenderWallpaperOnly() {
+    if (!m_config.Get().application.wallpaperMode || !m_wallpaperHwnd || !m_wallpaperModeApplied) {
+        return;
+    }
+    if (ShouldPauseWallpaper()) {
+        return;
+    }
+
+    const float elapsed = std::chrono::duration<float>(std::chrono::steady_clock::now() - m_startTime).count();
+    m_wallpaperRenderer.SetHighQuality(false);
+    SyncPaletteToRenderers();
+    m_wallpaperRenderer.Render(m_config.Get().animation, elapsed, true, false);
+    ++m_wallpaperFrames;
+}
+
 void Application::RenderFrame() {
     const auto now = std::chrono::steady_clock::now();
     const float elapsed = std::chrono::duration<float>(now - m_startTime).count();
 
     const bool pauseWallpaper = ShouldPauseWallpaper();
-    const bool drawUi = m_uiVisible && m_hwnd && IsWindowVisible(m_hwnd);
+    const bool drawUi = m_uiVisible && m_hwnd && IsWindowVisible(m_hwnd) && !m_inSizeMove;
 
     if (m_config.Get().application.wallpaperMode && m_wallpaperHwnd && m_wallpaperModeApplied && !pauseWallpaper) {
-        // Keep HQ on always — toggling with UI visibility reboots the look when closing.
-        m_wallpaperRenderer.SetHighQuality(true);
-        const bool renderWallpaperThisFrame = !drawUi || (m_wallpaperFrames % 3 == 0) || m_capturePending;
-        if (renderWallpaperThisFrame) {
-            SyncPaletteToRenderers();
-            m_wallpaperRenderer.Render(m_config.Get().animation, elapsed, true, false);
-        }
+        // Native-resolution path (no 2x supersample) — smooth motion, low GPU cost.
+        m_wallpaperRenderer.SetHighQuality(false);
+        SyncPaletteToRenderers();
+        m_wallpaperRenderer.Render(m_config.Get().animation, elapsed, true, false);
         ++m_wallpaperFrames;
         if (m_persistWallpaperPending && m_wallpaperFrames >= 18) {
             // Save GPU still for reboot fallback — never SPI while live embed is active.
@@ -863,6 +879,15 @@ void Application::RenderFrame() {
         const bool scrolling = ImGui::GetIO().MouseWheel != 0.0f || ImGui::GetIO().MouseWheelH != 0.0f;
         if (!scrolling && m_thumbnails.HasMissing(m_animations.GetPresets())) {
             m_thumbnails.BuildMissing(m_renderer, m_animations.GetPresets(), 1);
+        }
+
+        // Animate the library card under the cursor (uses previous frame's hover id).
+        ID3D11ShaderResourceView* hoverSrv = nullptr;
+        const std::string hoveredId = m_ui.GetLibraryState().hoveredPresetId;
+        if (!hoveredId.empty()) {
+            if (const AnimationPreset* hovered = m_animations.FindById(hoveredId)) {
+                hoverSrv = m_thumbnails.RenderHover(m_renderer, *hovered, elapsed);
+            }
         }
 
         if (!m_activePresetId.empty()) {
@@ -891,7 +916,10 @@ void Application::RenderFrame() {
             m_config,
             m_animations,
             m_renderer.GetPreviewSRV(),
-            [this](const std::string& id) -> ID3D11ShaderResourceView* {
+            [this, hoverSrv, hoveredId](const std::string& id) -> ID3D11ShaderResourceView* {
+                if (hoverSrv && !hoveredId.empty() && id == hoveredId) {
+                    return hoverSrv;
+                }
                 return m_thumbnails.Get(id);
             },
             m_desktopStatus,
@@ -918,11 +946,11 @@ void Application::RenderFrame() {
     }
 
     const int fps = EffectiveFpsLimit();
-    const auto frameBudget = std::chrono::milliseconds(1000 / fps);
-    const auto frameEnd = std::chrono::steady_clock::now();
-    const auto spent = frameEnd - m_lastFrame;
-    if (spent < frameBudget) {
-        std::this_thread::sleep_for(frameBudget - spent);
+    const auto frameBudget = std::chrono::microseconds(1000000 / (std::max)(1, fps));
+    const auto target = m_lastFrame + frameBudget;
+    const auto nowEnd = std::chrono::steady_clock::now();
+    if (nowEnd < target) {
+        std::this_thread::sleep_until(target);
     }
     m_lastFrame = std::chrono::steady_clock::now();
 }
@@ -980,6 +1008,26 @@ LRESULT Application::HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
     }
 
     switch (msg) {
+    case WM_ENTERSIZEMOVE:
+        if (hwnd == m_hwnd) {
+            m_inSizeMove = true;
+            // Windows runs a modal drag/resize loop — keep wallpaper alive with a timer.
+            SetTimer(m_hwnd, kSizeMoveTimerId, 16, nullptr);
+        }
+        return 0;
+    case WM_EXITSIZEMOVE:
+        if (hwnd == m_hwnd) {
+            m_inSizeMove = false;
+            KillTimer(m_hwnd, kSizeMoveTimerId);
+            m_uiResized = true;
+        }
+        return 0;
+    case WM_TIMER:
+        if (hwnd == m_hwnd && wParam == kSizeMoveTimerId) {
+            RenderWallpaperOnly();
+            return 0;
+        }
+        break;
     case WM_SIZE:
         if (hwnd == m_hwnd && wParam != SIZE_MINIMIZED) {
             m_uiResized = true;

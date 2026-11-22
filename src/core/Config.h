@@ -12,7 +12,7 @@ struct ApplicationSettings {
 };
 
 struct PerformanceSettings {
-    int fpsLimit = 30;
+    int fpsLimit = 60;
     float renderScale = 1.0f;
     bool pauseWhenFullscreen = true;
     bool powerSaving = false;

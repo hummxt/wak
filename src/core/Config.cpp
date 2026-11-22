@@ -82,6 +82,16 @@ bool Config::Load(const std::wstring& path) {
     m_config.application.wallpaperMode = ExtractBool(json, "wallpaperMode", m_config.application.wallpaperMode);
 
     m_config.performance.fpsLimit = ExtractInt(json, "fpsLimit", m_config.performance.fpsLimit);
+    // Migrate older installs that still ship the old 30 FPS default.
+    if (m_config.performance.fpsLimit == 30) {
+        m_config.performance.fpsLimit = 60;
+    }
+    if (m_config.performance.fpsLimit < 15) {
+        m_config.performance.fpsLimit = 60;
+    }
+    if (m_config.performance.fpsLimit > 240) {
+        m_config.performance.fpsLimit = 240;
+    }
     m_config.performance.renderScale = ExtractFloat(json, "renderScale", m_config.performance.renderScale);
     m_config.performance.pauseWhenFullscreen = ExtractBool(json, "pauseWhenFullscreen", m_config.performance.pauseWhenFullscreen);
     m_config.performance.powerSaving = ExtractBool(json, "powerSaving", m_config.performance.powerSaving);

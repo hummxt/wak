@@ -10,15 +10,22 @@ void SettingsView::Draw(AppConfig& config, const std::function<void()>& onChange
     ImGui::TextUnformatted("Performance");
 
     int fps = config.performance.fpsLimit;
-    if (ImGui::SliderInt("FPS Limit", &fps, 15, 60)) {
+    if (fps < 15) {
+        fps = 15;
+    }
+    if (fps > 240) {
+        fps = 240;
+    }
+    if (ImGui::SliderInt("FPS Limit", &fps, 15, 240)) {
         config.performance.fpsLimit = fps;
         onChanged();
     }
+    ImGui::TextDisabled("Default 60. Raise for smoother motion, lower to save power.");
 
-    if (ImGui::SliderFloat("Render Scale", &config.performance.renderScale, 0.75f, 1.0f, "%.2f")) {
+    if (ImGui::SliderFloat("Render Scale", &config.performance.renderScale, 0.5f, 1.0f, "%.2f")) {
         onChanged();
     }
-    ImGui::TextDisabled("Desktop wallpaper always uses native screen resolution.");
+    ImGui::TextDisabled("Lower scale = lighter GPU load. Wallpaper stays sharp enough for desktop use.");
 
     if (ImGui::Checkbox("Pause when fullscreen", &config.performance.pauseWhenFullscreen)) {
         onChanged();
@@ -27,6 +34,7 @@ void SettingsView::Draw(AppConfig& config, const std::function<void()>& onChange
     if (ImGui::Checkbox("Power saving", &config.performance.powerSaving)) {
         onChanged();
     }
+    ImGui::TextDisabled("Caps wallpaper around 30 FPS when enabled.");
 
     ImGui::Separator();
     ImGui::TextUnformatted("Application");
