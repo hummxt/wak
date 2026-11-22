@@ -1,0 +1,42 @@
+{
+  "id": "sg-plum-night",
+  "name": "Plum Night",
+  "category": "shader",
+  "shader": "shadergrad/ShaderGradient",
+  "description": "Plum night shader gradient.",
+  "thumbnail": "thumbnails/sg-plum-night.png",
+  "colorA": [
+    0.06,
+    0.02,
+    0.08,
+    1
+  ],
+  "colorB": [
+    0.25,
+    0.08,
+    0.28,
+    1
+  ],
+  "colorC": [
+    0.55,
+    0.25,
+    0.55,
+    1
+  ],
+  "colorD": [
+    0.9,
+    0.65,
+    0.85,
+    1
+  ],
+  "speed": 0.22,
+  "intensity": 1.6,
+  "angle": 130,
+  "zoom": 1.05,
+  "freq": 5.2,
+  "sharpness": 1.15,
+  "amplitude": 1.55,
+  "waveWidthMod": 0.38,
+  "localWarpIntensity": 1.1,
+  "grainIntensity": 0.06
+}
