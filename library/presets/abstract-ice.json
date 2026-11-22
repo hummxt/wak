@@ -1,0 +1,35 @@
+{
+  "id": "abstract-ice",
+  "name": "Abstract Ice",
+  "category": "abstract",
+  "shader": "abstract/Abstract",
+  "description": "Icy pale abstract rings.",
+  "thumbnail": "thumbnails/abstract-ice.png",
+  "colorA": [
+    0.08,
+    0.12,
+    0.18,
+    1
+  ],
+  "colorB": [
+    0.45,
+    0.6,
+    0.75,
+    1
+  ],
+  "colorC": [
+    0.8,
+    0.9,
+    0.95,
+    1
+  ],
+  "colorD": [
+    0.95,
+    0.98,
+    1.0,
+    1
+  ],
+  "speed": 0.3,
+  "intensity": 0.6,
+  "angle": 15
+}
