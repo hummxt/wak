@@ -1,0 +1,39 @@
+{
+  "id": "noise-wave-grey",
+  "name": "Grain Wave",
+  "category": "noise",
+  "shader": "noise/NoiseField",
+  "description": "Wavy soft grey shapes under fine static.",
+  "thumbnail": "thumbnails/noise-wave-grey.png",
+  "colorA": [
+    0.06,
+    0.06,
+    0.07,
+    1
+  ],
+  "colorB": [
+    0.25,
+    0.25,
+    0.27,
+    1
+  ],
+  "colorC": [
+    0.55,
+    0.55,
+    0.58,
+    1
+  ],
+  "colorD": [
+    0.88,
+    0.88,
+    0.9,
+    1
+  ],
+  "speed": 0.18,
+  "intensity": 0.9,
+  "angle": 20,
+  "zoom": 1.4,
+  "freq": 6,
+  "amplitude": 1.2,
+  "grainIntensity": 0.11
+}
