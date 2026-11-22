@@ -1,0 +1,43 @@
+{
+  "id": "galaxy-magenta-haze",
+  "name": "Magenta Haze",
+  "category": "galaxy",
+  "shader": "galaxy/Galaxy",
+  "description": "Indigo-to-magenta nebula clouds packed with stars.",
+  "thumbnail": "thumbnails/galaxy-magenta-haze.png",
+  "colorA": [
+    0.01,
+    0.02,
+    0.08,
+    1
+  ],
+  "colorB": [
+    0.15,
+    0.1,
+    0.45,
+    1
+  ],
+  "colorC": [
+    0.7,
+    0.25,
+    0.85,
+    1
+  ],
+  "colorD": [
+    0.9,
+    0.85,
+    1.0,
+    1
+  ],
+  "speed": 0.24,
+  "intensity": 0.95,
+  "zoom": 1.1,
+  "freq": 5.2,
+  "sharpness": 2.1,
+  "amplitude": 1.2,
+  "waveWidthMod": 0.2,
+  "offsetX": -0.1,
+  "offsetY": 0.12,
+  "localWarpIntensity": 0.95,
+  "localWarpFreqY": 1.7
+}
