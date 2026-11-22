@@ -1,0 +1,43 @@
+{
+  "id": "galaxy-teal-cloud",
+  "name": "Teal Cloud",
+  "category": "galaxy",
+  "shader": "galaxy/Galaxy",
+  "description": "Teal/emerald nebula with purple highlights.",
+  "thumbnail": "thumbnails/galaxy-teal-cloud.png",
+  "colorA": [
+    0.01,
+    0.03,
+    0.05,
+    1
+  ],
+  "colorB": [
+    0.05,
+    0.25,
+    0.28,
+    1
+  ],
+  "colorC": [
+    0.25,
+    0.75,
+    0.55,
+    1
+  ],
+  "colorD": [
+    0.75,
+    0.35,
+    0.85,
+    1
+  ],
+  "speed": 0.21,
+  "intensity": 0.9,
+  "zoom": 1.05,
+  "freq": 4.8,
+  "sharpness": 2.0,
+  "amplitude": 1.1,
+  "waveWidthMod": 0.18,
+  "offsetX": 0.05,
+  "offsetY": -0.08,
+  "localWarpIntensity": 0.9,
+  "localWarpFreqY": 1.5
+}
