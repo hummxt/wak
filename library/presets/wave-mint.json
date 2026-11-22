@@ -1,0 +1,36 @@
+{
+  "id": "wave-mint",
+  "name": "Mint Swell",
+  "category": "waves",
+  "shader": "waves/WaveGradient",
+  "description": "Soft mint and cream swell.",
+  "thumbnail": "thumbnails/wave-mint.png",
+  "colorA": [
+    0.08,
+    0.18,
+    0.16,
+    1
+  ],
+  "colorB": [
+    0.25,
+    0.55,
+    0.48,
+    1
+  ],
+  "colorC": [
+    0.65,
+    0.9,
+    0.8,
+    1
+  ],
+  "colorD": [
+    0.95,
+    0.92,
+    0.8,
+    1
+  ],
+  "speed": 0.3,
+  "intensity": 0.55,
+  "freq": 3.5,
+  "amplitude": 0.8
+}
