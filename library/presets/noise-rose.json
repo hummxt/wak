@@ -1,0 +1,38 @@
+{
+  "id": "noise-rose",
+  "name": "Rose Grain",
+  "category": "noise",
+  "shader": "noise/NoiseField",
+  "description": "Warm rose grain gradient.",
+  "thumbnail": "thumbnails/noise-rose.png",
+  "colorA": [
+    0.1,
+    0.04,
+    0.06,
+    1
+  ],
+  "colorB": [
+    0.3,
+    0.12,
+    0.16,
+    1
+  ],
+  "colorC": [
+    0.65,
+    0.35,
+    0.4,
+    1
+  ],
+  "colorD": [
+    0.95,
+    0.8,
+    0.8,
+    1
+  ],
+  "speed": 0.12,
+  "intensity": 0.7,
+  "angle": 160,
+  "zoom": 1.15,
+  "amplitude": 0.9,
+  "grainIntensity": 0.1
+}
