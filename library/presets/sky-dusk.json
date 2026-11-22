@@ -1,0 +1,36 @@
+{
+  "id": "sky-dusk",
+  "name": "Pinned Dusk",
+  "category": "sky",
+  "shader": "sky/DayNight",
+  "description": "A dusk-locked sky wash \u2014 almost still, soft horizon glow.",
+  "speed": 0.05,
+  "intensity": 0.9,
+  "brightness": 1.0,
+  "amplitude": 0.8,
+  "offsetX": 0.72,
+  "colorA": [
+    0.06,
+    0.05,
+    0.12,
+    1
+  ],
+  "colorB": [
+    0.75,
+    0.3,
+    0.25,
+    1
+  ],
+  "colorC": [
+    0.95,
+    0.55,
+    0.35,
+    1
+  ],
+  "colorD": [
+    1.0,
+    0.8,
+    0.45,
+    1
+  ]
+}
