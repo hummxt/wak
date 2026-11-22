@@ -1,0 +1,34 @@
+{
+  "id": "mesh-arctic",
+  "name": "Mesh Arctic",
+  "category": "mesh",
+  "shader": "mesh/MeshGradient",
+  "description": "Cool arctic mesh wash.",
+  "thumbnail": "thumbnails/mesh-arctic.png",
+  "colorA": [
+    0.05,
+    0.15,
+    0.28,
+    1
+  ],
+  "colorB": [
+    0.15,
+    0.45,
+    0.7,
+    1
+  ],
+  "colorC": [
+    0.55,
+    0.85,
+    0.95,
+    1
+  ],
+  "colorD": [
+    0.85,
+    0.95,
+    1.0,
+    1
+  ],
+  "speed": 0.35,
+  "intensity": 0.65
+}
