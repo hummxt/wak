@@ -65,7 +65,6 @@ Output: `build\Release\Wakbg.exe`
 Tray → **Exit** removes the tray icon and keeps the wallpaper running in the background. Launch Wakbg again to reopen the UI. Turn off **Wallpaper mode** in Settings only if you want the default Windows background back.
 
 =======
->>>>>>> e769ddc1650c4528eca683cf6cec628b9b8027ba
 ---
 
 ## Layout
